@@ -1,0 +1,35 @@
+// Schéma Prisma — compatible PostgreSQL (Vercel/Supabase/Neon) et SQLite (local)
+// Pour passer à PostgreSQL : changer provider en "postgresql" et mettre à jour DATABASE_URL
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Statuts possibles d'une commande
+enum StatutCommande {
+  EN_ATTENTE
+  EN_COURS
+  TERMINE
+  PAYE
+}
+
+// Table principale des commandes clients
+model Commande {
+  id          Int            @id @default(autoincrement())
+  nom         String         // Nom du client
+  email       String         // Email du client
+  service     String         // Service choisi
+  prixService Float          // Prix du service en euros
+  description String         // Description du problème
+  statut      StatutCommande @default(EN_ATTENTE)
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+
+  @@index([statut])
+  @@index([createdAt])
+}
