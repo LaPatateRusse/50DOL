@@ -1,9 +1,13 @@
-"""Voix off (Piper TTS), timeline et bande-son (musique + bruitages) de la vidéo.
+"""Voix off, timeline et bande-son (musique + bruitages) de la vidéo.
 
 Usage : python3 build_audio.py <dossier_voix> <dossier_sortie>
+Voix : ElevenLabs si la variable ELEVEN_KEY est définie (ELEVEN_VOICE pour choisir la voix),
+sinon Piper hors ligne. Avec ElevenLabs, les sous-titres sont calés sur l'horodatage des mots.
 Produit : timeline.json (lu par le rendu) et audio.wav.
 """
+import base64
 import json
+import urllib.request
 import os
 import subprocess
 import sys
@@ -15,6 +19,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 VOICE_DIR, OUT = sys.argv[1], sys.argv[2]
 MODEL = os.path.join(VOICE_DIR, "vits-piper-fr_FR-tom-medium", "fr_FR-tom-medium.onnx")
 SR = 44100
+ELEVEN_KEY = os.environ.get("ELEVEN_KEY")
+ELEVEN_VOICE = os.environ.get("ELEVEN_VOICE", "onwK4e9ZLuTAKqWW03F9")
 os.makedirs(os.path.join(OUT, "tts"), exist_ok=True)
 
 script = json.load(open(os.path.join(HERE, "script.json"), encoding="utf-8"))
@@ -25,7 +31,43 @@ GAP_IN, GAP_OUT, LEAD = 0.10, 0.28, 0.35
 PAD_AFTER = {"titre": 0.35, "carte": 0.2, "bain": 0.25, "co": 0.3, "fin": 3.2}
 
 
+def eleven(i, text):
+    """Renvoie (audio, débuts des mots en s) via l'API ElevenLabs avec horodatage."""
+    cache = os.path.join(OUT, "tts", f"{i:02d}_eleven.json")
+    if not os.path.exists(cache):
+        req = urllib.request.Request(
+            f"https://api.elevenlabs.io/v1/text-to-speech/{ELEVEN_VOICE}/with-timestamps?output_format=mp3_44100_128",
+            data=json.dumps({"text": text, "model_id": "eleven_multilingual_v2", "language_code": "fr",
+                             "voice_settings": {"stability": 0.45, "similarity_boost": 0.8, "style": 0.35,
+                                                "use_speaker_boost": True, "speed": 1.08}}).encode(),
+            headers={"xi-api-key": ELEVEN_KEY, "Content-Type": "application/json"})
+        with urllib.request.urlopen(req, timeout=120) as r:
+            open(cache, "wb").write(r.read())
+    res = json.load(open(cache))
+    mp3 = os.path.join(OUT, "tts", f"{i:02d}.mp3")
+    open(mp3, "wb").write(base64.b64decode(res["audio_base64"]))
+    al = res["alignment"]
+    chars, starts = al["characters"], al["character_start_times_seconds"]
+    ends = al["character_end_times_seconds"]
+    t0 = max(0.0, starts[0] - 0.03)
+    t1 = ends[-1] + 0.12
+    wstarts, prev_space = [], True
+    for ch, st in zip(chars, starts):
+        if not ch.isspace() and prev_space:
+            wstarts.append(st - t0)
+        prev_space = ch.isspace()
+    out = os.path.join(OUT, "tts", f"{i:02d}.wav")
+    af = (f"atrim=start={t0}:end={t1},asetpts=PTS-STARTPTS,highpass=f=60,"
+          "acompressor=threshold=-18dB:ratio=3:attack=5:release=80:makeup=2")
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", mp3, "-af", af, "-ar", str(SR), "-ac", "1", out], check=True)
+    with wave.open(out) as w:
+        data = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32) / 32768
+    return data, wstarts
+
+
 def tts(i, text):
+    if ELEVEN_KEY:
+        return eleven(i, text)
     raw = os.path.join(OUT, "tts", f"{i:02d}_raw.wav")
     out = os.path.join(OUT, "tts", f"{i:02d}.wav")
     if not os.path.exists(out):
@@ -43,7 +85,7 @@ def tts(i, text):
         subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", raw, "-af", af, "-ar", str(SR), "-ac", "1", out], check=True)
     with wave.open(out) as w:
         data = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32) / 32768
-    return data
+    return data, None
 
 
 def chunks(show):
@@ -77,7 +119,7 @@ t = LEAD
 voices, tl_lines, scenes = [], [], []
 prev_scene = None
 for i, ln in enumerate(lines):
-    audio = tts(i, ln["say"])
+    audio, wstarts = tts(i, ln["say"])
     if prev_scene is not None:
         t += GAP_IN if ln["scene"] == prev_scene else GAP_OUT + PAD_AFTER.get(prev_scene, 0)
     if ln["scene"] != prev_scene:
@@ -86,10 +128,22 @@ for i, ln in enumerate(lines):
     groups = chunks(ln["show"])
     weights = [sum(len(x["w"]) for x in g) + 2 for g in groups]
     acc, cks = t, []
-    for g, wgt in zip(groups, weights):
-        d = dur * wgt / sum(weights)
-        cks.append({"start": round(acc, 3), "end": round(acc + d, 3), "words": g})
-        acc += d
+    if wstarts:
+        # Mot affiché n° k ≈ mot prononcé n° k * (prononcés / affichés) ; « 180 » ↔ « cent quatre-vingts ».
+        n_show, k = sum(len(g) for g in groups), 0
+        for j, g in enumerate(groups):
+            si = min(len(wstarts) - 1, round(k * len(wstarts) / n_show))
+            st = t + (0 if j == 0 else wstarts[si] - 0.04)
+            cks.append({"start": round(st, 3), "words": g})
+            k += len(g)
+        for a, b in zip(cks, cks[1:]):
+            a["end"] = b["start"]
+        cks[-1]["end"] = round(t + dur, 3)
+    else:
+        for g, wgt in zip(groups, weights):
+            d = dur * wgt / sum(weights)
+            cks.append({"start": round(acc, 3), "end": round(acc + d, 3), "words": g})
+            acc += d
     tl_lines.append({"scene": ln["scene"], "start": round(t, 3), "end": round(t + dur, 3), "chunks": cks})
     voices.append((t, audio))
     t += dur
