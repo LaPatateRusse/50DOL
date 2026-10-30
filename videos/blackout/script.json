@@ -1,0 +1,26 @@
+{
+  "title": "Blackout général — Jour 1",
+  "note": "say = texte lu par la voix off ; show = sous-titre. [mot] = rouge (danger), {mot} = jaune (ressource / clé).",
+  "lines": [
+    { "scene": "intro",     "say": "Si le courant saute dans toute la ville, en plein hiver,", "show": "Si le courant saute dans toute la ville, en plein {hiver}," },
+    { "scene": "alerte",    "say": "surtout, ne fais pas comme tes voisins.", "show": "Surtout, ne fais pas comme tes [voisins]." },
+    { "scene": "titre",     "say": "Parce que sans le savoir, eux vont faire une erreur très stupide.", "show": "Parce que sans le savoir, eux vont faire une erreur très [stupide]." },
+    { "scene": "carte",     "say": "En quelques secondes, toute la ville est dans le noir.", "show": "En quelques secondes, toute la ville est dans le [noir]." },
+    { "scene": "carte",     "say": "Max, lui, a un plan.", "show": "Max, lui, a un {plan}." },
+    { "scene": "immeuble",  "say": "Problème : dans beaucoup d'immeubles, l'eau monte grâce à des pompes électriques.", "show": "Problème : dans beaucoup d'immeubles, l'eau monte grâce à des pompes [électriques]." },
+    { "scene": "immeuble",  "say": "Dans quelques heures, plus une goutte au robinet.", "show": "Dans quelques heures, plus une goutte au [robinet]." },
+    { "scene": "bain",      "say": "Alors d'abord : l'eau.", "show": "Alors d'abord : {l'eau}." },
+    { "scene": "bain",      "say": "Tant que ça coule encore, Max remplit tout : la baignoire, les casseroles, les bidons.", "show": "Tant que ça coule encore, Max remplit tout : la baignoire, les casseroles, les {bidons}." },
+    { "scene": "bain",      "say": "Cent quatre-vingts litres.", "show": "180 {litres}." },
+    { "scene": "infographie","say": "Parce qu'il faut au moins deux litres par jour et par personne, rien que pour boire.", "show": "Parce qu'il faut au moins 2 litres par jour et par personne, rien que pour {boire}." },
+    { "scene": "froid",     "say": "Ensuite : le froid.", "show": "Ensuite : le {froid}." },
+    { "scene": "froid",     "say": "Sans chauffage, un appartement peut perdre jusqu'à un degré par heure.", "show": "Sans chauffage, un appartement peut perdre jusqu'à 1 degré par [heure]." },
+    { "scene": "abri",      "say": "Max s'installe dans la plus petite pièce. Une couverture sur la fenêtre, une serviette sous la porte.", "show": "Max s'installe dans la plus petite pièce. Une couverture sur la fenêtre, une serviette sous la {porte}." },
+    { "scene": "co",        "say": "Et voilà l'erreur des voisins : un barbecue ou un groupe électrogène à l'intérieur.", "show": "Et voilà l'erreur des voisins : un barbecue ou un groupe électrogène à l'[intérieur]." },
+    { "scene": "co",        "say": "Le monoxyde de carbone n'a ni couleur, ni odeur.", "show": "Le monoxyde de carbone n'a ni couleur, ni [odeur]." },
+    { "scene": "co",        "say": "Il endort. Puis il tue.", "show": "Il endort. Puis il [tue]." },
+    { "scene": "nuit",      "say": "Mais Max, lui, vient d'allumer une bougie.", "show": "Mais Max, lui, vient d'allumer une {bougie}." },
+    { "scene": "nuit",      "say": "Et dans une ville sans lumière, une seule fenêtre éclairée se voit à des centaines de mètres.", "show": "Et dans une ville sans lumière, une seule fenêtre éclairée se voit à des centaines de [mètres]." },
+    { "scene": "fin",       "say": "Et il n'est pas le seul à l'avoir remarqué.", "show": "Et il n'est pas le seul à l'avoir [remarqué]." }
+  ]
+}
