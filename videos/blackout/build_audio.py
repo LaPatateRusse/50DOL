@@ -20,7 +20,7 @@ VOICE_DIR, OUT = sys.argv[1], sys.argv[2]
 MODEL = os.path.join(VOICE_DIR, "vits-piper-fr_FR-tom-medium", "fr_FR-tom-medium.onnx")
 SR = 44100
 ELEVEN_KEY = os.environ.get("ELEVEN_KEY")
-ELEVEN_VOICE = os.environ.get("ELEVEN_VOICE", "onwK4e9ZLuTAKqWW03F9")
+ELEVEN_VOICE = os.environ.get("ELEVEN_VOICE", "pNInz6obpgDQGcFmaJgB")  # Adam
 os.makedirs(os.path.join(OUT, "tts"), exist_ok=True)
 
 script = json.load(open(os.path.join(HERE, "script.json"), encoding="utf-8"))
