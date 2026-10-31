@@ -1,0 +1,20 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:'Oswald';src:url('oswald.woff2') format('woff2');font-weight:700}
+@font-face{font-family:'Montserrat';src:url('montserrat.woff2') format('woff2');font-weight:100 900}
+html,body{margin:0;background:#000}
+canvas{display:block}
+</style></head>
+<body><canvas id="c" width="1080" height="1920"></canvas>
+<script src="engine.js"></script>
+<script>
+// Charge les scènes de l'épisode passé en paramètre (?ep=chemin/absolu/vers/episode).
+const ep = new URLSearchParams(location.search).get('ep');
+const s = document.createElement('script');
+s.src = 'file://' + ep + '/scenes.js';
+s.onload = () => { window.EP_READY = true; };
+s.onerror = () => { window.EP_ERROR = 'scenes.js introuvable : ' + ep; };
+document.body.appendChild(s);
+</script>
+</body></html>

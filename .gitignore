@@ -39,3 +39,4 @@ prisma/dev.db-journal
 
 # Python
 __pycache__/
+videos/.build/
