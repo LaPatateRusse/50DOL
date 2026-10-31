@@ -144,3 +144,11 @@ Ce document sert de cahier des charges pour reproduire le style à l'identique s
 
 ### Prompt type pour générateur d'images
 > Flat vector illustration, 9:16 vertical, minimalist explainer animation style, thick dark outlines, muted palette (slate grey mountains with white peaks, dark green pine trees, warm brown wooden chalet, snowy white ground), soft vignette. Character: thin stickman-like figure with a big round beige face, rosy cheek, angry V-shaped eyebrows, black hoodie with a single pointed tip on top, olive backpack, navy jeans, brown boots. [SCÈNE]. No text.
+
+---
+
+## 10. Livraison
+
+Chaque épisode est livré dans son dossier `videos/<épisode>/` avec :
+- `tiktok.mp4` (la vidéo s'appelle toujours ainsi) ;
+- `descriptions.txt` : 3 descriptions au choix — **question** (fait réagir), **liste** (conseils, incite à enregistrer), **suspense** (pousse aux commentaires) — avec emojis et hashtags.

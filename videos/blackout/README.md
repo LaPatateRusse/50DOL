@@ -10,5 +10,5 @@ Short vertical 1080×1920 (68 s) dans le style de `docs/style-video-survie.md`.
 ```bash
 python3 build_audio.py <dossier_voix> build
 node render.js build
-ffmpeg -f concat -safe 0 -i build/segs.txt -i build/audio.wav -c:v copy -c:a aac -shortest blackout-jour1.mp4
+ffmpeg -f concat -safe 0 -i build/segs.txt -i build/audio.wav -c:v copy -c:a aac -shortest tiktok.mp4
 ```
