@@ -1,0 +1,44 @@
+{
+  "title": "Chance Infinie",
+  "note": "Histoire complète en 1 partie (super-pouvoir). Héros = personnage de l'avatar.",
+  "voice": {
+    "model": "eleven_v3", "voice_id": "pNInz6obpgDQGcFmaJgB", "stability": 0.5, "tempo": 1.0,
+    "gemini_voice": "Orus",
+    "gemini_style": "Lis ce texte en français, comme un narrateur TikTok drôle et captivant : voix masculine grave, rythme vif, ton amusé au début, puis sérieux et émouvant à la fin. Les passages entre guillemets « » sont dits comme une réplique. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+  },
+  "pad_after": { "rue": 0.2, "chance": 0.2, "perte": 0.2, "collier": 0.3, "papy": 0.2, "fin": 3.2 },
+  "lines": [
+    { "scene": "rue", "say": "Sous la pluie, un chat noir est coincé au milieu de la route. Tu le sauves, juste avant une voiture.", "show": "Sous la pluie, un chat noir est coincé au milieu de la route. Tu le sauves, juste avant une [voiture]." },
+    { "scene": "rue", "say": "Il te regarde… et il disparaît.", "show": "Il te regarde… et il [disparaît]." },
+    { "scene": "chance", "say": "Depuis, tout te réussit. Un billet de vingt euros par terre. Un ticket à gratter : cent euros.", "show": "Depuis, tout te réussit. 20 € par terre. Un ticket à gratter : {100 €}." },
+    { "scene": "chance", "say": "Et ton crush te répond enfin : « Tu fais quoi samedi ? »", "show": "Et ton crush te répond enfin : « Tu fais quoi {samedi} ? »" },
+    { "scene": "perte", "say": "Mais tu remarques un truc. L'homme devant toi fouille partout… il a perdu son billet de vingt euros.", "show": "Mais l'homme devant toi fouille partout… il a perdu son billet de [20 €]." },
+    { "scene": "perte", "say": "Et ton meilleur pote se fait larguer… le jour même où ton crush te répond.", "show": "Et ton meilleur pote se fait [larguer]… le jour où ton crush te répond." },
+    { "scene": "collier", "say": "Le soir, le chat noir t'attend sur ton lit. Sur son collier, un petit mot.", "show": "Le soir, le chat noir t'attend sur ton lit. Sur son collier, un petit {mot}." },
+    { "scene": "collier", "say": "« La chance ne se crée pas. Elle se déplace. Pour arrêter… donne-la. »", "show": "« La chance ne se crée pas. Elle se [déplace]. Pour arrêter… donne-la. »" },
+    { "scene": "papy", "say": "Ton grand-père est à l'hôpital depuis un mois. Tu prends sa main… et tu lui donnes toute ta chance.", "show": "Ton grand-père est à l'hôpital depuis un mois. Tu prends sa main… et tu lui donnes ta {chance}." },
+    { "scene": "papy", "say": "Le lendemain, il ouvre les yeux. Il sourit, il regarde le chat… et il dit :", "show": "Le lendemain, il ouvre les [yeux]. Il sourit, il regarde le chat… et il dit :" },
+    { "scene": "fin", "say": "« Ce chat, je l'ai sauvé il y a soixante ans. Et le jour de ta naissance… c'est à toi que j'avais donné ma chance. »", "show": "« Ce chat, je l'ai sauvé il y a 60 ans. Et le jour de ta naissance… c'est à toi que j'avais donné ma [chance]. »" },
+    { "scene": "fin", "say": "Toi, à qui tu l'aurais donnée ?", "show": "Toi, à qui tu l'aurais [donnée] ?" }
+  ],
+  "cues": {
+    "car": [0, "start", 2.5],
+    "save": [0, "end", -1.4],
+    "vanish": [1, "end", -0.6],
+    "bill": [2, "start", 2.6],
+    "ticket": [2, "end", -1.4],
+    "crush": [3, "start", 2.0],
+    "lose1": [4, "end", -1.6],
+    "lose2": [5, "start", 1.8],
+    "note": [7, "start", 0.0],
+    "give": [8, "end", -1.6],
+    "wake": [9, "start", 1.4],
+    "endcard": [11, "end", 0.6]
+  },
+  "sfx": [
+    { "type": "swish", "cue": ["car", "vanish"] },
+    { "type": "pop", "cue": ["bill", "ticket", "crush", "note"] },
+    { "type": "hit", "cue": ["lose1", "lose2", "give", "endcard"] }
+  ],
+  "pulse": [["papy", "fin"]]
+}
