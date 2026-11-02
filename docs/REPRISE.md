@@ -68,7 +68,8 @@ ffmpeg -f concat -safe 0 -i .build/jourN/segs.txt -i .build/jourN/audio.wav -c:v
 ## Planning automatique
 
 - 09:05 Blackout (tâche 08:31) jusqu'au Jour 5 = conclusion, puis la tâche se désactive.
-- 12:00 et 21:30 horreur (tâches 11:13 et 20:43), mini-séries de 3-4 parties.
+- 12:00 et 21:30 horreur (tâches 11:13 `trig_01FQT8pfNGWeVMQvgcEGRwNy` et 20:43 `trig_01TVdCcFBnasaoaTh94P1j9g`), mini-séries de 3-4 parties.
+- Dans un nouveau chat : désactiver ces 3 tâches et les recréer rattachées au nouveau chat.
 - Voir `docs/automatisation.md`.
 
 ## Prochaine étape
