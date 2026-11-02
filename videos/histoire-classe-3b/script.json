@@ -1,0 +1,47 @@
+{
+  "title": "Le Groupe « Classe 3B »",
+  "note": "Histoire complète en 1 partie (mystère). Héros = personnage de l'avatar.",
+  "voice": {
+    "model": "eleven_v3", "voice_id": "pNInz6obpgDQGcFmaJgB", "stability": 0.5, "tempo": 1.0,
+    "gemini_voice": "Orus",
+    "gemini_style": "Lis ce texte en français, comme un narrateur TikTok captivant : voix masculine grave, rythme vif, ton amusé au début, puis de plus en plus tendu et mystérieux jusqu'à la fin. Les passages entre guillemets « » sont dits comme un message lu à voix haute. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+  },
+  "pad_after": { "chat1": 0.2, "classe": 0.2, "chat2": 0.2, "contact": 0.3, "nuit": 0.2, "fin": 3.2 },
+  "lines": [
+    { "scene": "chat1", "say": "Minuit. Dans le groupe de ta classe, la trois B, quelqu'un vient d'arriver. Un numéro inconnu.", "show": "Minuit. Dans le groupe de ta classe, la 3B, quelqu'un vient d'arriver. Un numéro [inconnu]." },
+    { "scene": "chat1", "say": "Son premier message : « Demain, le prof de maths sera absent. »", "show": "Son premier message : « Demain, le prof de maths sera [absent]. »" },
+    { "scene": "chat1", "say": "Tout le monde rigole. Personne ne sait qui c'est.", "show": "Tout le monde rigole. Personne ne sait qui c'est." },
+    { "scene": "classe", "say": "Le lendemain matin… la salle de maths est vide. Le prof est absent.", "show": "Le lendemain matin… la salle de maths est vide. Le prof est [absent]." },
+    { "scene": "classe", "say": "Toute la classe se regarde. Et ton téléphone vibre.", "show": "Toute la classe se regarde. Et ton téléphone [vibre]." },
+    { "scene": "chat2", "say": "« À midi, Léo va tomber à la cantine. » À midi pile… Léo glisse sur un plateau.", "show": "« À midi, Léo va tomber à la cantine. » À midi pile… Léo glisse sur un [plateau]." },
+    { "scene": "chat2", "say": "Le soir, le numéro commence à balancer des secrets. Qui a triché. Qui sort avec qui.", "show": "Le soir, le numéro balance des [secrets]. Qui a triché. Qui sort avec qui." },
+    { "scene": "chat2", "say": "Le groupe devient fou. Tout le monde accuse tout le monde.", "show": "Le groupe devient fou. Tout le monde accuse tout le [monde]." },
+    { "scene": "contact", "say": "Toi, tu veux savoir. Tu enregistres le numéro dans tes contacts…", "show": "Toi, tu veux savoir. Tu enregistres le numéro dans tes {contacts}…" },
+    { "scene": "contact", "say": "Et ton téléphone affiche : « Ce contact existe déjà. Moi. »", "show": "Et ton téléphone affiche : « Ce contact existe déjà : [MOI]. »" },
+    { "scene": "nuit", "say": "Cette nuit-là, tu poses ton téléphone sur l'étagère, et tu filmes ta chambre pendant que tu dors.", "show": "Cette nuit-là, tu filmes ta chambre pendant que tu {dors}." },
+    { "scene": "nuit", "say": "Au réveil, tu regardes la vidéo. À trois heures deux… tu te lèves. Les yeux ouverts. Et tu écris.", "show": "Au réveil, tu regardes la vidéo. À 3 h 02… tu te lèves. Les yeux ouverts. Et tu [écris]." },
+    { "scene": "fin", "say": "Dernier message dans le groupe, envoyé depuis ton téléphone : « Demain, quelqu'un va quitter la classe. »", "show": "Dernier message, envoyé depuis ton téléphone : « Demain, quelqu'un va quitter la [classe]. »" },
+    { "scene": "fin", "say": "Et toi… tu serais allé en cours demain ?", "show": "Et toi… tu serais allé en cours [demain] ?" }
+  ],
+  "cues": {
+    "m1": [1, "start", 0.9],
+    "m2": [2, "start", 0.3],
+    "buzz": [4, "end", -0.5],
+    "m3": [5, "start", 0.2],
+    "fall": [5, "end", -1.2],
+    "m4": [6, "start", 1.6],
+    "m5": [7, "start", 0.2],
+    "save": [8, "end", -1.0],
+    "moi": [9, "end", -0.9],
+    "rise": [11, "start", 2.6],
+    "write": [11, "end", -1.0],
+    "last": [12, "end", -2.2],
+    "endcard": [13, "end", 0.6]
+  },
+  "sfx": [
+    { "type": "pop", "cue": ["m1", "m2", "m3", "m4", "m5", "save", "last"] },
+    { "type": "buzz", "cue": "buzz" },
+    { "type": "hit", "cue": ["moi", "rise", "endcard"] }
+  ],
+  "pulse": [["nuit", "fin"]]
+}
