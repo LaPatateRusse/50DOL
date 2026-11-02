@@ -1,6 +1,14 @@
 # Format « Et si… ? » — vidéo de 18:00
 
-**Depuis le 03/11, deux formats en alternance sur ce créneau :**
+**Format prioritaire à partir du 05/11 : HISTOIRES DE SUPER-POUVOIRS LONGUES (2 min 30 – 3 min)** — demandé par l'utilisateur.
+- Une histoire complète racontée **jour par jour** à la 2e personne, avec Max : « Jour 1 : tu n'as rien de spécial, tu rates ton bus… Jour 2 : tu te réveilles en retard, mais tu peux ARRÊTER LE TEMPS : tu rattrapes ton bus. Tu apprends qu'il y a un contrôle : tu arrêtes le temps et tu vas copier… » puis les choses dérapent (conséquences, rebondissements, morale ou twist final).
+- Petites interactions concrètes et drôles du quotidien (bus, école, cantine, crush, prof, parents, boulot), montée en puissance, un vrai problème au milieu, un retournement à la fin. Mélange drôle + un peu sérieux.
+- 2 min 30 à 3 min (TikTok Creator Rewards = vidéos de plus d'1 min). Carton « JOUR N » animé entre les jours, compteur/HUD si utile. Fin : « Quel super-pouvoir pour la prochaine ? » en commentaire.
+- Voix Gemini « Orus » avec le ton de l'histoire du compte en banque.
+- Idées : arrêter le temps ; être invisible ; lire dans les pensées ; voler mais seulement à 1 m du sol ; parler aux animaux ; revivre la même journée ; être chanceux à 100 % ; se téléporter mais tout nu (humour) ; copier n'importe quelle compétence en touchant quelqu'un.
+- « Et si ton compte doublait » : la Partie 2 (04/11) sera la fin, en format long.
+
+**Avant (02-04/11), deux formats en alternance sur ce créneau :**
 1. **Mini-séries « Et si… » de 3 ou 4 parties** (demandé par l'utilisateur) : une situation folle vécue par Max (« Et si ton compte en banque doublait chaque jour », « Et si tu devenais invisible », « Et si tu pouvais lire dans les pensées »…). Histoires avec rebondissements, mélange de drôle et de sérieux, vraies conséquences (maths, lois, physique) quand c'est possible, cliffhanger + choix OUI/NON à chaque fin, vraie conclusion à la dernière partie. Suivi dans `videos/etsi.json` → `series`.
 2. **Vidéos uniques scientifiques** (ci-dessous), entre deux mini-séries.
 
