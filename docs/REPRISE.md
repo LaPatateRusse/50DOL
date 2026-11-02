@@ -59,10 +59,18 @@ ffmpeg -f concat -safe 0 -i .build/jourN/segs.txt -i .build/jourN/audio.wav -c:v
 
 ## Autre série : « Les règles de la nuit » (horreur)
 
-- `videos/nuit-mamie/` : **Ne réponds pas — Partie 1** (59 s), réalisée le 02/11, non publiée (en attente de l'accord de l'utilisateur).
+- État détaillé : `videos/horreur.json` ; style : `docs/style-horreur.md` ; accessoires : `videos/engine/horreur.js`.
+- `videos/nuit-mamie/` : **Ne réponds pas — Partie 1**, publiée le 02/11 à 12:30.
+- `videos/nuit-mamie-2/` : **Partie 2**, programmée le 02/11 à 21:30 (fin : appel de « Mamie » depuis son téléphone resté dans la cuisine, tenu par des doigts gris ; choix « Tu décroches ? »). La Partie 3 conclut l'histoire.
 - Style différent du Blackout : bleu nuit, formes plates sans contours, personnage « toi » (tête noire ronde, deux yeux blancs, sweat orange), créature « le Copieur » (grand, maigre, gris, yeux jaunes), HUD lieu + horodatage `03:00:SS` (Roboto Mono), sous-titres en haut (Montserrat 900, mot rouge `#FF4B4B`) via `EP.subs`.
 - Histoire : chez Mamie à la campagne, 3 h du matin ; SMS « Si tu m'entends t'appeler depuis le jardin… ne réponds pas » ; voix de Mamie sous la fenêtre ; créature dans le jardin ; SMS « Ce n'est pas moi. Il copie les voix. » ; la porte d'entrée grince. Choix posé : « Tu aurais répondu ? OUI / NON ».
 
+## Planning automatique
+
+- 09:05 Blackout (tâche 08:31) jusqu'au Jour 5 = conclusion, puis la tâche se désactive.
+- 12:00 et 21:30 horreur (tâches 11:13 et 20:43), mini-séries de 3-4 parties.
+- Voir `docs/automatisation.md`.
+
 ## Prochaine étape
 
-- Jour 4 prévu le 03/11 à 09:05.
+- 03/11 : Blackout Jour 4 à 09:05, Ne réponds pas Partie 3 (fin) à 12:00, nouvelle histoire Partie 1 à 21:30.

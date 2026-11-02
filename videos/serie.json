@@ -1,13 +1,32 @@
 {
   "serie": "Blackout général",
   "tiktok": "@etsi_scenario",
-  "buffer": { "organizationId": "6ae857cdecb73df5e4545083", "channelId": "6ae85bb5e29c69a1713612e1" },
+  "buffer": {
+    "organizationId": "6ae857cdecb73df5e4545083",
+    "channelId": "6ae85bb5e29c69a1713612e1"
+  },
   "heure_publication": "09:05 Europe/Paris (créneau conseillé par Buffer pour la chaîne)",
   "episodes": [
-    { "jour": 1, "dossier": "videos/blackout", "publie": "2026-10-30", "fin": "Max allume une bougie : sa fenêtre est la seule éclairée de la ville." },
-    { "jour": 2, "dossier": "videos/blackout-jour2", "publie": "2026-10-31", "fin": "Message du voisin du 5e : « Je sais que tu as de l'eau. Ouvre-moi. »" },
-    { "jour": 3, "dossier": "videos/blackout-jour3", "publie": "2026-11-02", "buffer_post": "6ae85ec1bc7258b27b3cfeb8",
+    {
+      "jour": 1,
+      "dossier": "videos/blackout",
+      "publie": "2026-10-30",
+      "fin": "Max allume une bougie : sa fenêtre est la seule éclairée de la ville."
+    },
+    {
+      "jour": 2,
+      "dossier": "videos/blackout-jour2",
+      "publie": "2026-10-31",
+      "fin": "Message du voisin du 5e : « Je sais que tu as de l'eau. Ouvre-moi. »"
+    },
+    {
+      "jour": 3,
+      "dossier": "videos/blackout-jour3",
+      "publie": "2026-11-02",
+      "buffer_post": "6ae85ec1bc7258b27b3cfeb8",
       "fin": "Max doit sortir chercher de l'eau au gymnase (2 km). Le bidon a disparu, un mot dit : « Merci. Mais fais attention… ils t'attendent en bas. »",
-      "choix_pose": "Max sort-il chercher de l'eau au gymnase, oui ou non ?" }
-  ]
+      "choix_pose": "Max sort-il chercher de l'eau au gymnase, oui ou non ?"
+    }
+  ],
+  "fin_prevue": "Jour 5 = dernier épisode de Blackout général (conclusion, pas de nouveau choix)."
 }

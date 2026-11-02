@@ -5,12 +5,32 @@
       "titre": "Ne réponds pas",
       "creature": "le Copieur (grand, maigre, gris, yeux jaunes, copie les voix)",
       "episodes": [
-        { "partie": 1, "dossier": "videos/nuit-mamie", "publication": "2026-11-02 12:30", "buffer_post": "6ae8734a339e85e601694154",
+        {
+          "partie": 1,
+          "dossier": "videos/nuit-mamie",
+          "publication": "2026-11-02 12:30",
+          "buffer_post": "6ae8734a339e85e601694154",
           "fin": "SMS de Mamie : « Ce n'est pas moi. Il copie les voix. » La porte d'entrée grince : il n'est plus dans le jardin.",
-          "choix": "Tu aurais répondu ? OUI / NON" }
+          "choix": "Tu aurais répondu ? OUI / NON"
+        },
+        {
+          "partie": 2,
+          "dossier": "videos/nuit-mamie-2",
+          "publication": "2026-11-02 21:30",
+          "buffer_post": "6ae875cb2dd80afa12f61ce1",
+          "fin": "Caché sous le lit ; SMS de Mamie : « Il ne peut entrer que si tu lui réponds » ; la créature parle avec TA voix ; appel entrant « Mamie » alors que son téléphone est dans la cuisine… tenu par des doigts gris.",
+          "choix": "Tu décroches ? OUI / NON"
+        }
       ],
       "parties_prevues": 3
     }
   ],
-  "idees_suivantes": ["L'ascenseur du 13e", "Le baby-phone", "La station-service", "Le GPS", "La colo", "Le répondeur"]
+  "idees_suivantes": [
+    "L'ascenseur du 13e",
+    "Le baby-phone",
+    "La station-service",
+    "Le GPS",
+    "La colo",
+    "Le répondeur"
+  ]
 }
