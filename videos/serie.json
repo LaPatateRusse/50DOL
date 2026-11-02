@@ -26,6 +26,14 @@
       "buffer_post": "6ae85ec1bc7258b27b3cfeb8",
       "fin": "Max doit sortir chercher de l'eau au gymnase (2 km). Le bidon a disparu, un mot dit : « Merci. Mais fais attention… ils t'attendent en bas. »",
       "choix_pose": "Max sort-il chercher de l'eau au gymnase, oui ou non ?"
+    },
+    {
+      "jour": 4,
+      "dossier": "videos/blackout-jour4",
+      "publie": "2026-11-03 09:05 (programmé)",
+      "buffer_post": "6ae88cf409c35c01e8cc2fa2",
+      "fin": "Max n'est pas sorti (choix prudent, pas de vote lu). Rationnement, pastilles de purification. Le soir : 3 silhouettes dans le hall, puis un camion de la Sécurité civile distribue de l'eau ; les silhouettes partent vers le camion.",
+      "choix_pose": "Max descend chercher de l'eau ou attend le matin ? OUI / NON"
     }
   ],
   "fin_prevue": "Jour 5 = dernier épisode de Blackout général (conclusion, pas de nouveau choix)."

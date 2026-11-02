@@ -1,5 +1,14 @@
 # Format « Et si… ? » — vidéo de 18:00
 
+**Depuis le 03/11, deux formats en alternance sur ce créneau :**
+1. **Mini-séries « Et si… » de 3 ou 4 parties** (demandé par l'utilisateur) : une situation folle vécue par Max (« Et si ton compte en banque doublait chaque jour », « Et si tu devenais invisible », « Et si tu pouvais lire dans les pensées »…). Histoires avec rebondissements, mélange de drôle et de sérieux, vraies conséquences (maths, lois, physique) quand c'est possible, cliffhanger + choix OUI/NON à chaque fin, vraie conclusion à la dernière partie. Suivi dans `videos/etsi.json` → `series`.
+2. **Vidéos uniques scientifiques** (ci-dessous), entre deux mini-séries.
+
+Idées de mini-séries : compte en banque qui double chaque jour ; invisible pendant 24 h ; tu entends les pensées des autres ; tu revis la même journée ; tu gagnes au loto mais personne ne doit le savoir ; ton chat se met à parler ; tu peux arrêter le temps 10 secondes par jour.
+
+---
+
+
 Vidéo unique (pas de série), 45-60 s, qui répond à une question folle avec de la **vraie science vérifiée**. Elle colle au nom du compte (@etsi_scenario) et doit donner envie de partager.
 
 ## Style

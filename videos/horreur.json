@@ -20,9 +20,18 @@
           "buffer_post": "6ae875cb2dd80afa12f61ce1",
           "fin": "Caché sous le lit ; SMS de Mamie : « Il ne peut entrer que si tu lui réponds » ; la créature parle avec TA voix ; appel entrant « Mamie » alors que son téléphone est dans la cuisine… tenu par des doigts gris.",
           "choix": "Tu décroches ? OUI / NON"
+        },
+        {
+          "partie": 3,
+          "dossier": "videos/nuit-mamie-3",
+          "publication": "2026-11-03 12:00 (programmé)",
+          "buffer_post": "6ae88cf8386d2d7c133fbb50",
+          "fin": "FIN : tu n'as pas décroché ; message vocal avec ta voix ; Mamie sauve ; traces vers la forêt ; le soir, Mamie reçoit un message de TOI : « Mamie… tu peux venir dans le jardin ? »",
+          "choix": null
         }
       ],
-      "parties_prevues": 3
+      "parties_prevues": 3,
+      "terminee": true
     }
   ],
   "idees_suivantes": [
