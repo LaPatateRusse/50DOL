@@ -1,8 +1,15 @@
 {
   "programme": "1 vidéo « Et si… ? » par jour à 18:00 (Europe/Paris), vidéo unique, style docs/style-etsi.md",
-  "publiees": [],
+  "publiees": [
+    {
+      "question": "Et si tu tombais dans un trou qui traverse la Terre ?",
+      "dossier": "videos/etsi-traverser-terre",
+      "publication": "2026-11-02 18:00",
+      "buffer_post": "6ae8869c3911b6a45d4d5e79",
+      "voix": "Gemini Orus"
+    }
+  ],
   "idees_restantes": [
-    "Et si tu tombais dans un trou qui traverse la Terre ?",
     "Et si la Lune disparaissait cette nuit ?",
     "Et si tu ne dormais plus pendant 11 jours ?",
     "Et si la Terre arrêtait de tourner une seconde ?",
