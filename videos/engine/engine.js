@@ -212,21 +212,22 @@ function subtitles(c, gt) {
     });
   }
   if (!ch) return;
+  // Réglages par épisode (EP.subs) ; par défaut : style « survie » (Oswald, contour noir, bas de l'écran).
+  const S = Object.assign({ font: '700 96px Oswald', y: 1120, stroke: 16, space: 26, red: '#E53935', yellow: '#F5C518' }, EP.subs || {});
   c.save();
-  c.font = '700 96px Oswald'; c.textBaseline = 'middle';
+  c.font = S.font; c.textBaseline = 'middle';
   const words = ch.words.map(w => ({ ...w, w: w.w.toUpperCase() }));
-  const space = 26, widths = words.map(w => c.measureText(w.w).width);
+  const space = S.space, widths = words.map(w => c.measureText(w.w).width);
   const tot = widths.reduce((a, b) => a + b, 0) + space * (words.length - 1);
   const fit = Math.min(1, 960 / tot);
   const s = (.82 + .18 * back(pr(gt, chStart, chStart + .12))) * fit;
-  c.translate(540, 1120); c.scale(s, s);
+  c.translate(540, S.y); c.scale(s, s);
   let x = -tot / 2;
   words.forEach((w, i) => {
     c.textAlign = 'left';
     c.shadowColor = 'rgba(0,0,0,.55)'; c.shadowBlur = 18; c.shadowOffsetY = 8;
-    c.lineWidth = 16; c.strokeStyle = '#111'; c.lineJoin = 'round'; c.strokeText(w.w, x, 0);
-    c.shadowColor = 'transparent';
-    c.fillStyle = w.c === 'red' ? '#E53935' : w.c === 'yellow' ? '#F5C518' : '#FFFFFF';
+    if (S.stroke) { c.lineWidth = S.stroke; c.strokeStyle = '#111'; c.lineJoin = 'round'; c.strokeText(w.w, x, 0); c.shadowColor = 'transparent'; }
+    c.fillStyle = w.c === 'red' ? S.red : w.c === 'yellow' ? S.yellow : '#FFFFFF';
     c.fillText(w.w, x, 0);
     x += widths[i] + space;
   });

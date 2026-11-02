@@ -19,7 +19,7 @@ async function openPage(browser) {
   await page.waitForFunction(() => window.EP_READY || window.EP_ERROR);
   const err = await page.evaluate(() => window.EP_ERROR);
   if (err) { console.error(err); process.exit(1); }
-  await page.evaluate(async tl => { await document.fonts.load('700 50px Oswald'); await document.fonts.load('800 50px Montserrat'); await document.fonts.ready; window.setup(tl); }, TL);
+  await page.evaluate(async tl => { await document.fonts.load('700 50px Oswald'); await document.fonts.load('800 50px Montserrat'); await document.fonts.load('900 50px Montserrat'); await document.fonts.load('700 50px "Roboto Mono"'); await document.fonts.ready; window.setup(tl); }, TL);
   return page;
 }
 const grab = (page, t) => page.evaluate(t => { window.renderFrame(t); return document.getElementById('c').toDataURL('image/jpeg', 0.93); }, t);

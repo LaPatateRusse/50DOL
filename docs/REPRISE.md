@@ -57,6 +57,12 @@ ffmpeg -f concat -safe 0 -i .build/jourN/segs.txt -i .build/jourN/audio.wav -c:v
 3. **Jour 3** (publié le 02/11, post Buffer `6ae85ec1bc7258b27b3cfeb8`) : le voisin a entendu la baignoire via les tuyaux ; on parle sans ouvrir ; Max pose un bidon de 10 L sur le palier (réserve 158 L) ; Kobe 1995 : la plupart des survivants sauvés par leurs voisins ; viande décongelée tiède depuis 2 h = poubelle ; conserves froides ; radio : distribution d'eau au gymnase à 2 km. Fin : le bidon a disparu, un mot dit « Merci. Mais fais attention… ils t'attendent en bas. »
    - **Choix posé au public** : Max sort-il chercher de l'eau au gymnase ? (OUI / NON)
 
+## Autre série : « Les règles de la nuit » (horreur)
+
+- `videos/nuit-mamie/` : **Ne réponds pas — Partie 1** (59 s), réalisée le 02/11, non publiée (en attente de l'accord de l'utilisateur).
+- Style différent du Blackout : bleu nuit, formes plates sans contours, personnage « toi » (tête noire ronde, deux yeux blancs, sweat orange), créature « le Copieur » (grand, maigre, gris, yeux jaunes), HUD lieu + horodatage `03:00:SS` (Roboto Mono), sous-titres en haut (Montserrat 900, mot rouge `#FF4B4B`) via `EP.subs`.
+- Histoire : chez Mamie à la campagne, 3 h du matin ; SMS « Si tu m'entends t'appeler depuis le jardin… ne réponds pas » ; voix de Mamie sous la fenêtre ; créature dans le jardin ; SMS « Ce n'est pas moi. Il copie les voix. » ; la porte d'entrée grince. Choix posé : « Tu aurais répondu ? OUI / NON ».
+
 ## Prochaine étape
 
 - Jour 4 prévu le 03/11 à 09:05.

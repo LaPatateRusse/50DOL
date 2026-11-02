@@ -1,0 +1,45 @@
+{
+  "title": "Ne réponds pas — Partie 1",
+  "note": "Série horreur « Les règles de la nuit ». say = texte lu (balises v3) ; show = sous-titre, [mot] = rouge.",
+  "voice": { "model": "eleven_v3", "voice_id": "pNInz6obpgDQGcFmaJgB", "stability": 0.5, "tempo": 1.0 },
+  "pad_after": { "message": 0.25, "fenetre": 0.2, "fin": 3.4 },
+  "lines": [
+    { "scene": "chambre",  "say": "[whispers] Il est trois heures du matin. Tu dors chez ta grand-mère, au milieu de la campagne.", "show": "Il est 3 heures du matin. Tu dors chez ta grand-mère, au milieu de la [campagne]." },
+    { "scene": "chambre",  "say": "Ton téléphone vibre. Un message de Mamie… qui dort dans la chambre d'à côté.", "show": "Ton téléphone vibre. Un message de Mamie… qui dort dans la chambre d'à [côté]." },
+    { "scene": "message",  "say": "[whispers] « Si tu m'entends t'appeler depuis le jardin… surtout, ne réponds pas. »", "show": "« Si tu m'entends t'appeler depuis le jardin… surtout, ne réponds [pas]. »" },
+    { "scene": "lit",      "say": "Tu souris. C'est forcément une blague.", "show": "Tu souris. C'est forcément une [blague]." },
+    { "scene": "lit",      "say": "[whispers] Puis, juste sous ta fenêtre… quelqu'un murmure ton prénom.", "show": "Puis, juste sous ta fenêtre… quelqu'un murmure ton [prénom]." },
+    { "scene": "voix",     "say": "Avec la voix de ta grand-mère.", "show": "Avec la voix de ta [grand-mère]." },
+    { "scene": "voix",     "say": "[whispers] « Ouvre-moi, mon chéri… il fait si froid dehors. »", "show": "« Ouvre-moi, mon chéri… il fait si [froid] dehors. »" },
+    { "scene": "fenetre",  "say": "Tu t'approches de la fenêtre, sans faire de bruit.", "show": "Tu t'approches de la fenêtre, sans faire de [bruit]." },
+    { "scene": "fenetre",  "say": "Et dans le jardin, sous la lune… il y a quelque chose de beaucoup trop grand pour être elle.", "show": "Et dans le jardin, sous la lune… il y a quelque chose de beaucoup trop [grand] pour être elle." },
+    { "scene": "creature", "say": "[serious] Sa tête se tourne lentement vers ta fenêtre.", "show": "Sa tête se tourne lentement vers ta [fenêtre]." },
+    { "scene": "message2", "say": "Ton téléphone vibre encore.", "show": "Ton téléphone vibre [encore]." },
+    { "scene": "message2", "say": "[whispers] « Ce n'est pas moi. Ne fais aucun bruit. Il copie les voix. »", "show": "« Ce n'est pas moi. Ne fais aucun bruit. Il copie les [voix]. »" },
+    { "scene": "fin",      "say": "Tu recules… et en bas, la porte d'entrée se met à grincer.", "show": "Tu recules… et en bas, la porte d'entrée se met à [grincer]." },
+    { "scene": "fin",      "say": "[whispers] Il n'est plus dans le jardin.", "show": "Il n'est plus dans le [jardin]." }
+  ],
+  "cues": {
+    "buzz1":   [1, "start", 0.1],
+    "msg1":    [2, "start", -0.1],
+    "name":    [4, "end", -1.0],
+    "tap":     [6, "end", -0.2],
+    "reveal":  [8, "end", -1.6],
+    "turn":    [9, "start", 0.3],
+    "buzz2":   [10, "start", 0.0],
+    "msg2":    [11, "start", -0.1],
+    "creak":   [12, "end", -1.2],
+    "partie2": [13, "end", 0.7]
+  },
+  "sfx": [
+    { "type": "buzz", "cue": "buzz1" },
+    { "type": "pop", "cue": ["msg1", "msg2"] },
+    { "type": "knock", "cue": "tap" },
+    { "type": "hit", "cue": "reveal" },
+    { "type": "buzz", "cue": "buzz2" },
+    { "type": "swish", "cue": "creak" },
+    { "type": "wind", "scene": ["voix", "fenetre", "creature"] },
+    { "type": "hit", "cue": "partie2" }
+  ],
+  "pulse": [["lit", "fin"]]
+}
