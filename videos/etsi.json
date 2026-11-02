@@ -20,5 +20,20 @@
     "Et si tu tombais d'un avion sans parachute ?",
     "Et si le Soleil s'éteignait ?"
   ],
-  "series": []
+  "series": [
+    {
+      "titre": "Et si ton compte doublait chaque jour ?",
+      "parties_prevues": 3,
+      "episodes": [
+        {
+          "partie": 1,
+          "dossier": "videos/etsi-compte-double-1",
+          "publication": "2026-11-03 18:00 (programmé)",
+          "buffer_post": "6ae88f6f386d2d7c1340f337",
+          "fin": "Jour 20 : plus d'un million ; la banque bloque le compte (vérification de l'origine des fonds, TRACFIN). Demain le compte doit encore doubler (2 097 152 €).",
+          "choix": "Tu dis la vérité à la banque ? OUI / NON"
+        }
+      ]
+    }
+  ]
 }

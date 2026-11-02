@@ -73,6 +73,11 @@ ffmpeg -f concat -safe 0 -i .build/jourN/segs.txt -i .build/jourN/audio.wav -c:v
 - Dans un nouveau chat : désactiver ces 4 tâches et les recréer rattachées au nouveau chat.
 - Voir `docs/automatisation.md`.
 
+## Programmé le 03/11 (fait à l'avance le 02/11)
+
+- 09:05 Blackout Jour 4 (`videos/blackout-jour4`) · 12:00 Ne réponds pas Partie 3, FIN (`videos/nuit-mamie-3`) · 18:00 Et si ton compte doublait — P1 (`videos/etsi-compte-double-1`, mini-série) · 21:30 L'ascenseur du 13e — P1 (`videos/ascenseur-13-1`).
+- Voix Gemini + alignement des sous-titres par reconnaissance vocale locale (sherpa-onnx, modèle français téléchargé auto dans `videos/.build/asr`).
+
 ## Prochaine étape
 
 - 02/11 : premier « Et si… ? » (traverser la Terre, voix Gemini Orus) programmé à 18:00, « Ne réponds pas » Partie 2 à 21:30.
