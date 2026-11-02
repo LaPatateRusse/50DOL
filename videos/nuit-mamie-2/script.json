@@ -1,42 +1,169 @@
 {
   "title": "Ne réponds pas — Partie 2",
   "note": "Suite directe de la Partie 1. Votes non lus : aucune mention du choix du public.",
-  "voice": { "model": "eleven_v3", "voice_id": "pNInz6obpgDQGcFmaJgB", "stability": 0.5, "tempo": 1.0 },
-  "pad_after": { "sms": 0.25, "fin": 3.4 },
+  "voice": {
+    "model": "eleven_v3",
+    "voice_id": "pNInz6obpgDQGcFmaJgB",
+    "stability": 0.5,
+    "tempo": 1.0,
+    "gemini_voice": "Charon",
+    "gemini_style": "Lis ce texte en français, comme un conteur d'histoires d'horreur sur TikTok : voix masculine grave, à voix normale et bien posée, intense et inquiétante, rythme vif sans traîner. NE CHUCHOTE PAS. Les répliques entre guillemets « » sont dites d'une voix froide et menaçante, mais à voix normale. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+  },
+  "pad_after": {
+    "sms": 0.25,
+    "fin": 3.4
+  },
   "lines": [
-    { "scene": "escalier", "say": "[whispers] La porte d'entrée vient de s'ouvrir. Et quelque chose monte l'escalier.", "show": "La porte d'entrée vient de s'ouvrir. Et quelque chose monte l'[escalier]." },
-    { "scene": "escalier", "say": "Une marche… puis une autre… beaucoup trop lentement.", "show": "Une marche… puis une autre… beaucoup trop [lentement]." },
-    { "scene": "couloir",  "say": "[whispers] « Mon chéri… je suis tombée. Viens m'aider. »", "show": "« Mon chéri… je suis tombée. Viens m'[aider]. »" },
-    { "scene": "couloir",  "say": "C'est encore la voix de ta grand-mère.", "show": "C'est encore la voix de ta [grand-mère]." },
-    { "scene": "lit",      "say": "Tu te glisses sous le lit, sans respirer.", "show": "Tu te glisses sous le lit, sans [respirer]." },
-    { "scene": "sms",      "say": "Tu écris à Mamie : « T'es où ? »", "show": "Tu écris à Mamie : « T'es [où] ? »" },
-    { "scene": "sms",      "say": "[whispers] « Dans l'armoire de ma chambre. Il ne peut entrer que si tu lui réponds. »", "show": "« Dans l'armoire de ma chambre. Il ne peut entrer que si tu lui [réponds]. »" },
-    { "scene": "porte",    "say": "Les pas s'arrêtent. Juste devant ta porte.", "show": "Les pas s'arrêtent. Juste devant ta [porte]." },
-    { "scene": "porte",    "say": "[whispers] « Je sais que tu es là. »", "show": "« Je sais que tu es [là]. »" },
-    { "scene": "porte",    "say": "[serious] Mais cette fois… ce n'est plus la voix de Mamie. C'est la tienne.", "show": "Mais cette fois… ce n'est plus la voix de Mamie. C'est la [tienne]." },
-    { "scene": "fin",      "say": "Ton téléphone s'allume. Appel entrant : Mamie.", "show": "Ton téléphone s'allume. Appel entrant : [Mamie]." },
-    { "scene": "fin",      "say": "[whispers] Sauf que Mamie… a laissé son téléphone sur la table de la cuisine.", "show": "Sauf que Mamie… a laissé son téléphone sur la table de la [cuisine]." }
+    {
+      "scene": "escalier",
+      "say": "La porte d'entrée vient de s'ouvrir. Et quelque chose monte l'escalier.",
+      "show": "La porte d'entrée vient de s'ouvrir. Et quelque chose monte l'[escalier]."
+    },
+    {
+      "scene": "escalier",
+      "say": "Une marche… puis une autre… beaucoup trop lentement.",
+      "show": "Une marche… puis une autre… beaucoup trop [lentement]."
+    },
+    {
+      "scene": "couloir",
+      "say": "« Mon chéri… je suis tombée. Viens m'aider. »",
+      "show": "« Mon chéri… je suis tombée. Viens m'[aider]. »"
+    },
+    {
+      "scene": "couloir",
+      "say": "C'est encore la voix de ta grand-mère.",
+      "show": "C'est encore la voix de ta [grand-mère]."
+    },
+    {
+      "scene": "lit",
+      "say": "Tu te glisses sous le lit, sans respirer.",
+      "show": "Tu te glisses sous le lit, sans [respirer]."
+    },
+    {
+      "scene": "sms",
+      "say": "Tu écris à Mamie : « T'es où ? »",
+      "show": "Tu écris à Mamie : « T'es [où] ? »"
+    },
+    {
+      "scene": "sms",
+      "say": "« Dans l'armoire de ma chambre. Il ne peut entrer que si tu lui réponds. »",
+      "show": "« Dans l'armoire de ma chambre. Il ne peut entrer que si tu lui [réponds]. »"
+    },
+    {
+      "scene": "porte",
+      "say": "Les pas s'arrêtent. Juste devant ta porte.",
+      "show": "Les pas s'arrêtent. Juste devant ta [porte]."
+    },
+    {
+      "scene": "porte",
+      "say": "« Je sais que tu es là. »",
+      "show": "« Je sais que tu es [là]. »"
+    },
+    {
+      "scene": "porte",
+      "say": "[serious] Mais cette fois… ce n'est plus la voix de Mamie. C'est la tienne.",
+      "show": "Mais cette fois… ce n'est plus la voix de Mamie. C'est la [tienne]."
+    },
+    {
+      "scene": "fin",
+      "say": "Ton téléphone s'allume. Appel entrant : Mamie.",
+      "show": "Ton téléphone s'allume. Appel entrant : [Mamie]."
+    },
+    {
+      "scene": "fin",
+      "say": "Sauf que Mamie… a laissé son téléphone sur la table de la cuisine.",
+      "show": "Sauf que Mamie… a laissé son téléphone sur la table de la [cuisine]."
+    }
   ],
   "cues": {
-    "step":    [1, "start", 0.0],
-    "head":    [1, "end", -1.4],
-    "hide":    [4, "start", 0.3],
-    "sent":    [5, "start", 0.6],
-    "reply":   [6, "start", -0.1],
-    "stop":    [7, "start", 0.3],
-    "shadow":  [7, "end", -0.6],
-    "mine":    [9, "end", -1.0],
-    "call":    [10, "start", 0.0],
-    "partie3": [11, "end", 0.7]
+    "step": [
+      1,
+      "start",
+      0.0
+    ],
+    "head": [
+      1,
+      "end",
+      -1.4
+    ],
+    "hide": [
+      4,
+      "start",
+      0.3
+    ],
+    "sent": [
+      5,
+      "start",
+      0.6
+    ],
+    "reply": [
+      6,
+      "start",
+      -0.1
+    ],
+    "stop": [
+      7,
+      "start",
+      0.3
+    ],
+    "shadow": [
+      7,
+      "end",
+      -0.6
+    ],
+    "mine": [
+      9,
+      "end",
+      -1.0
+    ],
+    "call": [
+      10,
+      "start",
+      0.0
+    ],
+    "partie3": [
+      11,
+      "end",
+      0.7
+    ]
   },
   "sfx": [
-    { "type": "knock", "cue": "step" },
-    { "type": "hit", "cue": "head" },
-    { "type": "pop", "cue": ["sent", "reply"] },
-    { "type": "knock", "cue": "stop" },
-    { "type": "hit", "cue": "mine" },
-    { "type": "buzz", "cue": "call" },
-    { "type": "hit", "cue": "partie3" }
+    {
+      "type": "knock",
+      "cue": "step"
+    },
+    {
+      "type": "hit",
+      "cue": "head"
+    },
+    {
+      "type": "pop",
+      "cue": [
+        "sent",
+        "reply"
+      ]
+    },
+    {
+      "type": "knock",
+      "cue": "stop"
+    },
+    {
+      "type": "hit",
+      "cue": "mine"
+    },
+    {
+      "type": "buzz",
+      "cue": "call"
+    },
+    {
+      "type": "hit",
+      "cue": "partie3"
+    }
   ],
-  "pulse": [["escalier", "fin"]]
+  "pulse": [
+    [
+      "escalier",
+      "fin"
+    ]
+  ]
 }

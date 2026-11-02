@@ -2,37 +2,133 @@
   "title": "L'ascenseur du 13e — Partie 1",
   "note": "Nouvelle histoire horreur (3 parties prévues). Créature originale : le Liftier, uniforme de liftier, visage lisse sans traits.",
   "voice": {
-    "model": "eleven_v3", "voice_id": "pNInz6obpgDQGcFmaJgB", "stability": 0.5, "tempo": 1.0,
+    "model": "eleven_v3",
+    "voice_id": "pNInz6obpgDQGcFmaJgB",
+    "stability": 0.5,
+    "tempo": 1.0,
     "gemini_voice": "Charon",
-    "gemini_style": "Lis ce texte en français, comme le narrateur d'une histoire d'horreur sur TikTok : voix masculine grave, tendue, rythme posé mais sans traîner. Les passages entre guillemets « » sont murmurés, inquiétants. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+    "gemini_style": "Lis ce texte en français, comme un conteur d'histoires d'horreur sur TikTok : voix masculine grave, à voix normale et bien posée, intense et inquiétante, rythme vif sans traîner. NE CHUCHOTE PAS. Les répliques entre guillemets « » sont dites d'une voix froide et menaçante, mais à voix normale. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
   },
-  "pad_after": { "cabine": 0.2, "note": 0.2, "fin": 3.4 },
+  "pad_after": {
+    "cabine": 0.2,
+    "note": 0.2,
+    "fin": 3.4
+  },
   "lines": [
-    { "scene": "hall",    "say": "Il est trois heures du matin. Tu rentres chez toi, dans un immeuble de douze étages.", "show": "Il est 3 heures du matin. Tu rentres chez toi, dans un immeuble de 12 [étages]." },
-    { "scene": "cabine",  "say": "Tu appuies sur le douze. L'ascenseur monte… onze… douze… et ne s'arrête pas.", "show": "Tu appuies sur le 12. L'ascenseur monte… 11… 12… et ne s'arrête [pas]." },
-    { "scene": "cabine",  "say": "L'écran affiche : treize.", "show": "L'écran affiche : [13]." },
-    { "scene": "couloir", "say": "Les portes s'ouvrent sur un couloir que tu n'as jamais vu. Une moquette rouge. Et un mot, scotché au mur.", "show": "Les portes s'ouvrent sur un couloir que tu n'as jamais vu. Une moquette rouge. Et un mot, scotché au [mur]." },
-    { "scene": "note",    "say": "« Si quelqu'un te demande l'heure… ne réponds jamais. »", "show": "« Si quelqu'un te demande l'heure… ne réponds [jamais]. »" },
-    { "scene": "liftier", "say": "Au bout du couloir, un homme en uniforme de liftier. Il n'a pas de visage.", "show": "Au bout du couloir, un homme en uniforme de liftier. Il n'a pas de [visage]." },
-    { "scene": "liftier", "say": "Il s'approche, sans bruit. « Excusez-moi… vous avez l'heure ? »", "show": "Il s'approche, sans bruit. « Excusez-moi… vous avez l'[heure] ? »" },
-    { "scene": "heure",   "say": "Ton téléphone affiche trois heures… treize.", "show": "Ton téléphone affiche 3 heures… [13]." },
-    { "scene": "fin",     "say": "Derrière toi, les portes de l'ascenseur commencent à se refermer.", "show": "Derrière toi, les portes de l'ascenseur commencent à se [refermer]." },
-    { "scene": "fin",     "say": "Tu lui réponds ? Commente oui ou non.", "show": "Tu lui réponds ? Commente {OUI} ou [NON]." }
+    {
+      "scene": "hall",
+      "say": "Il est trois heures du matin. Tu rentres chez toi, dans un immeuble de douze étages.",
+      "show": "Il est 3 heures du matin. Tu rentres chez toi, dans un immeuble de 12 [étages]."
+    },
+    {
+      "scene": "cabine",
+      "say": "Tu appuies sur le douze. L'ascenseur monte… onze… douze… et ne s'arrête pas.",
+      "show": "Tu appuies sur le 12. L'ascenseur monte… 11… 12… et ne s'arrête [pas]."
+    },
+    {
+      "scene": "cabine",
+      "say": "L'écran affiche : treize.",
+      "show": "L'écran affiche : [13]."
+    },
+    {
+      "scene": "couloir",
+      "say": "Les portes s'ouvrent sur un couloir que tu n'as jamais vu. Une moquette rouge. Et un mot, scotché au mur.",
+      "show": "Les portes s'ouvrent sur un couloir que tu n'as jamais vu. Une moquette rouge. Et un mot, scotché au [mur]."
+    },
+    {
+      "scene": "note",
+      "say": "« Si quelqu'un te demande l'heure… ne réponds jamais. »",
+      "show": "« Si quelqu'un te demande l'heure… ne réponds [jamais]. »"
+    },
+    {
+      "scene": "liftier",
+      "say": "Au bout du couloir, un homme en uniforme de liftier. Il n'a pas de visage.",
+      "show": "Au bout du couloir, un homme en uniforme de liftier. Il n'a pas de [visage]."
+    },
+    {
+      "scene": "liftier",
+      "say": "Il s'approche, sans bruit. « Excusez-moi… vous avez l'heure ? »",
+      "show": "Il s'approche, sans bruit. « Excusez-moi… vous avez l'[heure] ? »"
+    },
+    {
+      "scene": "heure",
+      "say": "Ton téléphone affiche trois heures… treize.",
+      "show": "Ton téléphone affiche 3 heures… [13]."
+    },
+    {
+      "scene": "fin",
+      "say": "Derrière toi, les portes de l'ascenseur commencent à se refermer.",
+      "show": "Derrière toi, les portes de l'ascenseur commencent à se [refermer]."
+    },
+    {
+      "scene": "fin",
+      "say": "Tu lui réponds ? Commente oui ou non.",
+      "show": "Tu lui réponds ? Commente {OUI} ou [NON]."
+    }
   ],
   "cues": {
-    "ding":    [2, "start", 0.0],
-    "notepop": [3, "end", -1.0],
-    "face":    [5, "end", -1.2],
-    "ask":     [6, "start", 1.4],
-    "clock":   [7, "end", -1.0],
-    "doors":   [8, "start", 0.8],
-    "partie2": [9, "end", 0.8]
+    "ding": [
+      2,
+      "start",
+      0.0
+    ],
+    "notepop": [
+      3,
+      "end",
+      -1.0
+    ],
+    "face": [
+      5,
+      "end",
+      -1.2
+    ],
+    "ask": [
+      6,
+      "start",
+      1.4
+    ],
+    "clock": [
+      7,
+      "end",
+      -1.0
+    ],
+    "doors": [
+      8,
+      "start",
+      0.8
+    ],
+    "partie2": [
+      9,
+      "end",
+      0.8
+    ]
   },
   "sfx": [
-    { "type": "pop", "cue": ["ding", "notepop", "clock"] },
-    { "type": "hit", "cue": "face" },
-    { "type": "swish", "cue": "doors" },
-    { "type": "hit", "cue": "partie2" }
+    {
+      "type": "pop",
+      "cue": [
+        "ding",
+        "notepop",
+        "clock"
+      ]
+    },
+    {
+      "type": "hit",
+      "cue": "face"
+    },
+    {
+      "type": "swish",
+      "cue": "doors"
+    },
+    {
+      "type": "hit",
+      "cue": "partie2"
+    }
   ],
-  "pulse": [["couloir", "fin"]]
+  "pulse": [
+    [
+      "couloir",
+      "fin"
+    ]
+  ]
 }

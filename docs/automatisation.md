@@ -18,7 +18,9 @@ Si une étape échoue (clé ElevenLabs absente, Buffer en erreur…), rien n'est
 ## Voix (depuis le 02/11) — prioritaire sur les consignes des tâches
 
 - **Gemini TTS gratuit en priorité.** Avant `build_audio.py`, exporter `GEMINI_API_KEY` (variable d'environnement, ou à défaut la clé Gemini fournie par l'utilisateur dans cette conversation) **et** `ELEVEN_KEY` (secours automatique si Gemini échoue). Ne jamais écrire ces clés dans le dépôt.
-- Voix Gemini dans `script.json` → `voice.gemini_voice` : **« Orus »** pour la survie et « Et si… ? », **« Charon »** pour l'horreur ; `voice.gemini_style` décrit le ton (ex. horreur : « narrateur grave, tendu, passages entre « » murmurés »).
+- **Demande de l'utilisateur (02/11)** :
+  - Toutes les histoires « classiques » (survie, Et si…, mini-séries) : voix Gemini **« Orus »** avec le ton de `videos/etsi-compte-double-1/script.json` (`voice.gemini_style` : narrateur TikTok drôle et captivant, grave, rythme vif).
+  - Horreur : voix **« Charon »**, **à voix normale, PAS de chuchotement** (l'utilisateur trouve ça nul). Style à copier depuis `videos/ascenseur-13-1/script.json`. Ne pas mettre de balise `[whispers]` dans les scripts.
 - Après génération, vérifier dans `timeline.json` que chaque phrase a un débit de 14 à 24 caractères/s (sinon le découpage par silences s'est trompé : corriger avant le rendu).
 
 ## Planning (depuis le 02/11)

@@ -15,7 +15,7 @@ Référence : `videos/nuit-mamie/` (Ne réponds pas — Partie 1). Moteur : `vid
 - Une **règle** étrange donnée tôt (« ne réponds pas », « ne regarde pas… ») → le spectateur attend qu'elle soit enfreinte.
 - Une montée toutes les 8-10 s : son, message, détail qui cloche, révélation.
 - Fin = cliffhanger + choix « OUI / NON » en commentaire + carton « PARTIE N+1 ».
-- 50-65 s par épisode, voix Eleven v3 (Adam) avec `[whispers]` sur les moments clés.
+- 50-65 s par épisode, voix Gemini « Charon » à voix normale, grave et tendue — **jamais de chuchotement** (demande de l'utilisateur).
 - 3 à 4 épisodes par histoire, la dernière partie conclut vraiment (twist final), puis nouvelle histoire, nouveau lieu, nouvelle règle.
 
 ## Idées d'histoires (à piocher, ne pas réutiliser deux fois)

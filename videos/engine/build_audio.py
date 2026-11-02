@@ -75,10 +75,19 @@ GEMINI_STYLE = ("Lis ce texte en français, comme un narrateur de vidéo TikTok 
 
 
 def gemini_lines(all_lines):
-    """Toute la voix d'une vidéo en une requête Gemini, découpée phrase par phrase grâce aux silences.
-    Renvoie, pour chaque phrase : (audio 44,1 kHz, débuts estimés des mots en s)."""
+    """Voix Gemini d'une vidéo, découpée phrase par phrase. Gemini s'arrête parfois en route :
+    si la reconnaissance vocale ne retrouve pas le texte, on redemande (3 essais)."""
+    for attempt in range(3):
+        out = _gemini_once(all_lines, attempt)
+        if out is not None:
+            return out
+        print(f"Gemini : texte incomplet (essai {attempt + 1}), nouvelle demande")
+    raise RuntimeError("Gemini n'a pas lu tout le texte après 3 essais")
+
+
+def _gemini_once(all_lines, attempt):
     texts = [TAG.sub("", l["say"]).strip() for l in all_lines]
-    prompt = VOICE.get("gemini_style", GEMINI_STYLE) + "\n\n" + "\n\n".join(texts)
+    prompt = VOICE.get("gemini_style", GEMINI_STYLE) + ("\u200b" * attempt) + "\n\n" + "\n\n".join(texts)
     voice = VOICE.get("gemini_voice", "Charon")
     body = {"contents": [{"parts": [{"text": prompt}]}],
             "generationConfig": {"responseModalities": ["AUDIO"],
@@ -110,6 +119,11 @@ def gemini_lines(all_lines):
     aligned = asr_align(audio, texts)
     if aligned:
         return aligned
+    try:
+        import sherpa_onnx  # noqa: F401  (reconnaissance dispo mais texte non retrouvé → audio incomplet)
+        return None
+    except ImportError:
+        pass
     # Secours sans reconnaissance vocale — trames de 20 ms : parole / silence.
     fr = int(0.02 * SR)
     rms = np.sqrt(np.mean(audio[: len(audio) // fr * fr].reshape(-1, fr) ** 2, axis=1))
