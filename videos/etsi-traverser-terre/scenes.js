@@ -33,7 +33,7 @@ function paper(c) {
 // Max qui tombe, tête en bas ou non, bras levés.
 function fallingMax(c, x, y, s, t, flip = 0) {
   c.save(); c.translate(x, y); c.rotate(flip * Math.PI + Math.sin(t * 3) * .08);
-  drawMax(c, { x: 0, y: 300 * s, s, f: 1, t, front: [3.0, .2], back: [2.8, .2], mouthO: true });
+  hero(c, { x: 0, y: 300 * s, s, f: 1, t, front: [3.0, .2], back: [2.8, .2], mouthO: true });
   c.restore();
 }
 function speedLines(c, t, n = 30) {
@@ -62,7 +62,7 @@ SC.saut = (c, lt, gt) => {
   // le trou
   c.fillStyle = '#0A0D1C'; c.fillRect(440, 1300, 200, 1300);
   rr(c, 420, 1290, 240, 24, 8); fs(c, '#6B7A3A', 0);
-  if (gt < j) drawMax(c, { x: 380, y: 1300, s: .7, f: 1, t: gt, lean: .2, front: [.8, .2], back: [.6, .2] });
+  if (gt < j) hero(c, { x: 380, y: 1300, s: .7, f: 1, t: gt, lean: .2, front: [.8, .2], back: [.6, .2] });
   else fallingMax(c, 540, lerp(1050, 2000, fall), .55, gt);
   c.restore();
   const z = pop(gt, CUE.zero_g);

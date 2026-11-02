@@ -51,8 +51,8 @@ SC.debut = (c, lt, gt) => {
   c.save(); cam(c, 540, 1000, 1.05 + lt * .02);
   room(c);
   rr(c, 600, 1040, 380, 30, 8); fs(c, '#6B4A30', 6);
-  drawMax(c, { x: 420, y: 1330, s: .9, f: 1, t: gt, front: [1.9, .8], back: [.3, .2], lean: day === 7 ? .1 : 0, mouthO: day === 7 });
-  rr(c, 470, 830, 70, 110, 12); fs(c, '#1d1d22', 0); rr(c, 478, 840, 54, 90, 8); fs(c, '#9CC3FF', 0);
+  hero(c, { x: 420, y: 1330, s: .9, f: 1, t: gt, front: [1.9, .8], back: [.3, .2], lean: day === 7 ? .1 : 0, mouthO: day === 7 });
+  rr(c, 560, 900, 70, 110, 12); fs(c, '#1d1d22', 0); rr(c, 568, 910, 54, 90, 8); fs(c, '#9CC3FF', 0);
   c.restore();
   balance(c, gt, day, v, 1);
 };
@@ -62,7 +62,7 @@ SC.kebab = (c, lt, gt) => {
   rr(c, 520, 700, 520, 450, 10); fs(c, '#C0392B', 6); text(c, 'KEBAB', 780, 760, '700 70px Oswald', '#fff');
   rr(c, 560, 820, 440, 300, 8); fs(c, '#F7E3C4', 5);
   line(c, [[780, 840], [780, 1100]], 30, '#8B5A3C', OL, 6);
-  drawMax(c, { x: 330, y: 1330, s: .9, f: 1, t: gt, front: [1.6, -.2], back: [1.2, .3] });
+  hero(c, { x: 330, y: 1330, s: .9, f: 1, t: gt, front: [1.6, -.2], back: [1.2, .3] });
   const tp = pop(gt, CUE.tip); if (tp) { bill(c, 600, lerp(980, 1060, pr(gt, CUE.tip, CUE.tip + .5)), 1.3 * tp, -.2); badge(c, 780, 600, tp, 'POURBOIRE : 100 €', '#2EAD5B'); }
   c.restore();
   balance(c, gt, 10, 1024, 1);
@@ -70,8 +70,8 @@ SC.kebab = (c, lt, gt) => {
 SC.demission = (c, lt, gt) => {
   c.save(); cam(c, 540, 1000, 1.05 + lt * .02);
   room(c);
-  drawMax(c, { x: 460, y: 1330, s: .9, f: 1, t: gt, front: [2.3, 1.2], back: [.3, .2] });
-  rr(c, 560, 700, 60, 100, 10); fs(c, '#1d1d22', 0);
+  hero(c, { x: 460, y: 1330, s: .9, f: 1, t: gt, front: [2.3, 1.2], back: [.3, .2] });
+  rr(c, 610, 760, 60, 100, 10); fs(c, '#1d1d22', 0);
   const v = pop(gt, CUE.voice);
   if (v) { c.save(); c.translate(760, 560); c.scale(v, v); rr(c, -200, -60, 400, 120, 60); fs(c, '#2EAD5B', 0); for (let i = 0; i < 12; i++) { const h = 20 + Math.abs(Math.sin(gt * 12 + i)) * 50; rr(c, -130 + i * 22, -h / 2, 12, h, 6); fs(c, '#fff', 0); } c.restore(); text(c, '« JE DÉMISSIONNE ! »', 760, 690, '700 46px Oswald', '#1d1d22'); }
   c.restore();
@@ -83,7 +83,7 @@ SC.million = (c, lt, gt) => {
   room(c);
   moneyRain(c, gt, ring ? 6 : 26, 9);
   for (let i = 0; i < 18; i++) bill(c, 200 + (i % 6) * 130, 1290 - Math.floor(i / 6) * 40, 1, (i % 3 - 1) * .2);
-  drawMax(c, { x: 520, y: 1230, s: .9, f: 1, t: gt, front: ring ? [2.3, 1.2] : [2.9, .2], back: [2.7, .2], mouthO: true });
+  hero(c, { x: 520, y: 1230, s: .9, f: 1, t: gt, front: ring ? [2.3, 1.2] : [2.9, .2], back: [2.7, .2], mouthO: true });
   if (ring) { const sh = Math.sin(gt * 100) * 4; rr(c, 620 + sh, 640, 60, 100, 10); fs(c, '#1d1d22', 0); glow(c, 650, 690, 140, 'rgba(120,200,255,A)', .5); }
   c.restore();
   balance(c, gt, 20, 1048576, 1);
@@ -103,7 +103,7 @@ SC.tracfin = (c, lt, gt) => {
 SC.choix = (c, lt, gt) => {
   c.save(); cam(c, 540, 1000, 1.08);
   room(c);
-  drawMax(c, { x: 540, y: 1330, s: .9, f: 1, t: gt, front: [2.3, 1.2], back: [.3, .2] });
+  hero(c, { x: 540, y: 1330, s: .9, f: 1, t: gt, front: [2.3, 1.2], back: [.3, .2] });
   c.restore();
   const s = pop(gt, LINES[9].start + 3);
   if (s) { badge(c, 300, 460, s, 'LA VÉRITÉ : OUI', '#2EAD5B'); badge(c, 780, 460, s, 'MENTIR : NON', '#E53935'); }

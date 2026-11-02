@@ -151,3 +151,13 @@ function horrorEnd(c, gt, at, title, part, question) {
   if (s2) { c.save(); c.translate(540, 880); c.scale(s2, s2); text(c, part, 0, 0, '900 170px Montserrat', '#F2F4FF'); c.restore(); }
   if (s3 && question) { c.save(); c.globalAlpha = clamp(s3); text(c, question, 540, 1080, '800 48px Montserrat', '#C9D4FF', 'center', 0, OL, '4px'); text(c, 'OUI  /  NON', 540, 1160, '900 64px Montserrat', '#FF4B4B'); c.restore(); }
 }
+
+// Héros de toutes les vidéos depuis le 02/11 (personnage de l'avatar) : accepte les mêmes options que drawMax.
+function hero(c, o) {
+  const s = o.s * 1.06;
+  if (o.lean) { c.save(); c.translate(o.x, o.y - 250 * s); c.rotate((o.f || 1) * o.lean * .6); c.translate(-o.x, -(o.y - 250 * s)); }
+  const r = kid(c, { x: o.x, y: o.y, s, f: o.f || 1, t: o.t, sit: o.sit, walk: o.walk, shake: o.shiver || o.shake,
+    eyes: o.eyes ?? (o.mouthO ? .9 : .15), look: o.look ?? 1, front: o.front, back: o.back });
+  if (o.lean) c.restore();
+  return r;
+}

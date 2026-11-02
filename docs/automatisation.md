@@ -15,6 +15,11 @@ Chaque jour à 08:31 (heure de Paris), une tâche programmée lance la fabricati
 
 Si une étape échoue (clé ElevenLabs absente, Buffer en erreur…), rien n'est publié et l'utilisateur est prévenu.
 
+## Personnage (depuis le 02/11) — prioritaire sur les consignes des tâches
+
+- **Le héros de TOUTES les vidéos est le personnage de l'avatar** (`videos/avatar/avatar.png`) : tête ronde noire avec liseré bleu, deux yeux blancs, sweat orange, jambes grises. Dans le code : `hero(c, {...})` (même options que `drawMax`, défini dans `videos/engine/horreur.js`) ou `kid(c, {...})`. **Ne plus utiliser Max** (`drawMax`), sauf pour terminer la série Blackout (Jour 5, continuité).
+- Les histoires sont racontées à la 2e personne (« tu ») : le héros n'a pas besoin de prénom.
+
 ## Voix (depuis le 02/11) — prioritaire sur les consignes des tâches
 
 - **Gemini TTS gratuit en priorité.** Avant `build_audio.py`, exporter `GEMINI_API_KEY` (variable d'environnement, ou à défaut la clé Gemini fournie par l'utilisateur dans cette conversation) **et** `ELEVEN_KEY` (secours automatique si Gemini échoue). Ne jamais écrire ces clés dans le dépôt.

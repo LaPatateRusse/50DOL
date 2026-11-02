@@ -1,3 +1,5 @@
+> **Depuis le 02/11 : le héros est le personnage de l'avatar (`hero()` / `kid()`), plus Max** — voir `docs/automatisation.md`.
+
 # Format « Et si… ? » — vidéo de 18:00
 
 **Format prioritaire à partir du 05/11 : HISTOIRES DE SUPER-POUVOIRS LONGUES (2 min 30 – 3 min)** — demandé par l'utilisateur.

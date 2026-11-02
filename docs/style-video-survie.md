@@ -1,3 +1,5 @@
+> **Depuis le 02/11 : le héros est le personnage de l'avatar (`hero()` / `kid()`), plus Max** — voir `docs/automatisation.md`.
+
 # Bible de style — vidéos « Survie de Max » (format court vertical)
 
 Référence analysée : short vertical FR « Épidémie zombie — Jour 1 » (chalet de montagne, coupure imminente, eau/chauffage).
