@@ -78,7 +78,7 @@ ffmpeg -f concat -safe 0 -i .build/jourN/segs.txt -i .build/jourN/audio.wav -c:v
 - 09:05 Blackout Jour 4 (`videos/blackout-jour4`) · 12:00 Ne réponds pas Partie 3, FIN (`videos/nuit-mamie-3`) · 18:00 Et si ton compte doublait — P1 (`videos/etsi-compte-double-1`, mini-série) · 21:30 L'ascenseur du 13e — P1 (`videos/ascenseur-13-1`).
 - Voix Gemini + alignement des sous-titres par reconnaissance vocale locale (sherpa-onnx, modèle français téléchargé auto dans `videos/.build/asr`).
 
-- Avatar du compte : `videos/avatar/avatar.png` (Max lumineux, fond jaune-orangé, bulle « ? »).
+- Avatar du compte (sans Max, à la demande de l utilisateur) : `videos/avatar/avatar-A.png` (bulle « ET SI ? » sur fond bleu) ou `avatar-B.png` (personnage « toi » sur fond orangé).
 - 18:00 à partir du 05/11 : histoires de super-pouvoirs longues (2 min 30-3 min), voir `docs/style-etsi.md`.
 
 ## Prochaine étape
