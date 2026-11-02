@@ -19,8 +19,9 @@ Si une étape échoue (clé ElevenLabs absente, Buffer en erreur…), rien n'est
 
 | Heure (Paris) | Série | Tâche programmée |
 |---|---|---|
-| 09:05 | Blackout général, jusqu'au Jour 5 (conclusion), puis arrêt | lancée à 08:31 |
+| 09:05 | Survie : Blackout général jusqu'au Jour 5, puis nouvelle série de survie de 5 épisodes | lancée à 08:31 |
 | 12:00 | Horreur « Les règles de la nuit » | lancée à 11:13 |
+| 18:00 | « Et si… ? » : vidéo unique scientifique (`docs/style-etsi.md`, `videos/etsi.json`) | lancée à 14:47 |
 | 21:30 | Horreur « Les règles de la nuit » | lancée à 20:43 |
 
 ## Horreur

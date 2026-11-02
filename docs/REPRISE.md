@@ -67,11 +67,13 @@ ffmpeg -f concat -safe 0 -i .build/jourN/segs.txt -i .build/jourN/audio.wav -c:v
 
 ## Planning automatique
 
-- 09:05 Blackout (tâche 08:31) jusqu'au Jour 5 = conclusion, puis la tâche se désactive.
+- 09:05 survie (tâche 08:31 `trig_01J7u5zn3rs1CeJXLkzJLkbA`) : Blackout jusqu'au Jour 5 = conclusion, puis nouvelle série de survie de 5 épisodes.
+- 18:00 « Et si… ? » (tâche 14:47 `trig_01KMDU1Xf47e9nvmw13qWeTA`) : vidéo unique scientifique, style `docs/style-etsi.md`, état `videos/etsi.json`.
 - 12:00 et 21:30 horreur (tâches 11:13 `trig_01FQT8pfNGWeVMQvgcEGRwNy` et 20:43 `trig_01TVdCcFBnasaoaTh94P1j9g`), mini-séries de 3-4 parties.
-- Dans un nouveau chat : désactiver ces 3 tâches et les recréer rattachées au nouveau chat.
+- Dans un nouveau chat : désactiver ces 4 tâches et les recréer rattachées au nouveau chat.
 - Voir `docs/automatisation.md`.
 
 ## Prochaine étape
 
+- 02/11 : premier « Et si… ? » à 18:00, « Ne réponds pas » Partie 2 à 21:30.
 - 03/11 : Blackout Jour 4 à 09:05, Ne réponds pas Partie 3 (fin) à 12:00, nouvelle histoire Partie 1 à 21:30.
