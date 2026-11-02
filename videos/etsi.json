@@ -35,5 +35,28 @@
         }
       ]
     }
+  ],
+  "one_shots": [
+    {
+      "dir": "histoire-bouton-pause",
+      "title": "Le Bouton Pause",
+      "posted": "2026-11-02T15:35+01:00",
+      "buffer": "6ae89fb2f1669be3eab704cb",
+      "voice": "Gemini Orus"
+    },
+    {
+      "dir": "histoire-classe-3b",
+      "title": "Le Groupe « Classe 3B »",
+      "scheduled": "2026-11-02T16:05+01:00",
+      "buffer": "6ae8a1ba31e164b233e8ff16",
+      "voice": "ElevenLabs Adam (quota Gemini épuisé)"
+    },
+    {
+      "dir": "histoire-chance-infinie",
+      "title": "Chance Infinie",
+      "scheduled": "2026-11-02T16:35+01:00",
+      "buffer": "6ae8a2d02810e4a79d30c5fd",
+      "voice": "ElevenLabs Adam (quota Gemini épuisé)"
+    }
   ]
 }

@@ -85,3 +85,11 @@ ffmpeg -f concat -safe 0 -i .build/jourN/segs.txt -i .build/jourN/audio.wav -c:v
 
 - 02/11 : premier « Et si… ? » (traverser la Terre, voix Gemini Orus) programmé à 18:00, « Ne réponds pas » Partie 2 à 21:30.
 - 03/11 : Blackout Jour 4 à 09:05, Ne réponds pas Partie 3 (fin) à 12:00, nouvelle histoire Partie 1 à 21:30.
+
+## Histoires uniques du 02/11 (1 partie chacune, demandées par l'utilisateur)
+
+- 15:35 **Le Bouton Pause** (`videos/histoire-bouton-pause`) : publiée.
+- 16:05 **Le Groupe « Classe 3B »** (`videos/histoire-classe-3b`) : programmée.
+- 16:35 **Chance Infinie** (`videos/histoire-chance-infinie`) : programmée.
+- Voix : Gemini a renvoyé 429 (quota gratuit du jour épuisé) → secours automatique ElevenLabs (Adam) pour les deux dernières. Le quota Gemini se recharge chaque jour.
+- Kit décors du quotidien : `videos/engine/quotidien.js` (rue, bus, classe, prof, chat de groupe, cartons JOUR N, effet temps figé). Chat noir, voiture et billets : définis localement dans `histoire-chance-infinie/scenes.js`.
