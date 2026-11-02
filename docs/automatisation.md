@@ -15,6 +15,12 @@ Chaque jour à 08:31 (heure de Paris), une tâche programmée lance la fabricati
 
 Si une étape échoue (clé ElevenLabs absente, Buffer en erreur…), rien n'est publié et l'utilisateur est prévenu.
 
+## Voix (depuis le 02/11) — prioritaire sur les consignes des tâches
+
+- **Gemini TTS gratuit en priorité.** Avant `build_audio.py`, exporter `GEMINI_API_KEY` (variable d'environnement, ou à défaut la clé Gemini fournie par l'utilisateur dans cette conversation) **et** `ELEVEN_KEY` (secours automatique si Gemini échoue). Ne jamais écrire ces clés dans le dépôt.
+- Voix Gemini dans `script.json` → `voice.gemini_voice` : **« Orus »** pour la survie et « Et si… ? », **« Charon »** pour l'horreur ; `voice.gemini_style` décrit le ton (ex. horreur : « narrateur grave, tendu, passages entre « » murmurés »).
+- Après génération, vérifier dans `timeline.json` que chaque phrase a un débit de 14 à 24 caractères/s (sinon le découpage par silences s'est trompé : corriger avant le rendu).
+
 ## Planning (depuis le 02/11)
 
 | Heure (Paris) | Série | Tâche programmée |
