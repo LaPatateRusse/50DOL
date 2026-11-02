@@ -1,0 +1,35 @@
+{
+  "title": "Et si ton compte doublait chaque jour ? — Partie 1",
+  "note": "Mini-série « Et si… » (docs/style-etsi.md). Maths : 2^n € (jour 7 = 128, jour 10 = 1 024, jour 15 = 32 768, jour 20 = 1 048 576). En France, les banques doivent déclarer les opérations suspectes à TRACFIN.",
+  "voice": {
+    "model": "eleven_v3", "voice_id": "pNInz6obpgDQGcFmaJgB", "stability": 0.5, "tempo": 1.0,
+    "gemini_voice": "Orus",
+    "gemini_style": "Lis ce texte en français, comme un narrateur TikTok drôle et captivant : voix masculine grave, rythme vif, ton amusé sur les blagues, puis sérieux et tendu à la fin. Les passages entre guillemets « » sont dits d'une voix froide d'employé de banque. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+  },
+  "pad_after": { "titre": 0.2, "million": 0.2, "banque": 0.2, "choix": 3.2 },
+  "lines": [
+    { "scene": "titre",   "say": "Et si, chaque matin, l'argent sur ton compte doublait ?", "show": "Et si, chaque matin, l'argent sur ton compte [doublait] ?" },
+    { "scene": "debut",   "say": "Jour un : tu as un euro. Le lendemain, deux euros. Bof.", "show": "Jour 1 : tu as 1 euro. Le lendemain, 2 euros. {Bof}." },
+    { "scene": "debut",   "say": "Jour sept : cent vingt-huit euros. Bon… ça devient intéressant.", "show": "Jour 7 : 128 euros. Bon… ça devient {intéressant}." },
+    { "scene": "kebab",   "say": "Jour dix : mille vingt-quatre euros. Tu t'offres un kebab… et tu laisses cent euros de pourboire.", "show": "Jour 10 : 1 024 euros. Tu t'offres un kebab… et tu laisses 100 euros de {pourboire}." },
+    { "scene": "demission", "say": "Jour quinze : plus de trente-deux mille euros. Tu démissionnes. Par message vocal.", "show": "Jour 15 : plus de 32 000 euros. Tu démissionnes. Par message {vocal}." },
+    { "scene": "million", "say": "Jour vingt : plus d'un million d'euros.", "show": "Jour 20 : plus d'un {million} d'euros." },
+    { "scene": "million", "say": "Et c'est là que ton téléphone sonne. C'est ta banque.", "show": "Et c'est là que ton téléphone sonne. C'est ta [banque]." },
+    { "scene": "banque",  "say": "« Bonjour. Votre compte est bloqué. Nous devons vérifier l'origine de ces fonds. »", "show": "« Bonjour. Votre compte est bloqué. Nous devons vérifier l'origine de ces [fonds]. »" },
+    { "scene": "tracfin", "say": "Normal : en France, une banque doit signaler les mouvements d'argent suspects à un service de l'État, Tracfin.", "show": "En France, une banque doit signaler l'argent suspect à un service de l'État : [TRACFIN]." },
+    { "scene": "choix",   "say": "Et demain matin, ton compte doit encore doubler. Tu leur dis la vérité ? Commente oui ou non.", "show": "Et demain, ton compte doit encore doubler. Tu dis la vérité ? Commente {OUI} ou [NON]." }
+  ],
+  "cues": {
+    "tip":     [3, "end", -1.4],
+    "voice":   [4, "end", -1.2],
+    "ring":    [6, "start", 0.8],
+    "blocked": [7, "start", 0.9],
+    "partie2": [9, "end", 0.7]
+  },
+  "sfx": [
+    { "type": "pop", "cue": ["tip", "voice", "blocked"] },
+    { "type": "buzz", "cue": "ring" },
+    { "type": "hit", "cue": "partie2" }
+  ],
+  "pulse": [["banque", "choix"]]
+}
