@@ -1,0 +1,48 @@
+{
+  "title": "Le Bouton Pause",
+  "note": "Histoire complète en 1 partie (super-pouvoir). Héros = personnage de l'avatar.",
+  "voice": {
+    "model": "eleven_v3", "voice_id": "pNInz6obpgDQGcFmaJgB", "stability": 0.5, "tempo": 1.0,
+    "gemini_voice": "Orus",
+    "gemini_style": "Lis ce texte en français, comme un narrateur TikTok drôle et captivant : voix masculine grave, rythme vif, ton amusé sur les blagues, puis sérieux et tendu à la fin. Les passages entre guillemets « » sont dits comme une réplique de personnage. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+  },
+  "pad_after": { "j1": 0.2, "j2": 0.2, "controle": 0.2, "j3": 0.2, "j4": 0.2, "fin": 3.2 },
+  "lines": [
+    { "scene": "j1", "say": "Jour un. Ton réveil ne sonne pas. Tu cours… et le bus te passe sous le nez.", "show": "Jour 1. Ton réveil ne sonne pas. Tu cours… et le bus te passe sous le [nez]." },
+    { "scene": "j1", "say": "Sur le trottoir, tu trouves une vieille télécommande. Un seul bouton. Rouge.", "show": "Sur le trottoir, tu trouves une vieille télécommande. Un seul bouton. [Rouge]." },
+    { "scene": "j2", "say": "Jour deux. Encore en retard. Le bus démarre. Par réflexe, tu appuies sur le bouton.", "show": "Jour 2. Encore en retard. Le bus démarre. Par réflexe, tu appuies sur le {bouton}." },
+    { "scene": "j2", "say": "Et le monde entier… s'arrête. Les oiseaux sont figés dans le ciel. Le bus aussi.", "show": "Et le monde entier… s'arrête. Les oiseaux sont figés dans le ciel. Le bus [aussi]." },
+    { "scene": "j2", "say": "Tu montes tranquillement, tu t'assois, tu rappuies. Le bus repart. Personne n'a rien vu.", "show": "Tu montes, tu t'assois, tu rappuies. Le bus repart. Personne n'a rien {vu}." },
+    { "scene": "controle", "say": "En classe, contrôle surprise de maths. Tu n'as rien révisé.", "show": "En classe, contrôle surprise de maths. Tu n'as rien [révisé]." },
+    { "scene": "controle", "say": "Pause. Tu fais le tour de la classe, et tu recopies tranquillement la copie de la meilleure élève.", "show": "Pause. Tu fais le tour de la classe, et tu recopies la copie de la meilleure {élève}." },
+    { "scene": "controle", "say": "Résultat : vingt sur vingt. Le prof te regarde bizarrement.", "show": "Résultat : 20 sur 20. Le prof te regarde [bizarrement]." },
+    { "scene": "j3", "say": "Jour trois. Tu deviens le roi des blagues. Tu attaches les lacets de ton pote… à sa chaise.", "show": "Jour 3. Tu deviens le roi des blagues. Tu attaches les lacets de ton pote… à sa {chaise}." },
+    { "scene": "j3", "say": "Tu remplaces le café du prof par du jus d'orange. Toute la classe est morte de rire.", "show": "Tu remplaces le café du prof par du jus d'orange. Toute la classe est morte de {rire}." },
+    { "scene": "j4", "say": "Jour quatre. Devant le miroir, tu remarques une mèche blanche sur ta tête.", "show": "Jour 4. Devant le miroir, tu remarques une mèche [blanche] sur ta tête." },
+    { "scene": "j4", "say": "Et ta montre est en avance de six heures. Le temps s'arrête pour le monde… mais pas pour toi.", "show": "Ta montre est en avance de 6 heures. Le temps s'arrête pour le monde… mais pas pour [toi]." },
+    { "scene": "j5", "say": "Jour cinq. Pendant une pause, au milieu de la rue figée… quelqu'un bouge.", "show": "Jour 5. Pendant une pause, au milieu de la rue figée… quelqu'un [bouge]." },
+    { "scene": "j5", "say": "Un vieil homme en sweat orange. « Rends-moi ma télécommande. »", "show": "Un vieil homme en sweat orange. « Rends-moi ma [télécommande]. »" },
+    { "scene": "j5", "say": "Il enlève sa capuche. C'est toi. Avec soixante ans de plus.", "show": "Il enlève sa capuche. C'est toi. Avec 60 ans de [plus]." },
+    { "scene": "fin", "say": "« Chaque pause m'a volé une partie de ma vie. Ne fais pas la même erreur. »", "show": "« Chaque pause m'a volé une partie de ma vie. Ne fais pas la même [erreur]. »" },
+    { "scene": "fin", "say": "Toi, tu l'aurais utilisée combien de fois ?", "show": "Toi, tu l'aurais utilisée combien de [fois] ?" }
+  ],
+  "cues": {
+    "find": [1, "start", 1.8],
+    "press1": [2, "end", -0.6],
+    "unpress": [4, "start", 2.4],
+    "pause2": [6, "start", 0.0],
+    "grade": [7, "start", 1.0],
+    "mirror": [10, "start", 1.2],
+    "watch": [11, "start", 0.8],
+    "move": [12, "end", -0.8],
+    "reveal": [14, "start", 0.8],
+    "endcard": [16, "end", 0.6]
+  },
+  "sfx": [
+    { "type": "pop", "cue": ["find", "grade", "mirror", "watch"] },
+    { "type": "hit", "cue": ["press1", "pause2", "move", "reveal"] },
+    { "type": "swish", "cue": "unpress" },
+    { "type": "hit", "cue": "endcard" }
+  ],
+  "pulse": [["j5", "fin"]]
+}
