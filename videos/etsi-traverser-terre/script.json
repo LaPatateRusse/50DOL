@@ -1,0 +1,42 @@
+{
+  "title": "Et si… tu traversais la Terre ?",
+  "note": "Format « Et si… ? » (docs/style-etsi.md). Chiffres : diamètre 12 742 km ; forage de Kola 12,26 km ; centre ≈ 5 000-5 400 °C ; modèle du « tunnel gravitationnel » : vitesse max ≈ 7,9 km/s (≈ 28 000 km/h), traversée ≈ 38-42 min ; antipode de la France ≈ Nouvelle-Zélande ; avec frottement de l'air, oscillations amorties jusqu'au centre.",
+  "voice": {
+    "model": "eleven_v3", "voice_id": "pNInz6obpgDQGcFmaJgB", "stability": 0.5, "tempo": 1.0,
+    "gemini_voice": "Orus",
+    "gemini_style": "Lis ce texte en français, comme un narrateur de vulgarisation scientifique sur TikTok : voix masculine grave, enthousiaste, rythme vif, qui ménage le suspense. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+  },
+  "pad_after": { "titre": 0.2, "kola": 0.15, "temps": 0.15, "fin": 3.0 },
+  "lines": [
+    { "scene": "titre",   "say": "Et si tu sautais dans un trou qui traverse toute la Terre ?", "show": "Et si tu sautais dans un trou qui traverse toute la [Terre] ?" },
+    { "scene": "saut",    "say": "Tu sautes. Et tout de suite, tu deviens léger. En chute libre, tu ne sens plus ton poids.", "show": "Tu sautes. Et tout de suite, tu deviens léger. En chute libre, tu ne sens plus ton {poids}." },
+    { "scene": "kola",    "say": "Le trou le plus profond jamais creusé ne fait que douze kilomètres. Toi, tu en as plus de douze mille à traverser.", "show": "Le trou le plus profond jamais creusé : 12 km. Toi, tu en as plus de {12} {000} à traverser." },
+    { "scene": "chaleur", "say": "Au centre de la Terre, il fait environ cinq mille degrés. Presque autant qu'à la surface du Soleil.", "show": "Au centre de la Terre : environ 5 000 °C. Presque autant qu'à la surface du [Soleil]." },
+    { "scene": "vitesse", "say": "Et tu vas de plus en plus vite. En plein centre, tu fonces à près de vingt-huit mille kilomètres-heure.", "show": "Et tu vas de plus en plus vite. Au centre, tu fonces à près de 28 000 [km/h]." },
+    { "scene": "temps",   "say": "Le voyage complet ? Environ quarante minutes. Moins qu'un épisode de série.", "show": "Le voyage complet ? Environ {40} {minutes}. Moins qu'un épisode de série." },
+    { "scene": "arrivee", "say": "Tu ressors de l'autre côté de la planète… quelque part près de la Nouvelle-Zélande.", "show": "Tu ressors de l'autre côté de la planète… près de la {Nouvelle-Zélande}." },
+    { "scene": "yoyo",    "say": "Mais si personne ne te rattrape, tu retombes. Et tu fais l'aller-retour… pour toujours.", "show": "Mais si personne ne te rattrape, tu retombes. Et tu fais l'aller-retour… pour [toujours]." },
+    { "scene": "centre",  "say": "Avec l'air du tunnel, c'est encore plus fou : tu ralentis à chaque passage… jusqu'à flotter, immobile, au centre de la Terre.", "show": "Avec l'air du tunnel, tu ralentis à chaque passage… jusqu'à flotter au centre de la [Terre]." },
+    { "scene": "fin",     "say": "Et toi, tu aurais sauté ? Dis-le en commentaire.", "show": "Et toi, tu aurais [sauté] ? Dis-le en commentaire." }
+  ],
+  "cues": {
+    "jump":    [1, "start", 0.2],
+    "zero_g":  [1, "end", -1.4],
+    "kola":    [2, "start", 1.2],
+    "big":     [2, "end", -1.6],
+    "thermo":  [3, "start", 0.6],
+    "speed":   [4, "end", -2.4],
+    "timer":   [5, "start", 1.0],
+    "out":     [6, "start", 0.4],
+    "loop":    [7, "end", -1.4],
+    "float":   [8, "end", -2.4],
+    "endcard": [9, "end", 0.5]
+  },
+  "sfx": [
+    { "type": "swish", "cue": "jump" },
+    { "type": "pop", "cue": ["zero_g", "kola", "big", "thermo", "timer", "out", "loop", "float"] },
+    { "type": "wind", "scene": ["vitesse"] },
+    { "type": "hit", "cue": "endcard" }
+  ],
+  "pulse": []
+}

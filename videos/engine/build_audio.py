@@ -124,7 +124,36 @@ def gemini_lines(all_lines):
         else:
             k += 1
     need = len(texts) - 1
-    runs = sorted(sorted(runs, key=lambda r: r[1] - r[0], reverse=True)[:need])
+    # Coupures attendues d'après la longueur du texte ; on choisit (programmation dynamique) les silences
+    # les plus proches de ces positions, en préférant les silences longs, dans l'ordre.
+    runs = [r for r in runs if r[1] - r[0] >= 6]  # ≥ 120 ms
+    tot = sum(len(x) + 8 for x in texts)
+    cum, exp = 0, []
+    for x in texts[:-1]:
+        cum += len(x) + 8
+        exp.append(first + (last - first) * cum / tot)
+    if len(runs) >= need:
+        INF = float("inf")
+        R = len(runs)
+        cost = [[abs((r[0] + r[1]) / 2 - e) - 2.0 * (r[1] - r[0]) for r in runs] for e in exp]
+        dp = [[INF] * R for _ in range(need)]
+        prev = [[-1] * R for _ in range(need)]
+        for j in range(R):
+            dp[0][j] = cost[0][j]
+        for k in range(1, need):
+            best, arg = INF, -1
+            for j in range(R):
+                if j > 0 and dp[k - 1][j - 1] < best:
+                    best, arg = dp[k - 1][j - 1], j - 1
+                if best < INF:
+                    dp[k][j] = best + cost[k][j]
+                    prev[k][j] = arg
+        j = min(range(R), key=lambda q: dp[need - 1][q])
+        chosen = []
+        for k in range(need - 1, -1, -1):
+            chosen.append(runs[j])
+            j = prev[k][j]
+        runs = chosen[::-1]
     if len(runs) < need:  # pas assez de silences : découpage proportionnel au nombre de caractères
         tot = sum(len(x) for x in texts)
         acc, runs = first, []
@@ -162,7 +191,10 @@ def chunks(show):
     """Découpe le sous-titre en groupes de 2-4 mots ; couleur par mot."""
     words = []
     for tok in show.split():
-        if words and re.fullmatch(r"[:;?!…»]+", tok):  # ponctuation française détachée : collée au mot précédent
+        if words and re.fullmatch(r"\{?\d{3}\}?\S*", tok) and re.search(r"\d\}?$", words[-1]["w"] + ("}" if words[-1]["c"] else "")):
+            words[-1]["w"] += " " + re.sub(r"[\[\]{}]", "", tok)  # « 12 000 » : milliers gardés ensemble
+            continue
+        if words and re.fullmatch(r"[:;?!…»]+|°C\S*|%\S*", tok):  # ponctuation française détachée : collée au mot précédent
             words[-1]["w"] += " " + tok
             continue
         color = "red" if "[" in tok else "yellow" if "{" in tok else None

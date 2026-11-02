@@ -194,7 +194,8 @@ function card(c, cx, y, s, label, value, icon, col, badge, bs) {
   rr(c, -260, 0, 520, 160, 18); fs(c, '#FFFFFF', 7);
   text(c, label, 40, 40, '800 26px Montserrat', '#2A2A2A', 'center', 0, OL, '3px');
   icon(c, -170, 100);
-  text(c, value, 40, 108, '700 104px Oswald', col);
+  c.font = '700 104px Oswald'; const vw = c.measureText(value).width, vs = Math.min(1, 330 / vw);
+  c.save(); c.translate(40, 108); c.scale(vs, vs); text(c, value, 0, 0, '700 104px Oswald', col); c.restore();
   if (bs > 0) { c.save(); c.translate(225, 0); c.scale(bs, bs); rr(c, -54, -32, 108, 64, 22); fs(c, '#3B82D6', 0); text(c, badge, 0, 2, '700 40px Oswald', '#fff'); c.restore(); }
   c.restore();
 }
