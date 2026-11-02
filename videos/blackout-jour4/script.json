@@ -1,0 +1,39 @@
+{
+  "title": "Blackout général — Jour 4",
+  "note": "Votes non lus : Max fait le choix prudent (ne pas sortir), sans l'attribuer au public. Purification : pastilles en pharmacie, suivre la notice (pas de dosage de javel, variable selon la concentration).",
+  "voice": {
+    "model": "eleven_v3", "voice_id": "pNInz6obpgDQGcFmaJgB", "stability": 0.5, "tempo": 1.0,
+    "gemini_voice": "Orus",
+    "gemini_style": "Lis ce texte en français, comme le narrateur d'une série de survie sur TikTok : voix masculine grave, rythme vif, tension dramatique, ton sérieux. Les passages entre guillemets « » sont murmurés. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+  },
+  "pad_after": { "titre": 0.3, "purif": 0.15, "camion": 0.15, "choix": 3.4 },
+  "lines": [
+    { "scene": "doute",   "say": "Les mots du voisin tournent dans la tête de Max : « Ils t'attendent en bas. »", "show": "Les mots du voisin tournent dans la tête de Max : « Ils t'attendent en [bas]. »" },
+    { "scene": "doute",   "say": "Alors Max fait le choix le plus prudent. Il ne sort pas. Pas aujourd'hui.", "show": "Alors Max fait le choix le plus prudent. Il ne sort [pas]. Pas aujourd'hui." },
+    { "scene": "titre",   "say": "Jour quatre. Il reste cent cinquante-huit litres d'eau.", "show": "Jour 4. Il reste 158 {litres} d'eau." },
+    { "scene": "ration",  "say": "Première règle : rationner. Deux litres par jour pour boire, un peu pour se laver. Le reste, on le garde.", "show": "Première règle : rationner. 2 litres par jour pour boire, un peu pour se laver. Le reste, on le {garde}." },
+    { "scene": "purif",   "say": "Et l'eau de la baignoire ? Elle a stagné quatre jours. Avant de la boire, il faut la purifier.", "show": "Et l'eau de la baignoire ? Elle a stagné 4 jours. Avant de la boire, il faut la [purifier]." },
+    { "scene": "purif",   "say": "Des pastilles de purification, achetées en pharmacie. On suit la notice, et on attend avant de boire.", "show": "Des pastilles de purification, achetées en pharmacie. On suit la notice, et on {attend}." },
+    { "scene": "fenetre", "say": "Le soir, depuis sa fenêtre, Max voit des lampes torches dans le hall de l'immeuble.", "show": "Le soir, depuis sa fenêtre, Max voit des lampes torches dans le [hall]." },
+    { "scene": "fenetre", "say": "Trois silhouettes. Elles attendent.", "show": "Trois silhouettes. Elles [attendent]." },
+    { "scene": "camion",  "say": "Puis, au bout de la rue, des gyrophares. Un camion de la Sécurité civile distribue de l'eau.", "show": "Puis, au bout de la rue, des gyrophares. Un camion de la Sécurité civile distribue de l'{eau}." },
+    { "scene": "choix",   "say": "Les silhouettes partent vers le camion. Max peut enfin descendre… ou attendre le matin. Commente oui ou non.", "show": "Les silhouettes partent vers le camion. Max descend… ou attend ? Commente {OUI} ou [NON]." }
+  ],
+  "cues": {
+    "stay":    [1, "start", 1.5],
+    "bottles": [3, "start", 1.4],
+    "pill":    [5, "start", 0.8],
+    "timer":   [5, "end", -1.4],
+    "torch":   [6, "end", -1.8],
+    "lights":  [8, "start", 0.6],
+    "jour5":   [9, "end", 0.7]
+  },
+  "sfx": [
+    { "type": "pop", "cue": ["stay", "bottles", "pill", "timer", "torch"] },
+    { "type": "hit", "scene": "titre" },
+    { "type": "water", "cue": "pill", "dur": 1.0 },
+    { "type": "wind", "scene": ["fenetre", "camion"] },
+    { "type": "hit", "cue": "jour5" }
+  ],
+  "pulse": [["fenetre", "choix"]]
+}

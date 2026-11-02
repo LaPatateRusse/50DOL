@@ -1,0 +1,39 @@
+{
+  "title": "Ne réponds pas — Partie 3 (fin)",
+  "note": "Fin de l'histoire. Votes non lus : « tu » fais le choix prudent (ne pas décrocher), sans l'attribuer au public.",
+  "voice": {
+    "model": "eleven_v3", "voice_id": "pNInz6obpgDQGcFmaJgB", "stability": 0.5, "tempo": 1.0,
+    "gemini_voice": "Charon",
+    "gemini_style": "Lis ce texte en français, comme le narrateur d'une histoire d'horreur sur TikTok : voix masculine grave, lente, tendue, presque chuchotée. Les passages entre guillemets « » sont murmurés, inquiétants. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+  },
+  "pad_after": { "vocal": 0.2, "mamie": 0.15, "fin": 3.4 },
+  "lines": [
+    { "scene": "appel",  "say": "Tu ne décroches pas. Le téléphone vibre… vibre… puis s'arrête.", "show": "Tu ne décroches pas. Le téléphone vibre… vibre… puis s'[arrête]." },
+    { "scene": "appel",  "say": "Un nouveau message vocal. Durée : trois secondes.", "show": "Un nouveau message vocal. Durée : 3 [secondes]." },
+    { "scene": "vocal",  "say": "« Ouvre-moi. »", "show": "« Ouvre-[moi]. »" },
+    { "scene": "vocal",  "say": "C'est ta voix. Exactement ta voix.", "show": "C'est ta voix. Exactement ta [voix]." },
+    { "scene": "aube",   "say": "Tu ne bouges plus jusqu'au lever du soleil. À six heures, tout est silencieux.", "show": "Tu ne bouges plus jusqu'au lever du soleil. À 6 heures, tout est [silencieux]." },
+    { "scene": "mamie",  "say": "Mamie sort enfin de son armoire. Elle te serre très fort.", "show": "Mamie sort enfin de son armoire. Elle te serre très [fort]." },
+    { "scene": "mamie",  "say": "« Tu n'as répondu à personne ? Tant mieux. »", "show": "« Tu n'as répondu à personne ? Tant [mieux]. »" },
+    { "scene": "jardin", "say": "Dans le jardin, des traces de pas immenses repartent vers la forêt.", "show": "Dans le jardin, des traces de pas immenses repartent vers la [forêt]." },
+    { "scene": "jardin", "say": "Tu crois que c'est fini.", "show": "Tu crois que c'est [fini]." },
+    { "scene": "fin",    "say": "Mais le soir même, Mamie reçoit un message. De toi.", "show": "Mais le soir même, Mamie reçoit un message. De [toi]." },
+    { "scene": "fin",    "say": "« Mamie… tu peux venir dans le jardin ? »", "show": "« Mamie… tu peux venir dans le [jardin] ? »" }
+  ],
+  "cues": {
+    "missed":  [0, "end", -0.6],
+    "vm":      [1, "start", 0.3],
+    "play":    [2, "start", -0.2],
+    "hug":     [5, "end", -1.2],
+    "steps":   [7, "start", 0.4],
+    "msg":     [10, "start", -0.2],
+    "endcard": [10, "end", 0.8]
+  },
+  "sfx": [
+    { "type": "buzz", "cue": "missed" },
+    { "type": "pop", "cue": ["vm", "play", "hug", "steps", "msg"] },
+    { "type": "wind", "scene": ["jardin"] },
+    { "type": "hit", "cue": "endcard" }
+  ],
+  "pulse": [["appel", "vocal"], ["fin", "fin"]]
+}

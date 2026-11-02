@@ -107,7 +107,10 @@ def gemini_lines(all_lines):
                     "-af", af, "-ar", str(SR), "-ac", "1", wav], check=True)
     with wave.open(wav) as w:
         audio = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32) / 32768
-    # Trames de 20 ms : parole / silence.
+    aligned = asr_align(audio, texts)
+    if aligned:
+        return aligned
+    # Secours sans reconnaissance vocale — trames de 20 ms : parole / silence.
     fr = int(0.02 * SR)
     rms = np.sqrt(np.mean(audio[: len(audio) // fr * fr].reshape(-1, fr) ** 2, axis=1))
     voiced = rms > rms.max() * 0.03
@@ -127,15 +130,17 @@ def gemini_lines(all_lines):
     # Coupures attendues d'après la longueur du texte ; on choisit (programmation dynamique) les silences
     # les plus proches de ces positions, en préférant les silences longs, dans l'ordre.
     runs = [r for r in runs if r[1] - r[0] >= 6]  # ≥ 120 ms
+    # Positions attendues mesurées en temps de PAROLE (les longues pauses dramatiques ne comptent pas).
     tot = sum(len(x) + 8 for x in texts)
+    cv = np.cumsum(voiced)
     cum, exp = 0, []
     for x in texts[:-1]:
         cum += len(x) + 8
-        exp.append(first + (last - first) * cum / tot)
+        exp.append(int(np.searchsorted(cv, cv[last] * cum / tot)))
     if len(runs) >= need:
         INF = float("inf")
         R = len(runs)
-        cost = [[abs((r[0] + r[1]) / 2 - e) - 2.0 * (r[1] - r[0]) for r in runs] for e in exp]
+        cost = [[min(abs(r[0] - e), abs(r[1] - e)) - 0.8 * min(r[1] - r[0], 75) for r in runs] for e in exp]
         dp = [[INF] * R for _ in range(need)]
         prev = [[-1] * R for _ in range(need)]
         for j in range(R):
@@ -168,6 +173,94 @@ def gemini_lines(all_lines):
         dur = len(seg) / SR
         offs = [m.start() for m in re.finditer(r"\S+", x)]
         out.append((seg, [0.03 + (dur - 0.08) * o / max(1, len(x)) for o in offs]))
+    return out
+
+
+ASR_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".build", "asr")
+ASR_MODEL = "sherpa-onnx-streaming-zipformer-fr-2023-04-14"
+
+
+def _norm(w):
+    import unicodedata
+    w = unicodedata.normalize("NFD", w.lower())
+    return re.sub(r"[^a-z0-9]", "", "".join(ch for ch in w if unicodedata.category(ch) != "Mn"))
+
+
+def asr_align(audio, texts):
+    """Reconnaissance vocale française locale (sherpa-onnx) → début exact de chaque mot du script.
+    Renvoie [(audio de la phrase, débuts des mots)] ou None si indisponible."""
+    try:
+        import difflib
+        import sherpa_onnx
+    except ImportError:
+        return None
+    m = os.path.join(ASR_DIR, ASR_MODEL)
+    if not os.path.isdir(m):
+        os.makedirs(ASR_DIR, exist_ok=True)
+        tar = m + ".tar.bz2"
+        subprocess.run(["curl", "-sSL", "-o", tar,
+                        f"https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/{ASR_MODEL}.tar.bz2"], check=True)
+        subprocess.run(["tar", "xjf", tar, "-C", ASR_DIR], check=True)
+        os.remove(tar)
+    rec = sherpa_onnx.OnlineRecognizer.from_transducer(
+        tokens=f"{m}/tokens.txt", encoder=f"{m}/encoder-epoch-29-avg-9-with-averaged-model.int8.onnx",
+        decoder=f"{m}/decoder-epoch-29-avg-9-with-averaged-model.onnx",
+        joiner=f"{m}/joiner-epoch-29-avg-9-with-averaged-model.int8.onnx",
+        num_threads=4, sample_rate=16000, feature_dim=80, decoding_method="greedy_search")
+    a16 = audio[::max(1, round(SR / 16000))] if SR % 16000 == 0 else np.interp(
+        np.arange(0, len(audio), SR / 16000), np.arange(len(audio)), audio).astype(np.float32)
+    st = rec.create_stream()
+    st.accept_waveform(16000, a16.astype(np.float32))
+    st.accept_waveform(16000, np.zeros(32000, dtype=np.float32))
+    st.input_finished()
+    while rec.is_ready(st):
+        rec.decode_stream(st)
+    res = rec.get_result_all(st)
+    heard, cur = [], None
+    for tok, ts in zip(res.tokens, res.timestamps):
+        if tok.startswith(" ") or cur is None:
+            cur = [tok.strip(), ts]
+            heard.append(cur)
+        else:
+            cur[0] += tok
+    heard = [(_norm(w), t) for w, t in heard if _norm(w)]
+    script_words, owner = [], []
+    for n, x in enumerate(texts):
+        for w in x.split():
+            if _norm(w):
+                script_words.append(_norm(w))
+                owner.append(n)
+    sm = difflib.SequenceMatcher(None, script_words, [w for w, _ in heard], autojunk=False)
+    times = [None] * len(script_words)
+    for blk in sm.get_matching_blocks():
+        for k in range(blk.size):
+            times[blk.a + k] = heard[blk.b + k][1]
+    if sum(t is not None for t in times) < .6 * len(times):
+        return None
+    known = [k for k, t in enumerate(times) if t is not None]  # interpolation des mots non reconnus
+    for k in range(len(times)):
+        if times[k] is None:
+            lo = max([q for q in known if q < k], default=None)
+            hi = min([q for q in known if q > k], default=None)
+            if lo is not None and hi is not None:
+                times[k] = times[lo] + (times[hi] - times[lo]) * (k - lo) / (hi - lo)
+            else:
+                times[k] = times[lo] + .3 * (k - lo) if lo is not None else max(0, times[hi] - .3 * (hi - k))
+    fr = int(.02 * SR)
+    rms = np.sqrt(np.mean(audio[: len(audio) // fr * fr].reshape(-1, fr) ** 2, axis=1))
+    voiced = rms > rms.max() * .03
+    out = []
+    for n in range(len(texts)):
+        ks = [k for k in range(len(times)) if owner[k] == n]
+        t0 = max(0.0, times[ks[0]] - .12)
+        nxt = [k for k in range(len(times)) if owner[k] == n + 1]
+        t1 = (times[nxt[0]] - .12) if nxt else len(audio) / SR
+        # Fin de phrase = premier silence de 240 ms après le début du dernier mot.
+        f, fend = int(times[ks[-1]] / .02) + 3, min(len(voiced) - 12, int(t1 / .02))
+        while f < fend and voiced[f:f + 12].any():
+            f += 1
+        t1 = min(t1, f * .02 + .15)
+        out.append((audio[int(t0 * SR):int(t1 * SR)], [times[k] - t0 for k in ks]))
     return out
 
 
