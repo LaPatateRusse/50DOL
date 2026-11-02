@@ -33,7 +33,7 @@ node engine/render.js blackout-jourN .build/jourN
 ffmpeg -f concat -safe 0 -i .build/jourN/segs.txt -i .build/jourN/audio.wav -c:v copy -c:a aac -shortest blackout-jourN/tiktok.mp4
 ```
 
-- Voix : ElevenLabs, modèle `eleven_v3`, voix **Adam** (`pNInz6obpgDQGcFmaJgB`), générée scène par scène, balises `[whispers]`, `[serious]`, `[sighs]`. La clé n'a pas la permission `voices_read`.
+- Voix : Gemini TTS gratuit si `GEMINI_API_KEY` est défini (clé AI Studio dans un projet SANS facturation ; une requête par vidéo, secours ElevenLabs automatique), sinon ElevenLabs, modèle `eleven_v3`, voix **Adam** (`pNInz6obpgDQGcFmaJgB`), générée scène par scène, balises `[whispers]`, `[serious]`, `[sighs]`. La clé n'a pas la permission `voices_read`.
 - Sous-titres : `[mot]` = rouge (danger), `{mot}` = jaune (ressource), calés sur l'horodatage ElevenLabs.
 - Livraison : chaque dossier contient `tiktok.mp4` + `descriptions.txt` (3 descriptions : question, liste, suspense).
 - Réseau : `api.elevenlabs.io` et `api.buffer.com` autorisés ; TikTok non accessible.

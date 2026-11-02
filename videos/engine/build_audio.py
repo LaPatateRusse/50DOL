@@ -1,6 +1,8 @@
-"""Voix off ElevenLabs, timeline et bande-son d'un épisode.
+"""Voix off (Gemini TTS gratuit, ou ElevenLabs), timeline et bande-son d'un épisode.
 
-Usage : ELEVEN_KEY=... python3 build_audio.py <dossier_episode> <dossier_build>
+Usage : GEMINI_API_KEY=... (ou ELEVEN_KEY=...) python3 build_audio.py <dossier_episode> <dossier_build>
+Gemini est utilisé si GEMINI_API_KEY est défini (une seule requête par vidéo, découpage par silences,
+sous-titres estimés) ; sinon ElevenLabs avec horodatage exact des mots.
 Lit <episode>/script.json. Produit <build>/timeline.json (lu par le rendu) et <build>/audio.wav.
 
 La voix est générée scène par scène (une requête par scène) pour garder une intonation continue,
@@ -14,6 +16,8 @@ import os
 import re
 import subprocess
 import sys
+import time
+import urllib.error
 import urllib.request
 import wave
 
@@ -21,7 +25,9 @@ import numpy as np
 
 EP, OUT = sys.argv[1], sys.argv[2]
 SR = 44100
-KEY = os.environ["ELEVEN_KEY"]
+GEMINI_KEY = os.environ.get("GEMINI_API_KEY")
+KEY = os.environ.get("ELEVEN_KEY")
+PROVIDER = os.environ.get("TTS_PROVIDER") or ("gemini" if GEMINI_KEY else "eleven")
 os.makedirs(os.path.join(OUT, "tts"), exist_ok=True)
 script = json.load(open(os.path.join(EP, "script.json"), encoding="utf-8"))
 VOICE = script["voice"]
@@ -60,6 +66,80 @@ def eleven(text):
     st = [s / tempo for s in al["character_start_times_seconds"]]
     en = [e / tempo for e in al["character_end_times_seconds"]]
     return audio, "".join(al["characters"]), st, en
+
+
+GEMINI_MODEL = os.environ.get("GEMINI_TTS_MODEL", "gemini-2.5-flash-preview-tts")
+GEMINI_STYLE = ("Lis ce texte en français, comme un narrateur de vidéo TikTok captivant : voix masculine grave, "
+                "rythme vif, tension dramatique. Les passages entre guillemets « » sont murmurés, inquiétants. "
+                "Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne.")
+
+
+def gemini_lines(all_lines):
+    """Toute la voix d'une vidéo en une requête Gemini, découpée phrase par phrase grâce aux silences.
+    Renvoie, pour chaque phrase : (audio 44,1 kHz, débuts estimés des mots en s)."""
+    texts = [TAG.sub("", l["say"]).strip() for l in all_lines]
+    prompt = VOICE.get("gemini_style", GEMINI_STYLE) + "\n\n" + "\n\n".join(texts)
+    voice = VOICE.get("gemini_voice", "Charon")
+    body = {"contents": [{"parts": [{"text": prompt}]}],
+            "generationConfig": {"responseModalities": ["AUDIO"],
+                                 "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voice}}}}}
+    h = hashlib.sha1(json.dumps([GEMINI_MODEL, body], sort_keys=True).encode()).hexdigest()[:12]
+    cache = os.path.join(OUT, "tts", f"gemini_{h}.pcm")
+    if not os.path.exists(cache):
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
+        for attempt in range(5):
+            try:
+                req = urllib.request.Request(url, data=json.dumps(body).encode(),
+                                             headers={"x-goog-api-key": GEMINI_KEY, "Content-Type": "application/json"})
+                with urllib.request.urlopen(req, timeout=300) as r:
+                    res = json.load(r)
+                break
+            except urllib.error.HTTPError as e:
+                if e.code in (429, 500, 503) and attempt < 4:
+                    time.sleep(20 * (attempt + 1))
+                    continue
+                raise
+        part = res["candidates"][0]["content"]["parts"][0]["inlineData"]
+        open(cache, "wb").write(base64.b64decode(part["data"]))
+    wav = cache.replace(".pcm", ".wav")
+    af = "highpass=f=60,equalizer=f=180:t=q:w=1:g=2,acompressor=threshold=-18dB:ratio=3:attack=5:release=90:makeup=2"
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-f", "s16le", "-ar", "24000", "-ac", "1", "-i", cache,
+                    "-af", af, "-ar", str(SR), "-ac", "1", wav], check=True)
+    with wave.open(wav) as w:
+        audio = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32) / 32768
+    # Trames de 20 ms : parole / silence.
+    fr = int(0.02 * SR)
+    rms = np.sqrt(np.mean(audio[: len(audio) // fr * fr].reshape(-1, fr) ** 2, axis=1))
+    voiced = rms > rms.max() * 0.03
+    idx = np.flatnonzero(voiced)
+    first, last = idx[0], idx[-1]
+    runs, k = [], first
+    while k < last:
+        if not voiced[k]:
+            j = k
+            while j < last and not voiced[j]:
+                j += 1
+            runs.append((k, j))
+            k = j
+        else:
+            k += 1
+    need = len(texts) - 1
+    runs = sorted(sorted(runs, key=lambda r: r[1] - r[0], reverse=True)[:need])
+    if len(runs) < need:  # pas assez de silences : découpage proportionnel au nombre de caractères
+        tot = sum(len(x) for x in texts)
+        acc, runs = first, []
+        for x in texts[:-1]:
+            acc += (last - first) * len(x) / tot
+            runs.append((int(acc), int(acc) + 1))
+    bounds = [first] + [b for r in runs for b in r] + [last + 1]
+    out = []
+    for n, x in enumerate(texts):
+        a, b = bounds[2 * n] * fr, bounds[2 * n + 1] * fr
+        seg = audio[max(0, a - int(.03 * SR)):b + int(.05 * SR)]
+        dur = len(seg) / SR
+        offs = [m.start() for m in re.finditer(r"\S+", x)]
+        out.append((seg, [0.03 + (dur - 0.08) * o / max(1, len(x)) for o in offs]))
+    return out
 
 
 def spoken_words(text, offset, st):
@@ -112,7 +192,37 @@ for i, ln in enumerate(lines):
 
 t = LEAD
 voices, tl_lines, scenes = [], [], []
+GLINES = None
+if PROVIDER == "gemini":
+    try:
+        GLINES = gemini_lines(lines)
+    except Exception as e:  # quota gratuit atteint, panne… : secours ElevenLabs si une clé existe
+        if not KEY:
+            raise
+        print(f"Gemini indisponible ({e}), secours ElevenLabs")
 for bi, b in enumerate(blocks):
+    if GLINES is not None:  # Gemini : phrases déjà découpées, on les enchaîne avec une courte respiration
+        if bi:
+            t += GAP_OUT + PAD.get(blocks[bi - 1]["scene"], 0)
+        scenes.append({"id": b["scene"], "start": 0 if not scenes else t - 0.1})
+        for n, i in enumerate(b["idx"]):
+            seg, words = GLINES[i]
+            if n:
+                t += 0.15
+            voices.append((t, seg))
+            ls, le = t, t + len(seg) / SR
+            groups = chunks(lines[i]["show"])
+            n_show, k, cks = sum(len(g) for g in groups), 0, []
+            for j, g in enumerate(groups):
+                si = min(len(words) - 1, round(k * len(words) / n_show))
+                cks.append({"start": round(ls if j == 0 else t + words[si] - 0.04, 3), "words": g})
+                k += len(g)
+            for x, y in zip(cks, cks[1:]):
+                x["end"] = y["start"]
+            cks[-1]["end"] = round(le, 3)
+            tl_lines.append({"scene": b["scene"], "start": round(ls, 3), "end": round(le, 3), "chunks": cks})
+            t = le
+        continue
     texts = [lines[i]["say"] for i in b["idx"]]
     full = " ".join(texts)
     audio, chars, st, en = eleven(full)
