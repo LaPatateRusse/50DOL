@@ -1,0 +1,201 @@
+{
+  "title": "Le Carnet des excuses",
+  "note": "Histoire complète en 1 partie, style cinéma (docs/BRIEF-STYLE-CINEMA.md). Règle : chaque excuse sincère rajeunit d'un an celui qui la reçoit… et vieillit d'un an celui qui la donne.",
+  "voice": {
+    "model": "eleven_v3",
+    "voice_id": "pNInz6obpgDQGcFmaJgB",
+    "stability": 0.5,
+    "tempo": 1.0,
+    "gemini_voice": "Orus",
+    "gemini_style": "Lis ce texte en français, comme un conteur de mini-film d'animation sur TikTok : voix masculine grave et posée, phrases courtes, rythme vif mais avec de vraies pauses dramatiques sur les points de suspension. Ton léger et drôle au début, puis émouvant à la fin. Les répliques entre guillemets « » sont jouées : la vieille dame d'une voix douce et mystérieuse, le héros d'une voix sincère, le grand-père d'une voix fatiguée puis joyeuse. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+  },
+  "pad_after": {
+    "arret": 0.3,
+    "maman": 0.3,
+    "lycee": 0.3,
+    "prix": 0.4,
+    "papy": 0.3,
+    "fin": 3.4
+  },
+  "lines": [
+    {
+      "scene": "arret",
+      "say": "Jour un. Tu claques la porte au nez de ta mère. Sans un mot.",
+      "show": "Jour un. Tu claques la porte au nez de ta mère. Sans un mot."
+    },
+    {
+      "scene": "arret",
+      "say": "À l'arrêt de bus, une vieille dame te tend un petit carnet rouge.",
+      "show": "À l'arrêt de bus, une vieille dame te tend un petit carnet rouge."
+    },
+    {
+      "scene": "arret",
+      "say": "Sur la première page : « Chaque excuse sincère rajeunit d'un an celui qui la reçoit. »",
+      "show": "Sur la première page : « Chaque excuse sincère rajeunit d'un an celui qui la reçoit. »"
+    },
+    {
+      "scene": "maman",
+      "say": "Le soir, tu essaies. « Maman… pardon pour ce matin. »",
+      "show": "Le soir, tu essaies. « Maman… pardon pour ce matin. »"
+    },
+    {
+      "scene": "maman",
+      "say": "Elle sourit. Et sa mèche grise… disparaît. Elle a un an de moins.",
+      "show": "Elle sourit. Et sa mèche grise… disparaît. Elle a un an de moins."
+    },
+    {
+      "scene": "lycee",
+      "say": "Jour deux. Tu t'excuses auprès de tout le monde. Le prof. Ton pote. Même la dame de la cantine.",
+      "show": "Jour deux. Tu t'excuses auprès de tout le monde. Le prof. Ton pote. Même la dame de la cantine."
+    },
+    {
+      "scene": "lycee",
+      "say": "Le prof retrouve ses cheveux. Ton pote n'a plus de boutons. Tout le monde t'adore.",
+      "show": "Le prof retrouve ses cheveux. Ton pote n'a plus de boutons. Tout le monde t'adore."
+    },
+    {
+      "scene": "prix",
+      "say": "Le soir, dans le miroir… une ride. Puis deux.",
+      "show": "Le soir, dans le miroir… une ride. Puis deux."
+    },
+    {
+      "scene": "prix",
+      "say": "Au dos du carnet, en tout petit : « … et chaque excuse vieillit d'un an celui qui la donne. »",
+      "show": "Au dos du carnet, en tout petit : « … et chaque excuse vieillit d'un an celui qui la donne. »"
+    },
+    {
+      "scene": "prix",
+      "say": "Tu as seize ans. Ton visage en a vingt-trois.",
+      "show": "Tu as seize ans. Ton visage en a vingt-trois."
+    },
+    {
+      "scene": "papy",
+      "say": "Jour trois. Ton grand-père est à l'hôpital. Tu n'es jamais allé le voir. Tu avais toujours une excuse.",
+      "show": "Jour trois. Ton grand-père est à l'hôpital. Tu n'es jamais allé le voir. Tu avais toujours une excuse."
+    },
+    {
+      "scene": "papy",
+      "say": "Tu prends sa main. « Pardon, Papy. Pour toutes les fois où je ne suis pas venu. »",
+      "show": "Tu prends sa main. « Pardon, Papy. Pour toutes les fois où je ne suis pas venu. »"
+    },
+    {
+      "scene": "papy",
+      "say": "Une excuse. Deux. Dix. Il se redresse. Il rit. Toi… tu as quarante ans.",
+      "show": "Une excuse. Deux. Dix. Il se redresse. Il rit. Toi… tu as quarante ans."
+    },
+    {
+      "scene": "fin",
+      "say": "Dernière page du carnet : « Il te reste une seule personne à qui tu dois des excuses. »",
+      "show": "Dernière page du carnet : « Il te reste une seule personne à qui tu dois des excuses. »"
+    },
+    {
+      "scene": "fin",
+      "say": "Tu regardes le miroir. « Pardon… de toujours t'en vouloir. »",
+      "show": "Tu regardes le miroir. « Pardon… de toujours t'en vouloir. »"
+    },
+    {
+      "scene": "fin",
+      "say": "Et ton reflet… retrouve ses seize ans.",
+      "show": "Et ton reflet… retrouve ses seize ans."
+    },
+    {
+      "scene": "fin",
+      "say": "Et toi… à qui tu dois des excuses ?",
+      "show": "Et toi… à qui tu dois des excuses ?"
+    }
+  ],
+  "cues": {
+    "slam": [
+      0,
+      "start",
+      1.6
+    ],
+    "book": [
+      1,
+      "start",
+      1.6
+    ],
+    "rule": [
+      2,
+      "start",
+      0.4
+    ],
+    "m1": [
+      4,
+      "start",
+      1.0
+    ],
+    "roll1": [
+      6,
+      "start",
+      0.2
+    ],
+    "wrinkle": [
+      7,
+      "start",
+      1.2
+    ],
+    "back": [
+      8,
+      "start",
+      0.3
+    ],
+    "papy": [
+      12,
+      "start",
+      0.2
+    ],
+    "last": [
+      13,
+      "start",
+      0.6
+    ],
+    "young": [
+      15,
+      "start",
+      0.8
+    ],
+    "endcard": [
+      16,
+      "end",
+      0.7
+    ]
+  },
+  "sfx": [
+    {
+      "type": "knock",
+      "cue": "slam"
+    },
+    {
+      "type": "swish",
+      "cue": [
+        "book",
+        "rule",
+        "last"
+      ]
+    },
+    {
+      "type": "pop",
+      "cue": [
+        "m1",
+        "roll1",
+        "papy",
+        "young"
+      ]
+    },
+    {
+      "type": "hit",
+      "cue": [
+        "wrinkle",
+        "back",
+        "endcard"
+      ]
+    }
+  ],
+  "pulse": [
+    [
+      "prix",
+      "fin"
+    ]
+  ]
+}
