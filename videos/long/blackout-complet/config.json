@@ -1,0 +1,18 @@
+{
+ "title": "BLACKOUT GÉNÉRAL",
+ "subtitle": "5 jours sans électricité en plein hiver",
+ "voice": "Orus",
+ "style": "Lis ce texte en français, comme le narrateur d'une série de survie sur YouTube : voix masculine grave, posée, captivante. Marque une courte pause entre les phrases. Ne lis pas cette consigne.",
+ "intro_say": "Une nuit d'hiver, toute la ville s'éteint. Plus de lumière, plus de chauffage, plus de réseau. Pendant cinq jours, Max va devoir survivre seul dans son appartement… avec de vrais conseils, à appliquer si ça t'arrive un jour. Voici l'histoire complète.",
+ "outro_say": "Cinq jours. Cent cinquante litres d'eau. Et des voisins, au bon moment. Si tu devais retenir une seule chose : prépare ton kit d'urgence avant d'en avoir besoin. Abonne-toi pour la prochaine histoire de survie.",
+ "outro_text": "Abonne-toi pour la prochaine histoire de survie",
+ "parts": [
+  {"dir": "blackout", "label": "JOUR 1", "sub": "La panne", "cut_end": 2.8},
+  {"dir": "blackout-jour2", "label": "JOUR 2", "sub": "On frappe à la porte", "cut_end": 2.8},
+  {"dir": "blackout-jour3", "label": "JOUR 3", "sub": "Le voisin du 5e", "cut_end": 2.8},
+  {"dir": "blackout-jour4", "label": "JOUR 4", "sub": "Les silhouettes", "cut_end": 4.6},
+  {"dir": "blackout-jour5", "label": "JOUR 5", "sub": "La lumière revient", "cut_end": 0}
+ ],
+ "description_head": "Une nuit d'hiver, toute la ville s'éteint. Pendant 5 jours, Max doit survivre au blackout : eau, chaleur, nourriture, voisins… avec de vrais conseils de survie à appliquer si ça t'arrive un jour.\nToi, tu aurais tenu combien de jours ? Dis-le en commentaire 👇",
+ "hashtags": "#survie #blackout #coupuredecourant #histoire #animation #kitdurgence"
+}

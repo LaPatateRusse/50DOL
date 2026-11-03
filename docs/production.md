@@ -68,3 +68,10 @@ Séries déjà commencées : elles finissent dans LEUR style (Blackout J5 = styl
 - Fin qui pousse à commenter (question à choix, « dis-le en commentaire ») et, pour les séries, « Abonne-toi pour la partie N+1 ».
 - Descriptions : une question + 5 à 8 hashtags ciblés (thème + #histoire/#horreur + #pourtoi #fyp), pas de liens.
 - Chaque jour, au premier passage horaire après 09:00 : relire `videos/stats/stats-tiktok.xlsx` ; la catégorie avec le meilleur « % regardé » et le plus de vues sur 2 jours reçoit plus de créneaux (remplacer une partie des « histoire » par cette catégorie) ; noter la décision dans `docs/REPRISE.md`.
+
+## Formats longs YouTube (demande de l'utilisateur, 03/11)
+
+- Outil : `python3 engine/long_format.py long/<nom>/config.json` (depuis `videos/`) → `long/<nom>/youtube-long.mp4` (1920×1080) + `description.txt` avec chapitres. Intro et fin INÉDITES (voix Gemini, durée vérifiée automatiquement), cartons de chapitre, vidéos verticales sur fond flou, vidéos style cinéma recadrées sur la bande 16:9. Couper les cartons de fin des parties (`cut_end`) sauf la dernière.
+- Un format long dès qu'une série est terminée (toutes ses parties sorties sur TikTok), et une compilation thématique (4 histoires complètes du même genre : super-pouvoirs, horreur, science) dès qu'il y en a 4 nouvelles.
+- Publication : entrée `"format": "long"` dans `videos/youtube.json` ; `create_post` YouTube avec la vidéo `…/videos/<fichier>?v=1`, le titre SANS `#Shorts` (≤ 100 caractères), texte = `description.txt`, `metadata.youtube` comme pour les Shorts. Au plus 1 format long par jour, à 18:30 (`heure_prevue`), en comptant dans la limite de 10 publications YouTube par jour.
+- Fichier < 100 Mo (sinon GitHub refuse) : vérifier avec `ls -la` avant commit.

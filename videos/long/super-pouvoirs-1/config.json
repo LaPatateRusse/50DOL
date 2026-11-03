@@ -1,0 +1,17 @@
+{
+ "title": "4 SUPER-POUVOIRS",
+ "subtitle": "…et le prix à payer pour chacun",
+ "voice": "Orus",
+ "style": "Lis ce texte en français, comme un narrateur de vidéo YouTube captivant : voix masculine grave, rythme vif, ton complice et mystérieux. Marque une courte pause entre les phrases. Ne lis pas cette consigne.",
+ "intro_say": "Arrêter le temps. Entendre les pensées. Avoir une chance infinie. Rajeunir les gens avec une simple excuse. Quatre pouvoirs dont tout le monde rêve… mais chacun a un prix. Lequel tu choisirais ? Regarde jusqu'au bout avant de répondre.",
+ "outro_say": "Alors, lequel tu aurais choisi ? Le bouton pause, les pensées, la chance… ou le carnet ? Dis-le en commentaire, et abonne-toi : un nouveau pouvoir arrive très bientôt.",
+ "outro_text": "Lequel tu choisis ? Dis-le en commentaire",
+ "parts": [
+  {"dir": "histoire-bouton-pause", "label": "POUVOIR N°1", "sub": "Arrêter le temps", "cut_end": 3.0},
+  {"dir": "histoire-pensees", "label": "POUVOIR N°2", "sub": "Entendre les pensées", "cut_end": 3.0},
+  {"dir": "histoire-chance-infinie", "label": "POUVOIR N°3", "sub": "La chance infinie", "cut_end": 3.0},
+  {"dir": "histoire-carnet-excuses", "label": "POUVOIR N°4", "sub": "Le carnet des excuses", "cut_end": 3.2, "cinema": true}
+ ],
+ "description_head": "Arrêter le temps, entendre les pensées, une chance infinie, rajeunir les gens avec une excuse… 4 super-pouvoirs, 4 histoires, et à chaque fois un prix à payer.\nLequel tu choisirais ? Dis-le en commentaire 👇",
+ "hashtags": "#superpouvoir #histoire #animation #etsi #twist"
+}
