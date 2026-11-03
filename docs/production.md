@@ -55,7 +55,9 @@ Séries déjà commencées : elles finissent dans LEUR style (Blackout J5 = styl
 ## YouTube Shorts (demande de l'utilisateur, 03/11) — chaîne « MalabarTv » `6ae9f1a3e29c69a1714b3729`
 
 - File d'attente : `videos/youtube.json` (toutes les vidéos dans l'ordre de fabrication ; `statut` : a_publier → programme). Chaque nouvelle vidéo fabriquée (étape 2 du stock) est ajoutée à la FIN de cette file.
-- À chaque passage horaire : `list_posts` sur la chaîne YouTube statut `scheduled` ; tant qu'il y a moins de 10 posts programmés sur CETTE chaîne (la limite Buffer est par chaîne), programmer la prochaine entrée `a_publier` au prochain créneau libre de la même grille de 11 horaires (sans autre post YouTube à ±20 min).
+- **YouTube autorise 10 publications par JOUR au maximum** (refus « Limit reached » au-delà) et Buffer 10 programmées à la fois par chaîne.
+- Rattrapage (demande de l'utilisateur, 03/11 : « poste toutes les anciennes vidéos à 10 min d'intervalle jusqu'à être en même temps que les posts TikTok ») : tant qu'il reste dans `videos/youtube.json` des vidéos `a_publier` DÉJÀ sorties sur TikTok, les programmer à 10 min d'intervalle (dès maintenant, ou à partir de 07:00 le lendemain si les 10 du jour sont pris), dans l'ordre de la file.
+- Une fois rattrapé : chaque vidéo part sur YouTube à la MÊME heure que sur TikTok (même `dueAt`), dans la limite de 10 par jour (au-delà, le lendemain à 10 min d'intervalle dès 07:00).
 - `create_post` : `channelId` YouTube, `schedulingType: automatic`, `customScheduled`, vidéo `…/videos/<dossier>/tiktok.mp4?v=yt`, texte = description n°1 en remplaçant `#apprendresurtiktok`, `#pourtoi` et `#fyp` par `#shorts`, et « demain » par « bientôt ». `metadata.youtube` = `{ title: "<titre> #Shorts" (≤ 100 caractères), categoryId: "24", privacy: "public", madeForKids: false, isAiGenerated: false, notifySubscribers: true }`.
 - Les vidéos de l'autre chat (`cinema-mensonge-*`) sont dans la file aussi (demande de l'utilisateur : republier toutes les anciennes vidéos).
 
