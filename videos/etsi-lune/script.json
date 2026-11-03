@@ -1,0 +1,132 @@
+{
+ "title": "Et si la Lune disparaissait cette nuit ?",
+ "note": "« Et si… ? » science, style cinéma. Sources : marées solaires ≈ 46 % des marées lunaires (≈ 1/3 de la marée totale actuelle) ; tortues marines guidées par l'horizon lumineux au-dessus de la mer ; stabilisation de l'obliquité par la Lune (Laskar et al., Nature 1993) ; éloignement de la Lune ≈ 3,8 cm/an (tirs laser Apollo).",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Orus",
+  "gemini_style": "Lis ce texte en français, comme un conteur de mini-film d'animation sur TikTok : voix masculine grave et posée, phrases courtes, rythme vif mais avec de vraies pauses dramatiques sur les points de suspension. Ton fasciné et mystérieux, un peu inquiétant, puis rassurant à la fin. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "plage": 0.3,
+  "nuit": 0.3,
+  "maree": 0.3,
+  "tortues": 0.3,
+  "axe": 0.3,
+  "fin": 3.4
+ },
+ "lines": [
+  {
+   "scene": "plage",
+   "say": "Cette nuit, tu es sur la plage. La pleine Lune éclaire tout. Et d'un coup… elle disparaît.",
+   "show": "Cette nuit, tu es sur la plage. La pleine Lune éclaire tout. Et d'un coup… elle disparaît."
+  },
+  {
+   "scene": "plage",
+   "say": "Pas d'explosion. Pas de bruit. Juste un trou noir dans le ciel.",
+   "show": "Pas d'explosion. Pas de bruit. Juste un trou noir dans le ciel."
+  },
+  {
+   "scene": "nuit",
+   "say": "Première minute : la nuit devient vraiment noire. Tu ne vois plus tes mains. Mais tu n'as jamais vu autant d'étoiles.",
+   "show": "Première minute : la nuit devient vraiment noire. Tu ne vois plus tes mains. Mais tu n'as jamais vu autant d'étoiles."
+  },
+  {
+   "scene": "maree",
+   "say": "Six heures plus tard, la marée monte… à peine. Sans la Lune, il ne reste que les marées du Soleil : environ trois fois plus petites.",
+   "show": "Six heures plus tard, la marée monte… à peine. Sans la Lune, il ne reste que les marées du Soleil : environ trois fois plus petites."
+  },
+  {
+   "scene": "tortues",
+   "say": "Sur la plage, des bébés tortues sortent du sable. D'habitude, elles suivent la lumière au-dessus de la mer. Cette nuit, elles partent… vers les lampadaires de la ville.",
+   "show": "Sur la plage, des bébés tortues sortent du sable. D'habitude, elles suivent la lumière au-dessus de la mer. Cette nuit, elles partent… vers les lampadaires de la ville."
+  },
+  {
+   "scene": "axe",
+   "say": "Et dans des millions d'années, le pire : la Lune stabilise l'inclinaison de la Terre. Sans elle, l'axe pourrait basculer de plusieurs dizaines de degrés. Des saisons folles.",
+   "show": "Et dans des millions d'années, le pire : la Lune stabilise l'inclinaison de la Terre. Sans elle, l'axe pourrait basculer de plusieurs dizaines de degrés. Des saisons folles."
+  },
+  {
+   "scene": "fin",
+   "say": "Rassure-toi : la Lune est toujours là. Mais chaque année, elle s'éloigne de nous… de trois virgule huit centimètres.",
+   "show": "Rassure-toi : la Lune est toujours là. Mais chaque année, elle s'éloigne de nous… de trois virgule huit centimètres."
+  },
+  {
+   "scene": "fin",
+   "say": "Quelle question pour le prochain « Et si » ? Dis-le en commentaire.",
+   "show": "Quelle question pour le prochain « Et si » ? Dis-le en commentaire."
+  }
+ ],
+ "cues": {
+  "gone": [
+   0,
+   "end",
+   -1.0
+  ],
+  "dark": [
+   2,
+   "start",
+   0.4
+  ],
+  "tide": [
+   3,
+   "start",
+   2.4
+  ],
+  "turtles": [
+   4,
+   "start",
+   1.0
+  ],
+  "axis": [
+   5,
+   "start",
+   3.0
+  ],
+  "far": [
+   6,
+   "end",
+   -2.4
+  ],
+  "endcard": [
+   7,
+   "end",
+   0.6
+  ]
+ },
+ "sfx": [
+  {
+   "type": "hit",
+   "cue": [
+    "gone",
+    "axis"
+   ]
+  },
+  {
+   "type": "swish",
+   "cue": [
+    "dark",
+    "tide"
+   ]
+  },
+  {
+   "type": "pop",
+   "cue": [
+    "turtles",
+    "far"
+   ]
+  },
+  {
+   "type": "hit",
+   "cue": "endcard"
+  }
+ ],
+ "pulse": [
+  [
+   "axe",
+   "fin"
+  ]
+ ]
+}
