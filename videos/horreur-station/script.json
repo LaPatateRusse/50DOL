@@ -7,16 +7,16 @@
   "stability": 0.5,
   "tempo": 1.0,
   "gemini_voice": "Charon",
-  "gemini_style": "Lis ce texte en français, comme un conteur de mini-film d'horreur sur TikTok : voix masculine grave, à voix normale et bien posée, tendue et inquiétante, phrases courtes, vraies pauses dramatiques sur les points de suspension. NE CHUCHOTE PAS. Le mot des parents entre guillemets est lu comme un avertissement sérieux. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+  "gemini_style": "Lis ce texte en français, comme un conteur d'histoires d'horreur sur TikTok : voix masculine grave, à voix normale et bien posée, intense et inquiétante, rythme vif et soutenu, sans traîner, pauses courtes. NE CHUCHOTE PAS. Les répliques entre guillemets « » sont dites d'une voix froide et menaçante, mais à voix normale. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
  },
  "pad_after": {
-  "flash": 0.6,
+  "flash": 0.9,
   "route": 0.4,
   "boutique": 0.4,
-  "caisse": 0.5,
+  "caisse": 0.7,
   "recul": 0.4,
   "voiture": 0.5,
-  "fin": 3.4
+  "fin": 5.0
  },
  "lines": [
   {
