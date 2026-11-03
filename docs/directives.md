@@ -1,6 +1,15 @@
-# Directives de l'agent stratège (lues EN PREMIER par l'usine avant chaque fabrication)
+# Directives de production (lues EN PREMIER par l'Usine et le Réalisateur avant chaque fabrication)
 
-Mise à jour : 03/11 soir. Source : `docs/veille/2026-11-03/rapport.md`.
+Mise à jour : 03/11 20:55 par le Superviseur. Source : `docs/analyse/2026-11-03-2050/rapport.md` (Analyste).
+
+## Décisions du 03/11 soir (prioritaires sur le reste)
+1. **SURVIE = format n° 1** (YouTube : Blackout J1 à J3 = 847, 786 et 680 vues, contre moins de 50 pour le reste). Nouvelle série de 5 épisodes au créneau de 12:10 à partir du 05/11 (Usine).
+2. **Test « Protocole de survie »** au créneau de 19:15 (à la place de l'horreur complète) du 05 au 07/11 : « Si un jour… » + 4 à 5 règles numérotées (vrais conseils vérifiés), la dernière retourne tout ; 61 à 75 s. Référence de format seulement : @secretzonetiktok.
+3. **Légendes de la survie** : appel au partage (« Enregistre-la, tu en auras besoin un jour 📌 » / « Envoie-la à celui qui ne survivrait pas 2 jours »).
+4. **Shorts YouTube** : au moins 60 min d'écart entre deux Shorts ; la journée YouTube va de 09:00 à 09:00 (heure de Paris) ; 10 envois au maximum, format long compris.
+5. **Formats longs** : « 4 super-pouvoirs » le 04/11 à 09:05 ; Blackout complet le 05/11 à 18:30 ; « Ne réponds pas + L'ascenseur du 13e » le 06/11 à 18:30 (Usine fabrique, session YouTube envoie via Upload-Post).
+6. **Créneau de 17:30 à partir du 05/11 = Réalisateur** (série « Le secret de mon frère.. », 4 parties). L'Usine garde tous les autres créneaux.
+7. Science et histoires : on ne change rien, réévaluation le 05/11.
 
 ## Nouveau format prioritaire : « Le secret de… » (mini-drame de famille)
 - Inspiré du FORMAT qui explose en France (mini-drames de famille animés à titre-mystère), avec NOS personnages et des histoires 100 % originales (pas de fruits, pas de reprise d'intrigue).
