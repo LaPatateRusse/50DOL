@@ -1,0 +1,154 @@
+{
+ "title": "Le Baby-phone",
+ "note": "Horreur complète en 1 partie, style cinéma. Créature originale : les Respirants (formes pâles et plates, seulement des yeux, qui respirent).",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Charon",
+  "gemini_style": "Lis ce texte en français, comme un conteur de mini-film d'horreur sur TikTok : voix masculine grave, à voix normale et bien posée, tendue et inquiétante, phrases courtes, vraies pauses dramatiques sur les points de suspension. NE CHUCHOTE PAS. Le mot des parents entre guillemets est lu comme un avertissement sérieux. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "salon": 0.3,
+  "escalier": 0.2,
+  "chambre": 0.3,
+  "retour": 0.3,
+  "ecran": 0.3,
+  "fin": 3.4
+ },
+ "lines": [
+  {
+   "scene": "salon",
+   "say": "Ce soir, tu gardes ta petite sœur. Elle dort à l'étage. Sur le baby-phone : une respiration. La sienne.",
+   "show": "Ce soir, tu gardes ta petite sœur. Elle dort à l'étage. Sur le baby-phone : une respiration. La sienne."
+  },
+  {
+   "scene": "salon",
+   "say": "Sur le frigo, un mot de tes parents : « Si le baby-phone compte plus d'une respiration… ne monte pas. »",
+   "show": "Sur le frigo, un mot de tes parents : « Si le baby-phone compte plus d'une respiration… ne monte pas. »"
+  },
+  {
+   "scene": "salon",
+   "say": "Vingt-trois heures. Le baby-phone grésille. Deux respirations.",
+   "show": "Vingt-trois heures. Le baby-phone grésille. Deux respirations."
+  },
+  {
+   "scene": "escalier",
+   "say": "Tu montes quand même. Doucement. La porte de sa chambre grince.",
+   "show": "Tu montes quand même. Doucement. La porte de sa chambre grince."
+  },
+  {
+   "scene": "chambre",
+   "say": "Ta sœur dort. Seule. Il n'y a personne. Rien sous le lit. Rien dans le placard.",
+   "show": "Ta sœur dort. Seule. Il n'y a personne. Rien sous le lit. Rien dans le placard."
+  },
+  {
+   "scene": "retour",
+   "say": "Tu redescends. Minuit. Trois respirations.",
+   "show": "Tu redescends. Minuit. Trois respirations."
+  },
+  {
+   "scene": "ecran",
+   "say": "Tu regardes l'écran de plus près. En tout petit, il est écrit : « Émetteur : salon. »",
+   "show": "Tu regardes l'écran de plus près. En tout petit, il est écrit : « Émetteur : salon. »"
+  },
+  {
+   "scene": "ecran",
+   "say": "Le baby-phone ne l'a jamais écoutée, elle. Il écoute la pièce où tu es.",
+   "show": "Le baby-phone ne l'a jamais écoutée, elle. Il écoute la pièce où tu es."
+  },
+  {
+   "scene": "fin",
+   "say": "Quatre respirations. La tienne… et trois autres, juste derrière le canapé.",
+   "show": "Quatre respirations. La tienne… et trois autres, juste derrière le canapé."
+  },
+  {
+   "scene": "fin",
+   "say": "Toi, tu te serais retourné ?",
+   "show": "Toi, tu te serais retourné ?"
+  }
+ ],
+ "cues": {
+  "b1": [
+   0,
+   "end",
+   -1.2
+  ],
+  "note": [
+   1,
+   "start",
+   0.6
+  ],
+  "b2": [
+   2,
+   "end",
+   -1.0
+  ],
+  "creak": [
+   3,
+   "end",
+   -1.2
+  ],
+  "b3": [
+   5,
+   "end",
+   -1.0
+  ],
+  "emit": [
+   6,
+   "end",
+   -1.6
+  ],
+  "b4": [
+   8,
+   "start",
+   0.2
+  ],
+  "eyes": [
+   8,
+   "end",
+   -1.6
+  ],
+  "endcard": [
+   9,
+   "end",
+   0.6
+  ]
+ },
+ "sfx": [
+  {
+   "type": "buzz",
+   "cue": [
+    "b2",
+    "b3",
+    "b4"
+   ]
+  },
+  {
+   "type": "pop",
+   "cue": [
+    "b1",
+    "note"
+   ]
+  },
+  {
+   "type": "knock",
+   "cue": "creak"
+  },
+  {
+   "type": "hit",
+   "cue": [
+    "emit",
+    "eyes",
+    "endcard"
+   ]
+  }
+ ],
+ "pulse": [
+  [
+   "retour",
+   "fin"
+  ]
+ ]
+}

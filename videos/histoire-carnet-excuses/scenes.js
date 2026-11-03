@@ -212,8 +212,8 @@ SC.lycee = (c, lt, gt) => {
     } else {
       p.save(); cam2(p, 960 + dx, 560 + dy, push(st, 1.2, 1.3, 3)); hallDay(p, gt);
       [[500, POTE, POTE2, capHair], [760, PROF, PROF2, profHair(true)], [1240, '#E05B8B', '#B84670', null], [1480, '#5BBF7A', '#479A62', null]].forEach(([x, col, col2, hair], i) =>
-        rig(p, { x, y: 835, s: .58, f: x < 960 ? 1 : -1, t: gt, col, col2, hair, e: 'happy', mouth: 'smile', armF: [2.6 + Math.sin(gt * 6 + i) * .3, .3], seed: i + 7 }));
-      rig(p, { x: 1000, y: 835, s: .62, f: 1, t: gt, e: 'happy', mouth: 'smile', armF: [2.8, .2], armB: [2.8, .2], light: 1 });
+        rig(p, { x, y: 835, s: .58, f: x < 960 ? 1 : -1, t: gt, col, col2, hair, e: 'happy', mouth: 'smile', armF: [2.7 + Math.sin(gt * 6 + i) * .25, 0], seed: i + 7 }));
+      rig(p, { x: 1000, y: 835, s: .62, f: 1, t: gt, e: 'happy', mouth: 'smile', armF: [2.9, 0], armB: [2.9, 0], light: 1 });
       p.restore();
     }
   });
