@@ -6,7 +6,7 @@ Tâche programmée « Agent stratège » : 2 fois par jour (06:40 et 18:40, Euro
 
 ## À chaque passage
 1. **Veille TikTok / YouTube** (outils Firecrawl, budget max ~200 crédits par passage) :
-   - `firecrawl_scrape` alexandria `oriane / tiktok/posts-search` (projection `default`, tri `viewsCount:desc`, limit 10) sur 3 à 4 requêtes de notre niche : `#histoire`, `#horreur`, `#storytime`, `#animation`, `#creepypasta`, `#survie`, `#superpouvoir`, `#etsi`… (varier). Retenir les vidéos à fort ratio vues/abonnés (`viewsRatePerFollowers`) et fort engagement : ce sont les formats qui percent.
+   - `firecrawl_scrape` alexandria `oriane / tiktok/posts-search` (projection `default`, tri `viewsCount:desc`, limit 10) sur 3 à 4 requêtes de notre niche : `#histoire`, `#horreur`, `#storytime`, `#animation`, `#creepypasta`, `#survie`, `#superpouvoir`, `#etsi`… (varier ; l’index couvre mal « #histoirehorreur » : préférer `#creepypasta`, `#mystere`, `#famille`, `#secret`, `#enigme`). Retenir les vidéos à fort ratio vues/abonnés (`viewsRatePerFollowers`) et fort engagement : ce sont les formats qui percent.
    - Tendances France : `https://ads.tiktok.com/creative/creativeCenter/trends/hashtag?region=FR&period=7` (scrape markdown) et `firecrawl_search` (web, dernière semaine) sur les formats viraux de YouTube Shorts et de TikTok en français.
    - Ne jamais copier une vidéo, une intrigue ou des personnages : on s'inspire d'un FORMAT (accroche, durée, structure, type de titre, hashtags), on écrit une histoire originale.
 2. **Nos statistiques** : `list_posts` TikTok + YouTube avec `includeMetrics: true` → `videos/.build/posts.json` → `python3 engine/stats_excel.py` → lire « % regardé », vues, abonnés gagnés. Repérer ce qui marche chez nous et ce qui ne marche pas.
