@@ -38,6 +38,13 @@
      "buffer_post": "6ae88f6f386d2d7c1340f337",
      "fin": "Jour 20 : plus d'un million ; la banque bloque le compte (vérification de l'origine des fonds, TRACFIN). Demain le compte doit encore doubler (2 097 152 €).",
      "choix": "Tu dis la vérité à la banque ? OUI / NON"
+    },
+    {
+     "partie": 2,
+     "dossier": "videos/etsi-compte-double-2",
+     "publication": "2026-11-04 17:30 (visé)",
+     "fin": "FIN : il dit la vérité (choix prudent, pas de vote écrit) ; 0 × 2 = 0, il donne tout ; le lendemain « Tes abonnés ont doublé ».",
+     "choix": "Tu aurais tout donné ? OUI / NON"
     }
    ]
   }

@@ -1,0 +1,138 @@
+{
+ "title": "Et si ton compte doublait chaque jour ? — Partie 2 (FIN)",
+ "note": "Fin de la mini-série. Pas de vote écrit par l'utilisateur : choix le plus prudent (la vérité). Maths : jour n = 2^n € (P1) ; 2^21 = 2 097 152 ; 2^30 = 1 073 741 824 ; 2^42 ≈ 4 398 milliards > PIB de la France (≈ 2 900 milliards € en 2024). 0 × 2 = 0.",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Orus",
+  "gemini_style": "Lis ce texte en français, comme un narrateur TikTok drôle et captivant : voix masculine grave, rythme vif, ton amusé sur les blagues, sérieux et tendu au milieu, puis soulagé et complice à la fin. Les passages entre guillemets « » sont dits par un banquier : d'abord calme, puis paniqué. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "flash": 0.4,
+  "verite": 0.3,
+  "ecran": 0.3,
+  "calcul": 0.3,
+  "panique": 0.3,
+  "zero": 0.3,
+  "don": 0.3,
+  "matin": 0.3,
+  "fin": 3.2
+ },
+ "cues": {
+  "double": [
+   2,
+   "start",
+   3.28
+  ],
+  "j30": [
+   3,
+   "start",
+   2.0
+  ],
+  "j42": [
+   3,
+   "start",
+   4.4
+  ],
+  "zero": [
+   5,
+   "start",
+   3.96
+  ],
+  "solde": [
+   7,
+   "start",
+   4.32
+  ],
+  "notif": [
+   8,
+   "start",
+   1.36
+  ],
+  "fin": [
+   9,
+   "end",
+   0.6
+  ]
+ },
+ "sfx": [
+  {
+   "type": "pop",
+   "cue": [
+    "double",
+    "j30",
+    "j42",
+    "zero",
+    "solde"
+   ]
+  },
+  {
+   "type": "buzz",
+   "cue": "notif"
+  },
+  {
+   "type": "hit",
+   "cue": "fin"
+  }
+ ],
+ "pulse": [
+  [
+   "calcul",
+   "don"
+  ]
+ ],
+ "lines": [
+  {
+   "scene": "flash",
+   "say": "Deux millions d'euros. Et tu dois tout donner.",
+   "show": "Deux millions d'euros. Et tu dois tout donner."
+  },
+  {
+   "scene": "verite",
+   "say": "Partie 2. Tu as choisi la vérité. Au banquier, tu dis : « Il double tout seul, chaque matin. »",
+   "show": "Partie 2. Tu as choisi la vérité. Au banquier, tu dis : « Il double tout seul, chaque matin. »"
+  },
+  {
+   "scene": "ecran",
+   "say": "Il rigole. Puis il regarde l'écran. Deux millions quatre-vingt-dix-sept mille euros. Le chiffre vient de doubler, sous ses yeux.",
+   "show": "Il rigole. Puis il regarde l'écran. Deux millions quatre-vingt-dix-sept mille euros. Le chiffre vient de doubler, sous ses yeux."
+  },
+  {
+   "scene": "calcul",
+   "say": "Il sort sa calculatrice. Jour trente : plus d'un milliard. Jour quarante-deux : plus que tout ce que la France produit en un an.",
+   "show": "Il sort sa calculatrice. Jour trente : plus d'un milliard. Jour quarante-deux : plus que tout ce que la France produit en un an."
+  },
+  {
+   "scene": "panique",
+   "say": "Il devient tout blanc : « Si ça continue, l'argent ne vaudra plus rien. » Trop d'argent d'un coup, et les prix s'envolent.",
+   "show": "Il devient tout blanc : « Si ça continue, l'argent ne vaudra plus rien. » Trop d'argent d'un coup, et les prix s'envolent."
+  },
+  {
+   "scene": "zero",
+   "say": "Il n'y a qu'un moyen d'arrêter ça. Zéro fois deux… ça fait toujours zéro.",
+   "show": "Il n'y a qu'un moyen d'arrêter ça. Zéro fois deux… ça fait toujours zéro."
+  },
+  {
+   "scene": "don",
+   "say": "Alors tu vides tout. L'hôpital de ta ville, ta mère, ton prof de maths, le kebab. Tout le monde reçoit sa part.",
+   "show": "Alors tu vides tout. L'hôpital de ta ville, ta mère, ton prof de maths, le kebab. Tout le monde reçoit sa part."
+  },
+  {
+   "scene": "matin",
+   "say": "Le lendemain matin, tu ouvres ton appli, le cœur battant. Solde : zéro euro. C'est fini.",
+   "show": "Le lendemain matin, tu ouvres ton appli, le cœur battant. Solde : zéro euro. C'est fini."
+  },
+  {
+   "scene": "matin",
+   "say": "Puis une notification arrive : « Tes abonnés ont doublé. »",
+   "show": "Puis une notification arrive : « Tes abonnés ont doublé. »"
+  },
+  {
+   "scene": "fin",
+   "say": "Abonne-toi… on vérifie demain si ça marche. Et toi, tu aurais tout donné ? Commente oui ou non.",
+   "show": "Abonne-toi… on vérifie demain si ça marche. Et toi, tu aurais tout donné ? Commente oui ou non."
+  }
+ ]
+}
