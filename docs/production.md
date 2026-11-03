@@ -45,3 +45,8 @@ Séries déjà commencées : elles finissent dans LEUR style (Blackout J5 = styl
   2. **Fabriquer** : si `pret` contient moins de 12 vidéos, fabriquer UNE nouvelle vidéo (en suivant les étapes 3 à 8 ci-dessus, contrôle qualité en 3 passes, mais sans programmer), du type le moins représenté dans le stock par rapport au planning (11 par jour : 1 science, 1 survie, 4 histoires, 2 horreurs complètes, 1 partie de série, 2 parties d'horreur-série). Commit + push, vérifier l'URL raw, l'ajouter à `pret` avec : dossier, type, titre, description n°1, partie (pour les séries).
   3. Refaire l'étape 1 (une place a pu se libérer), commit + push de `videos/stock.json`, résumer en 1 ligne.
 - Séries fabriquées à l'avance : sans vote du public, le héros fait le choix le plus prudent (ne jamais inventer de vote). Si l'utilisateur écrit un vote dans la conversation, l'appliquer aux parties PAS encore fabriquées.
+
+## Tableau Excel des statistiques (demande de l'utilisateur, 03/11)
+
+`videos/stats/stats-tiktok.xlsx` (onglets « Vidéos » et « Résumé ») : date de fabrication, date de programmation et de publication, durée, vues, likes, commentaires, partages, personnes touchées, temps moyen regardé, % regardé, taux d'engagement.
+À chaque passage de la tâche horaire, après le remplissage de Buffer : `list_posts` (chaîne TikTok, `includeMetrics: true`, `first: 100`) → enregistrer la réponse dans `videos/.build/posts.json` → `cd videos && python3 engine/stats_excel.py .build/posts.json stats/stats-tiktok.xlsx` → recalcul (`python3 <skill xlsx>/scripts/recalc.py videos/stats/stats-tiktok.xlsx`, à défaut le fichier reste valable, Excel recalcule à l'ouverture) → commit + push.

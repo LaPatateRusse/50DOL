@@ -11,13 +11,15 @@
       "jour": 1,
       "dossier": "videos/blackout",
       "publie": "2026-10-30",
-      "fin": "Max allume une bougie : sa fenêtre est la seule éclairée de la ville."
+      "fin": "Max allume une bougie : sa fenêtre est la seule éclairée de la ville.",
+      "buffer_post": "6ae85bb5750b62125df27ae9"
     },
     {
       "jour": 2,
       "dossier": "videos/blackout-jour2",
       "publie": "2026-10-31",
-      "fin": "Message du voisin du 5e : « Je sais que tu as de l'eau. Ouvre-moi. »"
+      "fin": "Message du voisin du 5e : « Je sais que tu as de l'eau. Ouvre-moi. »",
+      "buffer_post": "6ae85bb5750b62125df27ae7"
     },
     {
       "jour": 3,
