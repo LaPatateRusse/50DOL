@@ -67,6 +67,15 @@
       "scheduled": "2026-11-03T18:00+01:00",
       "buffer": "6ae9df6cc6fbbde824889ad1",
       "voice": "Gemini Orus"
+    },
+    {
+      "dir": "histoire-carnet-excuses",
+      "title": "Le Carnet des excuses",
+      "regle": "chaque excuse sincère rajeunit d'un an celui qui la reçoit et vieillit celui qui la donne",
+      "style": "cinéma",
+      "scheduled": "2026-11-03T16:30+01:00",
+      "buffer": "6ae9e90087e4378742d956d1",
+      "voice": "Gemini Orus"
     }
   ]
 }
