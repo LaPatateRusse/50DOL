@@ -42,3 +42,10 @@ Si une étape échoue (clé ElevenLabs absente, Buffer en erreur…), rien n'est
 - Style et idées : `docs/style-horreur.md` ; accessoires : `videos/engine/horreur.js` ; état : `videos/horreur.json`.
 - Chaque histoire = 3 ou 4 parties max (dossiers `videos/<histoire>-N/`), la dernière conclut avec un twist, puis nouvelle histoire originale (nouveau lieu, nouvelle règle, nouvelle créature).
 - Même procédure que Blackout (voix, rendu, contrôle, push, Buffer `customScheduled`, description n°1, `isAiGenerated`), puis mise à jour de `videos/horreur.json` et `docs/REPRISE.md`.
+
+## Style « cinéma » obligatoire (demande de l'utilisateur, 03/11)
+
+Toutes les NOUVELLES vidéos (tous créneaux) se font en style cinéma : `docs/BRIEF-STYLE-CINEMA.md` + `docs/style-cinema.md`, moteur `videos/engine/cinema.js` + `cinema-rig.js`. Seules les séries déjà commencées gardent leur ancien style jusqu'à leur fin (Blackout Jour 5, L'ascenseur du 13e P2-P3).
+- Horreur en style cinéma : voix Gemini « Charon » à voix normale (jamais chuchotée), décors de nuit, créature originale.
+- Les éléments de `mensonge-kit.js` (autre chat) se copient dans un nouveau kit propre à l'histoire (`videos/engine/<histoire>-kit.js`) ; ne pas modifier les fichiers de l'autre chat.
+- Voix : `build_audio.py` passe automatiquement d'un modèle Gemini TTS à l'autre quand un quota est épuisé (2.5-flash → 3.8-flash → 3.1-flash → 3.8-flash-lite), puis ElevenLabs.
