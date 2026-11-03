@@ -196,10 +196,11 @@
    "statut": "programme",
    "heure": "2026-11-04T09:05+01:00",
    "upload_post": {
-    "job_id": "15bb846684774eaf9749eb1bc0b114f7",
-    "request_id": "4f969bfa756c4e3c81d2d11696e99a2d"
+    "job_id": "d23196a030ae4818aacd2b6cd0bc70c4",
+    "request_id": "354d8214d2ec4d709b32ae30b02fd2ee"
    },
-   "note": "03/11 20:42 : publication immédiate refusée par YouTube (limite d'envois quotidienne, réinitialisée vers 09:00 à Paris) → reprogrammée au 04/11 09:05 (décision du superviseur). Les Shorts Buffer doivent passer après."
+   "note": "03/11 20:42 : publication immédiate refusée par YouTube (limite d'envois quotidienne, réinitialisée vers 09:00 à Paris) → reprogrammée au 04/11 09:05 (décision du superviseur). Les Shorts Buffer doivent passer après.",
+   "contenu_ia_declare": true
   },
   {
    "dossier": "long/blackout-complet",
@@ -210,9 +211,10 @@
    "statut": "programme",
    "heure": "2026-11-05T18:30+01:00",
    "upload_post": {
-    "job_id": "2d62b1befe364e03b7a7e05a1a04b496",
-    "request_id": "5f77c26f5ea14e4eb8f56c636db4193f"
-   }
+    "job_id": "7a2c268740fb412f881b1cd457b59cfc",
+    "request_id": "31fd5a7fcfd44f0196832e625c4b7353"
+   },
+   "contenu_ia_declare": true
   },
   {
    "dossier": "secret-gant",
