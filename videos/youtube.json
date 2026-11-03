@@ -196,9 +196,10 @@
    "statut": "programme",
    "heure": "2026-11-04T18:30+01:00",
    "upload_post": {
-    "job_id": "80c9bd650ee74909b52996537d9befec",
-    "request_id": "28b6c20921814c0c922ba40d40616878"
-   }
+    "job_id": "accd21f2a5a14295984ff3fa480aa4af",
+    "request_id": "4c108ff8314a40b08c9d9341d174dc6e"
+   },
+   "note": "03/11 20:42 : publication immédiate refusée par YouTube (limite d'envois quotidienne de la chaîne, réinitialisée vers 09:00 heure de Paris) → reprogrammée au 04/11 18:30."
   },
   {
    "dossier": "long/blackout-complet",
