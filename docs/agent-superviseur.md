@@ -30,10 +30,10 @@ Organisation `6ae857cdecb73df5e4545083`.
   - Le nombre de posts programmés doit rester proche de 10 (c'est la limite gratuite).
   - Pas deux posts à moins de 20 minutes l'un de l'autre, et rien entre 17:40 et 18:20 du 04 au 07/11 (créneau réservé au chat « mensonge »).
   - Les parties d'une série doivent sortir dans l'ordre (Partie 1 avant 2, avant 3…).
-  - Chaque post a `isAiGenerated: false` (demande explicite de l'utilisateur).
+  - Chaque post a `isAiGenerated: true` (décision de l'utilisateur du 03/11 soir).
 - **YouTube** (`6ae9f1a3e29c69a1714b3729`) :
   - au plus 10 programmés à la fois et 10 publiés par jour ;
-  - titre `… #Shorts`, catégorie 24, `madeForKids: false`, `isAiGenerated: false` ;
+  - titre `… #Shorts`, catégorie 24, `madeForKids: false`, `isAiGenerated: true` ;
   - pas de `#pourtoi` ni de `#fyp` (remplacés par `#shorts`) ;
   - un Short ne sort pas avant sa date de sortie sur TikTok ;
   - les **formats longs ne passent PAS par Buffer** (Buffer refuse toute vidéo de plus de 3 min ou horizontale) ; vérifier qu'on les a bien donnés à l'utilisateur pour un upload manuel, ou via Upload-Post si une clé `UPLOAD_POST_API_KEY` est configurée.
@@ -67,7 +67,7 @@ S'il y a un défaut : envoie à l'agent qui a fait la vidéo la correction préc
 - **Ne jamais écrire de clé API dans le dépôt ni dans un message.** Avant chaque commit : `grep -rl "sk_\|AQ\.Ab8" --exclude-dir=.git --exclude-dir=.build .` doit être vide. Les clés ne s'utilisent que comme variables d'environnement, au moment de la commande.
 - Ne jamais demander le mot de passe TikTok ni YouTube à l'utilisateur.
 - Ne jamais inventer de votes ni de commentaires (sans vote lu, le héros fait le choix prudent).
-- Ne jamais cocher « contenu généré par IA » (`isAiGenerated: false`).
+- Toujours cocher « contenu généré par IA » (`isAiGenerated: true`, décision de l'utilisateur du 03/11 soir).
 - Ne pas modifier toi-même les fichiers ni les publications Buffer d'un autre agent : tu lui **demandes** de le faire. Tu n'interviens directement que si c'est urgent (une vidéo cassée part dans moins d'une heure). Dans ce cas, tu passes le post en brouillon (`edit_post` avec `saveToDraft: true`), tu préviens l'agent et l'utilisateur, et tu ne supprimes rien.
 - Ne rien supprimer sur Buffer sans l'accord de l'utilisateur.
 - Ne pas changer les horaires de la grille sans l'accord de l'utilisateur.
