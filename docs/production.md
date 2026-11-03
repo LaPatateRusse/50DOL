@@ -71,6 +71,11 @@ Séries déjà commencées : elles finissent dans LEUR style (Blackout J5 = styl
 - Descriptions : une question + 5 à 8 hashtags ciblés (thème + #histoire/#horreur + #pourtoi #fyp), pas de liens.
 - Chaque jour, au premier passage horaire après 09:00 : relire `videos/stats/stats-tiktok.xlsx` ; la catégorie avec le meilleur « % regardé » et le plus de vues sur 2 jours reçoit plus de créneaux (remplacer une partie des « histoire » par cette catégorie) ; noter la décision dans `docs/REPRISE.md`.
 
+### Quota et espacement YouTube (consigne du Superviseur, 03/11)
+- La journée YouTube va de 09:00 à 09:00 (heure de Paris). On fait au maximum 10 envois par journée YouTube, format long compris (les formats longs passent par Upload-Post, gérés par la session YouTube).
+- Buffer refuse aussi plus de 10 posts YouTube programmés le même jour calendaire. Pour décaler un post, il faut d'abord libérer une place ce jour-là, et `edit_post` doit renvoyer le texte, les assets et `metadata.youtube` en entier.
+- Les Shorts sont espacés d'au moins 60 min (idéalement 70 à 80 min), et aucun ne part avant 09:00. Le rattrapage toutes les 10 min est terminé.
+
 ## Formats longs YouTube (demande de l'utilisateur, 03/11)
 
 - Outil : `python3 engine/long_format.py long/<nom>/config.json` (depuis `videos/`) → `long/<nom>/youtube-long.mp4` (1920×1080) + `description.txt` avec chapitres. Intro et fin INÉDITES (voix Gemini, durée vérifiée automatiquement), cartons de chapitre, vidéos verticales sur fond flou, vidéos style cinéma recadrées sur la bande 16:9. Couper les cartons de fin des parties (`cut_end`) sauf la dernière.
