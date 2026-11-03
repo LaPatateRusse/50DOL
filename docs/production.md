@@ -59,7 +59,7 @@ Séries déjà commencées : elles finissent dans LEUR style (Blackout J5 = styl
 - Rattrapage (demande de l'utilisateur, 03/11 : « poste toutes les anciennes vidéos à 10 min d'intervalle jusqu'à être en même temps que les posts TikTok ») : tant qu'il reste dans `videos/youtube.json` des vidéos `a_publier` DÉJÀ sorties sur TikTok, les programmer à 10 min d'intervalle (dès maintenant, ou à partir de 07:00 le lendemain si les 10 du jour sont pris), dans l'ordre de la file.
 - Une fois rattrapé : chaque vidéo part sur YouTube à la MÊME heure que sur TikTok (même `dueAt`), dans la limite de 10 par jour (au-delà, le lendemain à 10 min d'intervalle dès 07:00).
 - `create_post` : `channelId` YouTube, `schedulingType: automatic`, `customScheduled`, vidéo `…/videos/<dossier>/tiktok.mp4?v=yt`, texte = description n°1 en remplaçant `#apprendresurtiktok`, `#pourtoi` et `#fyp` par `#shorts`, et « demain » par « bientôt ». `metadata.youtube` = `{ title: "<titre> #Shorts" (≤ 100 caractères), categoryId: "24", privacy: "public", madeForKids: false, isAiGenerated: false, notifySubscribers: true }`.
-- Les vidéos de l'autre chat (`cinema-mensonge-*`) sont dans la file aussi (demande de l'utilisateur : republier toutes les anciennes vidéos).
+- Les vidéos de l'autre chat (`cinema-mensonge-*`) : parties 1 → 5 dans l'ordre et JAMAIS avant leur date TikTok (P2 04/11, P3 05/11, P4 06/11, P5 07/11, à 18:00 ; demande de l'autre chat). Elles sont dans la file aussi (demande de l'utilisateur : republier toutes les anciennes vidéos).
 
 ## Faire percer le compte (demande de l'utilisateur : « fais tout pour que le compte perce »)
 
