@@ -11,12 +11,12 @@
  },
  "pad_after": {
   "flash": 0.8,
-  "rentree": 0.8,
-  "aveu": 1.4,
-  "lettre": 1.3,
-  "promesse": 0.8,
-  "coach": 0.8,
-  "fin": 5.0
+  "rentree": 1.3,
+  "aveu": 1.9,
+  "lettre": 1.6,
+  "promesse": 1.2,
+  "coach": 1.2,
+  "fin": 5.2
  },
  "lines": [
   {

@@ -10,13 +10,13 @@
   "gemini_style": "Lis ce texte en français, comme un conteur de mini-film d'animation sur TikTok : voix masculine grave et posée, phrases courtes, rythme vif, avec de vraies pauses sur les points de suspension. Ton émouvant, intime, comme un secret qu'on raconte. Les répliques entre guillemets « » sont jouées : Léo, 19 ans, d'une voix jeune et fatiguée ; la mère d'une voix douce et forte ; le coach d'une voix sèche. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
  },
  "pad_after": {
-  "flash": 0.1,
-  "refus": 0.2,
-  "plan": 0.2,
-  "vente": 0.2,
-  "bocal": 0.3,
-  "samedi": 0.3,
-  "stade": 3.2
+  "flash": 0.6,
+  "refus": 0.6,
+  "plan": 0.5,
+  "vente": 0.6,
+  "bocal": 0.8,
+  "samedi": 0.6,
+  "stade": 4.6
  },
  "lines": [
   {
@@ -26,13 +26,13 @@
   },
   {
    "scene": "refus",
-   "say": "Tu dis tout à Léo. Il secoue la tête. « Samedi, je travaille. Le stade paie double. »",
-   "show": "Tu dis tout à Léo. Il secoue la tête. « Samedi, je travaille. Le stade paie double. »"
+   "say": "Tu dis tout à Léo. Il secoue la tête. « Samedi, je travaille. Le stade paie double. Je ne peux pas perdre ça. »",
+   "show": "Tu dis tout à Léo. Il secoue la tête. « Samedi, je travaille. Le stade paie double. Je ne peux pas perdre ça. »"
   },
   {
    "scene": "plan",
-   "say": "Double, c'est deux cent soixante euros. Alors tu fais un plan.",
-   "show": "Double, c'est deux cent soixante euros. Alors tu fais un plan."
+   "say": "Double, c'est deux cent soixante euros. Toi, tu as quinze ans et zéro euro. Alors tu fais un plan.",
+   "show": "Double, c'est deux cent soixante euros. Toi, tu as quinze ans et zéro euro. Alors tu fais un plan."
   },
   {
    "scene": "vente",
@@ -51,8 +51,8 @@
   },
   {
    "scene": "bocal",
-   "say": "Vendredi soir, tu poses un bocal sur le lit de Léo. Avec un mot : « Ta nuit de samedi. Va jouer. »",
-   "show": "Vendredi soir, tu poses un bocal sur le lit de Léo. Avec un mot : « Ta nuit de samedi. Va jouer. »"
+   "say": "Vendredi soir, tu poses un bocal plein sur le lit de Léo. Avec un mot : « Ta nuit de samedi. Deux cent soixante euros. Va jouer. »",
+   "show": "Vendredi soir, tu poses un bocal plein sur le lit de Léo. Avec un mot : « Ta nuit de samedi. Deux cent soixante euros. Va jouer. »"
   },
   {
    "scene": "bocal",
@@ -61,8 +61,8 @@
   },
   {
    "scene": "samedi",
-   "say": "Samedi, neuf heures. Son lit est vide. Son sac de foot… est toujours là.",
-   "show": "Samedi, neuf heures. Son lit est vide. Son sac de foot… est toujours là."
+   "say": "Samedi, neuf heures. Le lit de Léo est vide. Son sac de foot… est toujours là. Il est parti travailler.",
+   "show": "Samedi, neuf heures. Le lit de Léo est vide. Son sac de foot… est toujours là. Il est parti travailler."
   },
   {
    "scene": "stade",
