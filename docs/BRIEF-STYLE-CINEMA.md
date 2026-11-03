@@ -113,6 +113,6 @@ ffmpeg -f concat -safe 0 -i .build/<x>/segs.txt -i .build/<x>/audio.wav -c:v lib
 
 - Commit + push d'abord : la vidéo est envoyée via `https://raw.githubusercontent.com/LaPatateRusse/50DOL/claude/tech-services-dashboard-dj8dG/videos/<dossier>/tiktok.mp4?v=1`.
 - Connecteur Buffer : organisation `6ae857cdecb73df5e4545083`, chaîne TikTok `6ae85bb5e29c69a1713612e1`, fuseau Europe/Paris.
-- `create_post` : `schedulingType: automatic`, `mode: customScheduled` + `dueAt` (ou `shareNow`), description n° 1 de `descriptions.txt`, `metadata.tiktok.isAiGenerated: true`.
+- `create_post` : `schedulingType: automatic`, `mode: customScheduled` + `dueAt` (ou `shareNow`), description n° 1 de `descriptions.txt`, `metadata.tiktok.isAiGenerated: false` (demande de l'utilisateur, 03/11 : ne plus cocher la mention IA).
 - Créneaux déjà utilisés par d'autres séries : 09:05, 12:00, 18:00, 21:30. Éviter les doublons.
 - Noter chaque partie publiée dans un fichier d'état (ex. `videos/<histoire>.json`) et dans `docs/REPRISE.md`.
