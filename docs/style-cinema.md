@@ -17,6 +17,14 @@ une règle magique avec un compteur, et une voix off à la 2e personne. Kit : `v
 | Voix | Narrateur masculin posé, « tu », phrases très courtes, répliques des personnages jouées entre guillemets | Gemini « Orus » avec `gemini_style` du script pilote |
 | Fin | Coupure sèche sur un cliffhanger, la suite dans la partie suivante | `cinemaEnd()` : « À SUIVRE… / PARTIE N+1 » + question |
 
+## Animation (kit `engine/cinema-rig.js`) — à utiliser partout
+
+- **Un plan toutes les 1 à 3 s** : `shots(gt, [[début, 'nom'], …])` dans chaque scène. Alterner plan large, plan par-dessus l'épaule (personnage flou au premier plan avec `blurred()`), gros plan visage (`bust()`), gros plan objet (téléphone `phoneHeld()`, main `hand()`, pièce `coin()`).
+- **Personnages articulés** `rig()` : poses `stand` / `walk` / `run` / `sit` / `kneel`, bras animés `armF` / `armB` (avec `kf()` pour les images clés), inclinaison de tête `tilt`, objet en main `holdF`, coiffure ou chapeau `hair`.
+- **Visages vivants** (rig et bust) : clignements automatiques, bouche qui parle `talk: talking(gt, début, fin)` pendant les répliques, expressions `n / wide / happy / sad / worried / angry / side`, goutte de sueur, sourcils.
+- **Lumière quasi réaliste** : liseré de lumière chaude sur les bords des corps et froide sur les têtes, dégradé d'ombre, cônes de lumière, halo autour des zones claires et grain de film (`film()` = `stage()` + `post()`).
+- **Toujours du mouvement** : caméra à l'épaule `hand2()`, travelling `push()`, respiration, pluie, vapeur, objets qui bougent. Aucun plan figé.
+
 ## Recette d'une histoire
 
 1. **Accroche (0-10 s)** : situation banale et un peu triste, chiffre au compteur (« Sur ton compte : 3 euros »).
