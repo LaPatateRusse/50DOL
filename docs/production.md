@@ -23,6 +23,8 @@ Séries déjà commencées : elles finissent dans LEUR style (Blackout J5 = styl
 
 ## Étapes de chaque tâche
 
+0. Lire `docs/directives.md` (directives de l'agent stratège, `docs/agent-strategie.md`) et les appliquer en priorité sur le reste de ce document.
+
 1. `git pull --ff-only origin claude/tech-services-dashboard-dj8dG`.
 2. `list_posts` : si un post est déjà programmé à ±30 min du créneau aujourd'hui, ou s'il ne reste aucune place sous la limite Buffer de 10 posts programmés : ne rien faire.
 3. Écrire l'histoire. Toujours ORIGINALE (jamais une intrigue, une règle ou un pouvoir déjà traité : vérifier les fichiers d'état), règle magique chiffrée ou compteur, accroche immédiate, émotion vraie, twist final qui boucle avec le début. Votes du public : seulement ceux que l'utilisateur écrit dans cette conversation, jamais inventés.
