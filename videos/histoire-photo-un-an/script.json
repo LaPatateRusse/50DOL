@@ -1,0 +1,133 @@
+{
+ "title": "La photo d'un an",
+ "note": "Histoire originale complète en 1 partie (créneau 16:30), style cinéma.",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Orus",
+  "gemini_style": "Lis ce texte en français, comme un conteur de mini-film d'animation sur TikTok : voix masculine grave et posée, phrases courtes, rythme vif, avec de vraies pauses sur les points de suspension. Ton mystérieux au début, inquiet au milieu, puis très émouvant et lumineux à la fin. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "flash": 0.7,
+  "grenier": 0.5,
+  "salon": 0.6,
+  "nuit": 0.5,
+  "jardin": 0.5,
+  "fin": 3.4
+ },
+ "cues": {
+  "cat": [
+   2,
+   "start",
+   2.6
+  ],
+  "click": [
+   4,
+   "start",
+   0.3
+  ],
+  "day": [
+   6,
+   "start",
+   0.0
+  ],
+  "year": [
+   7,
+   "start",
+   0.0
+  ],
+  "sil": [
+   7,
+   "end",
+   -2.6
+  ],
+  "endcard": [
+   9,
+   "end",
+   0.6
+  ]
+ },
+ "sfx": [
+  {
+   "type": "pop",
+   "cue": [
+    "cat",
+    "click"
+   ]
+  },
+  {
+   "type": "swish",
+   "cue": [
+    "day",
+    "year"
+   ]
+  },
+  {
+   "type": "hit",
+   "cue": [
+    "sil",
+    "endcard"
+   ]
+  }
+ ],
+ "pulse": [
+  [
+   "salon",
+   "fin"
+  ]
+ ],
+ "lines": [
+  {
+   "scene": "flash",
+   "say": "Sur la photo, le fauteuil est vide.",
+   "show": "Sur la photo, le fauteuil est vide."
+  },
+  {
+   "scene": "grenier",
+   "say": "Trois jours plus tôt. Dans le grenier de Papy, tu trouves un vieil appareil photo. Une étiquette : « Montre dans un an. »",
+   "show": "Trois jours plus tôt. Dans le grenier de Papy, tu trouves un vieil appareil photo. Une étiquette : « Montre dans un an. »"
+  },
+  {
+   "scene": "grenier",
+   "say": "Il reste trois photos. Tu prends le chat. La photo sort… le chat est énorme, endormi sur la machine à laver.",
+   "show": "Il reste trois photos. Tu prends le chat. La photo sort… le chat est énorme, endormi sur la machine à laver."
+  },
+  {
+   "scene": "salon",
+   "say": "Ça marche vraiment. Tu descends au salon. Papy est dans son fauteuil, comme tous les jours, devant la télé.",
+   "show": "Ça marche vraiment. Tu descends au salon. Papy est dans son fauteuil, comme tous les jours, devant la télé."
+  },
+  {
+   "scene": "salon",
+   "say": "Clic. La photo sort. Le fauteuil est là… mais il est vide. Papy n'y est plus.",
+   "show": "Clic. La photo sort. Le fauteuil est là… mais il est vide. Papy n'y est plus."
+  },
+  {
+   "scene": "nuit",
+   "say": "Tu ne dors pas de la nuit. Dans un an, Papy ne sera plus là. Alors tu décides de ne plus perdre une seule journée.",
+   "show": "Tu ne dors pas de la nuit. Dans un an, Papy ne sera plus là. Alors tu décides de ne plus perdre une seule journée."
+  },
+  {
+   "scene": "jardin",
+   "say": "Chaque après-midi, tu le fais lever de son fauteuil. La pêche, les balades, le potager. Il râle… puis il rit.",
+   "show": "Chaque après-midi, tu le fais lever de son fauteuil. La pêche, les balades, le potager. Il râle… puis il rit."
+  },
+  {
+   "scene": "fin",
+   "say": "Un an plus tard, tu ressors la photo. Tu regardes mieux. Par la fenêtre, au fond… deux silhouettes dans le potager.",
+   "show": "Un an plus tard, tu ressors la photo. Tu regardes mieux. Par la fenêtre, au fond… deux silhouettes dans le potager."
+  },
+  {
+   "scene": "fin",
+   "say": "Le fauteuil était vide… parce que tu l'avais fait se lever.",
+   "show": "Le fauteuil était vide… parce que tu l'avais fait se lever."
+  },
+  {
+   "scene": "fin",
+   "say": "Et toi, qui tu prendrais en photo ? Dis-le en commentaire.",
+   "show": "Et toi, qui tu prendrais en photo ? Dis-le en commentaire."
+  }
+ ]
+}
