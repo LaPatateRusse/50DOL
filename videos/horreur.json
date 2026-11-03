@@ -45,6 +45,14 @@
           "buffer_post": "6ae88f72bf0a4c296cb34577",
           "fin": "Immeuble de 12 étages, l'ascenseur s'arrête au 13e ; mot : « Si quelqu'un te demande l'heure… ne réponds jamais » ; le Liftier sans visage demande l'heure ; il est 3 h 13 ; les portes de l'ascenseur se referment derrière toi.",
           "choix": "Tu lui réponds ? OUI / NON"
+        },
+        {
+          "partie": 2,
+          "dossier": "videos/ascenseur-13-2",
+          "publication": "2026-11-03 21:00 (programmé)",
+          "buffer_post": "6ae9ecb087e4378742db161b",
+          "fin": "Sans vote lu : il ne répond pas. L'ascenseur ne revient plus ; toutes les portes portent le n°13 ; appartement plein d'horloges arrêtées à 3 h 13 ; registre de ceux qui ont « répondu » ; dernière ligne = ton prénom, vide ; la porte se referme, « Je peux attendre… longtemps. » ; téléphone à 3 %, l'écran affiche 03:13.",
+          "choix": "Tu éteins ton téléphone ? OUI / NON"
         }
       ]
     }
