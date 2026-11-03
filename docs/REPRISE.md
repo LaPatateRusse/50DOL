@@ -97,5 +97,5 @@ ffmpeg -f concat -safe 0 -i .build/jourN/segs.txt -i .build/jourN/audio.wav -c:v
 ## Format « cinéma » (03/11, copié d'une vidéo de référence fournie par l'utilisateur)
 
 - Guide : `docs/style-cinema.md` ; kit : `videos/engine/cinema.js` (film 16:9 dans le 9:16, titre « Partie N », HUD JOUR + compteur, pas de sous-titres, gros plans).
-- Pilote : `videos/cinema-mensonge-1/` « Cent euros le mensonge — Partie 1 » : seulement `brouillon-sans-voix.mp4` (aucune clé TTS dans la session). Pour finir : relancer `build_audio.py` avec `GEMINI_API_KEY`, rendre, produire `tiktok.mp4`. Pas encore programmé sur Buffer.
+- `videos/cinema-mensonge-1/` « Cent euros le mensonge — Partie 1 » (voix Gemini Orus, 84 s) : publiée le 03/11 à 08:43 (Buffer `6ae9909664e1ad8ea2ef5e43`). Kit animation : `videos/engine/cinema-rig.js`. Partie 2 à faire : il ne reste que la grand-mère qui se souvient du héros ; l'inconnu au chapeau écrit « Plus qu'une. Tu continues ? ». Question posée : « Tu aurais menti ? ».
 - `build_audio.py` accepte `TTS_PROVIDER=draft` (brouillon muet, durées estimées).
