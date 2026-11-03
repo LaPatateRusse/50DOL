@@ -1,0 +1,160 @@
+{
+ "title": "Le secret du gâteau",
+ "note": "Format « Le secret de… » n°2 (directive agent stratège), style cinéma, histoire originale, ouverture flash-forward.",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Orus",
+  "gemini_style": "Lis ce texte en français, comme un conteur de mini-film d'animation sur TikTok : voix masculine grave et posée, phrases courtes, vraies pauses dramatiques sur les points de suspension. Ton mystérieux au début, puis très émouvant. Les répliques entre guillemets « » sont jouées : les enfants moqueurs, la grand-mère d'une voix douce et fragile, l'infirmière d'une voix calme. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "flash": 0.7,
+  "cantine": 0.6,
+  "rue": 0.6,
+  "chambre": 0.9,
+  "fin": 3.4
+ },
+ "lines": [
+  {
+   "scene": "flash",
+   "say": "Chaque jour… elle cache son gâteau.",
+   "show": "Chaque jour… elle cache son gâteau."
+  },
+  {
+   "scene": "cantine",
+   "say": "Trois jours plus tôt. À la cantine, ta petite sœur ne mange jamais son dessert. Elle l'emballe dans une serviette.",
+   "show": "Trois jours plus tôt. À la cantine, ta petite sœur ne mange jamais son dessert. Elle l'emballe dans une serviette."
+  },
+  {
+   "scene": "cantine",
+   "say": "Les autres rigolent : « Elle fait des réserves ! »",
+   "show": "Les autres rigolent : « Elle fait des réserves ! »"
+  },
+  {
+   "scene": "cantine",
+   "say": "Toi, tu as honte. Tu fais semblant de ne pas la connaître.",
+   "show": "Toi, tu as honte. Tu fais semblant de ne pas la connaître."
+  },
+  {
+   "scene": "rue",
+   "say": "Le soir, au lieu de rentrer, elle prend une autre rue. Tu la suis, en te demandant à qui elle va donner ce gâteau.",
+   "show": "Le soir, au lieu de rentrer, elle prend une autre rue. Tu la suis, en te demandant à qui elle va donner ce gâteau."
+  },
+  {
+   "scene": "rue",
+   "say": "Elle entre dans une maison de retraite. Tu restes derrière la vitre.",
+   "show": "Elle entre dans une maison de retraite. Tu restes derrière la vitre."
+  },
+  {
+   "scene": "chambre",
+   "say": "Dans une chambre, une vieille dame qui ne reconnaît plus personne. Mamie. Toi, ça fait deux ans que tu n'es pas venu la voir.",
+   "show": "Dans une chambre, une vieille dame qui ne reconnaît plus personne. Mamie. Toi, ça fait deux ans que tu n'es pas venu la voir."
+  },
+  {
+   "scene": "chambre",
+   "say": "Ta sœur déplie la serviette. Le visage de Mamie s'illumine : « Ma petite… tu m'as encore gardé ton gâteau. »",
+   "show": "Ta sœur déplie la serviette. Le visage de Mamie s'illumine : « Ma petite… tu m'as encore gardé ton gâteau. »"
+  },
+  {
+   "scene": "chambre",
+   "say": "L'infirmière te dit : « Elle vient tous les jours, depuis sept mois. C'est la seule dont elle se souvient. »",
+   "show": "L'infirmière te dit : « Elle vient tous les jours, depuis sept mois. C'est la seule dont elle se souvient. »"
+  },
+  {
+   "scene": "fin",
+   "say": "Le lendemain, à la cantine, tu emballes ton dessert dans une serviette. Et cette fois, tu t'assois à côté de ta sœur.",
+   "show": "Le lendemain, à la cantine, tu emballes ton dessert dans une serviette. Et cette fois, tu t'assois à côté de ta sœur."
+  },
+  {
+   "scene": "fin",
+   "say": "Et toi… tu aurais fait pareil ?",
+   "show": "Et toi… tu aurais fait pareil ?"
+  }
+ ],
+ "cues": {
+  "wrap": [
+   1,
+   "end",
+   -1.8
+  ],
+  "laugh": [
+   2,
+   "start",
+   1.0
+  ],
+  "shame": [
+   3,
+   "start",
+   0.8
+  ],
+  "enter": [
+   5,
+   "start",
+   1.6
+  ],
+  "mamie": [
+   6,
+   "end",
+   -0.8
+  ],
+  "open": [
+   7,
+   "start",
+   1.0
+  ],
+  "smile": [
+   7,
+   "start",
+   2.4
+  ],
+  "days": [
+   8,
+   "start",
+   3.0
+  ],
+  "sit": [
+   9,
+   "start",
+   3.2
+  ],
+  "endcard": [
+   10,
+   "end",
+   0.6
+  ]
+ },
+ "sfx": [
+  {
+   "type": "pop",
+   "cue": [
+    "wrap",
+    "laugh",
+    "open",
+    "days",
+    "sit"
+   ]
+  },
+  {
+   "type": "swish",
+   "cue": [
+    "shame",
+    "enter"
+   ]
+  },
+  {
+   "type": "hit",
+   "cue": [
+    "mamie",
+    "endcard"
+   ]
+  }
+ ],
+ "pulse": [
+  [
+   "chambre",
+   "fin"
+  ]
+ ]
+}
