@@ -1,12 +1,37 @@
 {
-  "titre": "Cent euros le mensonge",
-  "format": "cinéma (docs/style-cinema.md), 5 parties, voix Gemini Orus",
-  "regle": "Chaque mensonge = +100 €. Chaque nouveau millier franchi = une personne t'oublie (cœur du HUD).",
-  "arc": [
-    {"partie": 1, "dossier": "videos/cinema-mensonge-1", "statut": "publiée 03/11 08:43", "resume": "Arrêt de bus, l'inconnu au chapeau (ruban rouge) offre le pacte et une pièce dorée percée. Mensonges, 2 003 €. Le meilleur pote puis la mère l'oublient. Message : « Plus qu'une. Tu continues ? »"},
-    {"partie": 2, "dossier": "videos/cinema-mensonge-2", "statut": "programmée 04/11 18:00", "resume": "La mère le chasse. Il jure de ne plus mentir, prend le dernier train chez Mamie (seule à se souvenir). Il lui dit tout. Mamie reconnaît l'homme au chapeau : Papy avait fait le même pacte il y a 50 ans, tout le monde l'a oublié sauf elle, puis il a disparu à l'arrêt de bus. Derrière la photo : « Pour briser le pacte, il faut dire la vérité qui coûte le plus. » SMS : « Ne crois pas tout ce que dit ta grand-mère. » Quelqu'un attend sous le lampadaire. Choix : Tu sors ?"},
-    {"partie": 3, "resume": "Il sort : l'homme au chapeau lui propose de tout effacer contre UN dernier mensonge (+100 000 €… et Mamie l'oublie). Il refuse. Il commence à dire des vérités qui coûtent : chaque vérité = −100 €, le compteur descend vers zéro. Le pote se souvient à nouveau. Fin : le compteur passe sous zéro, ça devient dangereux (dette → c'est le héros qui commence à s'effacer : ses mains deviennent transparentes)."},
-    {"partie": 4, "resume": "Le héros s'efface peu à peu (photos où il disparaît). Mamie trouve le carnet de Papy : la vérité qui coûte le plus n'est pas un secret, c'est d'avouer à quelqu'un ce qu'on n'a jamais osé dire. Il retourne voir sa mère qui ne le connaît pas. Cliffhanger : l'homme au chapeau retire son chapeau… c'est le visage de Papy jeune."},
-    {"partie": 5, "resume": "Finale. Papy est prisonnier du pacte depuis 50 ans (devenu le collecteur, oublié de tous sauf Mamie). Le héros, à l'arrêt de bus, dit sa vérité la plus coûteuse (« J'ai menti parce que j'avais honte d'être pauvre / de décevoir maman ») et rend la pièce. Le pacte se brise : tout le monde se souvient, compte à 3 €, Papy redevient vieux et retrouve Mamie. Dernier plan : le dernier bus arrive, cette fois il le prend. Question : quelle vérité tu n'as jamais osé dire ?"}
-  ]
+ "titre": "Cent euros le mensonge",
+ "format": "cinéma (docs/style-cinema.md), 5 parties, voix Gemini Orus",
+ "regle": "Chaque mensonge = +100 €. Chaque nouveau millier franchi = une personne t'oublie (cœur du HUD).",
+ "arc": [
+  {
+   "partie": 1,
+   "dossier": "videos/cinema-mensonge-1",
+   "statut": "publiée 03/11 08:43",
+   "resume": "Arrêt de bus, l'inconnu au chapeau (ruban rouge) offre le pacte et une pièce dorée percée. Mensonges, 2 003 €. Le meilleur pote puis la mère l'oublient. Message : « Plus qu'une. Tu continues ? »"
+  },
+  {
+   "partie": 2,
+   "dossier": "videos/cinema-mensonge-2",
+   "statut": "programmée 04/11 18:00",
+   "resume": "La mère le chasse. Il jure de ne plus mentir, prend le dernier train chez Mamie (seule à se souvenir). Il lui dit tout. Mamie reconnaît l'homme au chapeau : Papy avait fait le même pacte il y a 50 ans, tout le monde l'a oublié sauf elle, puis il a disparu à l'arrêt de bus. Derrière la photo : « Pour briser le pacte, il faut dire la vérité qui coûte le plus. » SMS : « Ne crois pas tout ce que dit ta grand-mère. » Quelqu'un attend sous le lampadaire. Choix : Tu sors ?"
+  },
+  {
+   "partie": 3,
+   "resume": "Il sort : l'homme au chapeau lui propose de tout effacer contre UN dernier mensonge (+100 000 €… et Mamie l'oublie). Il refuse. Il commence à dire des vérités qui coûtent : chaque vérité = −100 €, le compteur descend vers zéro. Le pote se souvient à nouveau. Fin : le compteur passe sous zéro, ça devient dangereux (dette → c'est le héros qui commence à s'effacer : ses mains deviennent transparentes).",
+   "statut": "programmée 05/11 18:00",
+   "dossier": "videos/cinema-mensonge-3"
+  },
+  {
+   "partie": 4,
+   "resume": "Le héros s'efface peu à peu (photos où il disparaît). Mamie trouve le carnet de Papy : la vérité qui coûte le plus n'est pas un secret, c'est d'avouer à quelqu'un ce qu'on n'a jamais osé dire. Il retourne voir sa mère qui ne le connaît pas. Cliffhanger : l'homme au chapeau retire son chapeau… c'est le visage de Papy jeune.",
+   "statut": "programmée 06/11 18:00",
+   "dossier": "videos/cinema-mensonge-4"
+  },
+  {
+   "partie": 5,
+   "resume": "Finale. Papy est prisonnier du pacte depuis 50 ans (devenu le collecteur, oublié de tous sauf Mamie). Le héros, à l'arrêt de bus, dit sa vérité la plus coûteuse (« J'ai menti parce que j'avais honte d'être pauvre / de décevoir maman ») et rend la pièce. Le pacte se brise : tout le monde se souvient, compte à 3 €, Papy redevient vieux et retrouve Mamie. Dernier plan : le dernier bus arrive, cette fois il le prend. Question : quelle vérité tu n'as jamais osé dire ?",
+   "statut": "programmée 07/11 18:00",
+   "dossier": "videos/cinema-mensonge-5"
+  }
+ ]
 }
