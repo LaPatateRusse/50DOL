@@ -1,0 +1,144 @@
+{
+ "title": "Le GPS",
+ "note": "Horreur complète en 1 partie (19:15 du 04/11), style cinéma, histoire originale.",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Charon",
+  "gemini_style": "Lis ce texte en français, comme un conteur d'histoires d'horreur sur TikTok : voix masculine grave, à voix normale et bien posée, intense et inquiétante, rythme vif et soutenu, sans traîner, pauses courtes. NE CHUCHOTE PAS. Les répliques du GPS entre guillemets « » sont dites d'une voix calme, douce et âgée ; la grande sœur d'une voix inquiète ; « Accélère ! » est crié. À la fin, l'émotion monte. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "flash": 0.8,
+  "voiture": 0.4,
+  "route": 0.5,
+  "femme": 0.5,
+  "maison": 0.6,
+  "fin": 3.4
+ },
+ "cues": {
+  "on": [
+   1,
+   "end",
+   -2.0
+  ],
+  "sign": [
+   5,
+   "start",
+   1.2
+  ],
+  "brake": [
+   5,
+   "start",
+   2.3
+  ],
+  "scream": [
+   6,
+   "start",
+   0.9
+  ],
+  "turn": [
+   6,
+   "start",
+   4.0
+  ],
+  "off": [
+   7,
+   "end",
+   -1.0
+  ],
+  "hist": [
+   8,
+   "start",
+   2.2
+  ],
+  "endcard": [
+   9,
+   "end",
+   0.6
+  ]
+ },
+ "sfx": [
+  {
+   "type": "pop",
+   "cue": [
+    "on",
+    "hist"
+   ]
+  },
+  {
+   "type": "hit",
+   "cue": [
+    "sign",
+    "scream",
+    "turn",
+    "endcard"
+   ]
+  },
+  {
+   "type": "swish",
+   "cue": [
+    "off"
+   ]
+  }
+ ],
+ "pulse": [
+  [
+   "route",
+   "femme"
+  ]
+ ],
+ "lines": [
+  {
+   "scene": "flash",
+   "say": "« Surtout, ne vous arrêtez pas. »",
+   "show": "« Surtout, ne vous arrêtez pas. »"
+  },
+  {
+   "scene": "voiture",
+   "say": "Minuit. Ta grande sœur conduit. Le vieux GPS de Papy, oublié dans la boîte à gants, s'allume tout seul.",
+   "show": "Minuit. Ta grande sœur conduit. Le vieux GPS de Papy, oublié dans la boîte à gants, s'allume tout seul."
+  },
+  {
+   "scene": "voiture",
+   "say": "Une voix calme : « Nouvel itinéraire. Arrivée dans trois kilomètres. » Personne ne lui a rien demandé.",
+   "show": "Une voix calme : « Nouvel itinéraire. Arrivée dans trois kilomètres. » Personne ne lui a rien demandé."
+  },
+  {
+   "scene": "route",
+   "say": "Sur l'écran, la route n'existe pas. Pourtant, devant vous, elle est là. Toute droite, au milieu des arbres.",
+   "show": "Sur l'écran, la route n'existe pas. Pourtant, devant vous, elle est là. Toute droite, au milieu des arbres."
+  },
+  {
+   "scene": "route",
+   "say": "« Dans cinq cents mètres, quelqu'un vous fera signe. Surtout, ne vous arrêtez pas. »",
+   "show": "« Dans cinq cents mètres, quelqu'un vous fera signe. Surtout, ne vous arrêtez pas. »"
+  },
+  {
+   "scene": "femme",
+   "say": "Au bord de la route, une femme en blanc lève la main. Ta sœur ralentit. « Elle a peut-être besoin d'aide… »",
+   "show": "Au bord de la route, une femme en blanc lève la main. Ta sœur ralentit. « Elle a peut-être besoin d'aide… »"
+  },
+  {
+   "scene": "femme",
+   "say": "Tu hurles : « Accélère ! » Dans le rétroviseur, la femme se retourne. Elle n'a pas de visage.",
+   "show": "Tu hurles : « Accélère ! » Dans le rétroviseur, la femme se retourne. Elle n'a pas de visage."
+  },
+  {
+   "scene": "maison",
+   "say": "« Vous êtes arrivés. » Vous êtes devant chez vous. L'écran s'éteint.",
+   "show": "« Vous êtes arrivés. » Vous êtes devant chez vous. L'écran s'éteint."
+  },
+  {
+   "scene": "fin",
+   "say": "Le lendemain, tu regardes l'historique. Un seul trajet : celui de Papy, il y a dix ans. Le soir où il n'est jamais rentré.",
+   "show": "Le lendemain, tu regardes l'historique. Un seul trajet : celui de Papy, il y a dix ans. Le soir où il n'est jamais rentré."
+  },
+  {
+   "scene": "fin",
+   "say": "Cette voix calme… c'était la sienne. Toi, tu te serais arrêté ? Commente oui ou non.",
+   "show": "Cette voix calme… c'était la sienne. Toi, tu te serais arrêté ? Commente oui ou non."
+  }
+ ]
+}

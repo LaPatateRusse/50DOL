@@ -67,8 +67,6 @@
  ],
  "idees_suivantes": [
   "Le baby-phone",
-  "La station-service",
-  "Le GPS",
   "La colo",
   "Le répondeur"
  ],
@@ -80,6 +78,20 @@
    "creature": "les Respirants (formes pâles derrière le canapé, seulement des yeux)",
    "buffer": "6ae9f1bc01362e3aae9c943e",
    "publication": "2026-11-03 19:15"
+  },
+  {
+   "dossier": "horreur-station",
+   "titre": "La station-service",
+   "style": "cinéma",
+   "voix": "Gemini Charon",
+   "creneau_vise": "2026-11-04T15:00+01:00"
+  },
+  {
+   "dossier": "horreur-gps",
+   "titre": "Le GPS",
+   "style": "cinéma",
+   "voix": "Gemini Charon",
+   "creneau_vise": "2026-11-04T19:15+01:00"
   }
  ]
 }
