@@ -68,7 +68,9 @@ def eleven(text):
     return audio, "".join(al["characters"]), st, en
 
 
-GEMINI_MODEL = os.environ.get("GEMINI_TTS_MODEL", "gemini-2.5-flash-preview-tts")
+# Chaque modèle TTS a son propre quota gratuit : si l'un renvoie 429 (quota épuisé), on passe au suivant.
+GEMINI_MODELS = os.environ.get("GEMINI_TTS_MODELS", "gemini-2.5-flash-preview-tts,gemini-3.8-flash-tts,"
+                               "gemini-3.1-flash-tts-preview,gemini-3.8-flash-lite-tts").split(",")
 GEMINI_STYLE = ("Lis ce texte en français, comme un narrateur de vidéo TikTok captivant : voix masculine grave, "
                 "rythme vif, tension dramatique. Les passages entre guillemets « » sont murmurés, inquiétants. "
                 "Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne.")
@@ -92,11 +94,15 @@ def _gemini_once(all_lines, attempt):
     body = {"contents": [{"parts": [{"text": prompt}]}],
             "generationConfig": {"responseModalities": ["AUDIO"],
                                  "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voice}}}}}
-    h = hashlib.sha1(json.dumps([GEMINI_MODEL, body], sort_keys=True).encode()).hexdigest()[:12]
-    cache = os.path.join(OUT, "tts", f"gemini_{h}.pcm")
-    if not os.path.exists(cache):
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
-        for attempt in range(5):
+    cache = None
+    for model in GEMINI_MODELS:
+        h = hashlib.sha1(json.dumps([model, body], sort_keys=True).encode()).hexdigest()[:12]
+        cache = os.path.join(OUT, "tts", f"gemini_{h}.pcm")
+        if os.path.exists(cache):
+            break
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+        res = None
+        for k in range(3):
             try:
                 req = urllib.request.Request(url, data=json.dumps(body).encode(),
                                              headers={"x-goog-api-key": GEMINI_KEY, "Content-Type": "application/json"})
@@ -104,12 +110,22 @@ def _gemini_once(all_lines, attempt):
                     res = json.load(r)
                 break
             except urllib.error.HTTPError as e:
-                if e.code in (429, 500, 503) and attempt < 4:
-                    time.sleep(20 * (attempt + 1))
+                if e.code == 429:
+                    print(f"Gemini {model} : quota épuisé, modèle suivant")
+                    break
+                if e.code in (500, 503) and k < 2:
+                    time.sleep(20 * (k + 1))
                     continue
                 raise
+        if res is None:
+            cache = None
+            continue
         part = res["candidates"][0]["content"]["parts"][0]["inlineData"]
         open(cache, "wb").write(base64.b64decode(part["data"]))
+        print(f"voix : {model}")
+        break
+    if cache is None:
+        raise urllib.error.HTTPError(url, 429, "quota épuisé sur tous les modèles Gemini", None, None)
     wav = cache.replace(".pcm", ".wav")
     af = "highpass=f=60,equalizer=f=180:t=q:w=1:g=2,acompressor=threshold=-18dB:ratio=3:attack=5:release=90:makeup=2"
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-f", "s16le", "-ar", "24000", "-ac", "1", "-i", cache,
