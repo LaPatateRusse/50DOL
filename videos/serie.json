@@ -36,7 +36,15 @@
       "buffer_post": "6ae88cf409c35c01e8cc2fa2",
       "fin": "Max n'est pas sorti (choix prudent, pas de vote lu). Rationnement, pastilles de purification. Le soir : 3 silhouettes dans le hall, puis un camion de la Sécurité civile distribue de l'eau ; les silhouettes partent vers le camion.",
       "choix_pose": "Max descend chercher de l'eau ou attend le matin ? OUI / NON"
+    },
+    {
+      "jour": 5,
+      "dossier": "videos/blackout-jour5",
+      "publie": "2026-11-04 12:10 (programmé)",
+      "fin": "FIN. Sans vote lu : Max attend le matin, sort accompagné du voisin du 5e ; les silhouettes étaient des voisins qui organisaient l'eau ; conseils retour du courant + kit d'urgence ; la ville se rallume.",
+      "choix_pose": null
     }
   ],
-  "fin_prevue": "Jour 5 = dernier épisode de Blackout général (conclusion, pas de nouveau choix)."
+  "fin_prevue": "Jour 5 = dernier épisode de Blackout général (conclusion, pas de nouveau choix).",
+  "terminee": true
 }

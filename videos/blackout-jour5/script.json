@@ -1,0 +1,156 @@
+{
+ "title": "Blackout général — Jour 5 (FIN)",
+ "note": "Sans vote lu : Max fait le choix prudent (attendre le jour, sortir accompagné). Kit : ≈ 4 L d'eau par personne et par jour pendant au moins 3 jours (≈ 1 gallon, recommandation FEMA/Ready.gov). Débrancher les appareils et laisser une lampe allumée au retour du courant (Ready.gov).",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Orus",
+  "gemini_style": "Lis ce texte en français, comme le narrateur d'une série de survie sur TikTok : voix masculine grave, rythme vif, ton sérieux, puis soulagé et chaleureux à la fin. Les passages entre guillemets « » sont dits à voix normale, comme une réplique. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "titre": 0.3,
+  "matin": 0.2,
+  "hall": 0.3,
+  "prises": 0.2,
+  "kit": 0.2,
+  "retour": 0.4,
+  "fin": 3.4
+ },
+ "lines": [
+  {
+   "scene": "titre",
+   "say": "Jour cinq. Le dernier jour du blackout.",
+   "show": "Jour 5. Le dernier jour du [blackout]."
+  },
+  {
+   "scene": "matin",
+   "say": "Max a attendu le matin. Pendant une panne, on évite de se déplacer la nuit : on y voit mal, et on est seul.",
+   "show": "Max a attendu le matin. Pendant une panne, on évite de sortir la [nuit]."
+  },
+  {
+   "scene": "matin",
+   "say": "Il descend de jour, et pas seul : avec le voisin du cinquième.",
+   "show": "Il descend de jour, et pas [seul] : avec le voisin du 5e."
+  },
+  {
+   "scene": "hall",
+   "say": "Les trois silhouettes d'hier soir ? Des voisins. Ils l'attendaient… pour organiser l'eau de tout l'immeuble.",
+   "show": "Les trois silhouettes ? Des {voisins}. Ils organisaient l'eau de tout l'immeuble."
+  },
+  {
+   "scene": "prises",
+   "say": "Conseil : quand le courant peut revenir, on débranche les appareils, et on laisse une seule lampe allumée.",
+   "show": "Conseil : on [débranche] les appareils, et on laisse une seule lampe allumée."
+  },
+  {
+   "scene": "prises",
+   "say": "Comme ça, on voit le retour du courant, sans risquer une surtension.",
+   "show": "Comme ça, on voit le retour du courant, sans risquer une [surtension]."
+  },
+  {
+   "scene": "kit",
+   "say": "Et pour la prochaine fois : un kit d'urgence. Environ quatre litres d'eau par personne et par jour, pour au moins trois jours.",
+   "show": "Kit d'urgence : environ {4 L} d'eau par personne et par jour, pour au moins 3 jours."
+  },
+  {
+   "scene": "kit",
+   "say": "Une radio à piles. Une lampe. Des conserves. Et un papier avec les numéros importants.",
+   "show": "Une radio à piles. Une lampe. Des conserves. Et les numéros [importants]."
+  },
+  {
+   "scene": "retour",
+   "say": "Dix-neuf heures. Une ampoule s'allume. Puis une fenêtre. Puis toute la ville.",
+   "show": "19 heures. Une ampoule s'allume. Puis une fenêtre. Puis toute la {ville}."
+  },
+  {
+   "scene": "fin",
+   "say": "Max a tenu cinq jours. Grâce à l'eau… mais surtout grâce à ses voisins.",
+   "show": "Max a tenu 5 jours. Grâce à l'eau… mais surtout grâce à ses {voisins}."
+  },
+  {
+   "scene": "fin",
+   "say": "Et toi, tu aurais tenu combien de jours ? Abonne-toi pour la prochaine série de survie.",
+   "show": "Et toi, tu aurais tenu combien de [jours] ? Abonne-toi pour la prochaine série."
+  }
+ ],
+ "cues": {
+  "pair": [
+   2,
+   "start",
+   1.4
+  ],
+  "neigh": [
+   3,
+   "start",
+   2.0
+  ],
+  "plug": [
+   4,
+   "start",
+   1.6
+  ],
+  "lamp": [
+   4,
+   "end",
+   -1.4
+  ],
+  "kit": [
+   6,
+   "start",
+   1.4
+  ],
+  "items": [
+   7,
+   "start",
+   0.2
+  ],
+  "light1": [
+   8,
+   "start",
+   1.6
+  ],
+  "city": [
+   8,
+   "end",
+   -1.4
+  ],
+  "fin": [
+   10,
+   "end",
+   0.7
+  ]
+ },
+ "sfx": [
+  {
+   "type": "hit",
+   "scene": "titre"
+  },
+  {
+   "type": "pop",
+   "cue": [
+    "pair",
+    "neigh",
+    "plug",
+    "lamp",
+    "kit",
+    "items",
+    "light1"
+   ]
+  },
+  {
+   "type": "hit",
+   "cue": [
+    "city",
+    "fin"
+   ]
+  }
+ ],
+ "pulse": [
+  [
+   "retour",
+   "fin"
+  ]
+ ]
+}
