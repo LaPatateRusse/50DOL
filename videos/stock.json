@@ -23,6 +23,13 @@
       "titre": "Le Baby-phone",
       "buffer": "6ae9f1bc01362e3aae9c943e",
       "heure": "2026-11-03T19:15+01:00"
+    },
+    {
+      "dossier": "etsi-lune",
+      "type": "science",
+      "titre": "Et si la Lune disparaissait cette nuit ?",
+      "buffer": "6ae9fcadb75704f9ac5d826f",
+      "heure": "2026-11-04T07:00+01:00"
     }
   ]
 }
