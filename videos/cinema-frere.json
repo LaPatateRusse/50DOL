@@ -1,0 +1,26 @@
+{
+ "titre": "Le secret de mon frère..",
+ "format": "cinéma, 4 parties de 61-75 s, créneau 17:30 (05→08/11), consignes du Superviseur",
+ "parties": [
+  {
+   "partie": 1,
+   "dossier": "videos/cinema-frere-1",
+   "resume": "Léo ment : crampons neufs, virements de 400 €/mois à Maman depuis 11 mois, il nettoie la nuit le stade du club."
+  },
+  {
+   "partie": 2,
+   "dossier": "videos/cinema-frere-2",
+   "resume": "Aveu : faillite de la boulangerie, dette 18 000 € (reste 13 600 €), « prime du club » inventée. Promesse. Le coach appelle : essai samedi 10 h."
+  },
+  {
+   "partie": 3,
+   "dossier": "videos/cinema-frere-3",
+   "resume": "Léo refuse (le stade paie double, 260 €). Le héros réunit 260 € (console, mangas, boulanger). Samedi : Léo dans les tribunes avec la serpillière… et Maman à côté."
+  },
+  {
+   "partie": 4,
+   "dossier": "videos/cinema-frere-4",
+   "resume": "Maman savait : elle a gardé chaque virement (4 400 €) et rembourse seule en faisant des ménages. Léo joue l'essai, marque. Nouvel article sur le frigo, pour de vrai."
+  }
+ ]
+}

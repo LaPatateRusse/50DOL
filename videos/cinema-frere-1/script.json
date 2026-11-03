@@ -1,0 +1,140 @@
+{
+ "title": "Le secret de mon frère — Partie 1",
+ "note": "Série « Le secret de mon frère.. » — arc : videos/cinema-frere.json",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Orus",
+  "gemini_style": "Lis ce texte en français, comme un conteur de mini-film d'animation sur TikTok : voix masculine grave et posée, phrases courtes, rythme vif, avec de vraies pauses sur les points de suspension. Ton émouvant, intime, comme un secret qu'on raconte. Les répliques entre guillemets « » sont jouées : Léo, 19 ans, d'une voix jeune et fatiguée ; la mère d'une voix douce et forte ; le coach d'une voix sèche. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "flash": 0.5,
+  "intro": 0.5,
+  "frigo": 0.4,
+  "placard": 0.7,
+  "tel": 0.6,
+  "suivre": 0.5,
+  "stade": 0.8,
+  "fin": 4.4
+ },
+ "lines": [
+  {
+   "scene": "flash",
+   "say": "Ton grand frère ment à toute la famille.",
+   "show": "Ton grand frère ment à toute la famille."
+  },
+  {
+   "scene": "intro",
+   "say": "Léo, dix-neuf ans. Le meilleur joueur du quartier.",
+   "show": "Léo, dix-neuf ans. Le meilleur joueur du quartier."
+  },
+  {
+   "scene": "intro",
+   "say": "Chaque soir, il part à l'entraînement du centre de formation.",
+   "show": "Chaque soir, il part à l'entraînement du centre de formation."
+  },
+  {
+   "scene": "frigo",
+   "say": "Maman est fière. Elle colle chaque article sur le frigo.",
+   "show": "Maman est fière. Elle colle chaque article sur le frigo."
+  },
+  {
+   "scene": "placard",
+   "say": "Mais ce soir, au fond du placard, tu trouves ses crampons. Neufs. Jamais portés.",
+   "show": "Mais ce soir, au fond du placard, tu trouves ses crampons. Neufs. Jamais portés."
+  },
+  {
+   "scene": "tel",
+   "say": "Son téléphone vibre. Virement envoyé à Maman : quatre cents euros.",
+   "show": "Son téléphone vibre. Virement envoyé à Maman : quatre cents euros."
+  },
+  {
+   "scene": "tel",
+   "say": "Tu fais défiler. Un virement chaque mois. Depuis onze mois.",
+   "show": "Tu fais défiler. Un virement chaque mois. Depuis onze mois."
+  },
+  {
+   "scene": "suivre",
+   "say": "Vingt-deux heures. Léo sort. Tu le suis.",
+   "show": "Vingt-deux heures. Léo sort. Tu le suis."
+  },
+  {
+   "scene": "suivre",
+   "say": "Il ne prend pas le bus du centre. Il prend le dernier… vers le stade.",
+   "show": "Il ne prend pas le bus du centre. Il prend le dernier… vers le stade."
+  },
+  {
+   "scene": "stade",
+   "say": "Les projecteurs sont allumés. Les tribunes sont vides.",
+   "show": "Les projecteurs sont allumés. Les tribunes sont vides."
+  },
+  {
+   "scene": "stade",
+   "say": "Et ton frère est là. Avec un seau et une serpillière.",
+   "show": "Et ton frère est là. Avec un seau et une serpillière."
+  },
+  {
+   "scene": "fin",
+   "say": "Il nettoie le stade du club… qui devait le recruter. Tu le dis à Maman ?",
+   "show": "Il nettoie le stade du club… qui devait le recruter. Tu le dis à Maman ?"
+  }
+ ],
+ "cues": {
+  "buzz": [
+   5,
+   "start",
+   0.1
+  ],
+  "v1": [
+   5,
+   "start",
+   1.4
+  ],
+  "roll": [
+   6,
+   "start",
+   0.6
+  ],
+  "lights": [
+   9,
+   "start",
+   0.2
+  ],
+  "mop": [
+   10,
+   "start",
+   1.5
+  ],
+  "endcard": [
+   11,
+   "end",
+   0.6
+  ]
+ },
+ "sfx": [
+  {
+   "type": "buzz",
+   "cue": "buzz"
+  },
+  {
+   "type": "pop",
+   "cue": "v1"
+  },
+  {
+   "type": "hit",
+   "cue": [
+    "lights",
+    "mop",
+    "endcard"
+   ]
+  }
+ ],
+ "pulse": [
+  [
+   "stade",
+   "fin"
+  ]
+ ]
+}

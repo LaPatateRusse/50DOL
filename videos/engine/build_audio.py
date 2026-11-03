@@ -120,7 +120,12 @@ def _gemini_once(all_lines, attempt):
         if res is None:
             cache = None
             continue
-        part = res["candidates"][0]["content"]["parts"][0]["inlineData"]
+        try:
+            part = res["candidates"][0]["content"]["parts"][0]["inlineData"]
+        except (KeyError, IndexError):  # réponse sans audio (refus, arrêt) : modèle suivant
+            print(f"Gemini {model} : réponse sans audio ({res.get('candidates', [{}])[0].get('finishReason')}), modèle suivant")
+            cache = None
+            continue
         open(cache, "wb").write(base64.b64decode(part["data"]))
         print(f"voix : {model}")
         break

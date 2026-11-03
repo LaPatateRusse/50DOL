@@ -1,0 +1,128 @@
+{
+ "title": "Le secret de mon frère — Partie 4 (fin)",
+ "note": "Série « Le secret de mon frère.. » — arc : videos/cinema-frere.json",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Orus",
+  "gemini_style": "Lis ce texte en français, comme un conteur de mini-film d'animation sur TikTok : voix masculine grave et posée, phrases courtes, rythme vif, avec de vraies pauses sur les points de suspension. Ton émouvant, intime, comme un secret qu'on raconte. Les répliques entre guillemets « » sont jouées : Léo, 19 ans, d'une voix jeune et fatiguée ; la mère d'une voix douce et forte ; le coach d'une voix sèche. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "flash": 0.1,
+  "tribune": 0.2,
+  "enveloppe": 0.3,
+  "go": 0.3,
+  "match": 0.5,
+  "joie": 0.3,
+  "frigo": 3.4
+ },
+ "lines": [
+  {
+   "scene": "flash",
+   "say": "Maman savait tout depuis le début.",
+   "show": "Maman savait tout depuis le début."
+  },
+  {
+   "scene": "tribune",
+   "say": "Léo baisse les yeux. Maman prend ses mains abîmées.",
+   "show": "Léo baisse les yeux. Maman prend ses mains abîmées."
+  },
+  {
+   "scene": "tribune",
+   "say": "« Tu crois que je ne voyais pas tes mains ? »",
+   "show": "« Tu crois que je ne voyais pas tes mains ? »"
+  },
+  {
+   "scene": "enveloppe",
+   "say": "Elle sort une enveloppe. « Tes quatre cents euros. Tous les mois. Je n'en ai jamais dépensé un seul. »",
+   "show": "Elle sort une enveloppe. « Tes quatre cents euros. Tous les mois. Je n'en ai jamais dépensé un seul. »"
+  },
+  {
+   "scene": "enveloppe",
+   "say": "« La dette, je la rembourse moi-même. Je fais des ménages. Le matin. »",
+   "show": "« La dette, je la rembourse moi-même. Je fais des ménages. Le matin. »"
+  },
+  {
+   "scene": "enveloppe",
+   "say": "Deux menteurs. Qui mentaient pour la même raison.",
+   "show": "Deux menteurs. Qui mentaient pour la même raison."
+  },
+  {
+   "scene": "go",
+   "say": "Maman pousse Léo vers le terrain. « Va. Il est dix heures. »",
+   "show": "Maman pousse Léo vers le terrain. « Va. Il est dix heures. »"
+  },
+  {
+   "scene": "match",
+   "say": "L'essai commence. Soixante-dix-huitième minute. Léo frappe…",
+   "show": "L'essai commence. Soixante-dix-huitième minute. Léo frappe…"
+  },
+  {
+   "scene": "match",
+   "say": "But.",
+   "show": "But."
+  },
+  {
+   "scene": "joie",
+   "say": "Maman crie plus fort que tout le stade.",
+   "show": "Maman crie plus fort que tout le stade."
+  },
+  {
+   "scene": "frigo",
+   "say": "Le soir, il y a un nouvel article sur le frigo. Pour de vrai, cette fois.",
+   "show": "Le soir, il y a un nouvel article sur le frigo. Pour de vrai, cette fois."
+  },
+  {
+   "scene": "frigo",
+   "say": "Fin. Et toi, qui garde un secret pour te protéger ? Dis-le en commentaire.",
+   "show": "Fin. Et toi, qui garde un secret pour te protéger ? Dis-le en commentaire."
+  }
+ ],
+ "cues": {
+  "env": [
+   3,
+   "start",
+   0.6
+  ],
+  "kick": [
+   7,
+   "end",
+   -0.4
+  ],
+  "goal": [
+   8,
+   "start",
+   0.0
+  ],
+  "endcard": [
+   11,
+   "end",
+   0.6
+  ]
+ },
+ "sfx": [
+  {
+   "type": "swish",
+   "cue": "env"
+  },
+  {
+   "type": "hit",
+   "cue": [
+    "kick",
+    "endcard"
+   ]
+  },
+  {
+   "type": "pop",
+   "cue": "goal"
+  }
+ ],
+ "pulse": [
+  [
+   "match",
+   "joie"
+  ]
+ ]
+}

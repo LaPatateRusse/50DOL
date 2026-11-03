@@ -1,0 +1,115 @@
+{
+ "title": "Le secret de mon frère — Partie 2",
+ "note": "Série « Le secret de mon frère.. » — arc : videos/cinema-frere.json",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Orus",
+  "gemini_style": "Lis ce texte en français, comme un conteur de mini-film d'animation sur TikTok : voix masculine grave et posée, phrases courtes, rythme vif, avec de vraies pauses sur les points de suspension. Ton émouvant, intime, comme un secret qu'on raconte. Les répliques entre guillemets « » sont jouées : Léo, 19 ans, d'une voix jeune et fatiguée ; la mère d'une voix douce et forte ; le coach d'une voix sèche. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "flash": 0.8,
+  "rentree": 0.8,
+  "aveu": 1.4,
+  "lettre": 1.3,
+  "promesse": 0.8,
+  "coach": 0.8,
+  "fin": 5.0
+ },
+ "lines": [
+  {
+   "scene": "flash",
+   "say": "« Si tu lui dis… je pars. »",
+   "show": "« Si tu lui dis… je pars. »"
+  },
+  {
+   "scene": "rentree",
+   "say": "Cinq heures du matin. La porte s'ouvre doucement. Léo rentre. Tu l'attends dans la cuisine.",
+   "show": "Cinq heures du matin. La porte s'ouvre doucement. Léo rentre. Tu l'attends dans la cuisine."
+  },
+  {
+   "scene": "rentree",
+   "say": "Tu lui montres la photo du stade. « Tu m'as suivi ? » Il devient tout blanc.",
+   "show": "Tu lui montres la photo du stade. « Tu m'as suivi ? » Il devient tout blanc."
+  },
+  {
+   "scene": "aveu",
+   "say": "« La boulangerie de Maman a fait faillite. Elle doit dix-huit mille euros. Elle l'a caché à tout le monde. »",
+   "show": "« La boulangerie de Maman a fait faillite. Elle doit dix-huit mille euros. Elle l'a caché à tout le monde. »"
+  },
+  {
+   "scene": "aveu",
+   "say": "« Le centre de formation, ça ne paie pas. Le stade, si. Douze euros de l'heure. De minuit à quatre heures. »",
+   "show": "« Le centre de formation, ça ne paie pas. Le stade, si. Douze euros de l'heure. De minuit à quatre heures. »"
+  },
+  {
+   "scene": "lettre",
+   "say": "Il sort une lettre de la banque. Reste à payer : treize mille six cents euros.",
+   "show": "Il sort une lettre de la banque. Reste à payer : treize mille six cents euros."
+  },
+  {
+   "scene": "lettre",
+   "say": "Chaque mois, il envoie l'argent à Maman… et il lui dit que c'est sa prime du club.",
+   "show": "Chaque mois, il envoie l'argent à Maman… et il lui dit que c'est sa prime du club."
+  },
+  {
+   "scene": "promesse",
+   "say": "Tu regardes ses mains. Elles sont pleines d'ampoules. « Si tu lui dis… je pars. » Alors tu promets.",
+   "show": "Tu regardes ses mains. Elles sont pleines d'ampoules. « Si tu lui dis… je pars. » Alors tu promets."
+  },
+  {
+   "scene": "coach",
+   "say": "Le lendemain, le téléphone de la maison sonne.",
+   "show": "Le lendemain, le téléphone de la maison sonne."
+  },
+  {
+   "scene": "coach",
+   "say": "« Ici le coach Benali. Léo ne vient plus. Dernière chance : un essai, samedi, dix heures. »",
+   "show": "« Ici le coach Benali. Léo ne vient plus. Dernière chance : un essai, samedi, dix heures. »"
+  },
+  {
+   "scene": "fin",
+   "say": "Léo dort. Il n'en sait rien. C'est toi qui as l'information. Tu lui dis ?",
+   "show": "Léo dort. Il n'en sait rien. C'est toi qui as l'information. Tu lui dis ?"
+  }
+ ],
+ "cues": {
+  "letter": [
+   5,
+   "start",
+   0.8
+  ],
+  "ring": [
+   8,
+   "start",
+   1.0
+  ],
+  "endcard": [
+   10,
+   "end",
+   0.6
+  ]
+ },
+ "sfx": [
+  {
+   "type": "swish",
+   "cue": "letter"
+  },
+  {
+   "type": "buzz",
+   "cue": "ring"
+  },
+  {
+   "type": "hit",
+   "cue": "endcard"
+  }
+ ],
+ "pulse": [
+  [
+   "coach",
+   "fin"
+  ]
+ ]
+}

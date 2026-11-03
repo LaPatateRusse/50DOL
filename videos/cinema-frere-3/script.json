@@ -1,0 +1,128 @@
+{
+ "title": "Le secret de mon frère — Partie 3",
+ "note": "Série « Le secret de mon frère.. » — arc : videos/cinema-frere.json",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Orus",
+  "gemini_style": "Lis ce texte en français, comme un conteur de mini-film d'animation sur TikTok : voix masculine grave et posée, phrases courtes, rythme vif, avec de vraies pauses sur les points de suspension. Ton émouvant, intime, comme un secret qu'on raconte. Les répliques entre guillemets « » sont jouées : Léo, 19 ans, d'une voix jeune et fatiguée ; la mère d'une voix douce et forte ; le coach d'une voix sèche. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "flash": 0.1,
+  "refus": 0.2,
+  "plan": 0.2,
+  "vente": 0.2,
+  "bocal": 0.3,
+  "samedi": 0.3,
+  "stade": 3.2
+ },
+ "lines": [
+  {
+   "scene": "flash",
+   "say": "Ta mère est dans les tribunes.",
+   "show": "Ta mère est dans les tribunes."
+  },
+  {
+   "scene": "refus",
+   "say": "Tu dis tout à Léo. Il secoue la tête. « Samedi, je travaille. Le stade paie double. »",
+   "show": "Tu dis tout à Léo. Il secoue la tête. « Samedi, je travaille. Le stade paie double. »"
+  },
+  {
+   "scene": "plan",
+   "say": "Double, c'est deux cent soixante euros. Alors tu fais un plan.",
+   "show": "Double, c'est deux cent soixante euros. Alors tu fais un plan."
+  },
+  {
+   "scene": "vente",
+   "say": "Tu vends ta console. Cent quatre-vingts euros.",
+   "show": "Tu vends ta console. Cent quatre-vingts euros."
+  },
+  {
+   "scene": "vente",
+   "say": "Tes vieux mangas à la voisine. Quarante euros.",
+   "show": "Tes vieux mangas à la voisine. Quarante euros."
+  },
+  {
+   "scene": "vente",
+   "say": "Trois matins à aider le boulanger d'en face. Quarante euros.",
+   "show": "Trois matins à aider le boulanger d'en face. Quarante euros."
+  },
+  {
+   "scene": "bocal",
+   "say": "Vendredi soir, tu poses un bocal sur le lit de Léo. Avec un mot : « Ta nuit de samedi. Va jouer. »",
+   "show": "Vendredi soir, tu poses un bocal sur le lit de Léo. Avec un mot : « Ta nuit de samedi. Va jouer. »"
+  },
+  {
+   "scene": "bocal",
+   "say": "Léo lit. Il ne dit rien. Il éteint la lumière.",
+   "show": "Léo lit. Il ne dit rien. Il éteint la lumière."
+  },
+  {
+   "scene": "samedi",
+   "say": "Samedi, neuf heures. Son lit est vide. Son sac de foot… est toujours là.",
+   "show": "Samedi, neuf heures. Son lit est vide. Son sac de foot… est toujours là."
+  },
+  {
+   "scene": "stade",
+   "say": "Tu cours au stade. Léo est dans les tribunes, avec sa serpillière.",
+   "show": "Tu cours au stade. Léo est dans les tribunes, avec sa serpillière."
+  },
+  {
+   "scene": "stade",
+   "say": "Et à côté de lui… il y a Maman. Qu'est-ce qu'elle va dire ?",
+   "show": "Et à côté de lui… il y a Maman. Qu'est-ce qu'elle va dire ?"
+  }
+ ],
+ "cues": {
+  "c1": [
+   3,
+   "start",
+   1.2
+  ],
+  "c2": [
+   4,
+   "start",
+   1.0
+  ],
+  "c3": [
+   5,
+   "start",
+   1.6
+  ],
+  "mom": [
+   10,
+   "start",
+   1.0
+  ],
+  "endcard": [
+   10,
+   "end",
+   0.6
+  ]
+ },
+ "sfx": [
+  {
+   "type": "pop",
+   "cue": [
+    "c1",
+    "c2",
+    "c3"
+   ]
+  },
+  {
+   "type": "hit",
+   "cue": [
+    "mom",
+    "endcard"
+   ]
+  }
+ ],
+ "pulse": [
+  [
+   "samedi",
+   "stade"
+  ]
+ ]
+}
