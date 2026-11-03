@@ -8,7 +8,15 @@
   "serie": "17:30",
   "horreur-serie": "20:00 / 21:00"
  },
- "pret": [],
+ "pret": [
+  {
+   "dossier": "secret-concierge",
+   "type": "histoire",
+   "titre": "Le secret du concierge",
+   "creneau_cible": "2026-11-04T14:30+01:00",
+   "description": "Le secret du concierge.. 📖\nEt toi, tu l'aurais aidé ? 👇\n\n#histoire #ecole #secret #emotion #animation #lecture #pourtoi #fyp"
+  }
+ ],
  "programmes": [
   {
    "dossier": "ascenseur-13-2",
