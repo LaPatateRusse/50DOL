@@ -1,0 +1,163 @@
+{
+ "title": "Le secret du gant",
+ "note": "Format « Le secret de… » (directive de l'agent stratège du 03/11), style cinéma, histoire originale. Ouverture en flash-forward.",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Orus",
+  "gemini_style": "Lis ce texte en français, comme un conteur de mini-film d'animation sur TikTok : voix masculine grave et posée, phrases courtes, vraies pauses dramatiques sur les points de suspension. Ton mystérieux au début, puis de plus en plus émouvant. Les répliques entre guillemets « » sont jouées : les enfants qui se moquent, puis le héros, la voix brisée. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "flash": 0.4,
+  "ecole": 0.3,
+  "voiture": 0.6,
+  "grenier": 0.3,
+  "journal": 0.6,
+  "cuisine": 0.6,
+  "fin": 3.4
+ },
+ "lines": [
+  {
+   "scene": "flash",
+   "say": "Ce gant… cache un secret.",
+   "show": "Ce gant… cache un secret."
+  },
+  {
+   "scene": "ecole",
+   "say": "Trois jours plus tôt. Ton père vient te chercher à l'école. Comme toujours, avec un gant à la main gauche. Même en été.",
+   "show": "Trois jours plus tôt. Ton père vient te chercher à l'école. Comme toujours, avec un gant à la main gauche. Même en été."
+  },
+  {
+   "scene": "ecole",
+   "say": "Derrière toi, les autres rigolent : « Voilà le père au gant ! »",
+   "show": "Derrière toi, les autres rigolent : « Voilà le père au gant ! »"
+  },
+  {
+   "scene": "voiture",
+   "say": "Dans la voiture, tu craques : « Papa… ne viens plus me chercher. J'ai honte. »",
+   "show": "Dans la voiture, tu craques : « Papa… ne viens plus me chercher. J'ai honte. »"
+  },
+  {
+   "scene": "voiture",
+   "say": "Il ne dit rien. Il regarde juste la route.",
+   "show": "Il ne dit rien. Il regarde juste la route."
+  },
+  {
+   "scene": "grenier",
+   "say": "Le soir, en cherchant ton vieux doudou au grenier, tu tombes sur un journal jauni.",
+   "show": "Le soir, en cherchant ton vieux doudou au grenier, tu tombes sur un journal jauni."
+  },
+  {
+   "scene": "journal",
+   "say": "En première page : une maison en flammes. « Un père sauve son bébé du feu, à mains nues. »",
+   "show": "En première page : une maison en flammes. « Un père sauve son bébé du feu, à mains nues. »"
+  },
+  {
+   "scene": "journal",
+   "say": "La maison sur la photo… c'est la tienne. Le bébé… c'est toi.",
+   "show": "La maison sur la photo… c'est la tienne. Le bébé… c'est toi."
+  },
+  {
+   "scene": "cuisine",
+   "say": "Tu descends. Ton père fait la vaisselle, sans son gant. Sa main est couverte de cicatrices.",
+   "show": "Tu descends. Ton père fait la vaisselle, sans son gant. Sa main est couverte de cicatrices."
+  },
+  {
+   "scene": "cuisine",
+   "say": "Il te voit. Il sourit, gêné : « Je le portais pour que tu n'aies jamais peur de ma main. »",
+   "show": "Il te voit. Il sourit, gêné : « Je le portais pour que tu n'aies jamais peur de ma main. »"
+  },
+  {
+   "scene": "fin",
+   "say": "Le lendemain, devant toute l'école, c'est toi qui lui prends la main. La main gauche.",
+   "show": "Le lendemain, devant toute l'école, c'est toi qui lui prends la main. La main gauche."
+  },
+  {
+   "scene": "fin",
+   "say": "Et toi… tu l'aurais deviné, ce secret ?",
+   "show": "Et toi… tu l'aurais deviné, ce secret ?"
+  }
+ ],
+ "cues": {
+  "glove": [
+   0,
+   "start",
+   0.3
+  ],
+  "laugh": [
+   2,
+   "start",
+   1.2
+  ],
+  "shame": [
+   3,
+   "start",
+   2.0
+  ],
+  "paper": [
+   5,
+   "end",
+   -1.4
+  ],
+  "headline": [
+   6,
+   "start",
+   1.6
+  ],
+  "baby": [
+   7,
+   "start",
+   1.4
+  ],
+  "scar": [
+   8,
+   "start",
+   2.8
+  ],
+  "hand": [
+   10,
+   "start",
+   2.6
+  ],
+  "endcard": [
+   11,
+   "end",
+   0.6
+  ]
+ },
+ "sfx": [
+  {
+   "type": "hit",
+   "cue": [
+    "glove",
+    "baby",
+    "scar"
+   ]
+  },
+  {
+   "type": "pop",
+   "cue": [
+    "laugh",
+    "paper",
+    "headline",
+    "hand"
+   ]
+  },
+  {
+   "type": "swish",
+   "cue": "shame"
+  },
+  {
+   "type": "hit",
+   "cue": "endcard"
+  }
+ ],
+ "pulse": [
+  [
+   "journal",
+   "fin"
+  ]
+ ]
+}

@@ -1,87 +1,95 @@
 {
- "programme": "1 vidéo « Et si… ? » par jour à 18:00 (Europe/Paris), vidéo unique, style docs/style-etsi.md",
- "publiees": [
-  {
-   "question": "Et si tu tombais dans un trou qui traverse la Terre ?",
-   "dossier": "videos/etsi-traverser-terre",
-   "publication": "2026-11-02 18:00",
-   "buffer_post": "6ae8869c3911b6a45d4d5e79",
-   "voix": "Gemini Orus"
-  },
-  {
-   "question": "Et si la Lune disparaissait cette nuit ?",
-   "dossier": "videos/etsi-lune",
-   "style": "cinéma",
-   "publication": "2026-11-04 07:00 (programmé)",
-   "voix": "Gemini Orus"
-  }
- ],
- "idees_restantes": [
-  "Et si tu ne dormais plus pendant 11 jours ?",
-  "Et si la Terre arrêtait de tourner une seconde ?",
-  "Et si tu buvais 10 litres d'eau d'un coup ?",
-  "Et si tous les insectes disparaissaient ?",
-  "Et si tu restais 1 an dans l'espace ?",
-  "Et si internet s'arrêtait dans le monde entier ?",
-  "Et si tu tombais d'un avion sans parachute ?",
-  "Et si le Soleil s'éteignait ?"
- ],
- "series": [
-  {
-   "titre": "Et si ton compte doublait chaque jour ?",
-   "parties_prevues": 3,
-   "episodes": [
+  "programme": "1 vidéo « Et si… ? » par jour à 18:00 (Europe/Paris), vidéo unique, style docs/style-etsi.md",
+  "publiees": [
     {
-     "partie": 1,
-     "dossier": "videos/etsi-compte-double-1",
-     "publication": "2026-11-03 18:00 (programmé)",
-     "buffer_post": "6ae88f6f386d2d7c1340f337",
-     "fin": "Jour 20 : plus d'un million ; la banque bloque le compte (vérification de l'origine des fonds, TRACFIN). Demain le compte doit encore doubler (2 097 152 €).",
-     "choix": "Tu dis la vérité à la banque ? OUI / NON"
+      "question": "Et si tu tombais dans un trou qui traverse la Terre ?",
+      "dossier": "videos/etsi-traverser-terre",
+      "publication": "2026-11-02 18:00",
+      "buffer_post": "6ae8869c3911b6a45d4d5e79",
+      "voix": "Gemini Orus"
+    },
+    {
+      "question": "Et si la Lune disparaissait cette nuit ?",
+      "dossier": "videos/etsi-lune",
+      "style": "cinéma",
+      "publication": "2026-11-04 07:00 (programmé)",
+      "voix": "Gemini Orus"
     }
-   ]
-  }
- ],
- "one_shots": [
-  {
-   "dir": "histoire-bouton-pause",
-   "title": "Le Bouton Pause",
-   "posted": "2026-11-02T15:35+01:00",
-   "buffer": "6ae89fb2f1669be3eab704cb",
-   "voice": "Gemini Orus",
-   "pouvoir": "arrêter le temps"
-  },
-  {
-   "dir": "histoire-classe-3b",
-   "title": "Le Groupe « Classe 3B »",
-   "scheduled": "2026-11-02T16:05+01:00",
-   "buffer": "6ae8a1ba31e164b233e8ff16",
-   "voice": "ElevenLabs Adam (quota Gemini épuisé)"
-  },
-  {
-   "dir": "histoire-chance-infinie",
-   "title": "Chance Infinie",
-   "scheduled": "2026-11-02T16:35+01:00",
-   "buffer": "6ae8a2d02810e4a79d30c5fd",
-   "voice": "ElevenLabs Adam (quota Gemini épuisé)",
-   "pouvoir": "chance infinie"
-  },
-  {
-   "dir": "histoire-pensees",
-   "title": "J'entends tes pensées",
-   "pouvoir": "lire dans les pensées",
-   "scheduled": "2026-11-03T18:00+01:00",
-   "buffer": "6ae9df6cc6fbbde824889ad1",
-   "voice": "Gemini Orus"
-  },
-  {
-   "dir": "histoire-carnet-excuses",
-   "title": "Le Carnet des excuses",
-   "regle": "chaque excuse sincère rajeunit d'un an celui qui la reçoit et vieillit celui qui la donne",
-   "style": "cinéma",
-   "scheduled": "2026-11-03T16:30+01:00",
-   "buffer": "6ae9e90087e4378742d956d1",
-   "voice": "Gemini Orus"
-  }
- ]
+  ],
+  "idees_restantes": [
+    "Et si tu ne dormais plus pendant 11 jours ?",
+    "Et si la Terre arrêtait de tourner une seconde ?",
+    "Et si tu buvais 10 litres d'eau d'un coup ?",
+    "Et si tous les insectes disparaissaient ?",
+    "Et si tu restais 1 an dans l'espace ?",
+    "Et si internet s'arrêtait dans le monde entier ?",
+    "Et si tu tombais d'un avion sans parachute ?",
+    "Et si le Soleil s'éteignait ?"
+  ],
+  "series": [
+    {
+      "titre": "Et si ton compte doublait chaque jour ?",
+      "parties_prevues": 3,
+      "episodes": [
+        {
+          "partie": 1,
+          "dossier": "videos/etsi-compte-double-1",
+          "publication": "2026-11-03 18:00 (programmé)",
+          "buffer_post": "6ae88f6f386d2d7c1340f337",
+          "fin": "Jour 20 : plus d'un million ; la banque bloque le compte (vérification de l'origine des fonds, TRACFIN). Demain le compte doit encore doubler (2 097 152 €).",
+          "choix": "Tu dis la vérité à la banque ? OUI / NON"
+        }
+      ]
+    }
+  ],
+  "one_shots": [
+    {
+      "dir": "histoire-bouton-pause",
+      "title": "Le Bouton Pause",
+      "posted": "2026-11-02T15:35+01:00",
+      "buffer": "6ae89fb2f1669be3eab704cb",
+      "voice": "Gemini Orus",
+      "pouvoir": "arrêter le temps"
+    },
+    {
+      "dir": "histoire-classe-3b",
+      "title": "Le Groupe « Classe 3B »",
+      "scheduled": "2026-11-02T16:05+01:00",
+      "buffer": "6ae8a1ba31e164b233e8ff16",
+      "voice": "ElevenLabs Adam (quota Gemini épuisé)"
+    },
+    {
+      "dir": "histoire-chance-infinie",
+      "title": "Chance Infinie",
+      "scheduled": "2026-11-02T16:35+01:00",
+      "buffer": "6ae8a2d02810e4a79d30c5fd",
+      "voice": "ElevenLabs Adam (quota Gemini épuisé)",
+      "pouvoir": "chance infinie"
+    },
+    {
+      "dir": "histoire-pensees",
+      "title": "J'entends tes pensées",
+      "pouvoir": "lire dans les pensées",
+      "scheduled": "2026-11-03T18:00+01:00",
+      "buffer": "6ae9df6cc6fbbde824889ad1",
+      "voice": "Gemini Orus"
+    },
+    {
+      "dir": "histoire-carnet-excuses",
+      "title": "Le Carnet des excuses",
+      "regle": "chaque excuse sincère rajeunit d'un an celui qui la reçoit et vieillit celui qui la donne",
+      "style": "cinéma",
+      "scheduled": "2026-11-03T16:30+01:00",
+      "buffer": "6ae9e90087e4378742d956d1",
+      "voice": "Gemini Orus"
+    },
+    {
+      "dir": "secret-gant",
+      "title": "Le secret du gant",
+      "format": "Le secret de… (directive agent)",
+      "style": "cinéma",
+      "scheduled": "2026-11-04T13:30+01:00",
+      "voice": "Gemini"
+    }
+  ]
 }
