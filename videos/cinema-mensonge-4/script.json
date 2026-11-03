@@ -1,0 +1,177 @@
+{
+ "title": "Cent euros le mensonge — Partie 4",
+ "note": "Arc : videos/cinema-mensonge.json",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Orus",
+  "gemini_style": "Lis ce texte en français, comme un conteur de mini-film d'animation sur TikTok : voix masculine grave et posée, phrases courtes, rythme vif mais avec de vraies pauses dramatiques sur les points de suspension. Ton émouvant et mystérieux. Les répliques entre guillemets « » sont jouées : l'homme au chapeau d'une voix rauque, douce et menaçante, le héros d'une voix jeune, la mère d'une voix douce, la grand-mère d'une voix âgée et chaleureuse, le grand-père d'une voix âgée et brisée. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "reveil": 0.2,
+  "tasse": 0.2,
+  "carnet": 0.4,
+  "depart": 0.2,
+  "porte": 0.3,
+  "voix": 0.2,
+  "chapeau": 0.5,
+  "fin": 3.4
+ },
+ "lines": [
+  {
+   "scene": "reveil",
+   "say": "Jour cinq. Tu te réveilles chez Mamie. Ta main a encore pâli.",
+   "show": "Jour cinq. Tu te réveilles chez Mamie. Ta main a encore pâli."
+  },
+  {
+   "scene": "reveil",
+   "say": "Sur les photos du salon… tu n'es plus là. Même sur celles de tes anniversaires.",
+   "show": "Sur les photos du salon… tu n'es plus là. Même sur celles de tes anniversaires."
+  },
+  {
+   "scene": "tasse",
+   "say": "Mamie pose une tasse de chocolat devant toi. Sa main tremble.",
+   "show": "Mamie pose une tasse de chocolat devant toi. Sa main tremble."
+  },
+  {
+   "scene": "tasse",
+   "say": "« Ton grand-père avait laissé un carnet. Je n'ai jamais eu le courage de le lire. »",
+   "show": "« Ton grand-père avait laissé un carnet. Je n'ai jamais eu le courage de le lire. »"
+  },
+  {
+   "scene": "carnet",
+   "say": "Dernière page. L'écriture de Papy.",
+   "show": "Dernière page. L'écriture de Papy."
+  },
+  {
+   "scene": "carnet",
+   "say": "« La vérité qui coûte le plus, ce n'est pas un secret. C'est ce qu'on n'a jamais osé dire à quelqu'un qu'on aime. »",
+   "show": "« La vérité qui coûte le plus, ce n'est pas un secret. C'est ce qu'on n'a jamais osé dire à quelqu'un qu'on aime. »"
+  },
+  {
+   "scene": "carnet",
+   "say": "« Moi, je n'ai jamais osé le dire à Jeanne. »",
+   "show": "« Moi, je n'ai jamais osé le dire à Jeanne. »"
+  },
+  {
+   "scene": "carnet",
+   "say": "Mamie pose la main sur sa bouche. Jeanne… c'est elle.",
+   "show": "Mamie pose la main sur sa bouche. Jeanne… c'est elle."
+  },
+  {
+   "scene": "depart",
+   "say": "Toi, tu sais exactement à qui tu dois parler.",
+   "show": "Toi, tu sais exactement à qui tu dois parler."
+  },
+  {
+   "scene": "porte",
+   "say": "Tu reprends le train. Tu frappes chez ta mère. Elle ouvre… et regarde à travers toi.",
+   "show": "Tu reprends le train. Tu frappes chez ta mère. Elle ouvre… et regarde à travers toi."
+  },
+  {
+   "scene": "porte",
+   "say": "« Il y a quelqu'un ? »",
+   "show": "« Il y a quelqu'un ? »"
+  },
+  {
+   "scene": "porte",
+   "say": "Elle ne te voit presque plus. Tu as peu de temps.",
+   "show": "Elle ne te voit presque plus. Tu as peu de temps."
+  },
+  {
+   "scene": "voix",
+   "say": "Mais avant que tu parles, une voix derrière toi : « Tu ne lui diras rien. »",
+   "show": "Mais avant que tu parles, une voix derrière toi : « Tu ne lui diras rien. »"
+  },
+  {
+   "scene": "voix",
+   "say": "L'homme au chapeau. Pour la première fois… il a peur.",
+   "show": "L'homme au chapeau. Pour la première fois… il a peur."
+  },
+  {
+   "scene": "chapeau",
+   "say": "Tu attrapes son chapeau… et il tombe.",
+   "show": "Tu attrapes son chapeau… et il tombe."
+  },
+  {
+   "scene": "chapeau",
+   "say": "Sous le chapeau… c'est le visage de ton grand-père. Le même que sur la photo.",
+   "show": "Sous le chapeau… c'est le visage de ton grand-père. Le même que sur la photo."
+  },
+  {
+   "scene": "fin",
+   "say": "Papy n'a jamais disparu. Il est devenu le pacte. Qui doit être sauvé : toi ou Papy ? Dis-le en commentaire.",
+   "show": "Papy n'a jamais disparu. Il est devenu le pacte. Qui doit être sauvé : toi ou Papy ? Dis-le en commentaire."
+  }
+ ],
+ "cues": {
+  "knock": [
+   9,
+   "start",
+   2.2
+  ],
+  "open": [
+   9,
+   "start",
+   3.4
+  ],
+  "voice": [
+   12,
+   "start",
+   2.0
+  ],
+  "grab": [
+   14,
+   "start",
+   0.6
+  ],
+  "fall": [
+   14,
+   "start",
+   1.4
+  ],
+  "reveal": [
+   15,
+   "start",
+   1.2
+  ],
+  "endcard": [
+   16,
+   "end",
+   0.6
+  ]
+ },
+ "sfx": [
+  {
+   "type": "knock",
+   "cue": "knock"
+  },
+  {
+   "type": "swish",
+   "cue": [
+    "open",
+    "grab"
+   ]
+  },
+  {
+   "type": "hit",
+   "cue": [
+    "voice",
+    "reveal",
+    "endcard"
+   ]
+  },
+  {
+   "type": "puff",
+   "cue": "fall"
+  }
+ ],
+ "pulse": [
+  [
+   "voix",
+   "fin"
+  ]
+ ]
+}

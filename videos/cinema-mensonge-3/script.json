@@ -1,0 +1,185 @@
+{
+ "title": "Cent euros le mensonge — Partie 3",
+ "note": "Arc : videos/cinema-mensonge.json",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Orus",
+  "gemini_style": "Lis ce texte en français, comme un conteur de mini-film d'animation sur TikTok : voix masculine grave et posée, phrases courtes, rythme vif mais avec de vraies pauses dramatiques sur les points de suspension. Ton émouvant et mystérieux. Les répliques entre guillemets « » sont jouées : l'homme au chapeau d'une voix rauque, douce et menaçante, le héros d'une voix jeune, la mère d'une voix douce, la grand-mère d'une voix âgée et chaleureuse, le grand-père d'une voix âgée et brisée. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "rue": 0.2,
+  "offre": 0.2,
+  "refus": 0.4,
+  "verites": 0.2,
+  "montage": 0.2,
+  "chute": 0.4,
+  "fin": 3.4
+ },
+ "lines": [
+  {
+   "scene": "rue",
+   "say": "Tu sors. La pluie. Le lampadaire. Et lui.",
+   "show": "Tu sors. La pluie. Le lampadaire. Et lui."
+  },
+  {
+   "scene": "rue",
+   "say": "« Bonsoir, petit. Ta grand-mère t'a parlé de la vérité ? Elle t'a menti. »",
+   "show": "« Bonsoir, petit. Ta grand-mère t'a parlé de la vérité ? Elle t'a menti. »"
+  },
+  {
+   "scene": "offre",
+   "say": "Il sort une liasse de billets. « Un dernier mensonge… et je te donne cent mille euros. »",
+   "show": "Il sort une liasse de billets. « Un dernier mensonge… et je te donne cent mille euros. »"
+  },
+  {
+   "scene": "offre",
+   "say": "« Le prix ? Elle t'oubliera. Comme tous les autres. »",
+   "show": "« Le prix ? Elle t'oubliera. Comme tous les autres. »"
+  },
+  {
+   "scene": "refus",
+   "say": "Tu lèves les yeux. Mamie est là, derrière le rideau.",
+   "show": "Tu lèves les yeux. Mamie est là, derrière le rideau."
+  },
+  {
+   "scene": "refus",
+   "say": "Tu réponds : « Non. »",
+   "show": "Tu réponds : « Non. »"
+  },
+  {
+   "scene": "refus",
+   "say": "Il sourit. « Alors amuse-toi bien avec tes vérités. » Et il disparaît.",
+   "show": "Il sourit. « Alors amuse-toi bien avec tes vérités. » Et il disparaît."
+  },
+  {
+   "scene": "verites",
+   "say": "Jour quatre. Tu essaies. Une vérité à la fois.",
+   "show": "Jour quatre. Tu essaies. Une vérité à la fois."
+  },
+  {
+   "scene": "verites",
+   "say": "À ton pote : « C'est moi qui ai cassé ta console. » Moins cent euros.",
+   "show": "À ton pote : « C'est moi qui ai cassé ta console. » Moins cent euros."
+  },
+  {
+   "scene": "verites",
+   "say": "Il fronce les sourcils… « Attends… je te connais, toi ! »",
+   "show": "Il fronce les sourcils… « Attends… je te connais, toi ! »"
+  },
+  {
+   "scene": "verites",
+   "say": "Ça marche. Chaque vérité te coûte cent euros… mais quelqu'un se souvient.",
+   "show": "Ça marche. Chaque vérité te coûte cent euros… mais quelqu'un se souvient."
+  },
+  {
+   "scene": "montage",
+   "say": "Au prof. Au voisin. À la boulangère. Moins cent. Moins cent. Moins cent.",
+   "show": "Au prof. Au voisin. À la boulangère. Moins cent. Moins cent. Moins cent."
+  },
+  {
+   "scene": "chute",
+   "say": "Le soir, ton compte affiche : moins quatre-vingt-dix-sept euros.",
+   "show": "Le soir, ton compte affiche : moins quatre-vingt-dix-sept euros."
+  },
+  {
+   "scene": "chute",
+   "say": "Et là, tu regardes ta main.",
+   "show": "Et là, tu regardes ta main."
+  },
+  {
+   "scene": "chute",
+   "say": "Tu vois le carrelage… à travers tes doigts.",
+   "show": "Tu vois le carrelage… à travers tes doigts."
+  },
+  {
+   "scene": "fin",
+   "say": "Sous zéro, ce n'est plus les autres qui t'oublient. C'est toi qui disparais.",
+   "show": "Sous zéro, ce n'est plus les autres qui t'oublient. C'est toi qui disparais."
+  },
+  {
+   "scene": "fin",
+   "say": "Il te reste une seule chance. Tu sais laquelle ? Commente oui ou non.",
+   "show": "Il te reste une seule chance. Tu sais laquelle ? Commente oui ou non."
+  }
+ ],
+ "cues": {
+  "no": [
+   5,
+   "start",
+   1.0
+  ],
+  "vanish": [
+   6,
+   "end",
+   -1.2
+  ],
+  "m1": [
+   8,
+   "end",
+   -0.6
+  ],
+  "heart": [
+   9,
+   "start",
+   1.4
+  ],
+  "m2": [
+   11,
+   "start",
+   0.3
+  ],
+  "m3": [
+   11,
+   "start",
+   1.5
+  ],
+  "m4": [
+   11,
+   "start",
+   2.7
+  ],
+  "neg": [
+   12,
+   "start",
+   0.5
+  ],
+  "endcard": [
+   16,
+   "end",
+   0.6
+  ]
+ },
+ "sfx": [
+  {
+   "type": "puff",
+   "cue": "vanish"
+  },
+  {
+   "type": "pop",
+   "cue": [
+    "m1",
+    "m2",
+    "m3",
+    "m4",
+    "heart"
+   ]
+  },
+  {
+   "type": "hit",
+   "cue": [
+    "no",
+    "neg",
+    "endcard"
+   ]
+  }
+ ],
+ "pulse": [
+  [
+   "chute",
+   "fin"
+  ]
+ ]
+}
