@@ -193,9 +193,12 @@
    "fichier": "long/super-pouvoirs-1/youtube-long.mp4",
    "titre": "4 super-pouvoirs… et le prix à payer pour chacun | Histoires animées",
    "description": "Arrêter le temps, entendre les pensées, une chance infinie, rajeunir les gens avec une excuse… 4 super-pouvoirs, 4 histoires, et à chaque fois un prix à payer.\nLequel tu choisirais ? Dis-le en commentaire 👇\n\n00:00 Introduction\n00:21 POUVOIR N°1 — Arrêter le temps\n01:39 POUVOIR N°2 — Entendre les pensées\n03:00 POUVOIR N°3 — La chance infinie\n04:08 POUVOIR N°4 — Le carnet des excuses\n05:47 Fin\n\n#superpouvoir #histoire #animation #etsi #twist",
-   "statut": "upload_manuel",
-   "heure_prevue": "2026-11-04T18:30+01:00",
-   "note": "Buffer refuse les vidéos > 3 min / horizontales (Shorts uniquement) : à mettre en ligne à la main dans YouTube Studio."
+   "statut": "programme",
+   "heure": "2026-11-04T18:30+01:00",
+   "upload_post": {
+    "job_id": "80c9bd650ee74909b52996537d9befec",
+    "request_id": "28b6c20921814c0c922ba40d40616878"
+   }
   },
   {
    "dossier": "long/blackout-complet",
@@ -203,9 +206,12 @@
    "fichier": "long/blackout-complet/youtube-long.mp4",
    "titre": "Blackout général : 5 jours sans électricité en plein hiver (l'histoire complète)",
    "description": "Une nuit d'hiver, toute la ville s'éteint. Pendant 5 jours, Max doit survivre au blackout : eau, chaleur, nourriture, voisins… avec de vrais conseils de survie à appliquer si ça t'arrive un jour.\nToi, tu aurais tenu combien de jours ? Dis-le en commentaire 👇\n\n00:00 Introduction\n00:30 JOUR 1 — La panne\n01:46 JOUR 2 — On frappe à la porte\n03:10 JOUR 3 — Le voisin du 5e\n04:33 JOUR 4 — Les silhouettes\n05:24 JOUR 5 — La lumière revient\n06:27 Fin\n\n#survie #blackout #coupuredecourant #histoire #animation #kitdurgence",
-   "statut": "upload_manuel",
-   "heure_prevue": "2026-11-05T18:30+01:00",
-   "note": "Buffer refuse les vidéos > 3 min / horizontales (Shorts uniquement) : à mettre en ligne à la main dans YouTube Studio."
+   "statut": "programme",
+   "heure": "2026-11-05T18:30+01:00",
+   "upload_post": {
+    "job_id": "2d62b1befe364e03b7a7e05a1a04b496",
+    "request_id": "5f77c26f5ea14e4eb8f56c636db4193f"
+   }
   },
   {
    "dossier": "secret-gant",
