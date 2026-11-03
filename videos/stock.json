@@ -30,6 +30,13 @@
       "titre": "Et si la Lune disparaissait cette nuit ?",
       "buffer": "6ae9fcadb75704f9ac5d826f",
       "heure": "2026-11-04T07:00+01:00"
+    },
+    {
+      "dossier": "blackout-jour5",
+      "type": "survie",
+      "titre": "Blackout général — Jour 5 (FIN)",
+      "buffer": "6aea09e7b75704f9ac6275c9",
+      "heure": "2026-11-04T12:10+01:00"
     }
   ]
 }
