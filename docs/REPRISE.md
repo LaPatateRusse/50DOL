@@ -101,3 +101,20 @@ ffmpeg -f concat -safe 0 -i .build/jourN/segs.txt -i .build/jourN/audio.wav -c:v
 - `build_audio.py` accepte `TTS_PROVIDER=draft` (brouillon muet, durées estimées).
 
 - **Mini-série « Cent euros le mensonge » : 5 parties**, arc complet dans `videos/cinema-mensonge.json`. Parties 2 à 5 fabriquées (`videos/cinema-mensonge-2..5/`) et programmées sur Buffer les 04, 05, 06 et 07/11 à 18:00. Kit commun de la série : `videos/engine/mensonge-kit.js` (objet `MK`). Attention : la tâche « Et si… » publie aussi à 18:00.
+
+## Cadence doublée (03/11, demande de l'utilisateur) : 8 vidéos par jour
+
+| Heure | Contenu | Tâche programmée (heure de lancement) |
+|---|---|---|
+| 07:30 | « Et si… ? » science (idees_restantes de etsi.json) | `trig_011qzjcaiRHNmWVQyJYGwpyN` (06:47) |
+| 09:05 | Survie (Blackout J5 le 04/11, puis nouvelle série) | `trig_01J7u5zn3rs1CeJXLkzJLkbA` (08:31) |
+| 12:00 | Horreur mini-série | `trig_01FQT8pfNGWeVMQvgcEGRwNy` (11:13) |
+| 14:30 | Histoire originale en 1 partie | `trig_01Jzi2tRcohnqCxmKc6PaSLU` (13:49) |
+| 16:30 | Histoire originale en 1 partie | `trig_01BYBXWMw3WSnZNLbatDQLyr` (15:43) |
+| 18:00 | « Et si… » super-pouvoir long (04-07/11 : « Cent euros le mensonge » d'un AUTRE chat) | `trig_01KMDU1Xf47e9nvmw13qWeTA` (14:47) |
+| 21:30 | Horreur mini-série | `trig_01TVdCcFBnasaoaTh94P1j9g` (20:43) |
+| 23:00 | Horreur courte complète | `trig_0159VwstQdPrMQtknrkbDspx` (22:17) |
+
+- Un autre chat Claude publie aussi sur le compte (série « Cent euros le mensonge », dossiers `videos/cinema-*`) : toujours `git pull --ff-only` avant de travailler, ne pas toucher à ses fichiers.
+- Chaque tâche vérifie le créneau et la limite Buffer (10 posts programmés) avant de fabriquer.
+- 03/11 18:00 : « J'entends tes pensées » (`videos/histoire-pensees`).

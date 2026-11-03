@@ -42,7 +42,8 @@
       "title": "Le Bouton Pause",
       "posted": "2026-11-02T15:35+01:00",
       "buffer": "6ae89fb2f1669be3eab704cb",
-      "voice": "Gemini Orus"
+      "voice": "Gemini Orus",
+      "pouvoir": "arrêter le temps"
     },
     {
       "dir": "histoire-classe-3b",
@@ -56,7 +57,16 @@
       "title": "Chance Infinie",
       "scheduled": "2026-11-02T16:35+01:00",
       "buffer": "6ae8a2d02810e4a79d30c5fd",
-      "voice": "ElevenLabs Adam (quota Gemini épuisé)"
+      "voice": "ElevenLabs Adam (quota Gemini épuisé)",
+      "pouvoir": "chance infinie"
+    },
+    {
+      "dir": "histoire-pensees",
+      "title": "J'entends tes pensées",
+      "pouvoir": "lire dans les pensées",
+      "scheduled": "2026-11-03T18:00+01:00",
+      "buffer": "6ae9df6cc6fbbde824889ad1",
+      "voice": "Gemini Orus"
     }
   ]
 }
