@@ -1,0 +1,143 @@
+{
+ "title": "L'ascenseur du 13e — Partie 3 (FIN)",
+ "note": "Sans vote du public lu : le héros fait le choix prudent (il éteint son téléphone).",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Charon",
+  "gemini_style": "Lis ce texte en français, comme un conteur d'histoires d'horreur sur TikTok : voix masculine grave, à voix normale et bien posée, intense et inquiétante, rythme vif sans traîner. NE CHUCHOTE PAS. Les répliques entre guillemets « » sont dites d'une voix froide et menaçante, mais à voix normale. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "noir": 0.2,
+  "horloge": 0.3,
+  "couloir": 0.2,
+  "ascenseur": 0.2,
+  "rdc": 0.3,
+  "bouton": 0.3,
+  "fin": 3.0
+ },
+ "lines": [
+  {
+   "scene": "noir",
+   "say": "Tu éteins ton téléphone. Noir total. Et tout près de ton oreille : « Vous avez l'heure ? »",
+   "show": "Noir total. Tout près de ton oreille : « Vous avez l'[heure] ? »"
+  },
+  {
+   "scene": "noir",
+   "say": "Tu serres les dents. Tous ceux du registre ont répondu. Toi, tu ne diras rien. Ton cœur cogne si fort que tu as peur qu'il l'entende.",
+   "show": "Tous ceux du registre ont répondu. Toi, tu ne diras [rien]."
+  },
+  {
+   "scene": "horloge",
+   "say": "Dans le noir, un bruit. Tic. Tac. Une seule horloge s'est remise à marcher.",
+   "show": "Tic. Tac. Une seule horloge s'est remise à [marcher]."
+  },
+  {
+   "scene": "horloge",
+   "say": "Trois heures quatorze. Personne ne lui a répondu… et pourtant, l'heure a changé. Pour la première fois, le Liftier recule.",
+   "show": "3 h [14]. Personne ne lui a répondu… et pourtant, l'heure a changé."
+  },
+  {
+   "scene": "couloir",
+   "say": "Un long cri, puis le silence. Les lumières du couloir se rallument, une à une. Au bout, un petit bruit : ding. L'ascenseur est ouvert.",
+   "show": "Un long cri, puis le silence. [Ding]. L'ascenseur est ouvert."
+  },
+  {
+   "scene": "ascenseur",
+   "say": "Tu cours de toutes tes forces. Tu appuies sur zéro. Les portes se referment sur un visage lisse.",
+   "show": "Tu appuies sur [0]. Les portes se referment sur un visage lisse."
+  },
+  {
+   "scene": "rdc",
+   "say": "Rez-de-chaussée. Le gardien te fixe : « Tu étais où ? Ça fait trois jours qu'on te cherche ! »",
+   "show": "Le gardien : « Ça fait [trois jours] qu'on te cherche ! »"
+  },
+  {
+   "scene": "bouton",
+   "say": "Tu regardes le panneau. Entre le douze et le toit, il y a un nouveau bouton. Le treize. Et il est allumé. Quelqu'un, là-haut, attend encore sa réponse.",
+   "show": "Le [13] est allumé. Quelqu'un, là-haut, attend encore sa réponse."
+  },
+  {
+   "scene": "fin",
+   "say": "Fin. Et toi… tu serais remonté ? Commente oui ou non.",
+   "show": "Tu serais remonté ? Commente {OUI} ou [NON]."
+  }
+ ],
+ "cues": {
+  "off": [
+   0,
+   "start",
+   0.6
+  ],
+  "ask": [
+   0,
+   "end",
+   -1.4
+  ],
+  "tick": [
+   2,
+   "start",
+   1.4
+  ],
+  "min": [
+   3,
+   "start",
+   0.2
+  ],
+  "ding": [
+   4,
+   "start",
+   2.6
+  ],
+  "press": [
+   5,
+   "start",
+   1.0
+  ],
+  "guard": [
+   6,
+   "start",
+   1.4
+  ],
+  "b13": [
+   7,
+   "start",
+   3.4
+  ],
+  "endcard": [
+   8,
+   "end",
+   0.6
+  ]
+ },
+ "sfx": [
+  {
+   "type": "hit",
+   "cue": [
+    "ask",
+    "b13",
+    "endcard"
+   ]
+  },
+  {
+   "type": "pop",
+   "cue": [
+    "tick",
+    "min",
+    "ding"
+   ]
+  },
+  {
+   "type": "swish",
+   "cue": "press"
+  }
+ ],
+ "pulse": [
+  [
+   "couloir",
+   "fin"
+  ]
+ ]
+}

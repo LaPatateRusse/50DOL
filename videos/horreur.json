@@ -1,77 +1,85 @@
 {
-  "programme": "2 épisodes horreur par jour : 12:00 et 21:30 (Europe/Paris), mini-séries de 3-4 épisodes, style docs/style-horreur.md",
-  "series": [
+ "programme": "2 épisodes horreur par jour : 12:00 et 21:30 (Europe/Paris), mini-séries de 3-4 épisodes, style docs/style-horreur.md",
+ "series": [
+  {
+   "titre": "Ne réponds pas",
+   "creature": "le Copieur (grand, maigre, gris, yeux jaunes, copie les voix)",
+   "episodes": [
     {
-      "titre": "Ne réponds pas",
-      "creature": "le Copieur (grand, maigre, gris, yeux jaunes, copie les voix)",
-      "episodes": [
-        {
-          "partie": 1,
-          "dossier": "videos/nuit-mamie",
-          "publication": "2026-11-02 12:30",
-          "buffer_post": "6ae8734a339e85e601694154",
-          "fin": "SMS de Mamie : « Ce n'est pas moi. Il copie les voix. » La porte d'entrée grince : il n'est plus dans le jardin.",
-          "choix": "Tu aurais répondu ? OUI / NON"
-        },
-        {
-          "partie": 2,
-          "dossier": "videos/nuit-mamie-2",
-          "publication": "2026-11-02 21:30",
-          "buffer_post": "6ae875cb2dd80afa12f61ce1",
-          "fin": "Caché sous le lit ; SMS de Mamie : « Il ne peut entrer que si tu lui réponds » ; la créature parle avec TA voix ; appel entrant « Mamie » alors que son téléphone est dans la cuisine… tenu par des doigts gris.",
-          "choix": "Tu décroches ? OUI / NON"
-        },
-        {
-          "partie": 3,
-          "dossier": "videos/nuit-mamie-3",
-          "publication": "2026-11-03 12:00 (programmé)",
-          "buffer_post": "6ae88cf8386d2d7c133fbb50",
-          "fin": "FIN : tu n'as pas décroché ; message vocal avec ta voix ; Mamie sauve ; traces vers la forêt ; le soir, Mamie reçoit un message de TOI : « Mamie… tu peux venir dans le jardin ? »",
-          "choix": null
-        }
-      ],
-      "parties_prevues": 3,
-      "terminee": true
+     "partie": 1,
+     "dossier": "videos/nuit-mamie",
+     "publication": "2026-11-02 12:30",
+     "buffer_post": "6ae8734a339e85e601694154",
+     "fin": "SMS de Mamie : « Ce n'est pas moi. Il copie les voix. » La porte d'entrée grince : il n'est plus dans le jardin.",
+     "choix": "Tu aurais répondu ? OUI / NON"
     },
     {
-      "titre": "L'ascenseur du 13e",
-      "creature": "le Liftier (uniforme de liftier rouge sombre, casquette, long cou, visage lisse sans traits)",
-      "parties_prevues": 3,
-      "episodes": [
-        {
-          "partie": 1,
-          "dossier": "videos/ascenseur-13-1",
-          "publication": "2026-11-03 20:00 (programmé, avancé depuis 21:30)",
-          "buffer_post": "6ae88f72bf0a4c296cb34577",
-          "fin": "Immeuble de 12 étages, l'ascenseur s'arrête au 13e ; mot : « Si quelqu'un te demande l'heure… ne réponds jamais » ; le Liftier sans visage demande l'heure ; il est 3 h 13 ; les portes de l'ascenseur se referment derrière toi.",
-          "choix": "Tu lui réponds ? OUI / NON"
-        },
-        {
-          "partie": 2,
-          "dossier": "videos/ascenseur-13-2",
-          "publication": "2026-11-03 21:00 (programmé)",
-          "buffer_post": "6ae9ecb087e4378742db161b",
-          "fin": "Sans vote lu : il ne répond pas. L'ascenseur ne revient plus ; toutes les portes portent le n°13 ; appartement plein d'horloges arrêtées à 3 h 13 ; registre de ceux qui ont « répondu » ; dernière ligne = ton prénom, vide ; la porte se referme, « Je peux attendre… longtemps. » ; téléphone à 3 %, l'écran affiche 03:13.",
-          "choix": "Tu éteins ton téléphone ? OUI / NON"
-        }
-      ]
-    }
-  ],
-  "idees_suivantes": [
-    "Le baby-phone",
-    "La station-service",
-    "Le GPS",
-    "La colo",
-    "Le répondeur"
-  ],
-  "one_shots": [
+     "partie": 2,
+     "dossier": "videos/nuit-mamie-2",
+     "publication": "2026-11-02 21:30",
+     "buffer_post": "6ae875cb2dd80afa12f61ce1",
+     "fin": "Caché sous le lit ; SMS de Mamie : « Il ne peut entrer que si tu lui réponds » ; la créature parle avec TA voix ; appel entrant « Mamie » alors que son téléphone est dans la cuisine… tenu par des doigts gris.",
+     "choix": "Tu décroches ? OUI / NON"
+    },
     {
-      "dossier": "videos/horreur-baby-phone",
-      "titre": "Le Baby-phone",
-      "regle": "le baby-phone compte les respirations ; plus d'une = ne monte pas ; twist : l'émetteur est dans le salon",
-      "creature": "les Respirants (formes pâles derrière le canapé, seulement des yeux)",
-      "buffer": "6ae9f1bc01362e3aae9c943e",
-      "publication": "2026-11-03 19:15"
+     "partie": 3,
+     "dossier": "videos/nuit-mamie-3",
+     "publication": "2026-11-03 12:00 (programmé)",
+     "buffer_post": "6ae88cf8386d2d7c133fbb50",
+     "fin": "FIN : tu n'as pas décroché ; message vocal avec ta voix ; Mamie sauve ; traces vers la forêt ; le soir, Mamie reçoit un message de TOI : « Mamie… tu peux venir dans le jardin ? »",
+     "choix": null
     }
-  ]
+   ],
+   "parties_prevues": 3,
+   "terminee": true
+  },
+  {
+   "titre": "L'ascenseur du 13e",
+   "creature": "le Liftier (uniforme de liftier rouge sombre, casquette, long cou, visage lisse sans traits)",
+   "parties_prevues": 3,
+   "episodes": [
+    {
+     "partie": 1,
+     "dossier": "videos/ascenseur-13-1",
+     "publication": "2026-11-03 20:00 (programmé, avancé depuis 21:30)",
+     "buffer_post": "6ae88f72bf0a4c296cb34577",
+     "fin": "Immeuble de 12 étages, l'ascenseur s'arrête au 13e ; mot : « Si quelqu'un te demande l'heure… ne réponds jamais » ; le Liftier sans visage demande l'heure ; il est 3 h 13 ; les portes de l'ascenseur se referment derrière toi.",
+     "choix": "Tu lui réponds ? OUI / NON"
+    },
+    {
+     "partie": 2,
+     "dossier": "videos/ascenseur-13-2",
+     "publication": "2026-11-03 21:00 (programmé)",
+     "buffer_post": "6ae9ecb087e4378742db161b",
+     "fin": "Sans vote lu : il ne répond pas. L'ascenseur ne revient plus ; toutes les portes portent le n°13 ; appartement plein d'horloges arrêtées à 3 h 13 ; registre de ceux qui ont « répondu » ; dernière ligne = ton prénom, vide ; la porte se referme, « Je peux attendre… longtemps. » ; téléphone à 3 %, l'écran affiche 03:13.",
+     "choix": "Tu éteins ton téléphone ? OUI / NON"
+    },
+    {
+     "partie": 3,
+     "dossier": "videos/ascenseur-13-3",
+     "publication": "2026-11-04 21:00",
+     "fin": "FIN : il éteint son téléphone et ne répond pas ; l'horloge passe seule à 3 h 14, le Liftier recule ; il s'enfuit par l'ascenseur ; au rez-de-chaussée, ça fait 3 jours qu'on le cherche ; un nouveau bouton 13 est allumé.",
+     "choix": null
+    }
+   ],
+   "terminee": true
+  }
+ ],
+ "idees_suivantes": [
+  "Le baby-phone",
+  "La station-service",
+  "Le GPS",
+  "La colo",
+  "Le répondeur"
+ ],
+ "one_shots": [
+  {
+   "dossier": "videos/horreur-baby-phone",
+   "titre": "Le Baby-phone",
+   "regle": "le baby-phone compte les respirations ; plus d'une = ne monte pas ; twist : l'émetteur est dans le salon",
+   "creature": "les Respirants (formes pâles derrière le canapé, seulement des yeux)",
+   "buffer": "6ae9f1bc01362e3aae9c943e",
+   "publication": "2026-11-03 19:15"
+  }
+ ]
 }
