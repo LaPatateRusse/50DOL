@@ -1,0 +1,47 @@
+{
+  "title": "J'entends tes pensées",
+  "note": "Histoire complète en 1 partie (super-pouvoir : lire dans les pensées). Héros = personnage de l'avatar.",
+  "voice": {
+    "model": "eleven_v3", "voice_id": "pNInz6obpgDQGcFmaJgB", "stability": 0.5, "tempo": 1.0,
+    "gemini_voice": "Orus",
+    "gemini_style": "Lis ce texte en français, comme un narrateur TikTok drôle et captivant : voix masculine grave, rythme vif, ton amusé sur les blagues, puis sérieux et tendu à la fin. Les passages entre guillemets « » sont les pensées des gens, dites comme une réplique de personnage. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+  },
+  "pad_after": { "j1": 0.2, "j2": 0.2, "j3": 0.2, "j4": 0.2, "j5": 0.2, "fin": 3.2 },
+  "lines": [
+    { "scene": "j1", "say": "Jour un. Une journée normale. Ton crush passe à côté de toi… sans te regarder.", "show": "Jour 1. Une journée normale. Ton crush passe à côté de toi… sans te [regarder]." },
+    { "scene": "j1", "say": "Le soir, tu as une migraine énorme. Tu t'endors direct.", "show": "Le soir, tu as une migraine [énorme]. Tu t'endors direct." },
+    { "scene": "j2", "say": "Jour deux. Dans le bus, le chauffeur te regarde et tu l'entends dire : « Encore lui, toujours en retard. » Mais sa bouche n'a pas bougé.", "show": "Jour 2. Le chauffeur te regarde : « Encore lui, toujours en retard. » Mais sa bouche n'a pas [bougé]." },
+    { "scene": "j2", "say": "En classe, la prof pense très fort : « Interro surprise, question trois, la réponse c'est mille-sept-cent-quatre-vingt-neuf. »", "show": "La prof pense : « Interro surprise. Question 3 : la réponse, c'est {1789}. »" },
+    { "scene": "j2", "say": "Tu lèves la main avant même qu'elle pose la question. Toute la classe est choquée.", "show": "Tu lèves la main avant même la question. Toute la classe est [choquée]." },
+    { "scene": "j3", "say": "Jour trois. Tu croises ton crush. Dans sa tête : « Il est mignon… mais il parle trop. »", "show": "Jour 3. Ton crush pense : « Il est mignon… mais il parle [trop]. »" },
+    { "scene": "j3", "say": "Alors tu dis juste : « Salut. » Et tu pars. Elle pense : « Wow. Mystérieux. » Ça marche.", "show": "Tu dis juste « Salut. » Et tu pars. Elle pense : « Wow. {Mystérieux}. »" },
+    { "scene": "j4", "say": "Jour quatre. Ça devient trop. Tu entends tout le monde, tout le temps. Même la nuit, les voisins pensent à travers les murs.", "show": "Jour 4. Tu entends tout le monde, tout le temps. Même la nuit, à travers les [murs]." },
+    { "scene": "j4", "say": "Et là, ton meilleur pote pense : « Samedi… il ne doit surtout rien savoir. »", "show": "Et ton meilleur pote pense : « Samedi… il ne doit surtout rien [savoir]. »" },
+    { "scene": "j4", "say": "Tu te sens trahi. Tu lui cries dessus devant tout le monde. Il ne comprend rien.", "show": "Tu te sens trahi. Tu lui cries dessus devant tout le monde. Il ne comprend [rien]." },
+    { "scene": "j5", "say": "Jour cinq. Samedi. Tu rentres chez toi… et toutes les lumières s'allument. « Surprise ! » Ton anniversaire. C'était lui qui avait tout organisé.", "show": "Jour 5. Samedi. Les lumières s'allument : « {Surprise} ! » C'était lui qui avait tout organisé." },
+    { "scene": "j5", "say": "Trente personnes dans la pièce. Trente pensées en même temps. Sauf une.", "show": "30 personnes. 30 pensées en même temps. Sauf [une]." },
+    { "scene": "fin", "say": "Le nouveau de la classe, au fond. Dans sa tête… le silence total. Il te regarde. Et tu l'entends, directement dans ton crâne :", "show": "Le nouveau, au fond. Dans sa tête… le [silence]. Il te regarde, et tu l'entends dans ton crâne :" },
+    { "scene": "fin", "say": "« Toi aussi, tu nous entends ? »", "show": "« Toi aussi, tu nous [entends] ? »" },
+    { "scene": "fin", "say": "Quel super-pouvoir pour la prochaine ? Dis-le en commentaire.", "show": "Quel super-pouvoir pour la prochaine ? Dis-le en [commentaire]." }
+  ],
+  "cues": {
+    "think1": [2, "start", 3.0],
+    "think2": [3, "start", 1.4],
+    "hand": [4, "start", 0.3],
+    "think3": [5, "start", 1.6],
+    "think4": [6, "start", 2.4],
+    "noise": [7, "start", 1.6],
+    "think5": [8, "start", 1.6],
+    "yell": [9, "start", 1.2],
+    "lights": [10, "start", 2.2],
+    "silence": [12, "start", 1.4],
+    "voice": [13, "start", 0.0],
+    "endcard": [14, "end", 0.6]
+  },
+  "sfx": [
+    { "type": "pop", "cue": ["think1", "think2", "hand", "think3", "think4", "think5", "lights"] },
+    { "type": "hit", "cue": ["yell", "silence", "voice", "endcard"] },
+    { "type": "buzz", "cue": "noise" }
+  ],
+  "pulse": [["fin", "fin"]]
+}
