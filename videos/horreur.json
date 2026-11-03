@@ -64,5 +64,14 @@
     "La colo",
     "Le répondeur"
   ],
-  "one_shots": []
+  "one_shots": [
+    {
+      "dossier": "videos/horreur-baby-phone",
+      "titre": "Le Baby-phone",
+      "regle": "le baby-phone compte les respirations ; plus d'une = ne monte pas ; twist : l'émetteur est dans le salon",
+      "creature": "les Respirants (formes pâles derrière le canapé, seulement des yeux)",
+      "buffer": "6ae9f1bc01362e3aae9c943e",
+      "publication": "2026-11-03 19:15"
+    }
+  ]
 }
