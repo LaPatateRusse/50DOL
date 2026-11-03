@@ -1,0 +1,147 @@
+{
+ "title": "Le secret du concierge",
+ "note": "Format « Le secret de… » n°3 (directives agent stratège), style cinéma, histoire originale.",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Orus",
+  "gemini_style": "Lis ce texte en français, comme un conteur de mini-film d'animation sur TikTok : voix masculine grave et posée, phrases courtes, vraies pauses dramatiques sur les points de suspension. Ton mystérieux au début, puis très émouvant. Les répliques entre guillemets « » sont jouées : le vieux concierge d'une voix lente, timide et émue, qui déchiffre syllabe par syllabe. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "flash": 0.7,
+  "couloir": 0.6,
+  "classe": 0.7,
+  "fin": 3.4
+ },
+ "lines": [
+  {
+   "scene": "flash",
+   "say": "Chaque soir, il reste seul dans l'école. Et personne ne sait pourquoi.",
+   "show": "Chaque soir, il reste seul dans l'école. Et personne ne sait pourquoi."
+  },
+  {
+   "scene": "couloir",
+   "say": "Trois jours plus tôt. Monsieur Ahmed, le concierge, passe la serpillière pendant que tout le monde rentre chez soi.",
+   "show": "Trois jours plus tôt. Monsieur Ahmed, le concierge, passe la serpillière pendant que tout le monde rentre chez soi."
+  },
+  {
+   "scene": "couloir",
+   "say": "Les autres disent qu'il fouille dans les cartables… qu'il vole les objets perdus. Et toi, tu as fini par les croire.",
+   "show": "Les autres disent qu'il fouille dans les cartables… qu'il vole les objets perdus. Et toi, tu as fini par les croire."
+  },
+  {
+   "scene": "couloir",
+   "say": "Ce soir-là, tu oublies ta trousse. Tu reviens. La lumière de ta classe est allumée.",
+   "show": "Ce soir-là, tu oublies ta trousse. Tu reviens. La lumière de ta classe est allumée."
+  },
+  {
+   "scene": "classe",
+   "say": "Par la porte entrouverte, tu le vois. Assis à ta table, avec un livre de CP. Il suit les lettres avec son doigt.",
+   "show": "Par la porte entrouverte, tu le vois. Assis à ta table, avec un livre de CP. Il suit les lettres avec son doigt."
+  },
+  {
+   "scene": "classe",
+   "say": "« Bon… jour. Bonjour. » Il sourit tout seul, comme s'il venait de gagner quelque chose.",
+   "show": "« Bon… jour. Bonjour. » Il sourit tout seul, comme s'il venait de gagner quelque chose."
+  },
+  {
+   "scene": "classe",
+   "say": "Il te voit. Il referme vite le livre. « J'ai cinquante-deux ans… et je ne sais pas lire. S'il te plaît, ne le dis à personne. »",
+   "show": "Il te voit. Il referme vite le livre. « J'ai cinquante-deux ans… et je ne sais pas lire. S'il te plaît, ne le dis à personne. »"
+  },
+  {
+   "scene": "fin",
+   "say": "Le lendemain, tu poses ton vieux livre de lecture sur son chariot. Avec un mot : « Je peux vous aider, tous les soirs. »",
+   "show": "Le lendemain, tu poses ton vieux livre de lecture sur son chariot. Avec un mot : « Je peux vous aider, tous les soirs. »"
+  },
+  {
+   "scene": "fin",
+   "say": "Trois mois plus tard, c'est lui qui te lit une histoire. Lentement. Sans se tromper une seule fois.",
+   "show": "Trois mois plus tard, c'est lui qui te lit une histoire. Lentement. Sans se tromper une seule fois."
+  },
+  {
+   "scene": "fin",
+   "say": "Et toi… tu l'aurais aidé ?",
+   "show": "Et toi… tu l'aurais aidé ?"
+  }
+ ],
+ "cues": {
+  "mop": [
+   1,
+   "start",
+   2.0
+  ],
+  "rumor": [
+   2,
+   "start",
+   0.3
+  ],
+  "light": [
+   3,
+   "end",
+   -1.2
+  ],
+  "finger": [
+   4,
+   "end",
+   -1.8
+  ],
+  "word": [
+   5,
+   "start",
+   0.2
+  ],
+  "close": [
+   6,
+   "start",
+   0.6
+  ],
+  "note": [
+   7,
+   "end",
+   -1.8
+  ],
+  "months": [
+   8,
+   "start",
+   0.2
+  ],
+  "endcard": [
+   9,
+   "end",
+   0.6
+  ]
+ },
+ "sfx": [
+  {
+   "type": "pop",
+   "cue": [
+    "word",
+    "note",
+    "months"
+   ]
+  },
+  {
+   "type": "swish",
+   "cue": [
+    "rumor",
+    "light"
+   ]
+  },
+  {
+   "type": "hit",
+   "cue": [
+    "close",
+    "endcard"
+   ]
+  }
+ ],
+ "pulse": [
+  [
+   "classe",
+   "fin"
+  ]
+ ]
+}
