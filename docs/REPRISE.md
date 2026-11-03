@@ -99,3 +99,5 @@ ffmpeg -f concat -safe 0 -i .build/jourN/segs.txt -i .build/jourN/audio.wav -c:v
 - Guide : `docs/style-cinema.md` ; kit : `videos/engine/cinema.js` (film 16:9 dans le 9:16, titre « Partie N », HUD JOUR + compteur, pas de sous-titres, gros plans).
 - `videos/cinema-mensonge-1/` « Cent euros le mensonge — Partie 1 » (voix Gemini Orus, 84 s) : publiée le 03/11 à 08:43 (Buffer `6ae9909664e1ad8ea2ef5e43`). Kit animation : `videos/engine/cinema-rig.js`. Partie 2 à faire : il ne reste que la grand-mère qui se souvient du héros ; l'inconnu au chapeau écrit « Plus qu'une. Tu continues ? ». Question posée : « Tu aurais menti ? ».
 - `build_audio.py` accepte `TTS_PROVIDER=draft` (brouillon muet, durées estimées).
+
+- **Mini-série « Cent euros le mensonge » : 5 parties**, arc complet dans `videos/cinema-mensonge.json`. Partie 2 (`videos/cinema-mensonge-2/`, 99 s) programmée le 04/11 à 18:00 sur Buffer. Parties 3 à 5 à fabriquer (une par jour à 18:00 si l'utilisateur confirme).

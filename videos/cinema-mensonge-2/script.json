@@ -1,0 +1,190 @@
+{
+ "title": "Cent euros le mensonge — Partie 2",
+ "note": "Arc complet : videos/cinema-mensonge.json. HUD : 2 003 €, 1 cœur (Mamie).",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Orus",
+  "gemini_style": "Lis ce texte en français, comme un conteur de mini-film d'animation sur TikTok : voix masculine grave et posée, phrases courtes, rythme vif mais avec de vraies pauses dramatiques sur les points de suspension. Ton émouvant et mystérieux. Les répliques entre guillemets « » sont jouées : la mère d'une voix froide et effrayée, la grand-mère d'une voix âgée, chaleureuse puis grave, le message inconnu d'une voix basse et menaçante. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "rappel": 0.2,
+  "depart": 0.2,
+  "train": 0.3,
+  "porte": 0.3,
+  "salon": 0.3,
+  "photo": 0.3,
+  "note": 0.4,
+  "fin": 3.4
+ },
+ "lines": [
+  {
+   "scene": "rappel",
+   "say": "Il ne reste qu'une personne qui se souvient de toi.",
+   "show": "Il ne reste qu'une personne qui se souvient de toi."
+  },
+  {
+   "scene": "rappel",
+   "say": "Ta mère recule. « Sortez de chez moi… ou j'appelle la police. »",
+   "show": "Ta mère recule. « Sortez de chez moi… ou j'appelle la police. »"
+  },
+  {
+   "scene": "depart",
+   "say": "Tu prends ton sac. Et pour la première fois, tu te fais une promesse : plus un seul mensonge.",
+   "show": "Tu prends ton sac. Et pour la première fois, tu te fais une promesse : plus un seul mensonge."
+  },
+  {
+   "scene": "train",
+   "say": "Dernier train de la nuit. Direction : chez ta grand-mère.",
+   "show": "Dernier train de la nuit. Direction : chez ta grand-mère."
+  },
+  {
+   "scene": "porte",
+   "say": "Jour trois. Tu frappes. La porte s'ouvre…",
+   "show": "Jour trois. Tu frappes. La porte s'ouvre…"
+  },
+  {
+   "scene": "porte",
+   "say": "« Mon grand ! Entre vite, il fait froid ! »",
+   "show": "« Mon grand ! Entre vite, il fait froid ! »"
+  },
+  {
+   "scene": "porte",
+   "say": "Elle se souvient de toi. Tu pourrais pleurer.",
+   "show": "Elle se souvient de toi. Tu pourrais pleurer."
+  },
+  {
+   "scene": "salon",
+   "say": "Alors tu lui dis tout. Le bus. L'homme au chapeau. Les mensonges.",
+   "show": "Alors tu lui dis tout. Le bus. L'homme au chapeau. Les mensonges."
+  },
+  {
+   "scene": "salon",
+   "say": "Tu t'attends à ce qu'elle rie. Elle ne rit pas.",
+   "show": "Tu t'attends à ce qu'elle rie. Elle ne rit pas."
+  },
+  {
+   "scene": "salon",
+   "say": "« Un chapeau noir… avec un ruban rouge ? »",
+   "show": "« Un chapeau noir… avec un ruban rouge ? »"
+  },
+  {
+   "scene": "photo",
+   "say": "Elle ouvre un vieux tiroir et en sort une photo.",
+   "show": "Elle ouvre un vieux tiroir et en sort une photo."
+  },
+  {
+   "scene": "photo",
+   "say": "Ton grand-père, à vingt ans. Dans sa main : la même pièce dorée, percée au milieu.",
+   "show": "Ton grand-père, à vingt ans. Dans sa main : la même pièce dorée, percée au milieu."
+  },
+  {
+   "scene": "photo",
+   "say": "« Il a fait le même pacte. Un jour, tout le monde l'a oublié… sauf moi. »",
+   "show": "« Il a fait le même pacte. Un jour, tout le monde l'a oublié… sauf moi. »"
+  },
+  {
+   "scene": "photo",
+   "say": "« Une nuit, il est parti à l'arrêt de bus. Il n'est jamais revenu. »",
+   "show": "« Une nuit, il est parti à l'arrêt de bus. Il n'est jamais revenu. »"
+  },
+  {
+   "scene": "note",
+   "say": "Derrière la photo, quelques mots, écrits à la main :",
+   "show": "Derrière la photo, quelques mots, écrits à la main :"
+  },
+  {
+   "scene": "note",
+   "say": "« Pour briser le pacte, il faut dire la vérité qui coûte le plus. »",
+   "show": "« Pour briser le pacte, il faut dire la vérité qui coûte le plus. »"
+  },
+  {
+   "scene": "fin",
+   "say": "Ton téléphone vibre. Numéro inconnu.",
+   "show": "Ton téléphone vibre. Numéro inconnu."
+  },
+  {
+   "scene": "fin",
+   "say": "« Ne crois pas tout ce que dit ta grand-mère. »",
+   "show": "« Ne crois pas tout ce que dit ta grand-mère. »"
+  },
+  {
+   "scene": "fin",
+   "say": "Et dehors, sous le lampadaire… quelqu'un t'attend. Tu sors ? Commente oui ou non.",
+   "show": "Et dehors, sous le lampadaire… quelqu'un t'attend. Tu sors ? Commente oui ou non."
+  }
+ ],
+ "cues": {
+  "knock": [
+   4,
+   "start",
+   0.9
+  ],
+  "open": [
+   4,
+   "end",
+   -0.4
+  ],
+  "drawer": [
+   10,
+   "start",
+   0.4
+  ],
+  "buzz": [
+   16,
+   "start",
+   0.1
+  ],
+  "msg": [
+   17,
+   "start",
+   0.1
+  ],
+  "lamp": [
+   18,
+   "start",
+   0.6
+  ],
+  "endcard": [
+   18,
+   "end",
+   0.6
+  ]
+ },
+ "sfx": [
+  {
+   "type": "knock",
+   "cue": "knock"
+  },
+  {
+   "type": "swish",
+   "cue": [
+    "open",
+    "drawer"
+   ]
+  },
+  {
+   "type": "buzz",
+   "cue": "buzz"
+  },
+  {
+   "type": "pop",
+   "cue": "msg"
+  },
+  {
+   "type": "hit",
+   "cue": [
+    "lamp",
+    "endcard"
+   ]
+  }
+ ],
+ "pulse": [
+  [
+   "note",
+   "fin"
+  ]
+ ]
+}
