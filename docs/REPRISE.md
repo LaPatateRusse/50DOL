@@ -109,3 +109,8 @@ ffmpeg -f concat -safe 0 -i .build/jourN/segs.txt -i .build/jourN/audio.wav -c:v
 - 03/11 18:00 : « J'entends tes pensées » (`videos/histoire-pensees`).
 
 - 03/11 16:30 : « Le Carnet des excuses » (`videos/histoire-carnet-excuses`), première vidéo en style cinéma de ce chat.
+
+### Coordination entre les deux chats (03/11)
+- Chat « Style de vidéo TikTok » (`session_01PqzQsrwnrHoFwrhXKuhVhq`) : série « Cent euros le mensonge » uniquement. Créneau 18:00 réservé du 04 au 07/11 (posts Buffer `6ae999fb8cfed4eda4c6268f`, `6ae9b63bf5576ea189fea564`, `6ae9b9a68bcf49341df472e3`, `6ae9b9a95b02786f00cf09d1`). Rien d'autre de programmé.
+- Sujets réservés à cette série : mensonges payés, proches qui t'oublient (cœurs), homme au chapeau noir à ruban rouge, pièce dorée percée, pacte grand-père → petit-fils (Papy Antoine, Mamie Jeanne).
+- Règle commune : `list_posts` sur toute l'organisation avant chaque programmation, ±20 min d'écart minimum, ne jamais modifier les fichiers de l'autre chat.
