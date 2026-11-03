@@ -245,11 +245,11 @@ window.renderFrame = gt => {
   bx.save(); SC[sc.id](bx, lt, gt); bx.restore();
   ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.fillStyle = '#000'; ctx.fillRect(0, 0, W, H);
   // transition d'entrée : zoom + flou de mouvement
-  const k = si > 0 ? eo(pr(lt, 0, .32)) : 1;
+  const k = si > 0 && !EP.cinema ? eo(pr(lt, 0, .32)) : 1; // format cinéma : coupes franches
   ctx.save();
   if (k < 1) { const z = lerp(1.14, 1, k); ctx.filter = `blur(${(1 - k) * 14}px)`; ctx.translate(W / 2, H / 2); ctx.scale(z, z); ctx.translate(-W / 2, -H / 2); }
   ctx.drawImage(buf, 0, 0); ctx.restore(); ctx.filter = 'none';
-  const vg = (EP.vignette || {})[sc.id]; if (vg !== 0) vignette(ctx, vg ?? .4);
+  const vg = (EP.vignette || {})[sc.id]; if (vg !== 0 && !EP.cinema) vignette(ctx, vg ?? .4);
   hud(ctx, gt, sc.id);
   if (!EP.hideSubs || !EP.hideSubs(gt)) subtitles(ctx, gt);
 };

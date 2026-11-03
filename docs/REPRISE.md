@@ -93,3 +93,9 @@ ffmpeg -f concat -safe 0 -i .build/jourN/segs.txt -i .build/jourN/audio.wav -c:v
 - 16:35 **Chance Infinie** (`videos/histoire-chance-infinie`) : programmée.
 - Voix : Gemini a renvoyé 429 (quota gratuit du jour épuisé) → secours automatique ElevenLabs (Adam) pour les deux dernières. Le quota Gemini se recharge chaque jour.
 - Kit décors du quotidien : `videos/engine/quotidien.js` (rue, bus, classe, prof, chat de groupe, cartons JOUR N, effet temps figé). Chat noir, voiture et billets : définis localement dans `histoire-chance-infinie/scenes.js`.
+
+## Format « cinéma » (03/11, copié d'une vidéo de référence fournie par l'utilisateur)
+
+- Guide : `docs/style-cinema.md` ; kit : `videos/engine/cinema.js` (film 16:9 dans le 9:16, titre « Partie N », HUD JOUR + compteur, pas de sous-titres, gros plans).
+- Pilote : `videos/cinema-mensonge-1/` « Cent euros le mensonge — Partie 1 » : seulement `brouillon-sans-voix.mp4` (aucune clé TTS dans la session). Pour finir : relancer `build_audio.py` avec `GEMINI_API_KEY`, rendre, produire `tiktok.mp4`. Pas encore programmé sur Buffer.
+- `build_audio.py` accepte `TTS_PROVIDER=draft` (brouillon muet, durées estimées).

@@ -1,6 +1,6 @@
 """Voix off (Gemini TTS gratuit, ou ElevenLabs), timeline et bande-son d'un épisode.
 
-Usage : GEMINI_API_KEY=... (ou ELEVEN_KEY=...) python3 build_audio.py <dossier_episode> <dossier_build>
+Usage : GEMINI_API_KEY=... (ou ELEVEN_KEY=..., ou TTS_PROVIDER=draft pour un brouillon muet) python3 build_audio.py <dossier_episode> <dossier_build>
 Gemini est utilisé si GEMINI_API_KEY est défini (une seule requête par vidéo, découpage par silences,
 sous-titres estimés) ; sinon ElevenLabs avec horodatage exact des mots.
 Lit <episode>/script.json. Produit <build>/timeline.json (lu par le rendu) et <build>/audio.wav.
@@ -332,6 +332,12 @@ for i, ln in enumerate(lines):
 t = LEAD
 voices, tl_lines, scenes = [], [], []
 GLINES = None
+if PROVIDER == "draft":  # brouillon sans voix (aucune clé) : durées estimées à 15 caractères/s, pour caler l'image
+    GLINES = []
+    for l in lines:
+        ws = TAG.sub("", l["say"]).split()
+        d = max(1.0, len(" ".join(ws)) / 15)
+        GLINES.append((np.zeros(int(d * SR), dtype=np.float32), [d * k / len(ws) for k in range(len(ws))]))
 if PROVIDER == "gemini":
     try:
         GLINES = gemini_lines(lines)
@@ -522,7 +528,7 @@ for fx in script.get("sfx", []):
 voice = np.zeros(N)
 for at, a in voices:
     place(voice, at, a)
-voice /= np.abs(voice).max()
+voice /= max(np.abs(voice).max(), 1e-9)
 venv = np.convolve(np.abs(voice), np.ones(4410) / 4410, mode="same")
 duck = 1 - 0.45 * np.clip(venv / 0.08, 0, 1)
 mix = voice * 0.9 + music * 0.16 * duck + sfx * 0.8

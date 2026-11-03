@@ -1,0 +1,279 @@
+{
+ "title": "Cent euros le mensonge — Partie 1",
+ "note": "Format cinéma (docs/style-cinema.md). Règle : chaque mensonge = +100 € ; chaque nouveau millier franchi = une personne t'oublie (cœur du HUD). Personnes : mère, grand-mère, meilleur pote. Partie 2 : il ne reste que la grand-mère.",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Orus",
+  "gemini_style": "Lis ce texte en français, comme un conteur de mini-film d'animation sur TikTok : voix masculine grave et posée, phrases courtes, rythme vif mais avec de vraies pauses dramatiques sur les points de suspension. Ton complice au début, de plus en plus tendu à la fin. Les répliques entre guillemets « » sont jouées : le vieil homme d'une voix rauque et amusée, la mère d'une voix douce, puis froide et perdue à la fin. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "arret": 0.2,
+  "pacte": 0.3,
+  "riche": 0.3,
+  "comprends": 0.3,
+  "ding": 0.5,
+  "fin": 3.4
+ },
+ "lines": [
+  {
+   "scene": "arret",
+   "say": "Un soir, tu rates le dernier bus. Sur ton compte : trois euros.",
+   "show": "Un soir, tu rates le dernier bus. Sur ton compte : trois euros."
+  },
+  {
+   "scene": "arret",
+   "say": "Un vieil homme s'arrête à côté de toi. « T'aurais une pièce, petit ? »",
+   "show": "Un vieil homme s'arrête à côté de toi. « T'aurais une pièce, petit ? »"
+  },
+  {
+   "scene": "arret",
+   "say": "Tu réponds : « Désolé, j'ai rien. »",
+   "show": "Tu réponds : « Désolé, j'ai rien. »"
+  },
+  {
+   "scene": "pacte",
+   "say": "Il sourit. « Menteur… Ça tombe bien. »",
+   "show": "Il sourit. « Menteur… Ça tombe bien. »"
+  },
+  {
+   "scene": "pacte",
+   "say": "« À partir de ce soir, chaque mensonge te rapportera cent euros. »",
+   "show": "« À partir de ce soir, chaque mensonge te rapportera cent euros. »"
+  },
+  {
+   "scene": "pacte",
+   "say": "Un bus passe. Quand tu relèves les yeux… il a disparu.",
+   "show": "Un bus passe. Quand tu relèves les yeux… il a disparu."
+  },
+  {
+   "scene": "notif",
+   "say": "Ton téléphone vibre. Plus cent euros.",
+   "show": "Ton téléphone vibre. Plus cent euros."
+  },
+  {
+   "scene": "notif",
+   "say": "Motif du virement : « Premier mensonge. »",
+   "show": "Motif du virement : « Premier mensonge. »"
+  },
+  {
+   "scene": "maman",
+   "say": "Jour un. Ta mère : « T'as révisé ? » Toi : « Oui. » Plus cent.",
+   "show": "Jour un. Ta mère : « T'as révisé ? » Toi : « Oui. » Plus cent."
+  },
+  {
+   "scene": "prof",
+   "say": "Le prof : « Ton exposé est prêt ? » « Bien sûr. » Plus cent.",
+   "show": "Le prof : « Ton exposé est prêt ? » « Bien sûr. » Plus cent."
+  },
+  {
+   "scene": "riche",
+   "say": "Tu mens toute la journée. Le soir, tu as mille neuf cent trois euros.",
+   "show": "Tu mens toute la journée. Le soir, tu as mille neuf cent trois euros."
+  },
+  {
+   "scene": "riche",
+   "say": "Mais sous le chiffre, le petit cœur vient de passer de trois… à deux.",
+   "show": "Mais sous le chiffre, le petit cœur vient de passer de trois… à deux."
+  },
+  {
+   "scene": "pote",
+   "say": "Jour deux. Ton meilleur pote passe devant toi.",
+   "show": "Jour deux. Ton meilleur pote passe devant toi."
+  },
+  {
+   "scene": "pote",
+   "say": "« Salut… on se connaît ? »",
+   "show": "« Salut… on se connaît ? »"
+  },
+  {
+   "scene": "comprends",
+   "say": "Tu comprends. Chaque fois que tu passes un nouveau millier, quelqu'un t'oublie.",
+   "show": "Tu comprends. Chaque fois que tu passes un nouveau millier, quelqu'un t'oublie."
+  },
+  {
+   "scene": "comprends",
+   "say": "Il ne reste que deux personnes qui se souviennent de toi : ta mère… et ta grand-mère.",
+   "show": "Il ne reste que deux personnes qui se souviennent de toi : ta mère… et ta grand-mère."
+  },
+  {
+   "scene": "diner",
+   "say": "Le soir, au dîner, ta mère te demande : « Ça va, à l'école ? »",
+   "show": "Le soir, au dîner, ta mère te demande : « Ça va, à l'école ? »"
+  },
+  {
+   "scene": "diner",
+   "say": "Et sans réfléchir, tu réponds : « Oui, super. »",
+   "show": "Et sans réfléchir, tu réponds : « Oui, super. »"
+  },
+  {
+   "scene": "ding",
+   "say": "Ton téléphone vibre. Deux mille trois euros.",
+   "show": "Ton téléphone vibre. Deux mille trois euros."
+  },
+  {
+   "scene": "ding",
+   "say": "Ta mère te regarde. Longtemps.",
+   "show": "Ta mère te regarde. Longtemps."
+  },
+  {
+   "scene": "ding",
+   "say": "« Excusez-moi… vous êtes qui ? »",
+   "show": "« Excusez-moi… vous êtes qui ? »"
+  },
+  {
+   "scene": "fin",
+   "say": "Un message arrive. Numéro inconnu.",
+   "show": "Un message arrive. Numéro inconnu."
+  },
+  {
+   "scene": "fin",
+   "say": "« Plus qu'une. Tu continues ? »",
+   "show": "« Plus qu'une. Tu continues ? »"
+  }
+ ],
+ "cues": {
+  "lie": [
+   2,
+   "start",
+   0.6
+  ],
+  "smile": [
+   3,
+   "start",
+   0.1
+  ],
+  "bus": [
+   5,
+   "start",
+   0.2
+  ],
+  "gone": [
+   5,
+   "start",
+   1.4
+  ],
+  "buzz1": [
+   6,
+   "start",
+   0.2
+  ],
+  "m1": [
+   6,
+   "start",
+   1.3
+  ],
+  "m2": [
+   8,
+   "end",
+   -0.5
+  ],
+  "m3": [
+   9,
+   "end",
+   -0.5
+  ],
+  "roll": [
+   10,
+   "start",
+   0.8
+  ],
+  "heart1": [
+   11,
+   "start",
+   2.6
+  ],
+  "day2": [
+   12,
+   "start",
+   0
+  ],
+  "stop": [
+   13,
+   "start",
+   -0.4
+  ],
+  "buzz2": [
+   18,
+   "start",
+   0.1
+  ],
+  "m4": [
+   18,
+   "start",
+   1.2
+  ],
+  "stare": [
+   19,
+   "start",
+   0
+  ],
+  "heart2": [
+   20,
+   "start",
+   0.4
+  ],
+  "msg": [
+   21,
+   "start",
+   0.5
+  ],
+  "msg2": [
+   22,
+   "start",
+   0.1
+  ],
+  "endcard": [
+   22,
+   "end",
+   0.7
+  ]
+ },
+ "sfx": [
+  {
+   "type": "swish",
+   "cue": [
+    "bus",
+    "gone"
+   ]
+  },
+  {
+   "type": "buzz",
+   "cue": [
+    "buzz1",
+    "buzz2",
+    "msg"
+   ]
+  },
+  {
+   "type": "pop",
+   "cue": [
+    "m1",
+    "m2",
+    "m3",
+    "m4",
+    "msg2"
+   ]
+  },
+  {
+   "type": "hit",
+   "cue": [
+    "heart1",
+    "heart2",
+    "endcard"
+   ]
+  }
+ ],
+ "pulse": [
+  [
+   "comprends",
+   "comprends"
+  ],
+  [
+   "ding",
+   "fin"
+  ]
+ ]
+}
