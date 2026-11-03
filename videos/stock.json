@@ -1,49 +1,56 @@
 {
-  "note": "Vidéos rendues, vérifiées (3 passes), poussées sur GitHub, PAS encore programmées sur Buffer. Voir docs/production.md section « Stock ».",
-  "types": {
-    "science": "07:00",
-    "survie": "12:10",
-    "histoire": "13:30 / 14:30 / 16:00 / 16:30",
-    "horreur": "15:00 / 19:15",
-    "serie": "17:30",
-    "horreur-serie": "20:00 / 21:00"
+ "note": "Vidéos rendues, vérifiées (3 passes), poussées sur GitHub, PAS encore programmées sur Buffer. Voir docs/production.md section « Stock ».",
+ "types": {
+  "science": "07:00",
+  "survie": "12:10",
+  "histoire": "13:30 / 14:30 / 16:00 / 16:30",
+  "horreur": "15:00 / 19:15",
+  "serie": "17:30",
+  "horreur-serie": "20:00 / 21:00"
+ },
+ "pret": [],
+ "programmes": [
+  {
+   "dossier": "ascenseur-13-2",
+   "type": "horreur-serie",
+   "titre": "L'ascenseur du 13e — Partie 2",
+   "buffer": "6ae9ecb087e4378742db161b",
+   "heure": "2026-11-03T21:00+01:00"
   },
-  "pret": [],
-  "programmes": [
-    {
-      "dossier": "ascenseur-13-2",
-      "type": "horreur-serie",
-      "titre": "L'ascenseur du 13e — Partie 2",
-      "buffer": "6ae9ecb087e4378742db161b",
-      "heure": "2026-11-03T21:00+01:00"
-    },
-    {
-      "dossier": "horreur-baby-phone",
-      "type": "horreur",
-      "titre": "Le Baby-phone",
-      "buffer": "6ae9f1bc01362e3aae9c943e",
-      "heure": "2026-11-03T19:15+01:00"
-    },
-    {
-      "dossier": "etsi-lune",
-      "type": "science",
-      "titre": "Et si la Lune disparaissait cette nuit ?",
-      "buffer": "6ae9fcadb75704f9ac5d826f",
-      "heure": "2026-11-04T07:00+01:00"
-    },
-    {
-      "dossier": "blackout-jour5",
-      "type": "survie",
-      "titre": "Blackout général — Jour 5 (FIN)",
-      "buffer": "6aea09e7b75704f9ac6275c9",
-      "heure": "2026-11-04T12:10+01:00"
-    },
-    {
-      "dossier": "secret-gant",
-      "type": "histoire",
-      "titre": "Le secret du gant",
-      "buffer": "6aea1f37544a6d4567cbb79b",
-      "heure": "2026-11-04T13:30+01:00"
-    }
-  ]
+  {
+   "dossier": "horreur-baby-phone",
+   "type": "horreur",
+   "titre": "Le Baby-phone",
+   "buffer": "6ae9f1bc01362e3aae9c943e",
+   "heure": "2026-11-03T19:15+01:00"
+  },
+  {
+   "dossier": "etsi-lune",
+   "type": "science",
+   "titre": "Et si la Lune disparaissait cette nuit ?",
+   "buffer": "6ae9fcadb75704f9ac5d826f",
+   "heure": "2026-11-04T07:00+01:00"
+  },
+  {
+   "dossier": "blackout-jour5",
+   "type": "survie",
+   "titre": "Blackout général — Jour 5 (FIN)",
+   "buffer": "6aea09e7b75704f9ac6275c9",
+   "heure": "2026-11-04T12:10+01:00"
+  },
+  {
+   "dossier": "secret-gant",
+   "type": "histoire",
+   "titre": "Le secret du gant",
+   "buffer": "6aea1f37544a6d4567cbb79b",
+   "heure": "2026-11-04T13:30+01:00"
+  },
+  {
+   "dossier": "secret-gateau",
+   "type": "histoire",
+   "titre": "Le secret du gâteau",
+   "buffer": "6aea27d9f04b8d760d53b948",
+   "heure": "2026-11-04T16:00+01:00"
+  }
+ ]
 }
