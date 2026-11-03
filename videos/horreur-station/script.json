@@ -1,0 +1,167 @@
+{
+ "title": "La station-service",
+ "note": "Horreur complète en 1 partie, style cinéma, histoire originale.",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Charon",
+  "gemini_style": "Lis ce texte en français, comme un conteur de mini-film d'horreur sur TikTok : voix masculine grave, à voix normale et bien posée, tendue et inquiétante, phrases courtes, vraies pauses dramatiques sur les points de suspension. NE CHUCHOTE PAS. Le mot des parents entre guillemets est lu comme un avertissement sérieux. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "flash": 0.6,
+  "route": 0.4,
+  "boutique": 0.4,
+  "caisse": 0.5,
+  "recul": 0.4,
+  "voiture": 0.5,
+  "fin": 3.4
+ },
+ "lines": [
+  {
+   "scene": "flash",
+   "say": "La caissière sourit. Et elle ne cligne jamais des yeux.",
+   "show": "La caissière sourit. Et elle ne cligne jamais des yeux."
+  },
+  {
+   "scene": "route",
+   "say": "Deux heures du matin. Ton père s'arrête dans une station perdue, au milieu de nulle part.",
+   "show": "Deux heures du matin. Ton père s'arrête dans une station perdue, au milieu de nulle part."
+  },
+  {
+   "scene": "route",
+   "say": "« Va nous prendre de l'eau, je fais le plein. » Tu entres dans la boutique.",
+   "show": "« Va nous prendre de l'eau, je fais le plein. » Tu entres dans la boutique."
+  },
+  {
+   "scene": "boutique",
+   "say": "Personne. Le néon grésille. Sur la porte, un papier est scotché à l'envers.",
+   "show": "Personne. Le néon grésille. Sur la porte, un papier est scotché à l'envers."
+  },
+  {
+   "scene": "boutique",
+   "say": "« Si la caissière sourit, ne paie pas. Sors à reculons. Ne lui tourne jamais le dos. »",
+   "show": "« Si la caissière sourit, ne paie pas. Sors à reculons. Ne lui tourne jamais le dos. »"
+  },
+  {
+   "scene": "caisse",
+   "say": "Derrière toi, une voix douce : « Bonsoir. » Elle est là. Elle sourit. Beaucoup trop.",
+   "show": "Derrière toi, une voix douce : « Bonsoir. » Elle est là. Elle sourit. Beaucoup trop."
+  },
+  {
+   "scene": "caisse",
+   "say": "« Ça fera… ton prénom. »",
+   "show": "« Ça fera… ton prénom. »"
+  },
+  {
+   "scene": "recul",
+   "say": "Tu poses la bouteille. Tu recules, pas à pas. Son cou s'allonge au-dessus du comptoir pour te suivre.",
+   "show": "Tu poses la bouteille. Tu recules, pas à pas. Son cou s'allonge au-dessus du comptoir pour te suivre."
+  },
+  {
+   "scene": "voiture",
+   "say": "Tu sautes dans la voiture. « Démarre ! » Ton père te regarde : « Quelle station ? On roule depuis une heure sans s'arrêter. »",
+   "show": "Tu sautes dans la voiture. « Démarre ! » Ton père te regarde : « Quelle station ? On roule depuis une heure sans s'arrêter. »"
+  },
+  {
+   "scene": "fin",
+   "say": "Dans ta poche, un ticket de caisse. « Merci de votre visite. À très bientôt. » Et ton prénom, juste en dessous.",
+   "show": "Dans ta poche, un ticket de caisse. « Merci de votre visite. À très bientôt. » Et ton prénom, juste en dessous."
+  },
+  {
+   "scene": "fin",
+   "say": "Toi, tu lui aurais tourné le dos ? Commente oui ou non.",
+   "show": "Toi, tu lui aurais tourné le dos ? Commente oui ou non."
+  }
+ ],
+ "cues": {
+  "enter": [
+   2,
+   "end",
+   -1.0
+  ],
+  "note": [
+   3,
+   "end",
+   -1.6
+  ],
+  "voice": [
+   5,
+   "start",
+   0.4
+  ],
+  "smile": [
+   5,
+   "end",
+   -1.2
+  ],
+  "price": [
+   6,
+   "start",
+   0.3
+  ],
+  "back": [
+   7,
+   "start",
+   0.4
+  ],
+  "neck": [
+   7,
+   "start",
+   2.4
+  ],
+  "slam": [
+   8,
+   "start",
+   0.6
+  ],
+  "dad": [
+   8,
+   "start",
+   2.2
+  ],
+  "ticket": [
+   9,
+   "start",
+   0.4
+  ],
+  "endcard": [
+   10,
+   "end",
+   0.6
+  ]
+ },
+ "sfx": [
+  {
+   "type": "hit",
+   "cue": [
+    "voice",
+    "price",
+    "dad",
+    "endcard"
+   ]
+  },
+  {
+   "type": "swish",
+   "cue": [
+    "enter",
+    "back",
+    "slam"
+   ]
+  },
+  {
+   "type": "pop",
+   "cue": [
+    "note",
+    "ticket"
+   ]
+  }
+ ],
+ "pulse": [
+  [
+   "caisse",
+   "voiture"
+  ]
+ ]
+}

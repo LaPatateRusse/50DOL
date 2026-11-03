@@ -8,15 +8,7 @@
   "serie": "17:30",
   "horreur-serie": "20:00 / 21:00"
  },
- "pret": [
-  {
-   "dossier": "secret-concierge",
-   "type": "histoire",
-   "titre": "Le secret du concierge",
-   "creneau_cible": "2026-11-04T14:30+01:00",
-   "description": "Le secret du concierge.. 📖\nEt toi, tu l'aurais aidé ? 👇\n\n#histoire #ecole #secret #emotion #animation #lecture #pourtoi #fyp"
-  }
- ],
+ "pret": [],
  "programmes": [
   {
    "dossier": "ascenseur-13-2",
@@ -66,6 +58,13 @@
    "titre": "L'ascenseur du 13e — Partie 3 (FIN)",
    "buffer": "6aea345970d4f6bf8d83a0a7",
    "heure": "2026-11-04T21:00+01:00"
+  },
+  {
+   "dossier": "secret-concierge",
+   "type": "histoire",
+   "titre": "Le secret du concierge",
+   "buffer": "6aea3fc75fa3d509fa3e97a5",
+   "heure": "2026-11-04T14:30+01:00"
   }
  ]
 }
