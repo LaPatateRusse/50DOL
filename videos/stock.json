@@ -1,0 +1,9 @@
+{
+  "note": "Vidéos rendues, vérifiées (3 passes), poussées sur GitHub, PAS encore programmées sur Buffer. Voir docs/production.md section « Stock ».",
+  "types": {
+    "science": "07:00", "survie": "12:10", "histoire": "13:30 / 14:30 / 16:00 / 16:30", "horreur": "15:00 / 19:15",
+    "serie": "17:30", "horreur-serie": "20:00 / 21:00"
+  },
+  "pret": [],
+  "programmes": []
+}
