@@ -1,0 +1,132 @@
+{
+ "title": "La colo — Partie 2",
+ "note": "Mini-série d'horreur « La colo », partie 2 sur 3 (20:00 du 05/11). Sans vote écrit : choix le plus prudent (ne pas soulever la couverture).",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Charon",
+  "gemini_style": "Lis ce texte en français, comme un conteur d'histoires d'horreur sur TikTok : voix masculine grave, à voix normale et bien posée, intense et inquiétante, rythme vif et soutenu, sans traîner, pauses courtes. NE CHUCHOTE PAS. La voix qui fait l'appel entre guillemets « » est lente, grave et froide, mais à voix normale. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "flash": 0.5,
+  "nuit": 0.3,
+  "matin": 0.3,
+  "bureau": 0.3,
+  "fin": 2.8
+ },
+ "cues": {
+  "hold": [
+   3,
+   "start",
+   0.3
+  ],
+  "voice13": [
+   3,
+   "end",
+   -2.6
+  ],
+  "gone": [
+   4,
+   "start",
+   1.2
+  ],
+  "red": [
+   5,
+   "end",
+   -1.6
+  ],
+  "photo": [
+   6,
+   "start",
+   0.4
+  ],
+  "blur": [
+   6,
+   "end",
+   -3.0
+  ],
+  "name": [
+   7,
+   "end",
+   -1.6
+  ],
+  "endcard": [
+   8,
+   "end",
+   0.6
+  ]
+ },
+ "sfx": [
+  {
+   "type": "hit",
+   "cue": [
+    "voice13",
+    "red",
+    "blur",
+    "name",
+    "endcard"
+   ]
+  },
+  {
+   "type": "swish",
+   "cue": [
+    "gone"
+   ]
+  }
+ ],
+ "pulse": [
+  [
+   "nuit",
+   "bureau"
+  ]
+ ],
+ "lines": [
+  {
+   "scene": "flash",
+   "say": "Sous la couverture, ça respire. Au même rythme que toi.",
+   "show": "Sous la couverture, ça respire. Au même rythme que toi."
+  },
+  {
+   "scene": "nuit",
+   "say": "Partie 2. Tu ne soulèves pas la couverture. Tu fermes les yeux. Tu fais semblant de dormir.",
+   "show": "Partie 2. Tu ne soulèves pas la couverture. Tu fermes les yeux. Tu fais semblant de dormir."
+  },
+  {
+   "scene": "nuit",
+   "say": "À côté, sous le drap, ça respire. Lentement. Exactement au même rythme que toi.",
+   "show": "À côté, sous le drap, ça respire. Lentement. Exactement au même rythme que toi."
+  },
+  {
+   "scene": "nuit",
+   "say": "Tu retiens ton souffle. La respiration s'arrête aussi. Puis une voix lente, tout près : « Treize. Tu as répondu. »",
+   "show": "Tu retiens ton souffle. La respiration s'arrête aussi. Puis une voix lente, tout près : « Treize. Tu as répondu. »"
+  },
+  {
+   "scene": "matin",
+   "say": "Au matin, le treizième lit a disparu. Sami ne se souvient de rien. Personne n'a entendu l'appel. Personne, sauf toi.",
+   "show": "Au matin, le treizième lit a disparu. Sami ne se souvient de rien. Personne n'a entendu l'appel. Personne, sauf toi."
+  },
+  {
+   "scene": "bureau",
+   "say": "Mais sur la liste du directeur, il y a treize prénoms. Le dernier est écrit à l'encre rouge : le tien.",
+   "show": "Mais sur la liste du directeur, il y a treize prénoms. Le dernier est écrit à l'encre rouge : le tien."
+  },
+  {
+   "scene": "bureau",
+   "say": "Au mur, une vieille photo du chalet sept, été 1994. Treize enfants. Le dernier a le visage flou… et il porte ton sweat orange.",
+   "show": "Au mur, une vieille photo du chalet sept, été 1994. Treize enfants. Le dernier a le visage flou… et il porte ton sweat orange."
+  },
+  {
+   "scene": "fin",
+   "say": "Ce soir, l'appel recommence. Et cette fois, la voix commence par ton prénom.",
+   "show": "Ce soir, l'appel recommence. Et cette fois, la voix commence par ton prénom."
+  },
+  {
+   "scene": "fin",
+   "say": "Tu réponds « présent » ? Commente oui ou non. La fin, demain.",
+   "show": "Tu réponds « présent » ? Commente oui ou non. La fin, demain."
+  }
+ ]
+}

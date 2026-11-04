@@ -77,6 +77,13 @@
      "publication": "2026-11-04 20:00 (visé)",
      "fin": "Appel de minuit : le héros répond au douze ; une voix répond « présent » au treize ; un 13e lit à côté du sien, quelqu'un dort dedans (main pâle).",
      "choix": "Tu soulèves la couverture ? OUI / NON"
+    },
+    {
+     "partie": 2,
+     "dossier": "videos/colo-2",
+     "publication": "2026-11-05 20:00 (visé)",
+     "fin": "Il ne soulève pas la couverture (choix prudent). 13e lit disparu ; liste : 13e prénom = le sien en rouge ; photo 1994 : 13e enfant flou dans son sweat orange. L'appel recommence par son prénom.",
+     "choix": "Tu réponds « présent » ? OUI / NON"
     }
    ]
   }
