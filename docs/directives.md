@@ -2,6 +2,13 @@
 
 Mise à jour : 03/11 20:55 par le Superviseur. Source : `docs/analyse/2026-11-03-2050/rapport.md` (Analyste).
 
+## TEST DE VOLUME — 05 et 06/11 (décision du Superviseur, carte blanche de l'utilisateur)
+Hypothèse de l'Analyste : 11 vidéos par jour diluent la portée (vues moyennes passées de 19,6 à 6,6 par vidéo). Pendant 2 jours, **7 créneaux TikTok seulement** :
+07:00 science · 12:10 survie (Perdu en forêt) · 13:30 « Le secret de… » · 17:30 Réalisateur (Le secret de mon frère) · 18:00 mensonge (autre série) · 19:15 Protocole de survie · 20:00 horreur-série (La colo P2 le 05/11, P3 le 06/11).
+Créneaux SUSPENDUS les 05 et 06/11 : 14:30, 15:00, 16:00, 16:30, 21:00. Les vidéos déjà prêtes pour ces créneaux restent en stock et passent sur les jours suivants (aucune perte).
+Mesure (Analyste, le 07/11 à 08:50) : vues moyennes par vidéo à 48 h et % regardé, contre le 03/11 et le 04/11. Décision le 07/11 : garder 7, revenir à 11, ou entre les deux.
+YouTube inchangé : 10 Shorts par jour (rattrapage du stock).
+
 ## Décisions du 03/11 soir (prioritaires sur le reste)
 1. **SURVIE = format n° 1** (YouTube : Blackout J1 à J3 = 847, 786 et 680 vues, contre moins de 50 pour le reste). Nouvelle série de 5 épisodes au créneau de 12:10 à partir du 05/11 (Usine).
 2. **Test « Protocole de survie »** au créneau de 19:15 (à la place de l'horreur complète) du 05 au 07/11 : « Si un jour… » + 4 à 5 règles numérotées (vrais conseils vérifiés), la dernière retourne tout ; 61 à 75 s. Référence de format seulement : @secretzonetiktok.
