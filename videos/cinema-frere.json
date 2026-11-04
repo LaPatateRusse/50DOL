@@ -5,12 +5,14 @@
   {
    "partie": 1,
    "dossier": "videos/cinema-frere-1",
-   "resume": "Léo ment : crampons neufs, virements de 400 €/mois à Maman depuis 11 mois, il nettoie la nuit le stade du club."
+   "resume": "Léo ment : crampons neufs, virements de 400 €/mois à Maman depuis 11 mois, il nettoie la nuit le stade du club.",
+   "programme": "2026-11-05 17:30 (Buffer 6aeb98f51c31d2bdeba15be5)"
   },
   {
    "partie": 2,
    "dossier": "videos/cinema-frere-2",
-   "resume": "Aveu : faillite de la boulangerie, dette 18 000 € (reste 13 600 €), « prime du club » inventée. Promesse. Le coach appelle : essai samedi 10 h."
+   "resume": "Aveu : faillite de la boulangerie, dette 18 000 € (reste 13 600 €), « prime du club » inventée. Promesse. Le coach appelle : essai samedi 10 h.",
+   "programme": "2026-11-06 17:30 (Buffer 6aeb98f7f0e1705c28e60dfb)"
   },
   {
    "partie": 3,
@@ -22,5 +24,6 @@
    "dossier": "videos/cinema-frere-4",
    "resume": "Maman savait : elle a gardé chaque virement (4 400 €) et rembourse seule en faisant des ménages. Léo joue l'essai, marque. Nouvel article sur le frigo, pour de vrai."
   }
- ]
+ ],
+ "note_reprise": "Repris par l'Usine le 04/11 à 21:45 (session du Réalisateur arrêtée par le Superviseur)."
 }
