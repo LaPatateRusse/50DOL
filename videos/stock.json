@@ -38,6 +38,14 @@
    "titre": "Le GPS",
    "description": "Minuit. Le vieux GPS de Papy s'allume tout seul : « Surtout, ne vous arrêtez pas. » 😨\nToi, tu te serais arrêté ? OUI ou NON 👇",
    "creneau_vise": "2026-11-04T19:15+01:00"
+  },
+  {
+   "dossier": "colo-1",
+   "type": "horreur-serie",
+   "titre": "La colo — Partie 1",
+   "partie": 1,
+   "description": "On était douze. Il en a compté treize.. 🔦 Partie 1 de « La colo ».\nTu soulèves la couverture ? OUI ou NON 👇",
+   "creneau_vise": "2026-11-04T20:00+01:00"
   }
  ],
  "programmes": [

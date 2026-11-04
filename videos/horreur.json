@@ -63,11 +63,26 @@
     }
    ],
    "terminee": true
+  },
+  {
+   "titre": "La colo",
+   "creature": "la Voix de l'appel (lampe torche, compte les enfants à minuit ; pas encore montrée)",
+   "parties_prevues": 3,
+   "terminee": false,
+   "plan": "P1 04/11 20:00 ; P2 05/11 20:00 ; P3 (FIN) 05/11 21:00. Sans vote écrit : choix le plus prudent (ne pas soulever la couverture).",
+   "parties": [
+    {
+     "partie": 1,
+     "dossier": "videos/colo-1",
+     "publication": "2026-11-04 20:00 (visé)",
+     "fin": "Appel de minuit : le héros répond au douze ; une voix répond « présent » au treize ; un 13e lit à côté du sien, quelqu'un dort dedans (main pâle).",
+     "choix": "Tu soulèves la couverture ? OUI / NON"
+    }
+   ]
   }
  ],
  "idees_suivantes": [
   "Le baby-phone",
-  "La colo",
   "Le répondeur"
  ],
  "one_shots": [

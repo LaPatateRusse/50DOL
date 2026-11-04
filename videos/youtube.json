@@ -263,6 +263,12 @@
    "titre": "Le GPS",
    "description": "Minuit. Le vieux GPS de Papy s'allume tout seul : « Surtout, ne vous arrêtez pas. » 😨\nToi, tu te serais arrêté ? OUI ou NON 👇",
    "statut": "a_publier"
+  },
+  {
+   "dossier": "colo-1",
+   "titre": "La colo — Partie 1",
+   "description": "On était douze. Il en a compté treize.. 🔦 Partie 1 de « La colo ».\nTu soulèves la couverture ? OUI ou NON 👇",
+   "statut": "a_publier"
   }
  ],
  "regles": "YouTube : la journée YouTube va de 09:00 à 09:00 (heure de Paris, minuit heure du Pacifique). 10 envois MAXIMUM par journée YouTube, format long (Upload-Post) compris. Buffer refuse aussi plus de 10 posts YouTube programmés le même jour calendaire. Les Shorts sont espacés d'au moins 60 min (idéalement 70-80 min) : fini le rattrapage toutes les 10 min."
