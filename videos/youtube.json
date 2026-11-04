@@ -193,13 +193,8 @@
    "fichier": "long/super-pouvoirs-1/youtube-long.mp4",
    "titre": "4 super-pouvoirs… et le prix à payer pour chacun | Histoires animées",
    "description": "Arrêter le temps, entendre les pensées, une chance infinie, rajeunir les gens avec une excuse… 4 super-pouvoirs, 4 histoires, et à chaque fois un prix à payer.\nLequel tu choisirais ? Dis-le en commentaire 👇\n\n00:00 Introduction\n00:21 POUVOIR N°1 — Arrêter le temps\n01:39 POUVOIR N°2 — Entendre les pensées\n03:00 POUVOIR N°3 — La chance infinie\n04:08 POUVOIR N°4 — Le carnet des excuses\n05:47 Fin\n\n#superpouvoir #histoire #animation #etsi #twist",
-   "statut": "programme",
-   "heure": "2026-11-04T15:05+01:00",
-   "upload_post": {
-    "job_id": "6c8890b63f7444f1bb071af1cf41c56a",
-    "request_id": "9a97d0b305fa477780afda5de9671d2a"
-   },
-   "note": "Refusé 2 fois par YouTube (youtube_channel_daily_limit) le 03/11 20:42 et le 04/11 09:05. Limite probablement sur 24 h glissantes → reprogrammé au 04/11 15:05 (décision du superviseur).",
+   "statut": "en_attente",
+   "note": "Refusé 3 fois par YouTube (youtube_channel_daily_limit) : 03/11 20:42, 04/11 09:05, 04/11 15:05. En attente de la vérification de la chaîne (youtube.com/verify) avant tout nouvel envoi (décision du superviseur).",
    "contenu_ia_declare": true
   },
   {
