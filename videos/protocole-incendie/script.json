@@ -1,0 +1,152 @@
+{
+ "title": "Protocole de survie — L'incendie",
+ "note": "« Protocole de survie » n°2 (19:15 du 06/11). Consignes officielles (France) : feu chez soi → sortir et fermer la porte ; ne jamais prendre l'ascenseur ; se baisser sous la fumée ; appeler le 18 ou le 112 ; si l'escalier est enfumé → rester chez soi, porte fermée, linges mouillés en bas, se manifester à la fenêtre. La majorité des décès dans les incendies sont dus aux fumées.",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Orus",
+  "gemini_style": "Lis ce texte en français, comme un secouriste qui parle sur TikTok : voix masculine grave, assurée, rythme posé et clair, sans précipitation, avec de vraies pauses après chaque règle, ton sérieux et captivant. « Règle un », « Règle deux »… sont bien détachés. La règle cinq est dite plus lentement, avec gravité. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "flash": 1.0,
+  "intro": 0.8,
+  "chez": 0.8,
+  "couloir": 0.8,
+  "appel": 0.8,
+  "reste": 0.8,
+  "fin": 4.0
+ },
+ "cues": {
+  "r1": [
+   2,
+   "start",
+   0.1
+  ],
+  "door": [
+   2,
+   "end",
+   -3.6
+  ],
+  "r2": [
+   3,
+   "start",
+   0.1
+  ],
+  "r3": [
+   4,
+   "start",
+   0.1
+  ],
+  "r4": [
+   5,
+   "start",
+   0.1
+  ],
+  "r5": [
+   6,
+   "start",
+   1.4
+  ],
+  "smoke": [
+   6,
+   "end",
+   -1.4
+  ],
+  "towel": [
+   7,
+   "start",
+   2.0
+  ],
+  "window": [
+   7,
+   "start",
+   3.1
+  ],
+  "endcard": [
+   8,
+   "end",
+   0.6
+  ]
+ },
+ "sfx": [
+  {
+   "type": "pop",
+   "cue": [
+    "r1",
+    "r2",
+    "r3",
+    "r4"
+   ]
+  },
+  {
+   "type": "hit",
+   "cue": [
+    "r5",
+    "door",
+    "endcard"
+   ]
+  },
+  {
+   "type": "swish",
+   "cue": [
+    "towel",
+    "window"
+   ]
+  }
+ ],
+ "pulse": [
+  [
+   "chez",
+   "reste"
+  ]
+ ],
+ "lines": [
+  {
+   "scene": "flash",
+   "say": "Si ton immeuble prend feu, cette nuit…",
+   "show": "Si ton immeuble prend feu, cette nuit…"
+  },
+  {
+   "scene": "intro",
+   "say": "… voici cinq règles qui peuvent te sauver. La dernière va contre tous tes réflexes.",
+   "show": "… voici cinq règles qui peuvent te sauver. La dernière va contre tous tes réflexes."
+  },
+  {
+   "scene": "chez",
+   "say": "Règle un : si le feu est chez toi, sors tout de suite. Et ferme la porte derrière toi : ça ralentit le feu et la fumée.",
+   "show": "Règle un : si le feu est chez toi, sors tout de suite. Et ferme la porte derrière toi : ça ralentit le feu et la fumée."
+  },
+  {
+   "scene": "couloir",
+   "say": "Règle deux : jamais l'ascenseur. Il peut tomber en panne, et sa cage aspire la fumée comme une cheminée.",
+   "show": "Règle deux : jamais l'ascenseur. Il peut tomber en panne, et sa cage aspire la fumée comme une cheminée."
+  },
+  {
+   "scene": "couloir",
+   "say": "Règle trois : dans la fumée, baisse-toi. L'air qu'on peut encore respirer est tout près du sol.",
+   "show": "Règle trois : dans la fumée, baisse-toi. L'air qu'on peut encore respirer est tout près du sol."
+  },
+  {
+   "scene": "appel",
+   "say": "Règle quatre : une fois à l'abri, appelle le dix-huit ou le cent-douze. Donne l'adresse, l'étage, et combien vous êtes.",
+   "show": "Règle quatre : une fois à l'abri, appelle le dix-huit ou le cent-douze. Donne l'adresse, l'étage, et combien vous êtes."
+  },
+  {
+   "scene": "reste",
+   "say": "Et la règle cinq retourne tout : si le feu est ailleurs et que l'escalier est plein de fumée… ne sors pas.",
+   "show": "Et la règle cinq retourne tout : si le feu est ailleurs et que l'escalier est plein de fumée… ne sors pas."
+  },
+  {
+   "scene": "reste",
+   "say": "Ferme ta porte, bouche le bas avec des serviettes mouillées, et montre-toi à la fenêtre. Dans un incendie, la fumée tue bien plus que les flammes.",
+   "show": "Ferme ta porte, bouche le bas avec des serviettes mouillées, et montre-toi à la fenêtre. Dans un incendie, la fumée tue bien plus que les flammes."
+  },
+  {
+   "scene": "fin",
+   "say": "Enregistre-la. Et dis-moi : tu connaissais la règle cinq ?",
+   "show": "Enregistre-la. Et dis-moi : tu connaissais la règle cinq ?"
+  }
+ ]
+}
