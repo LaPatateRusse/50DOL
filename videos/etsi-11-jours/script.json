@@ -1,0 +1,145 @@
+{
+ "title": "Et si tu ne dormais plus pendant 11 jours ?",
+ "note": "« Et si… ? » science, style cinéma. Cas réel : Randy Gardner, 17 ans, décembre 1963 - janvier 1964, 264 h éveillé (expérience suivie par William Dement). Jour 2 : difficulté à faire le point ; jour 3 : humeur, coordination ; jour 4 : hallucinations, se croit Paul Lowe (joueur de football américain) ; jour 11 : soustraction 100 - 7 arrêtée à 65 ; a dormi ~14 h ensuite. Guinness ne reconnaît plus ce record (dangereux). Micro-sommeils documentés.",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Orus",
+  "gemini_style": "Lis ce texte en français, comme un conteur de mini-film d'animation sur TikTok : voix masculine grave et posée, phrases courtes, rythme vif mais avec de vraies pauses dramatiques sur les points de suspension. Ton fasciné et mystérieux, un peu inquiétant, puis rassurant à la fin. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "flash": 0.9,
+  "chambre": 0.8,
+  "halluc": 0.8,
+  "micro": 0.8,
+  "compte": 0.8,
+  "fin": 3.8
+ },
+ "cues": {
+  "blur": [
+   2,
+   "start",
+   0.6
+  ],
+  "drop": [
+   3,
+   "start",
+   3.4
+  ],
+  "helmet": [
+   4,
+   "start",
+   3.1
+  ],
+  "off1": [
+   5,
+   "start",
+   2.4
+  ],
+  "count": [
+   6,
+   "start",
+   1.9
+  ],
+  "stop65": [
+   6,
+   "start",
+   5.24
+  ],
+  "sleep": [
+   7,
+   "start",
+   0.3
+  ],
+  "guinness": [
+   7,
+   "start",
+   3.0
+  ],
+  "endcard": [
+   8,
+   "end",
+   0.6
+  ]
+ },
+ "sfx": [
+  {
+   "type": "pop",
+   "cue": [
+    "helmet",
+    "count",
+    "guinness"
+   ]
+  },
+  {
+   "type": "hit",
+   "cue": [
+    "off1",
+    "stop65"
+   ]
+  },
+  {
+   "type": "swish",
+   "cue": [
+    "blur",
+    "sleep",
+    "endcard"
+   ]
+  }
+ ],
+ "pulse": [
+  [
+   "micro",
+   "compte"
+  ]
+ ],
+ "lines": [
+  {
+   "scene": "flash",
+   "say": "Jour onze sans dormir. Tu ne sais plus compter.",
+   "show": "Jour onze sans dormir. Tu ne sais plus compter."
+  },
+  {
+   "scene": "chambre",
+   "say": "Et si tu ne dormais plus du tout ? Un ado l'a vraiment fait, en 1964 : Randy Gardner, dix-sept ans. Deux cent soixante-quatre heures éveillé.",
+   "show": "Et si tu ne dormais plus du tout ? Un ado l'a vraiment fait, en 1964 : Randy Gardner, dix-sept ans. Deux cent soixante-quatre heures éveillé."
+  },
+  {
+   "scene": "chambre",
+   "say": "Jour deux : tes yeux n'arrivent plus à faire le point. Lire devient impossible.",
+   "show": "Jour deux : tes yeux n'arrivent plus à faire le point. Lire devient impossible."
+  },
+  {
+   "scene": "chambre",
+   "say": "Jour trois : tu deviens grognon, tu trébuches, tu lâches les objets.",
+   "show": "Jour trois : tu deviens grognon, tu trébuches, tu lâches les objets."
+  },
+  {
+   "scene": "halluc",
+   "say": "Jour quatre : tu vois des choses qui n'existent pas. Randy s'est cru joueur de football américain… un vrai, célèbre.",
+   "show": "Jour quatre : tu vois des choses qui n'existent pas. Randy s'est cru joueur de football américain… un vrai, célèbre."
+  },
+  {
+   "scene": "micro",
+   "say": "Et partout, des micro-sommeils : ton cerveau s'éteint quelques secondes, sans prévenir. Même les yeux ouverts.",
+   "show": "Et partout, des micro-sommeils : ton cerveau s'éteint quelques secondes, sans prévenir. Même les yeux ouverts."
+  },
+  {
+   "scene": "compte",
+   "say": "Jour onze. On lui demande de partir de cent et d'enlever sept, encore et encore. Il s'arrête à soixante-cinq. Il a oublié ce qu'il faisait.",
+   "show": "Jour onze. On lui demande de partir de cent et d'enlever sept, encore et encore. Il s'arrête à soixante-cinq. Il a oublié ce qu'il faisait."
+  },
+  {
+   "scene": "fin",
+   "say": "Il finit par dormir quatorze heures d'affilée. Et le Guinness des records ne valide plus ce défi : trop dangereux.",
+   "show": "Il finit par dormir quatorze heures d'affilée. Et le Guinness des records ne valide plus ce défi : trop dangereux."
+  },
+  {
+   "scene": "fin",
+   "say": "Toi, tu as tenu combien d'heures sans dormir ? Dis-le en commentaire.",
+   "show": "Toi, tu as tenu combien d'heures sans dormir ? Dis-le en commentaire."
+  }
+ ]
+}

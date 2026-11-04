@@ -14,10 +14,14 @@
    "style": "cinéma",
    "publication": "2026-11-04 07:00 (programmé)",
    "voix": "Gemini Orus"
+  },
+  {
+   "dir": "videos/etsi-11-jours",
+   "title": "Et si tu ne dormais plus pendant 11 jours ?",
+   "scheduled": "2026-11-05T07:00+01:00 (visé)"
   }
  ],
  "idees_restantes": [
-  "Et si tu ne dormais plus pendant 11 jours ?",
   "Et si la Terre arrêtait de tourner une seconde ?",
   "Et si tu buvais 10 litres d'eau d'un coup ?",
   "Et si tous les insectes disparaissaient ?",

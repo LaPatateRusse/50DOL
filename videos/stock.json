@@ -62,6 +62,13 @@
    "description": "Si la glace craque sous tes pieds.. 🧊 5 règles qui peuvent te sauver.\nEnregistre-la, tu en auras besoin un jour 📌 Tu connaissais la règle 5 ? 👇",
    "creneau_vise": "2026-11-05T19:15+01:00",
    "note": "Test « Protocole de survie » (directive 2), créneau 19:15 du 05/11 à la place de l'horreur."
+  },
+  {
+   "dossier": "etsi-11-jours",
+   "type": "science",
+   "titre": "Et si tu ne dormais plus pendant 11 jours ?",
+   "description": "Un ado est resté 264 heures sans dormir.. 😵 Et au jour 11, il ne savait plus compter.\nToi, tu as tenu combien d'heures ? 👇",
+   "creneau_vise": "2026-11-05T07:00+01:00"
   }
  ],
  "programmes": [
