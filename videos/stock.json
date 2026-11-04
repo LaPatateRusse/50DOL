@@ -10,29 +10,6 @@
  },
  "pret": [
   {
-   "dossier": "etsi-compte-double-2",
-   "type": "serie",
-   "titre": "Et si ton compte doublait chaque jour ? — Partie 2 (FIN)",
-   "partie": 2,
-   "description": "Il a dû tout donner.. 💸 La FIN de « Et si ton compte doublait ».\nEnregistre-la et dis-moi : tu aurais tout donné ? 👇\n\n#etsi #argent #maths #banque #histoire #animation #pourtoi #fyp",
-   "creneau_vise": "2026-11-04T17:30+01:00"
-  },
-  {
-   "dossier": "horreur-gps",
-   "type": "horreur",
-   "titre": "Le GPS",
-   "description": "Le GPS de Papy s'est allumé tout seul.. 📍\nEnvoie-la à celui qui conduit la nuit 👇\n\n#horreur #histoiredhorreur #creepypasta #gps #minuit #peur #pourtoi #fyp",
-   "creneau_vise": "2026-11-04T19:15+01:00"
-  },
-  {
-   "dossier": "colo-1",
-   "type": "horreur-serie",
-   "titre": "La colo — Partie 1",
-   "partie": 1,
-   "description": "On était douze. Il en a compté treize.. 🔦\nEnregistre-la pour la Partie 2 👇\n\n#horreur #histoiredhorreur #creepypasta #colo #minuit #peur #pourtoi #fyp",
-   "creneau_vise": "2026-11-04T20:00+01:00"
-  },
-  {
    "dossier": "foret-1",
    "type": "survie",
    "titre": "Perdu en forêt — Jour 1",
@@ -47,13 +24,6 @@
    "description": "Si la glace craque sous tes pieds.. 🧊\nEnregistre-la, tu en auras besoin un jour 📌\n\n#survie #glace #protocole #conseils #hiver #securite #pourtoi #fyp",
    "creneau_vise": "2026-11-05T19:15+01:00",
    "note": "Test « Protocole de survie » (directive 2), créneau 19:15 du 05/11 à la place de l'horreur."
-  },
-  {
-   "dossier": "etsi-11-jours",
-   "type": "science",
-   "titre": "Et si tu ne dormais plus pendant 11 jours ?",
-   "description": "264 heures sans dormir.. 😵\nEnvoie-la à celui qui se couche à 4 h du matin 👇\n\n#etsi #science #sommeil #record #cerveau #lesaviezvous #pourtoi #fyp",
-   "creneau_vise": "2026-11-05T07:00+01:00"
   },
   {
    "dossier": "secret-gouter",
@@ -147,6 +117,34 @@
    "titre": "La photo d'un an",
    "buffer": "6aeb21e6e23d13cc159620e1",
    "heure": "2026-11-04T16:30+01:00"
+  },
+  {
+   "dossier": "etsi-compte-double-2",
+   "type": "serie",
+   "titre": "Et si ton compte doublait chaque jour ? — Partie 2 (FIN)",
+   "buffer": "6aeb4b913792c9d846bd8a1f",
+   "heure": "2026-11-04T17:30+01:00"
+  },
+  {
+   "dossier": "horreur-gps",
+   "type": "horreur",
+   "titre": "Le GPS",
+   "buffer": "6aeb4b9492ddc1c76295b422",
+   "heure": "2026-11-04T19:15+01:00"
+  },
+  {
+   "dossier": "colo-1",
+   "type": "horreur-serie",
+   "titre": "La colo — Partie 1",
+   "buffer": "6aeb4b973792c9d846bd8c3c",
+   "heure": "2026-11-04T20:00+01:00"
+  },
+  {
+   "dossier": "etsi-11-jours",
+   "type": "science",
+   "titre": "Et si tu ne dormais plus pendant 11 jours ?",
+   "buffer": "6aeb4b9ac7c81a1788929eb8",
+   "heure": "2026-11-05T07:00+01:00"
   }
  ]
 }
