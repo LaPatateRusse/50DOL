@@ -1,0 +1,167 @@
+{
+ "title": "Protocole de survie — La glace",
+ "note": "Test « Protocole de survie » (19:15 du 05/11). Conseils vérifiés : règle 1-10-1 (choc thermique ~1 min, ~10 min de mouvements utiles, ~1 h avant l'inconscience) ; ressortir du côté d'où l'on vient ; se tracter à plat en battant des jambes puis rouler sans se relever ; secours : s'allonger, tendre un objet, appeler le 112, ne pas courir vers le trou.",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Orus",
+  "gemini_style": "Lis ce texte en français, comme un secouriste qui parle sur TikTok : voix masculine grave, assurée, rythme posé et clair, sans précipitation, avec de vraies pauses après chaque règle, ton sérieux et captivant. « Règle un », « Règle deux »… sont bien détachés. La règle cinq est dite plus lentement, avec gravité. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "flash": 0.8,
+  "lac": 0.5,
+  "eau": 0.6,
+  "sortie": 0.6,
+  "ami": 0.6,
+  "fin": 3.4
+ },
+ "cues": {
+  "crack": [
+   0,
+   "start",
+   0.6
+  ],
+  "r1": [
+   2,
+   "start",
+   0.1
+  ],
+  "r2": [
+   3,
+   "start",
+   0.1
+  ],
+  "hour": [
+   4,
+   "start",
+   0.4
+  ],
+  "r3": [
+   5,
+   "start",
+   0.1
+  ],
+  "r4": [
+   6,
+   "start",
+   0.1
+  ],
+  "roll": [
+   6,
+   "end",
+   -3.6
+  ],
+  "r5": [
+   7,
+   "start",
+   1.4
+  ],
+  "fall": [
+   7,
+   "end",
+   -2.4
+  ],
+  "call": [
+   8,
+   "end",
+   -4.6
+  ],
+  "endcard": [
+   9,
+   "end",
+   0.6
+  ]
+ },
+ "sfx": [
+  {
+   "type": "hit",
+   "cue": [
+    "crack",
+    "r5",
+    "fall"
+   ]
+  },
+  {
+   "type": "pop",
+   "cue": [
+    "r1",
+    "r2",
+    "r3",
+    "r4"
+   ]
+  },
+  {
+   "type": "water",
+   "cue": [
+    "fall"
+   ]
+  },
+  {
+   "type": "swish",
+   "cue": [
+    "roll",
+    "endcard"
+   ]
+  }
+ ],
+ "pulse": [
+  [
+   "eau",
+   "ami"
+  ]
+ ],
+ "lines": [
+  {
+   "scene": "flash",
+   "say": "Si la glace craque sous tes pieds…",
+   "show": "Si la glace craque sous tes pieds…"
+  },
+  {
+   "scene": "lac",
+   "say": "… voici cinq règles qui peuvent te sauver. La dernière, presque personne ne la connaît.",
+   "show": "… voici cinq règles qui peuvent te sauver. La dernière, presque personne ne la connaît."
+  },
+  {
+   "scene": "eau",
+   "say": "Règle un : la première minute, ne nage pas. Le froid te coupe le souffle. Garde la tête hors de l'eau et respire lentement. Ça passe.",
+   "show": "Règle un : la première minute, ne nage pas. Le froid te coupe le souffle. Garde la tête hors de l'eau et respire lentement. Ça passe."
+  },
+  {
+   "scene": "eau",
+   "say": "Règle deux : ensuite, tu as environ dix minutes avant que tes bras ne répondent plus. C'est maintenant qu'il faut sortir.",
+   "show": "Règle deux : ensuite, tu as environ dix minutes avant que tes bras ne répondent plus. C'est maintenant qu'il faut sortir."
+  },
+  {
+   "scene": "eau",
+   "say": "Après ça, il te reste environ une heure avant de perdre connaissance à cause du froid. Mais sans tes bras, tu ne sortiras pas.",
+   "show": "Après ça, il te reste environ une heure avant de perdre connaissance à cause du froid. Mais sans tes bras, tu ne sortiras pas."
+  },
+  {
+   "scene": "sortie",
+   "say": "Règle trois : retourne du côté d'où tu es venu. Là où tu es tombé, la glace est trop fine. Derrière toi, elle t'a déjà porté.",
+   "show": "Règle trois : retourne du côté d'où tu es venu. Là où tu es tombé, la glace est trop fine. Derrière toi, elle t'a déjà porté."
+  },
+  {
+   "scene": "sortie",
+   "say": "Règle quatre : bras à plat sur la glace, tu bats des jambes pour glisser dessus. Puis tu roules jusqu'à la rive. Surtout, ne te relève pas.",
+   "show": "Règle quatre : bras à plat sur la glace, tu bats des jambes pour glisser dessus. Puis tu roules jusqu'à la rive. Surtout, ne te relève pas."
+  },
+  {
+   "scene": "ami",
+   "say": "Et la règle cinq retourne tout : si c'est ton ami qui tombe… tu ne cours pas vers le trou.",
+   "show": "Et la règle cinq retourne tout : si c'est ton ami qui tombe… tu ne cours pas vers le trou."
+  },
+  {
+   "scene": "ami",
+   "say": "Tu t'allonges, tu lui tends une branche ou une écharpe, et tu appelles le cent-douze. Beaucoup de noyés sur la glace… étaient venus aider.",
+   "show": "Tu t'allonges, tu lui tends une branche ou une écharpe, et tu appelles le cent-douze. Beaucoup de noyés sur la glace… étaient venus aider."
+  },
+  {
+   "scene": "fin",
+   "say": "Enregistre-la. Et dis-moi : tu connaissais la règle cinq ?",
+   "show": "Enregistre-la. Et dis-moi : tu connaissais la règle cinq ?"
+  }
+ ]
+}

@@ -275,6 +275,12 @@
    "titre": "Perdu en forêt — Jour 1",
    "description": "Perdu en forêt, 4 % de batterie.. 🌲🔋 Le 1er réflexe qui peut te sauver.\nEnregistre-la, tu en auras besoin un jour 📌 Tu réponds au message ? 👇",
    "statut": "a_publier"
+  },
+  {
+   "dossier": "protocole-glace",
+   "titre": "Protocole de survie : la glace",
+   "description": "Si la glace craque sous tes pieds.. 🧊 5 règles qui peuvent te sauver.\nEnregistre-la, tu en auras besoin un jour 📌 Tu connaissais la règle 5 ? 👇",
+   "statut": "a_publier"
   }
  ],
  "regles": "YouTube : la journée YouTube va de 09:00 à 09:00 (heure de Paris, minuit heure du Pacifique). 10 envois MAXIMUM par journée YouTube, format long (Upload-Post) compris. Buffer refuse aussi plus de 10 posts YouTube programmés le même jour calendaire. Les Shorts sont espacés d'au moins 60 min (idéalement 70-80 min) : fini le rattrapage toutes les 10 min."

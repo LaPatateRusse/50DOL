@@ -54,6 +54,14 @@
    "partie": 1,
    "description": "Perdu en forêt, 4 % de batterie.. 🌲🔋 Le 1er réflexe qui peut te sauver.\nEnregistre-la, tu en auras besoin un jour 📌 Tu réponds au message ? 👇",
    "creneau_vise": "2026-11-05T12:10+01:00"
+  },
+  {
+   "dossier": "protocole-glace",
+   "type": "survie",
+   "titre": "Protocole de survie — La glace",
+   "description": "Si la glace craque sous tes pieds.. 🧊 5 règles qui peuvent te sauver.\nEnregistre-la, tu en auras besoin un jour 📌 Tu connaissais la règle 5 ? 👇",
+   "creneau_vise": "2026-11-05T19:15+01:00",
+   "note": "Test « Protocole de survie » (directive 2), créneau 19:15 du 05/11 à la place de l'horreur."
   }
  ],
  "programmes": [
