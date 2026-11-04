@@ -72,6 +72,7 @@ Séries déjà commencées : elles finissent dans LEUR style (Blackout J5 = styl
 - Chaque jour, au premier passage horaire après 09:00 : relire `videos/stats/stats-tiktok.xlsx` ; la catégorie avec le meilleur « % regardé » et le plus de vues sur 2 jours reçoit plus de créneaux (remplacer une partie des « histoire » par cette catégorie) ; noter la décision dans `docs/REPRISE.md`.
 
 ### Quota et espacement YouTube (consigne du Superviseur, 03/11)
+- **Chaîne YouTube non vérifiée (refus du 04/11 à 09:40 : « daily video upload limit for an unverified YouTube account ») : tant que la chaîne n'est pas vérifiée, 10 envois YouTube au plus par 24 h GLISSANTES, format long compris.** Avant de programmer un Short, compter les envois des 24 h qui précèdent son heure.
 - La journée YouTube va de 09:00 à 09:00 (heure de Paris). On fait au maximum 10 envois par journée YouTube, format long compris (les formats longs passent par Upload-Post, gérés par la session YouTube).
 - Buffer refuse aussi plus de 10 posts YouTube programmés le même jour calendaire. Pour décaler un post, il faut d'abord libérer une place ce jour-là, et `edit_post` doit renvoyer le texte, les assets et `metadata.youtube` en entier.
 - Les Shorts sont espacés d'au moins 60 min (idéalement 70 à 80 min), et aucun ne part avant 09:00. Le rattrapage toutes les 10 min est terminé.
