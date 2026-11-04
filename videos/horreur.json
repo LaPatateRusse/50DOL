@@ -68,7 +68,7 @@
    "titre": "La colo",
    "creature": "la Voix de l'appel (lampe torche, compte les enfants à minuit ; pas encore montrée)",
    "parties_prevues": 3,
-   "terminee": false,
+   "terminee": true,
    "plan": "P1 04/11 20:00 ; P2 05/11 20:00 ; P3 (FIN) 06/11 20:00 (test de volume). Sans vote écrit : choix le plus prudent.",
    "parties": [
     {
@@ -84,6 +84,13 @@
      "publication": "2026-11-05 20:00 (visé)",
      "fin": "Il ne soulève pas la couverture (choix prudent). 13e lit disparu ; liste : 13e prénom = le sien en rouge ; photo 1994 : 13e enfant flou dans son sweat orange. L'appel recommence par son prénom.",
      "choix": "Tu réponds « présent » ? OUI / NON"
+    },
+    {
+     "partie": 3,
+     "dossier": "videos/colo-3",
+     "publication": "2026-11-06 20:00 (visé)",
+     "fin": "FIN : il ne répond pas (choix prudent) ; Sami répond à sa place et disparaît ; plus personne ne se souvient de lui ; sur la photo de 1994, le 13e enfant est Sami.",
+     "choix": "Tu aurais répondu pour ton pote ? OUI / NON"
     }
    ]
   }
