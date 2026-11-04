@@ -10,29 +10,6 @@
  },
  "pret": [
   {
-   "dossier": "foret-1",
-   "type": "survie",
-   "titre": "Perdu en forêt — Jour 1",
-   "partie": 1,
-   "description": "Perdu en forêt, 4 % de batterie.. 🌲\nEnregistre-la, tu en auras besoin un jour 📌\n\n#survie #foret #perdu #randonnee #conseils #112 #pourtoi #fyp",
-   "creneau_vise": "2026-11-05T12:10+01:00"
-  },
-  {
-   "dossier": "protocole-glace",
-   "type": "survie",
-   "titre": "Protocole de survie — La glace",
-   "description": "Si la glace craque sous tes pieds.. 🧊\nEnregistre-la, tu en auras besoin un jour 📌\n\n#survie #glace #protocole #conseils #hiver #securite #pourtoi #fyp",
-   "creneau_vise": "2026-11-05T19:15+01:00",
-   "note": "Test « Protocole de survie » (directive 2), créneau 19:15 du 05/11 à la place de l'horreur."
-  },
-  {
-   "dossier": "secret-gouter",
-   "type": "histoire",
-   "titre": "Le secret de son goûter",
-   "description": "Le secret de son goûter.. 🥐\nEnvoie-la à quelqu'un qui devrait appeler ses grands-parents 👇\n\n#histoire #famille #secret #emotion #animation #papy #pourtoi #fyp",
-   "creneau_vise": "2026-11-05T13:30+01:00"
-  },
-  {
    "dossier": "histoire-lettres",
    "type": "histoire",
    "titre": "Les lettres du futur",
@@ -153,6 +130,27 @@
    "titre": "Et si tu ne dormais plus pendant 11 jours ?",
    "buffer": "6aeb4b9ac7c81a1788929eb8",
    "heure": "2026-11-05T07:00+01:00"
+  },
+  {
+   "dossier": "foret-1",
+   "type": "survie",
+   "titre": "Perdu en forêt — Jour 1",
+   "buffer": "6aeb755f491f63648cef83c2",
+   "heure": "2026-11-05T12:10+01:00"
+  },
+  {
+   "dossier": "protocole-glace",
+   "type": "survie",
+   "titre": "Protocole de survie — La glace",
+   "buffer": "6aeb7565de5163115e1e09b1",
+   "heure": "2026-11-05T19:15+01:00"
+  },
+  {
+   "dossier": "secret-gouter",
+   "type": "histoire",
+   "titre": "Le secret de son goûter",
+   "buffer": "6aeb7562610a51b44de1e6ba",
+   "heure": "2026-11-05T13:30+01:00"
   }
  ]
 }
