@@ -115,6 +115,13 @@
    "format": "Le secret de… (directive agent)",
    "style": "cinéma",
    "voice": "Gemini"
+  },
+  {
+   "dir": "histoire-lettres",
+   "title": "Les lettres du futur",
+   "format": "histoire originale complète (14:30)",
+   "style": "cinéma",
+   "voice": "Gemini"
   }
  ]
 }

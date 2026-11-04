@@ -1,0 +1,149 @@
+{
+ "title": "Les lettres du futur",
+ "note": "Histoire originale complète en 1 partie (14:30 du 05/11), style cinéma.",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Orus",
+  "gemini_style": "Lis ce texte en français, comme un conteur de mini-film d'animation sur TikTok : voix masculine grave et posée, phrases courtes, rythme vif et soutenu, sans traîner, pauses courtes. Ton mystérieux au début, puis très émouvant. Les lettres entre guillemets « » sont lues d'une voix d'adulte calme et chaleureuse. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "flash": 0.8,
+  "immeuble": 0.6,
+  "lettre": 0.6,
+  "pluie": 0.6,
+  "classe": 0.6,
+  "fin": 3.6
+ },
+ "cues": {
+  "slip": [
+   2,
+   "start",
+   1.6
+  ],
+  "reply": [
+   2,
+   "end",
+   -3.4
+  ],
+  "l1": [
+   4,
+   "start",
+   0.2
+  ],
+  "rain": [
+   4,
+   "end",
+   -3.0
+  ],
+  "l2": [
+   5,
+   "start",
+   0.2
+  ],
+  "smile": [
+   6,
+   "end",
+   -2.6
+  ],
+  "l3": [
+   7,
+   "start",
+   0.2
+  ],
+  "noe": [
+   8,
+   "start",
+   3.0
+  ],
+  "endcard": [
+   9,
+   "end",
+   0.6
+  ]
+ },
+ "sfx": [
+  {
+   "type": "pop",
+   "cue": [
+    "reply",
+    "l1",
+    "l2",
+    "l3",
+    "noe"
+   ]
+  },
+  {
+   "type": "water",
+   "cue": [
+    "rain"
+   ]
+  },
+  {
+   "type": "hit",
+   "cue": [
+    "endcard"
+   ]
+  }
+ ],
+ "pulse": [
+  [
+   "classe",
+   "fin"
+  ]
+ ],
+ "lines": [
+  {
+   "scene": "flash",
+   "say": "Une lettre écrite par toi. Dans dix ans.",
+   "show": "Une lettre écrite par toi. Dans dix ans."
+  },
+  {
+   "scene": "immeuble",
+   "say": "Trois jours plus tôt. Chez ta grand-mère, au sixième étage, il y a une vieille boîte aux lettres sans nom.",
+   "show": "Trois jours plus tôt. Chez ta grand-mère, au sixième étage, il y a une vieille boîte aux lettres sans nom."
+  },
+  {
+   "scene": "immeuble",
+   "say": "Pour rire, tu y glisses un mot : « Qui est là ? » Le lendemain, une réponse. Ton écriture. Signée : toi, à vingt-quatre ans.",
+   "show": "Pour rire, tu y glisses un mot : « Qui est là ? » Le lendemain, une réponse. Ton écriture. Signée : toi, à vingt-quatre ans."
+  },
+  {
+   "scene": "lettre",
+   "say": "« Je n'ai droit qu'à trois lettres. Alors écoute bien. »",
+   "show": "« Je n'ai droit qu'à trois lettres. Alors écoute bien. »"
+  },
+  {
+   "scene": "pluie",
+   "say": "Première lettre : « Demain, prends ton parapluie. » Il pleut des cordes. Tout le monde est trempé. Sauf toi.",
+   "show": "Première lettre : « Demain, prends ton parapluie. » Il pleut des cordes. Tout le monde est trempé. Sauf toi."
+  },
+  {
+   "scene": "classe",
+   "say": "Deuxième : « Arrête de te moquer de Noé. Il n'a plus personne, à part toi. » Noé ? Le garçon bizarre, au fond de la classe ?",
+   "show": "Deuxième : « Arrête de te moquer de Noé. Il n'a plus personne, à part toi. » Noé ? Le garçon bizarre, au fond de la classe ?"
+  },
+  {
+   "scene": "classe",
+   "say": "Le lendemain, tu t'assois à côté de lui. Il a l'air surpris. Puis il sourit. Pour la première fois de l'année.",
+   "show": "Le lendemain, tu t'assois à côté de lui. Il a l'air surpris. Puis il sourit. Pour la première fois de l'année."
+  },
+  {
+   "scene": "fin",
+   "say": "Troisième lettre, la dernière : « Merci. Noé est devenu mon meilleur ami. Samedi, il est mon témoin de mariage. »",
+   "show": "Troisième lettre, la dernière : « Merci. Noé est devenu mon meilleur ami. Samedi, il est mon témoin de mariage. »"
+  },
+  {
+   "scene": "fin",
+   "say": "Et en bas, une autre écriture : « Merci de t'être assis à côté de moi. Noé. »",
+   "show": "Et en bas, une autre écriture : « Merci de t'être assis à côté de moi. Noé. »"
+  },
+  {
+   "scene": "fin",
+   "say": "Toi, tu écrirais quoi à ton toi du futur ? Dis-le en commentaire.",
+   "show": "Toi, tu écrirais quoi à ton toi du futur ? Dis-le en commentaire."
+  }
+ ]
+}
