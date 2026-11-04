@@ -1,0 +1,142 @@
+{
+ "title": "Le secret de son goûter",
+ "note": "Format « Le secret de… » (directives), 13:30 du 05/11, style cinéma, histoire originale.",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Orus",
+  "gemini_style": "Lis ce texte en français, comme un conteur de mini-film d'animation sur TikTok : voix masculine grave et posée, phrases courtes, rythme vif et soutenu, sans traîner, pauses courtes. Ton mystérieux au début, puis très émouvant. Les répliques entre guillemets « » sont jouées : les élèves d'une voix moqueuse, le vieux monsieur d'une voix âgée, d'abord polie et lointaine, puis bouleversée de joie. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "flash": 0.8,
+  "ecole": 0.6,
+  "rue": 0.5,
+  "chambre": 0.7,
+  "fin": 3.6
+ },
+ "cues": {
+  "hide": [
+   1,
+   "end",
+   -2.6
+  ],
+  "enter": [
+   3,
+   "end",
+   -2.0
+  ],
+  "snack": [
+   5,
+   "start",
+   0.8
+  ],
+  "lit": [
+   5,
+   "end",
+   -1.6
+  ],
+  "forgot": [
+   7,
+   "end",
+   -1.8
+  ],
+  "note": [
+   9,
+   "end",
+   -2.4
+  ],
+  "endcard": [
+   10,
+   "end",
+   0.6
+  ]
+ },
+ "sfx": [
+  {
+   "type": "pop",
+   "cue": [
+    "hide",
+    "lit",
+    "note"
+   ]
+  },
+  {
+   "type": "swish",
+   "cue": [
+    "enter"
+   ]
+  },
+  {
+   "type": "hit",
+   "cue": [
+    "forgot",
+    "endcard"
+   ]
+  }
+ ],
+ "pulse": [
+  [
+   "chambre",
+   "fin"
+  ]
+ ],
+ "lines": [
+  {
+   "scene": "flash",
+   "say": "Chaque jour, elle cache son goûter. Et elle ne le mange jamais.",
+   "show": "Chaque jour, elle cache son goûter. Et elle ne le mange jamais."
+  },
+  {
+   "scene": "ecole",
+   "say": "Trois jours plus tôt. Léna, la nouvelle, range son pain au chocolat dans son sac. À la récré, elle ne mange rien.",
+   "show": "Trois jours plus tôt. Léna, la nouvelle, range son pain au chocolat dans son sac. À la récré, elle ne mange rien."
+  },
+  {
+   "scene": "ecole",
+   "say": "Les autres rigolent : « Elle le revend. » « Elle fait un régime. » Toi, tu la suis.",
+   "show": "Les autres rigolent : « Elle le revend. » « Elle fait un régime. » Toi, tu la suis."
+  },
+  {
+   "scene": "rue",
+   "say": "Après l'école, elle ne rentre pas chez elle. Elle entre dans une maison de retraite.",
+   "show": "Après l'école, elle ne rentre pas chez elle. Elle entre dans une maison de retraite."
+  },
+  {
+   "scene": "chambre",
+   "say": "Dans une chambre, un vieux monsieur regarde par la fenêtre. Il ne la reconnaît pas. « Bonjour, mademoiselle. »",
+   "show": "Dans une chambre, un vieux monsieur regarde par la fenêtre. Il ne la reconnaît pas. « Bonjour, mademoiselle. »"
+  },
+  {
+   "scene": "chambre",
+   "say": "Léna pose le pain au chocolat sur ses genoux. Et d'un coup, les yeux du vieux monsieur s'allument.",
+   "show": "Léna pose le pain au chocolat sur ses genoux. Et d'un coup, les yeux du vieux monsieur s'allument."
+  },
+  {
+   "scene": "chambre",
+   "say": "« Léna ? Ma Léna ! Je t'en achetais un tous les jours, à la sortie de l'école ! »",
+   "show": "« Léna ? Ma Léna ! Je t'en achetais un tous les jours, à la sortie de l'école ! »"
+  },
+  {
+   "scene": "chambre",
+   "say": "Elle sourit, les yeux qui brillent. Cinq minutes plus tard, il l'a déjà oubliée.",
+   "show": "Elle sourit, les yeux qui brillent. Cinq minutes plus tard, il l'a déjà oubliée."
+  },
+  {
+   "scene": "fin",
+   "say": "Tu comprends : chaque goûter, c'est cinq minutes où son papy se souvient d'elle.",
+   "show": "Tu comprends : chaque goûter, c'est cinq minutes où son papy se souvient d'elle."
+  },
+  {
+   "scene": "fin",
+   "say": "Le lendemain, tu glisses ton goûter dans son sac. Avec un mot : « Pour demain. Ça fera dix minutes. »",
+   "show": "Le lendemain, tu glisses ton goûter dans son sac. Avec un mot : « Pour demain. Ça fera dix minutes. »"
+  },
+  {
+   "scene": "fin",
+   "say": "Et toi, tu aurais fait pareil ? Dis-le en commentaire.",
+   "show": "Et toi, tu aurais fait pareil ? Dis-le en commentaire."
+  }
+ ]
+}

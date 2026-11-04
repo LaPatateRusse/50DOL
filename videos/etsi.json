@@ -108,6 +108,13 @@
    "format": "histoire originale complète (16:30)",
    "style": "cinéma",
    "voice": "Gemini"
+  },
+  {
+   "dir": "secret-gouter",
+   "title": "Le secret de son goûter",
+   "format": "Le secret de… (directive agent)",
+   "style": "cinéma",
+   "voice": "Gemini"
   }
  ]
 }

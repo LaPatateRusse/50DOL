@@ -69,6 +69,13 @@
    "titre": "Et si tu ne dormais plus pendant 11 jours ?",
    "description": "Un ado est resté 264 heures sans dormir.. 😵 Et au jour 11, il ne savait plus compter.\nToi, tu as tenu combien d'heures ? 👇",
    "creneau_vise": "2026-11-05T07:00+01:00"
+  },
+  {
+   "dossier": "secret-gouter",
+   "type": "histoire",
+   "titre": "Le secret de son goûter",
+   "description": "Le secret de son goûter.. 🥐\nEt toi, tu aurais fait pareil ? 👇",
+   "creneau_vise": "2026-11-05T13:30+01:00"
   }
  ],
  "programmes": [
