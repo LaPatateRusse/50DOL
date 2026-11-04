@@ -14,3 +14,7 @@
 ## Consignes de passage (Superviseur, 03/11 21:01 : correction de l'utilisateur, la consigne de 21:00 est ANNULÉE)
 - Analyse complète et détaillée, budget Firecrawl normal (environ 150 crédits) : faire percer le compte passe avant tout.
 - Économiser seulement sur la forme : réponses Buffer enregistrées dans `videos/.build/` et lues par extraits (python/jq) ; pas de répétition d'un passage à l'autre (renvoyer au rapport précédent) ; message au Superviseur structuré, sans politesse.
+
+## Consigne d'économie (Superviseur, 04/11 ~00:18 Paris, limite hebdomadaire)
+- Passage quotidien maintenu. Budget Firecrawl : **60 crédits au plus** par passage.
+- Message au Superviseur : **6 lignes au plus** ; le détail reste dans docs/analyse/. Ne pas répondre à ce message.
