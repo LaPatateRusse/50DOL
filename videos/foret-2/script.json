@@ -1,0 +1,143 @@
+{
+ "title": "Perdu en forêt — Jour 2",
+ "note": "Série de survie, épisode 2 (12:10 du 06/11). Sans vote écrit : choix le plus prudent (il n'a pas répondu au SMS). Conseils : les secours peuvent contacter par SMS depuis un numéro inconnu ; se rendre visible (clairière, couleur vive, grandes lettres SOS au sol) ; eau de ruisseau non traitée : risque de parasites (giardia…) → diarrhée → déshydratation.",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Orus",
+  "gemini_style": "Lis ce texte en français, comme un narrateur TikTok de survie captivant : voix masculine grave, rythme vif et soutenu, ton sérieux et tendu, les conseils dits avec assurance comme un secouriste. Le SMS entre guillemets « » est lu d'une voix neutre et inquiétante. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "flash": 0.8,
+  "nuit": 0.6,
+  "matin": 0.6,
+  "clairiere": 0.6,
+  "ruisseau": 0.6,
+  "ciel": 0.6,
+  "fin": 3.6
+ },
+ "cues": {
+  "sms": [
+   2,
+   "start",
+   3.0
+  ],
+  "sweat": [
+   4,
+   "end",
+   -2.4
+  ],
+  "sos": [
+   5,
+   "start",
+   3.0
+  ],
+  "stream": [
+   6,
+   "start",
+   4.0
+  ],
+  "germ": [
+   7,
+   "start",
+   1.6
+  ],
+  "heli": [
+   8,
+   "start",
+   0.6
+  ],
+  "endcard": [
+   9,
+   "end",
+   0.6
+  ]
+ },
+ "sfx": [
+  {
+   "type": "buzz",
+   "cue": "sms"
+  },
+  {
+   "type": "pop",
+   "cue": [
+    "sweat",
+    "sos",
+    "germ"
+   ]
+  },
+  {
+   "type": "water",
+   "cue": [
+    "stream"
+   ]
+  },
+  {
+   "type": "hit",
+   "cue": [
+    "heli",
+    "endcard"
+   ]
+  }
+ ],
+ "pulse": [
+  [
+   "clairiere",
+   "ciel"
+  ]
+ ],
+ "lines": [
+  {
+   "scene": "flash",
+   "say": "Ils venaient te sauver. Et tu t'es caché.",
+   "show": "Ils venaient te sauver. Et tu t'es caché."
+  },
+  {
+   "scene": "nuit",
+   "say": "Jour deux. Cette nuit, tu n'as pas répondu au message. La lampe est passée tout près… puis elle est repartie.",
+   "show": "Jour deux. Cette nuit, tu n'as pas répondu au message. La lampe est passée tout près… puis elle est repartie."
+  },
+  {
+   "scene": "matin",
+   "say": "Au matin, tu rallumes ton téléphone deux minutes. Nouveau SMS, même numéro : « Gendarmerie. Ton oncle nous a donné ton numéro. »",
+   "show": "Au matin, tu rallumes ton téléphone deux minutes. Nouveau SMS, même numéro : « Gendarmerie. Ton oncle nous a donné ton numéro. »"
+  },
+  {
+   "scene": "matin",
+   "say": "Les secours peuvent t'écrire depuis un numéro inconnu. Ce n'était pas un piège. C'était eux.",
+   "show": "Les secours peuvent t'écrire depuis un numéro inconnu. Ce n'était pas un piège. C'était eux."
+  },
+  {
+   "scene": "clairiere",
+   "say": "Batterie : trois pour cent. Plan B : te rendre visible. Une clairière, à découvert. Ton sweat orange étalé par terre.",
+   "show": "Batterie : trois pour cent. Plan B : te rendre visible. Une clairière, à découvert. Ton sweat orange étalé par terre."
+  },
+  {
+   "scene": "clairiere",
+   "say": "Avec des branches, tu écris trois lettres immenses : S, O, S. Vues du ciel, elles se lisent de très loin.",
+   "show": "Avec des branches, tu écris trois lettres immenses : S, O, S. Vues du ciel, elles se lisent de très loin."
+  },
+  {
+   "scene": "ruisseau",
+   "say": "Midi. Ta gorge brûle. Tu n'as rien bu depuis hier. Juste à côté, un ruisseau. L'eau a l'air propre.",
+   "show": "Midi. Ta gorge brûle. Tu n'as rien bu depuis hier. Juste à côté, un ruisseau. L'eau a l'air propre."
+  },
+  {
+   "scene": "ruisseau",
+   "say": "Mais l'eau d'un ruisseau peut contenir des parasites qui donnent la diarrhée. Et la diarrhée… déshydrate encore plus.",
+   "show": "Mais l'eau d'un ruisseau peut contenir des parasites qui donnent la diarrhée. Et la diarrhée… déshydrate encore plus."
+  },
+  {
+   "scene": "ciel",
+   "say": "Au loin, un bruit de moteur dans le ciel. Il se rapproche.",
+   "show": "Au loin, un bruit de moteur dans le ciel. Il se rapproche."
+  },
+  {
+   "scene": "fin",
+   "say": "Tu bois l'eau du ruisseau ? Commente oui ou non. Jour trois, demain.",
+   "show": "Tu bois l'eau du ruisseau ? Commente oui ou non. Jour trois, demain."
+  }
+ ]
+}
