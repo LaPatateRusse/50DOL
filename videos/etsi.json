@@ -122,6 +122,13 @@
    "format": "histoire originale complète (14:30)",
    "style": "cinéma",
    "voice": "Gemini"
+  },
+  {
+   "dir": "secret-montre",
+   "title": "Le secret de sa montre",
+   "format": "Le secret de… (directive agent)",
+   "style": "cinéma",
+   "voice": "Gemini"
   }
  ]
 }

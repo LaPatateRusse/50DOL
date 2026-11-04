@@ -1,0 +1,136 @@
+{
+ "title": "Le secret de sa montre",
+ "note": "Format « Le secret de… » (directives), 16:00 du 05/11, style cinéma, histoire originale.",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Orus",
+  "gemini_style": "Lis ce texte en français, comme un conteur de mini-film d'animation sur TikTok : voix masculine grave et posée, phrases courtes, rythme vif et soutenu, sans traîner, pauses courtes. Ton mystérieux au début, puis très émouvant. Les répliques entre guillemets « » sont jouées : les élèves d'une voix moqueuse, Malik d'une voix jeune et calme, le pompier d'une voix d'homme grave, d'abord surprise, puis émue. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "flash": 1.0,
+  "classe": 0.8,
+  "pompier": 0.8,
+  "souvenir": 0.8,
+  "fin": 4.0
+ },
+ "cues": {
+  "sees": [
+   4,
+   "start",
+   1.0
+  ],
+  "fire": [
+   5,
+   "start",
+   2.6
+  ],
+  "carry": [
+   5,
+   "start",
+   5.0
+  ],
+  "out": [
+   6,
+   "end",
+   -0.8
+  ],
+  "kneel": [
+   7,
+   "start",
+   0.3
+  ],
+  "close": [
+   8,
+   "start",
+   3.0
+  ],
+  "endcard": [
+   9,
+   "end",
+   0.6
+  ]
+ },
+ "sfx": [
+  {
+   "type": "hit",
+   "cue": [
+    "sees",
+    "endcard"
+   ]
+  },
+  {
+   "type": "swish",
+   "cue": [
+    "fire",
+    "out"
+   ]
+  },
+  {
+   "type": "pop",
+   "cue": [
+    "close"
+   ]
+  }
+ ],
+ "pulse": [
+  [
+   "souvenir",
+   "fin"
+  ]
+ ],
+ "lines": [
+  {
+   "scene": "flash",
+   "say": "Sa montre est cassée. Et il ne l'enlève jamais.",
+   "show": "Sa montre est cassée. Et il ne l'enlève jamais."
+  },
+  {
+   "scene": "classe",
+   "say": "Trois jours plus tôt. Malik porte une vieille montre, arrêtée sur seize heures quarante-sept.",
+   "show": "Trois jours plus tôt. Malik porte une vieille montre, arrêtée sur seize heures quarante-sept."
+  },
+  {
+   "scene": "classe",
+   "say": "Les autres se moquent : « Tu sais pas lire l'heure ? » Il répond juste : « Elle est à l'heure. Pour moi. »",
+   "show": "Les autres se moquent : « Tu sais pas lire l'heure ? » Il répond juste : « Elle est à l'heure. Pour moi. »"
+  },
+  {
+   "scene": "pompier",
+   "say": "Vendredi, un pompier vient en classe parler des incendies. Grand, la voix calme.",
+   "show": "Vendredi, un pompier vient en classe parler des incendies. Grand, la voix calme."
+  },
+  {
+   "scene": "pompier",
+   "say": "Et puis il voit la montre de Malik. Il s'arrête net. « Où tu as eu ça ? »",
+   "show": "Et puis il voit la montre de Malik. Il s'arrête net. « Où tu as eu ça ? »"
+  },
+  {
+   "scene": "souvenir",
+   "say": "Malik baisse les yeux. « Il y a six ans, notre immeuble a brûlé. Un pompier m'a porté dans l'escalier. Il m'a donné sa montre pour que j'arrête de pleurer. »",
+   "show": "Malik baisse les yeux. « Il y a six ans, notre immeuble a brûlé. Un pompier m'a porté dans l'escalier. Il m'a donné sa montre pour que j'arrête de pleurer. »"
+  },
+  {
+   "scene": "souvenir",
+   "say": "« Je comptais les secondes. Quand elle s'est arrêtée… on était dehors. »",
+   "show": "« Je comptais les secondes. Quand elle s'est arrêtée… on était dehors. »"
+  },
+  {
+   "scene": "fin",
+   "say": "Le pompier s'accroupit, les yeux mouillés. « Je t'ai cherché pendant six ans. »",
+   "show": "Le pompier s'accroupit, les yeux mouillés. « Je t'ai cherché pendant six ans. »"
+  },
+  {
+   "scene": "fin",
+   "say": "Malik enlève la montre pour la lui rendre. Le pompier referme doucement sa main dessus. « Garde-la. Elle est toujours à l'heure. »",
+   "show": "Malik enlève la montre pour la lui rendre. Le pompier referme doucement sa main dessus. « Garde-la. Elle est toujours à l'heure. »"
+  },
+  {
+   "scene": "fin",
+   "say": "Et toi, tu l'aurais deviné ? Dis-le en commentaire.",
+   "show": "Et toi, tu l'aurais deviné ? Dis-le en commentaire."
+  }
+ ]
+}
