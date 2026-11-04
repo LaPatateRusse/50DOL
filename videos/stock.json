@@ -46,6 +46,14 @@
    "partie": 1,
    "description": "On était douze. Il en a compté treize.. 🔦 Partie 1 de « La colo ».\nTu soulèves la couverture ? OUI ou NON 👇",
    "creneau_vise": "2026-11-04T20:00+01:00"
+  },
+  {
+   "dossier": "foret-1",
+   "type": "survie",
+   "titre": "Perdu en forêt — Jour 1",
+   "partie": 1,
+   "description": "Perdu en forêt, 4 % de batterie.. 🌲🔋 Le 1er réflexe qui peut te sauver.\nEnregistre-la, tu en auras besoin un jour 📌 Tu réponds au message ? 👇",
+   "creneau_vise": "2026-11-05T12:10+01:00"
   }
  ],
  "programmes": [

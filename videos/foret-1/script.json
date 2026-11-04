@@ -1,0 +1,137 @@
+{
+ "title": "Perdu en forêt — Jour 1",
+ "note": "Nouvelle série de survie en 5 épisodes (12:10 à partir du 05/11), style cinéma. Conseils : s'arrêter quand on est perdu (STOP) ; en Europe le 112 peut passer par le réseau de n'importe quel opérateur ; un SMS passe parfois quand l'appel échoue ; mode avion pour économiser la batterie ; s'isoler du sol (perte de chaleur par conduction).",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Orus",
+  "gemini_style": "Lis ce texte en français, comme un narrateur TikTok de survie captivant : voix masculine grave, rythme vif et soutenu, ton sérieux et tendu, les conseils dits avec assurance comme un secouriste. Le SMS entre guillemets « » est lu d'une voix neutre et inquiétante. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "flash": 0.9,
+  "sentier": 0.7,
+  "regle": 0.7,
+  "abri": 0.7,
+  "nuit": 0.8,
+  "fin": 4.2
+ },
+ "cues": {
+  "turn": [
+   2,
+   "start",
+   0.2
+  ],
+  "stop": [
+   3,
+   "start",
+   2.4
+  ],
+  "sms": [
+   4,
+   "end",
+   -2.0
+  ],
+  "plane": [
+   5,
+   "start",
+   0.3
+  ],
+  "vibe": [
+   7,
+   "start",
+   2.4
+  ],
+  "light": [
+   8,
+   "end",
+   -1.0
+  ],
+  "endcard": [
+   9,
+   "end",
+   0.6
+  ]
+ },
+ "sfx": [
+  {
+   "type": "pop",
+   "cue": [
+    "stop",
+    "sms",
+    "plane"
+   ]
+  },
+  {
+   "type": "buzz",
+   "cue": "vibe"
+  },
+  {
+   "type": "hit",
+   "cue": [
+    "turn",
+    "light",
+    "endcard"
+   ]
+  }
+ ],
+ "pulse": [
+  [
+   "nuit",
+   "fin"
+  ]
+ ],
+ "lines": [
+  {
+   "scene": "flash",
+   "say": "Batterie : quatre pour cent. Et la nuit tombe.",
+   "show": "Batterie : quatre pour cent. Et la nuit tombe."
+  },
+  {
+   "scene": "sentier",
+   "say": "Trois heures plus tôt. Randonnée en forêt avec ton oncle. Tu quittes le sentier deux minutes, pour une photo.",
+   "show": "Trois heures plus tôt. Randonnée en forêt avec ton oncle. Tu quittes le sentier deux minutes, pour une photo."
+  },
+  {
+   "scene": "sentier",
+   "say": "Tu te retournes. Plus de sentier. Plus d'oncle. Que des arbres, tous pareils.",
+   "show": "Tu te retournes. Plus de sentier. Plus d'oncle. Que des arbres, tous pareils."
+  },
+  {
+   "scene": "regle",
+   "say": "Premier réflexe des secouristes : s'arrêter. Celui qui marche au hasard s'éloigne… et on le cherche au mauvais endroit.",
+   "show": "Premier réflexe des secouristes : s'arrêter. Celui qui marche au hasard s'éloigne… et on le cherche au mauvais endroit."
+  },
+  {
+   "scene": "regle",
+   "say": "Pas de réseau ? Le cent-douze passe par n'importe quel opérateur disponible. Ça sonne dans le vide. Alors tu envoies un SMS à ton oncle.",
+   "show": "Pas de réseau ? Le cent-douze passe par n'importe quel opérateur disponible. Ça sonne dans le vide. Alors tu envoies un SMS à ton oncle."
+  },
+  {
+   "scene": "regle",
+   "say": "Puis mode avion. Chaque pour cent de batterie peut te sauver demain.",
+   "show": "Puis mode avion. Chaque pour cent de batterie peut te sauver demain."
+  },
+  {
+   "scene": "abri",
+   "say": "Avant la nuit : un abri. Jamais sur la terre nue, le sol te vole ta chaleur. Tu entasses des feuilles sèches, épaisses comme un matelas.",
+   "show": "Avant la nuit : un abri. Jamais sur la terre nue, le sol te vole ta chaleur. Tu entasses des feuilles sèches, épaisses comme un matelas."
+  },
+  {
+   "scene": "nuit",
+   "say": "Vingt-deux heures. Ton téléphone vibre, une seule fois. Un SMS : « Ne bouge pas. On arrive. »",
+   "show": "Vingt-deux heures. Ton téléphone vibre, une seule fois. Un SMS : « Ne bouge pas. On arrive. »"
+  },
+  {
+   "scene": "nuit",
+   "say": "Sauf que… ce n'est pas le numéro de ton oncle. Et entre les arbres, une lampe s'approche.",
+   "show": "Sauf que… ce n'est pas le numéro de ton oncle. Et entre les arbres, une lampe s'approche."
+  },
+  {
+   "scene": "fin",
+   "say": "Tu réponds au message ? Commente oui ou non. Jour deux, demain.",
+   "show": "Tu réponds au message ? Commente oui ou non. Jour deux, demain."
+  }
+ ]
+}
