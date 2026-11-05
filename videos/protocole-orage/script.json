@@ -1,0 +1,186 @@
+{
+ "title": "Protocole de survie — L'orage",
+ "note": "« Protocole de survie » n°3 (19:15 du 07/11). Conseils vérifiés (Météo-France, sécurité civile) : le son parcourt environ 1 km en 3 s ; moins de 30 s entre éclair et tonnerre = orage dangereux, s'abriter ; jamais sous un arbre isolé ; s'éloigner de l'eau, des sommets, des objets métalliques qui dépassent ; meilleur abri : bâtiment ou voiture fermée (cage de Faraday) ; cheveux qui se dressent = foudre imminente → s'accroupir pieds joints, mains sur les oreilles, ne pas s'allonger.",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Orus",
+  "gemini_style": "Lis ce texte en français, comme un secouriste qui parle sur TikTok : voix masculine grave, assurée, rythme posé et clair, sans précipitation, avec de vraies pauses après chaque règle, ton sérieux et captivant. « Règle un », « Règle deux »… sont bien détachés. La règle cinq est dite plus lentement, avec gravité. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "flash": 1.2,
+  "intro": 1.1,
+  "compte": 1.1,
+  "arbre": 1.1,
+  "eau": 1.1,
+  "voiture": 1.1,
+  "cheveux": 1.1,
+  "fin": 4.0
+ },
+ "cues": {
+  "r1": [
+   2,
+   "start",
+   0.1
+  ],
+  "km": [
+   2,
+   "end",
+   -2.2
+  ],
+  "thirty": [
+   3,
+   "start",
+   0.3
+  ],
+  "r2": [
+   4,
+   "start",
+   0.1
+  ],
+  "strike": [
+   4,
+   "end",
+   -1.6
+  ],
+  "r3": [
+   5,
+   "start",
+   0.1
+  ],
+  "r4": [
+   6,
+   "start",
+   0.1
+  ],
+  "bolt": [
+   6,
+   "end",
+   -2.0
+  ],
+  "r5": [
+   7,
+   "start",
+   1.2
+  ],
+  "hair": [
+   7,
+   "start",
+   2.4
+  ],
+  "crouch": [
+   8,
+   "start",
+   0.3
+  ],
+  "nolie": [
+   8,
+   "end",
+   -1.6
+  ],
+  "endcard": [
+   9,
+   "end",
+   0.6
+  ]
+ },
+ "sfx": [
+  {
+   "type": "pop",
+   "cue": [
+    "r1",
+    "r2",
+    "r3",
+    "r4",
+    "km",
+    "thirty",
+    "nolie"
+   ]
+  },
+  {
+   "type": "hit",
+   "cue": [
+    "r5",
+    "strike",
+    "bolt",
+    "endcard"
+   ]
+  },
+  {
+   "type": "swish",
+   "cue": [
+    "crouch"
+   ]
+  },
+  {
+   "type": "wind",
+   "scene": [
+    "flash",
+    "compte",
+    "arbre",
+    "eau",
+    "cheveux"
+   ]
+  }
+ ],
+ "pulse": [
+  [
+   "compte",
+   "voiture"
+  ]
+ ],
+ "lines": [
+  {
+   "scene": "flash",
+   "say": "Si un orage te surprend dehors, cet après-midi…",
+   "show": "Si un orage te surprend dehors, cet après-midi…"
+  },
+  {
+   "scene": "intro",
+   "say": "… voici cinq règles qui peuvent te sauver. La dernière, presque personne ne la connaît.",
+   "show": "… voici cinq règles qui peuvent te sauver. La dernière, presque personne ne la connaît."
+  },
+  {
+   "scene": "compte",
+   "say": "Règle un : compte les secondes entre l'éclair et le tonnerre. Trois secondes, c'est environ un kilomètre.",
+   "show": "Règle un : compte les secondes entre l'éclair et le tonnerre. Trois secondes, c'est environ un kilomètre."
+  },
+  {
+   "scene": "compte",
+   "say": "Moins de trente secondes ? L'orage est assez près pour te frapper. Abrite-toi tout de suite.",
+   "show": "Moins de trente secondes ? L'orage est assez près pour te frapper. Abrite-toi tout de suite."
+  },
+  {
+   "scene": "arbre",
+   "say": "Règle deux : jamais sous un arbre isolé. La foudre frappe le point le plus haut.",
+   "show": "Règle deux : jamais sous un arbre isolé. La foudre frappe le point le plus haut."
+  },
+  {
+   "scene": "eau",
+   "say": "Règle trois : éloigne-toi de l'eau et des sommets. Et range tout ce qui dépasse, comme un parapluie ou une canne à pêche.",
+   "show": "Règle trois : éloigne-toi de l'eau et des sommets. Et range tout ce qui dépasse, comme un parapluie ou une canne à pêche."
+  },
+  {
+   "scene": "voiture",
+   "say": "Règle quatre : le meilleur abri, c'est un bâtiment, ou une voiture bien fermée. Sa carrosserie en métal détourne le courant.",
+   "show": "Règle quatre : le meilleur abri, c'est un bâtiment, ou une voiture bien fermée. Sa carrosserie en métal détourne le courant."
+  },
+  {
+   "scene": "cheveux",
+   "say": "Et la règle cinq : si tes cheveux se dressent sur ta tête… la foudre va tomber tout près.",
+   "show": "Et la règle cinq : si tes cheveux se dressent sur ta tête… la foudre va tomber tout près."
+  },
+  {
+   "scene": "cheveux",
+   "say": "Accroupis-toi, pieds joints, mains sur les oreilles, tête baissée. Et surtout, ne t'allonge pas par terre.",
+   "show": "Accroupis-toi, pieds joints, mains sur les oreilles, tête baissée. Et surtout, ne t'allonge pas par terre."
+  },
+  {
+   "scene": "fin",
+   "say": "Enregistre-la. Et dis-moi : tu connaissais la règle cinq ?",
+   "show": "Enregistre-la. Et dis-moi : tu connaissais la règle cinq ?"
+  }
+ ]
+}
