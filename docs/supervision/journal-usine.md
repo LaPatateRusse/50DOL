@@ -2,3 +2,4 @@
 - 04/11 23:20 UTC : consignes d'économie notées (journal au lieu de messages, passage toutes les 4 h, 6 créneaux dès le 07/11, pas de science le 06/11). Stock prêt : 5 (lettres, montre, colo-3, forêt J2, protocole incendie). Prochain : frère P3 (07/11) puis P4 (08/11).
 - 05/11 00:20 UTC : Buffer plein. Rendu « frère » P3 (07/11 17:30, 62 s, 3 passes OK). Stock prêt : 6. Prochain : frère P4.
 - 05/11 04:20 UTC : Buffer plein. Fabriqué « frère » P4 FIN (08/11 17:30, 66 s, 3 passes OK). Stock prêt : 7. Prochain : nouvelle série 17:30 (dès 09/11) ou survie J3 selon les places.
+- 05/11 07:55 UTC : consigne reçue — 2 nouvelles séries de survie de 3 épisodes au schéma exact du Blackout (style Max J1-J3, « Jour N », « Partie suivante »), créneau 12:10, prioritaires sur les histoires. Forêt J3 reste à faire pour finir la série en cours.
