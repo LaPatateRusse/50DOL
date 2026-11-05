@@ -360,6 +360,12 @@
       "titre": "Alerte inondation — Jour 1",
       "description": "L'eau monte dans ta rue cette nuit.. 🌊\nEnregistre-la, tu en auras besoin un jour 📌\n\n#survie #inondation #crue #conseils #securite #scenario #shorts",
       "statut": "a_publier"
+    },
+    {
+      "dossier": "inondation-2",
+      "titre": "Alerte inondation — Jour 2",
+      "description": "Un homme crie dans l'eau.. et Max ne descend pas 🌊\nEnregistre-la, tu en auras besoin un jour 📌\n\n#survie #inondation #crue #conseils #securite #112 #shorts",
+      "statut": "a_publier"
     }
   ],
   "regles": "YouTube : la journée YouTube va de 09:00 à 09:00 (heure de Paris, minuit heure du Pacifique). 10 envois MAXIMUM par journée YouTube, format long (Upload-Post) compris. Buffer refuse aussi plus de 10 posts YouTube programmés le même jour calendaire. Les Shorts sont espacés d'au moins 60 min (idéalement 70-80 min) : fini le rattrapage toutes les 10 min."

@@ -1,0 +1,225 @@
+{
+ "title": "Alerte inondation — Jour 2",
+ "note": "Épisode 2/3. Sans vote : choix prudent (Max ne descend pas dans l'eau). Conseils vérifiés : ne jamais entrer ni marcher dans l'eau d'une inondation (bouches d'égout soulevées, débris, risque électrique) ; 15 cm d'eau en mouvement peuvent faire chuter un adulte ; appeler le 112 et donner l'adresse ; aider depuis un endroit sûr : parler, faire s'accrocher, lancer un objet flottant (bidon vide fermé) ; après une crue, ne pas boire l'eau du robinet sans avis de la mairie, utiliser l'eau en bouteille. say = texte lu ; show = sous-titre.",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Orus",
+  "gemini_style": "Lis ce texte en français, comme un narrateur TikTok de survie captivant : voix masculine grave, rythme posé et tendu, articule bien chaque chiffre, marque nettement les virgules et les deux-points, ton sérieux, les règles dites lentement avec assurance comme un secouriste. Marque une pause entre chaque phrase. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "fenetre": 0.2,
+  "titre": 0.4,
+  "danger": 0.25,
+  "appel": 0.25,
+  "fenetre2": 0.25,
+  "bidon": 0.25,
+  "aube": 0.3,
+  "robinet": 0.25,
+  "soir": 0.3,
+  "fin": 3.4
+ },
+ "lines": [
+  {
+   "scene": "fenetre",
+   "say": "Un homme crie dans l'eau. Et Max ne descend pas.",
+   "show": "Un homme crie dans l'eau. Et Max ne descend [pas]."
+  },
+  {
+   "scene": "fenetre",
+   "say": "Ce qu'il fait à la place peut leur sauver la vie. À tous les deux.",
+   "show": "Ce qu'il fait à la place peut leur sauver la {vie}. À tous les deux."
+  },
+  {
+   "scene": "titre",
+   "say": "Règle numéro un : ne jamais entrer dans l'eau d'une inondation.",
+   "show": "Règle n°1 : ne jamais entrer dans l'eau d'une [inondation]."
+  },
+  {
+   "scene": "danger",
+   "say": "Sous cette eau trouble : une bouche d'égout ouverte, des débris, parfois du courant électrique.",
+   "show": "Sous cette eau trouble : une bouche d'[égout] ouverte, des débris, parfois du [courant] électrique."
+  },
+  {
+   "scene": "danger",
+   "say": "Quinze centimètres d'eau qui coule peuvent suffire à faire tomber un adulte.",
+   "show": "{15} {centimètres} d'eau qui coule peuvent suffire à faire tomber un [adulte]."
+  },
+  {
+   "scene": "appel",
+   "say": "Alors Max appelle le cent douze. Il donne son adresse et dit : un homme dans l'eau.",
+   "show": "Alors Max appelle le {112}. Il donne son adresse et dit : un homme dans l'eau."
+  },
+  {
+   "scene": "fenetre2",
+   "say": "Puis il lui crie de s'accrocher au lampadaire, et de ne plus bouger.",
+   "show": "Puis il lui crie de s'accrocher au {lampadaire}, et de ne plus bouger."
+  },
+  {
+   "scene": "bidon",
+   "say": "Il lui lance un objet qui flotte : un bidon vide, bien fermé.",
+   "show": "Il lui lance un objet qui {flotte} : un bidon vide, bien fermé."
+  },
+  {
+   "scene": "aube",
+   "say": "Six heures. Un bateau des pompiers arrive. L'homme est sauvé.",
+   "show": "6 heures. Un bateau des pompiers arrive. L'homme est {sauvé}."
+  },
+  {
+   "scene": "robinet",
+   "say": "Mais Max a soif. Règle numéro deux : l'eau du robinet n'est peut-être plus potable.",
+   "show": "Mais Max a soif. Règle n°2 : l'eau du robinet n'est peut-être plus [potable]."
+  },
+  {
+   "scene": "robinet",
+   "say": "Tant que la mairie ne dit pas le contraire, il boit l'eau en bouteille de son sac.",
+   "show": "Tant que la mairie ne dit pas le contraire, il boit l'eau en {bouteille} de son sac."
+  },
+  {
+   "scene": "soir",
+   "say": "Le soir, la pluie reprend. Et l'eau atteint le premier étage.",
+   "show": "Le soir, la pluie reprend. Et l'eau atteint le premier [étage]."
+  },
+  {
+   "scene": "fin",
+   "say": "Il ne reste plus qu'un endroit où aller : le toit.",
+   "show": "Il ne reste plus qu'un endroit où aller : le [toit]."
+  },
+  {
+   "scene": "fin",
+   "say": "Max monte sur le toit ? Réponds en commentaire. Partie suivante, demain.",
+   "show": "Max monte sur le toit ? Réponds en commentaire. Partie suivante, {demain}."
+  }
+ ],
+ "cues": {
+  "no": [
+   0,
+   "end",
+   -0.6
+  ],
+  "r1": [
+   2,
+   "start",
+   0.3
+  ],
+  "manhole": [
+   3,
+   "start",
+   2.2
+  ],
+  "spark": [
+   3,
+   "end",
+   -1.4
+  ],
+  "fall": [
+   4,
+   "end",
+   -1.0
+  ],
+  "call": [
+   5,
+   "start",
+   1.4
+  ],
+  "grab": [
+   6,
+   "end",
+   -1.6
+  ],
+  "throw": [
+   7,
+   "start",
+   1.8
+  ],
+  "boat": [
+   8,
+   "start",
+   1.6
+  ],
+  "saved": [
+   8,
+   "end",
+   -0.6
+  ],
+  "tap": [
+   9,
+   "end",
+   -1.4
+  ],
+  "bottle": [
+   10,
+   "end",
+   -1.6
+  ],
+  "roof": [
+   12,
+   "end",
+   -0.5
+  ],
+  "jour3": [
+   13,
+   "end",
+   0.7
+  ]
+ },
+ "sfx": [
+  {
+   "type": "hit",
+   "cue": [
+    "r1",
+    "roof",
+    "jour3"
+   ]
+  },
+  {
+   "type": "pop",
+   "cue": [
+    "manhole",
+    "spark",
+    "fall",
+    "grab",
+    "tap",
+    "bottle",
+    "saved"
+   ]
+  },
+  {
+   "type": "buzz",
+   "cue": "call"
+  },
+  {
+   "type": "swish",
+   "cue": "throw"
+  },
+  {
+   "type": "water",
+   "cue": [
+    "throw",
+    "boat"
+   ],
+   "dur": 1.5
+  },
+  {
+   "type": "wind",
+   "scene": [
+    "fenetre",
+    "fenetre2",
+    "soir",
+    "fin"
+   ]
+  }
+ ],
+ "pulse": [
+  [
+   "fenetre",
+   "titre"
+  ],
+  [
+   "soir",
+   "fin"
+  ]
+ ]
+}
