@@ -25,13 +25,6 @@
       "creneau_vise": "2026-11-06T20:00+01:00"
     },
     {
-      "dossier": "protocole-incendie",
-      "type": "survie",
-      "titre": "Protocole de survie — L'incendie",
-      "description": "Si ton immeuble prend feu cette nuit.. 🔥 5 règles qui peuvent te sauver.\nEnregistre-la, tu en auras besoin un jour 📌\n\n#survie #incendie #protocole #conseils #pompiers #securite #pourtoi #fyp",
-      "creneau_vise": "2026-11-06T19:15+01:00"
-    },
-    {
       "dossier": "cinema-frere-3",
       "type": "serie",
       "titre": "Le secret de mon frère.. — Partie 3",
@@ -220,6 +213,13 @@
       "titre": "Le secret de sa montre",
       "buffer": "6aec732dfac32e0e658bd49e",
       "heure": "2026-11-06T13:30+01:00"
+    },
+    {
+      "dossier": "protocole-incendie",
+      "type": "survie",
+      "titre": "Protocole de survie — L'incendie",
+      "buffer": "6aecab7b60a369bcd778a003",
+      "heure": "2026-11-06T19:15+01:00"
     }
   ]
 }
