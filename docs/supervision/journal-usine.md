@@ -9,3 +9,4 @@
 - 05/11 ~13:30 UTC : fabriqué « Alerte inondation » J1 (nouvelle série survie style Blackout/Max, 3 ép.), 72,5 s, 3 passes OK, visé 08/11 12:10. Stock prêt : 7. Prochain : inondation J2.
 - 05/11 16:15 UTC : TikTok protocole-incendie → 06/11 19:15 (Buffer 10/10). YouTube : quota du jour atteint. Stock prêt : 6. Fabrication : inondation J2.
 - 05/11 ~17:30 UTC : fabriqué inondation J2, 68,8 s, 3 passes OK, visé 09/11 12:10. Stock prêt : 7. Prochain : inondation J3 (FIN).
+- 05/11 20:15 UTC : TikTok +4 (colo-3 06/11 20:00, forêt-3 07/11 12:10, histoire-lettres 07/11 13:30, frère-3 07/11 17:30) → 10/10. Excel mis à jour (37 vidéos). Stock prêt : 3. Créneaux vides 07/11 : 19:15 et 20:00. Fabrication : protocole orage (19:15).

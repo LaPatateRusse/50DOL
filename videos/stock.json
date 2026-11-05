@@ -10,43 +10,12 @@
   },
   "pret": [
     {
-      "dossier": "histoire-lettres",
-      "type": "histoire",
-      "titre": "Les lettres du futur",
-      "description": "Une lettre de moi, dans dix ans.. ✉️\nIdentifie celui qui s'est assis à côté de toi un jour 👇\n\n#histoire #animation #emotion #amitie #futur #storytime #pourtoi #fyp",
-      "creneau_vise": "à partir du 07/11 (test de volume 05-06/11 : pas de 14:30 ni 16:00)"
-    },
-    {
-      "dossier": "colo-3",
-      "type": "horreur-serie",
-      "titre": "La colo — Partie 3 (FIN)",
-      "partie": 3,
-      "description": "Mon meilleur pote a répondu à ma place.. 🔦 La FIN de « La colo ».\nEnvoie-la à ton meilleur pote 👇\n\n#horreur #histoiredhorreur #creepypasta #colo #minuit #peur #fin #pourtoi #fyp",
-      "creneau_vise": "2026-11-06T20:00+01:00"
-    },
-    {
-      "dossier": "cinema-frere-3",
-      "type": "serie",
-      "titre": "Le secret de mon frère.. — Partie 3",
-      "partie": 3,
-      "description": "Le secret de mon frère.. 🫙 Partie 3\nEnregistre-la pour la fin 👇\n\n#histoire #animation #famille #secret #frere #emotion #pourtoi #fyp",
-      "creneau_vise": "2026-11-07T17:30+01:00"
-    },
-    {
       "dossier": "cinema-frere-4",
       "type": "serie",
       "titre": "Le secret de mon frère.. — Partie 4 (FIN)",
       "partie": 4,
       "description": "Le secret de mon frère.. ⚽ La FIN\nEnvoie-la à ton frère ou ta sœur 👇\n\n#histoire #animation #famille #secret #frere #emotion #fin #pourtoi #fyp",
       "creneau_vise": "2026-11-08T17:30+01:00"
-    },
-    {
-      "dossier": "foret-3",
-      "type": "survie",
-      "titre": "Perdu en forêt — Jour 3 (FIN)",
-      "partie": 3,
-      "description": "Un hélicoptère.. et il ne me voyait pas 🚁 La FIN.\nEnregistre-la, tu en auras besoin un jour 📌\n\n#survie #foret #perdu #helicoptere #conseils #secours #pourtoi #fyp",
-      "creneau_vise": "2026-11-07T12:10+01:00"
     },
     {
       "dossier": "inondation-1",
@@ -228,6 +197,34 @@
       "titre": "Protocole de survie — L'incendie",
       "buffer": "6aecab7b60a369bcd778a003",
       "heure": "2026-11-06T19:15+01:00"
+    },
+    {
+      "dossier": "colo-3",
+      "type": "horreur-serie",
+      "titre": "La colo — Partie 3 (FIN)",
+      "buffer": "6aece30d26d4080d86d353bb",
+      "heure": "2026-11-06T20:00+01:00"
+    },
+    {
+      "dossier": "foret-3",
+      "type": "survie",
+      "titre": "Perdu en forêt — Jour 3 (FIN)",
+      "buffer": "6aece311845dce9f7665ca68",
+      "heure": "2026-11-07T12:10+01:00"
+    },
+    {
+      "dossier": "histoire-lettres",
+      "type": "histoire",
+      "titre": "Les lettres du futur",
+      "buffer": "6aece314845dce9f7665ccff",
+      "heure": "2026-11-07T13:30+01:00"
+    },
+    {
+      "dossier": "cinema-frere-3",
+      "type": "serie",
+      "titre": "Le secret de mon frère.. — Partie 3",
+      "buffer": "6aece317ef862e889be8cf38",
+      "heure": "2026-11-07T17:30+01:00"
     }
   ]
 }
