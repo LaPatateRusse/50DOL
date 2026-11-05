@@ -1,342 +1,354 @@
 {
- "chaine": "6ae9f1a3e29c69a1714b3729",
- "nom": "MalabarTv (YouTube Shorts)",
- "note": "File d'attente YouTube Shorts : toutes les vidéos dans l'ordre de fabrication. Voir docs/production.md section YouTube.",
- "file": [
-  {
-   "dossier": "blackout",
-   "titre": "Blackout général — Jour 1",
-   "description": "Toute la ville tombe en panne en plein hiver ⚡❄️ Tu ferais quoi en premier ?\nLa plupart des gens font l'erreur à 0:52… 😶\nPartie 2 demain 👀\n\n#survie #blackout #coupuredecourant #panneelectrique #hiver #scenario #apprendresurtiktok #pourtoi #fyp",
-   "statut": "programme",
-   "buffer": "6ae9f399b75704f9ac5a0ab3",
-   "heure": "2026-11-03T15:49 (publiée tout de suite)"
-  },
-  {
-   "dossier": "blackout-jour2",
-   "titre": "Blackout général — Jour 2",
-   "description": "3 h du matin. Quelqu'un frappe à ta porte pendant le blackout 🚪⚡\nTu ouvres ou pas ?\nJour 3 bientôt 👀\n\n#survie #blackout #coupuredecourant #panneelectrique #scenario #apprendresurtiktok #pourtoi #fyp",
-   "statut": "programme",
-   "buffer": "6ae9f39c5a8533248e6a624b",
-   "heure": "2026-11-03T16:00"
-  },
-  {
-   "dossier": "blackout-jour3",
-   "titre": "Blackout général — Jour 3",
-   "description": "Ton voisin n'a plus d'eau et frappe à ta porte pendant le blackout 🚪💧\nTu ouvres… ou pas ?\nJour 4 bientôt 👀\n\n#survie #blackout #coupuredecourant #entraide #voisin #scenario #apprendresurtiktok #pourtoi #fyp",
-   "statut": "programme",
-   "buffer": "6ae9f39f6f67d38091228139",
-   "heure": "2026-11-03T16:10"
-  },
-  {
-   "dossier": "nuit-mamie",
-   "titre": "Ne réponds pas — Partie 1",
-   "description": "3 h du matin. Ta grand-mère t'appelle depuis le jardin… alors qu'elle dort à côté 😨\nTu aurais répondu ? OUI ou NON 👇\nPartie 2 bientôt 👀\n\n#horreur #histoiredhorreur #creepypasta #3hdumatin #peur #scenario #pourtoi #fyp",
-   "statut": "programme",
-   "buffer": "6ae9f3a3985f73e582518344",
-   "heure": "2026-11-03T16:20"
-  },
-  {
-   "dossier": "nuit-mamie-2",
-   "titre": "Ne réponds pas — Partie 2",
-   "description": "Ta grand-mère t'appelle… alors que son téléphone est resté dans la cuisine 📱😨\nTu décroches ? OUI ou NON 👇\nPartie 3 demain 👀\n\n#horreur #histoiredhorreur #creepypasta #3hdumatin #peur #suite #pourtoi #fyp",
-   "statut": "programme",
-   "buffer": "6ae9f3a6985f73e582518598",
-   "heure": "2026-11-03T16:30"
-  },
-  {
-   "dossier": "etsi-traverser-terre",
-   "titre": "Et si… tu traversais la Terre ?",
-   "description": "Tu sautes dans un trou qui traverse toute la Terre 🌍🕳️ Tu arrives où, et en combien de temps ?\nEt toi, tu aurais sauté ? 👇\n\n#etsi #science #terre #lesaviezvous #physique #apprendresurtiktok #curiosite #pourtoi #fyp",
-   "statut": "programme",
-   "buffer": "6ae9f3a95a8533248e6a6444",
-   "heure": "2026-11-03T16:40"
-  },
-  {
-   "dossier": "blackout-jour4",
-   "titre": "Blackout général — Jour 4",
-   "description": "Des inconnus attendent dans le hall… et un camion d'eau arrive au bout de la rue 🚒💧\nMax descend ou il attend ? OUI ou NON 👇\nDernier épisode demain 👀\n\n#survie #blackout #coupuredecourant #scenario #apprendresurtiktok #pourtoi #fyp",
-   "statut": "programme",
-   "buffer": "6ae9f3ac985f73e582518695",
-   "heure": "2026-11-03T16:50"
-  },
-  {
-   "dossier": "nuit-mamie-3",
-   "titre": "Ne réponds pas — Partie 3 (fin)",
-   "description": "Tu as survécu à la nuit… mais ce soir, Mamie reçoit un message de TOI 📱😨\nLa fin de « Ne réponds pas ». Tu l'avais vu venir ? 👇\n\n#horreur #histoiredhorreur #creepypasta #fin #twist #peur #pourtoi #fyp",
-   "statut": "programme",
-   "buffer": "6ae9f3af01362e3aae9d463c",
-   "heure": "2026-11-03T17:00"
-  },
-  {
-   "dossier": "ascenseur-13-1",
-   "titre": "L'ascenseur du 13e — Partie 1",
-   "description": "Ton immeuble a 12 étages. Ce soir, l'ascenseur s'arrête au 13e 🛗😨\nIl te demande l'heure… Tu lui réponds ? OUI ou NON 👇\nPartie 2 demain 👀\n\n#horreur #histoiredhorreur #creepypasta #ascenseur #3hdumatin #peur #pourtoi #fyp",
-   "statut": "programme",
-   "buffer": "6ae9f3b36f67d38091228434",
-   "heure": "2026-11-03T20:00"
-  },
-  {
-   "dossier": "etsi-compte-double-1",
-   "titre": "Et si ton compte doublait chaque jour ? — Partie 1",
-   "description": "1 € aujourd'hui… plus d'un million dans 20 jours 💸 Mais ta banque bloque tout 🔒\nTu leur dis la vérité ? OUI ou NON 👇\nPartie 2 demain 👀\n\n#etsi #argent #millionnaire #histoire #scenario #pourtoi #fyp",
-   "statut": "programme",
-   "buffer": "6ae9f3b601362e3aae9d4757",
-   "heure": "2026-11-03T17:10"
-  },
-  {
-   "dossier": "histoire-bouton-pause",
-   "titre": "Le Bouton Pause",
-   "description": "Tu trouves une télécommande qui arrête le temps ⏸️ Bus rattrapé, 20/20 au contrôle… mais il y a un prix 😳\nToi, tu l'aurais utilisée combien de fois ? 👇\n\n#etsi #superpouvoir #arreterletemps #histoire #drole #twist #pourtoi #fyp",
-   "statut": "programme",
-   "buffer": "6ae9fcb101362e3aaea07582",
-   "heure": "2026-11-04T09:40+01:00"
-  },
-  {
-   "dossier": "histoire-classe-3b",
-   "titre": "Le Groupe « Classe 3B »",
-   "description": "Un numéro inconnu rejoint le groupe de ta classe à minuit… et tout ce qu'il écrit se réalise 📱😨\nToi, tu serais allé en cours le lendemain ? 👇\n\n#histoire #mystere #groupe #college #twist #flippant #pourtoi #fyp",
-   "statut": "programme",
-   "buffer": "6aea0806ce22073f337bfd8a",
-   "heure": "2026-11-04T10:50+01:00"
-  },
-  {
-   "dossier": "histoire-chance-infinie",
-   "titre": "Chance Infinie",
-   "description": "Tu sauves un chat noir… et tout te réussit 🍀 Mais ta chance, quelqu'un d'autre la perd 😳\nToi, à qui tu l'aurais donnée ? 👇\n\n#histoire #chance #chatnoir #twist #emotion #superpouvoir #pourtoi #fyp",
-   "statut": "programme",
-   "buffer": "6aea0809ce22073f337bfe44",
-   "heure": "2026-11-04T13:20+01:00"
-  },
-  {
-   "dossier": "cinema-mensonge-1",
-   "titre": "Cent euros le mensonge — Partie 1",
-   "description": "1) Chaque mensonge te rapporte 100 €… mais il y a un prix 😶 Tu aurais menti ? Partie 2 demain 👀\n#histoire #animation #etsi #pourtoi #fyp #storytime\n\n2) Les règles du pacte :\n💸 1 mensonge = +100 €\n❤️ 1 000 € = quelqu'un t'oublie\nTu t'arrêtes à combien ? 👇\n#histoire #animation #pourtoi #fyp\n\n3) « Excusez-moi… vous êtes qui ? » 😨 Il ne reste qu'une personne qui se souvient de lui. Partie 2 bientôt.\n#histoire #animation #suspense #pourtoi #fyp",
-   "statut": "programme",
-   "buffer": "6aea080ceeb551286871892f",
-   "heure": "2026-11-04T14:40+01:00"
-  },
-  {
-   "dossier": "cinema-mensonge-2",
-   "titre": "Cent euros le mensonge — Partie 2",
-   "description": "1) Il ne reste qu'une personne qui se souvient de lui… et elle connaît l'homme au chapeau 🎩😨 Tu sors ? OUI ou NON 👇 Partie 3 bientôt\n#histoire #animation #etsi #pourtoi #fyp #storytime\n\n2) Partie 2 :\n👵 Mamie se souvient encore de lui\n📸 Papy avait fait le même pacte en 1976\n✉️ « Pour briser le pacte, il faut dire la vérité qui coûte le plus »\nTu sors ? 👇\n#histoire #animation #pourtoi #fyp\n\n3) « Ne crois pas tout ce que dit ta grand-mère. » 😶 Quelqu'un attend sous le lampadaire…\n#histoire #animation #suspense #pourtoi #fyp",
-   "statut": "a_publier"
-  },
-  {
-   "dossier": "cinema-mensonge-3",
-   "titre": "Cent euros le mensonge — Partie 3",
-   "description": "1) 100 000 € pour un dernier mensonge… mais Mamie l'oublierait 🎩💸 Il refuse. Sauf que chaque vérité lui coûte 100 €… et sous zéro, c'est LUI qui disparaît 😨 Partie 4 demain 👀\n#histoire #animation #etsi #pourtoi #fyp #storytime\n\n2) Partie 3 :\n💸 1 vérité = −100 €\n❤️ quelqu'un se souvient de toi\n⚠️ sous zéro… tu t'effaces\nTu aurais accepté les 100 000 € ? 👇\n#histoire #animation #pourtoi #fyp\n\n3) « Alors amuse-toi bien avec tes vérités. » 🎩 Il voit le carrelage à travers sa main…\n#histoire #animation #suspense #pourtoi #fyp",
-   "statut": "a_publier"
-  },
-  {
-   "dossier": "cinema-mensonge-4",
-   "titre": "Cent euros le mensonge — Partie 4",
-   "description": "1) Il disparaît des photos… et sous le chapeau, il y a le visage de son grand-père 😱🎩 Qui doit être sauvé : lui ou Papy ? 👇 Partie 5 (la FIN) demain\n#histoire #animation #etsi #pourtoi #fyp #storytime\n\n2) Partie 4 :\n📸 il s'efface des photos\n📓 le carnet de Papy révèle la vérité qui coûte le plus\n🎩 l'homme au chapeau… c'est Papy\nToi ou Papy ? 👇\n#histoire #animation #pourtoi #fyp\n\n3) « La vérité qui coûte le plus, c'est ce qu'on n'a jamais osé dire à quelqu'un qu'on aime. » 💔\n#histoire #animation #emotion #pourtoi #fyp",
-   "statut": "a_publier"
-  },
-  {
-   "dossier": "cinema-mensonge-5",
-   "titre": "Cent euros le mensonge — Partie 5 (fin)",
-   "description": "1) LA FIN 😭 Il dit enfin la vérité qu'il n'avait jamais osé dire… Et toi, quelle vérité tu n'as jamais osé dire ? Écris-la en commentaire 👇\n#histoire #animation #etsi #pourtoi #fyp #storytime #emotion\n\n2) Partie 5, FIN :\n💔 « Je n'ai jamais eu honte de toi. Je t'aime. »\n🪙 la pièce se brise\n❤️ un, deux, trois\n👵👴 Mamie et Papy réunis\n#histoire #animation #pourtoi #fyp\n\n3) « Tu en as mis du temps, Antoine. » 🥹 La fin de « Cent euros le mensonge ».\n#histoire #animation #emotion #pourtoi #fyp",
-   "statut": "a_publier"
-  },
-  {
-   "dossier": "histoire-pensees",
-   "titre": "J'entends tes pensées",
-   "description": "Tu te réveilles et tu entends les pensées de tout le monde 🧠 Ton crush, ta prof, ton meilleur pote… mais quelqu'un pense en silence 😳\nQuel super-pouvoir pour la prochaine ? 👇\n\n#etsi #superpouvoir #lirelespensees #histoire #drole #twist #pourtoi #fyp",
-   "statut": "programme",
-   "buffer": "6aea0813985f73e58258f980",
-   "heure": "2026-11-04T17:20+01:00"
-  },
-  {
-   "dossier": "histoire-carnet-excuses",
-   "titre": "Le Carnet des excuses",
-   "description": "Chaque excuse sincère rajeunit d'un an celui qui la reçoit… mais il y a un prix 📕😳\nEt toi, à qui tu dois des excuses ? 👇\n\n#histoire #animation #emotion #twist #storytime #pourtoi #fyp",
-   "statut": "programme",
-   "buffer": "6aea080feeb5512868718a01",
-   "heure": "2026-11-04T16:00+01:00"
-  },
-  {
-   "dossier": "ascenseur-13-2",
-   "titre": "L'ascenseur du 13e — Partie 2",
-   "description": "Tu n'as pas répondu au Liftier… mais au 13e étage, toutes les horloges sont arrêtées à 3 h 13 🕰️😨\nTu éteins ton téléphone ? OUI ou NON 👇 Partie 3 = la fin\n\n#horreur #histoiredhorreur #creepypasta #ascenseur #3hdumatin #peur #pourtoi #fyp",
-   "statut": "programme",
-   "buffer": "6aea081ace22073f337c017c",
-   "heure": "2026-11-04T20:20+01:00"
-  },
-  {
-   "dossier": "horreur-baby-phone",
-   "titre": "Le Baby-phone",
-   "description": "Le baby-phone compte les respirations dans la chambre de ta petite sœur… 1… 2… 3 😨 Sauf qu'il n'écoute pas sa chambre.\nToi, tu te serais retourné ? 👇\n\n#horreur #histoiredhorreur #creepypasta #babyphone #peur #animation #pourtoi #fyp",
-   "statut": "programme",
-   "buffer": "6aea0816ce22073f337c00d5",
-   "heure": "2026-11-04T19:00+01:00"
-  },
-  {
-   "dossier": "etsi-lune",
-   "titre": "Et si la Lune disparaissait cette nuit ?",
-   "description": "La Lune disparaît d'un coup cette nuit 🌕➡️🕳️ Les marées, les tortues, les saisons… tout change 😳\nQuelle question pour le prochain « Et si » ? 👇\n\n#etsi #science #lune #espace #lesaviezvous #curiosite #pourtoi #fyp",
-   "statut": "programme",
-   "buffer": "6aea081d985f73e58258fc1f",
-   "heure": "2026-11-05T09:15+01:00"
-  },
-  {
-   "dossier": "blackout-jour5",
-   "titre": "Blackout général — Jour 5 (FIN)",
-   "description": "Dernier jour du blackout ⚡ Les silhouettes du hall… et la ville qui se rallume 💡\nToi, tu aurais tenu combien de jours ? 👇\n\n#survie #blackout #coupuredecourant #kitdurgence #fin #scenario #pourtoi #fyp",
-   "statut": "programme",
-   "heure": "2026-11-04T12:10+01:00",
-   "buffer": "6aea2c5e5a920686c6c526cc"
-  },
-  {
-   "dossier": "long/super-pouvoirs-1",
-   "format": "long",
-   "fichier": "long/super-pouvoirs-1/youtube-long.mp4",
-   "titre": "4 super-pouvoirs… et le prix à payer pour chacun | Histoires animées",
-   "description": "Arrêter le temps, entendre les pensées, une chance infinie, rajeunir les gens avec une excuse… 4 super-pouvoirs, 4 histoires, et à chaque fois un prix à payer.\nLequel tu choisirais ? Dis-le en commentaire 👇\n\n00:00 Introduction\n00:21 POUVOIR N°1 — Arrêter le temps\n01:39 POUVOIR N°2 — Entendre les pensées\n03:00 POUVOIR N°3 — La chance infinie\n04:08 POUVOIR N°4 — Le carnet des excuses\n05:47 Fin\n\n#superpouvoir #histoire #animation #etsi #twist",
-   "statut": "en_attente",
-   "note": "Refusé 3 fois par YouTube (youtube_channel_daily_limit) : 03/11 20:42, 04/11 09:05, 04/11 15:05. En attente de la vérification de la chaîne (youtube.com/verify) avant tout nouvel envoi (décision du superviseur).",
-   "contenu_ia_declare": true
-  },
-  {
-   "dossier": "long/blackout-complet",
-   "format": "long",
-   "fichier": "long/blackout-complet/youtube-long.mp4",
-   "titre": "Blackout général : 5 jours sans électricité en plein hiver (l'histoire complète)",
-   "description": "Une nuit d'hiver, toute la ville s'éteint. Pendant 5 jours, Max doit survivre au blackout : eau, chaleur, nourriture, voisins… avec de vrais conseils de survie à appliquer si ça t'arrive un jour.\nToi, tu aurais tenu combien de jours ? Dis-le en commentaire 👇\n\n00:00 Introduction\n00:30 JOUR 1 — La panne\n01:46 JOUR 2 — On frappe à la porte\n03:10 JOUR 3 — Le voisin du 5e\n04:33 JOUR 4 — Les silhouettes\n05:24 JOUR 5 — La lumière revient\n06:27 Fin\n\n#survie #blackout #coupuredecourant #histoire #animation #kitdurgence",
-   "statut": "programme",
-   "heure": "2026-11-05T18:30+01:00",
-   "upload_post": {
-    "job_id": "7a2c268740fb412f881b1cd457b59cfc",
-    "request_id": "31fd5a7fcfd44f0196832e625c4b7353"
-   },
-   "contenu_ia_declare": true
-  },
-  {
-   "dossier": "secret-gant",
-   "titre": "Le secret du gant",
-   "description": "Le secret de son gant.. 🧤\nEt toi, tu l'aurais deviné ? 👇\n\n#histoire #famille #secret #emotion #animation #papa #pourtoi #fyp",
-   "statut": "a_publier"
-  },
-  {
-   "dossier": "secret-gateau",
-   "titre": "Le secret du gâteau",
-   "description": "Le secret de sa sœur.. 🍰\nEt toi, tu aurais fait pareil ? 👇\n\n#histoire #famille #secret #emotion #animation #soeur #pourtoi #fyp",
-   "statut": "a_publier"
-  },
-  {
-   "dossier": "ascenseur-13-3",
-   "titre": "L'ascenseur du 13e — Partie 3 (FIN)",
-   "description": "Tu as éteint ton téléphone… et dans le noir, l'heure a changé toute seule 🕰️😨 La FIN de « L'ascenseur du 13e ».\nTu serais remonté ? OUI ou NON 👇\n\n#horreur #histoiredhorreur #creepypasta #ascenseur #3hdumatin #peur #fin #pourtoi #fyp",
-   "statut": "a_publier"
-  },
-  {
-   "dossier": "secret-concierge",
-   "titre": "Le secret du concierge",
-   "description": "Le secret du concierge.. 📖\nEt toi, tu l'aurais aidé ? 👇\n\n#histoire #ecole #secret #emotion #animation #lecture #pourtoi #fyp",
-   "statut": "a_publier"
-  },
-  {
-   "dossier": "horreur-station",
-   "titre": "La station-service",
-   "description": "2 h du matin. Une station perdue. Un papier sur la porte : « Si la caissière sourit, ne paie pas. » 😨\nToi, tu lui aurais tourné le dos ? OUI ou NON 👇\n\n#horreur #histoiredhorreur #creepypasta #stationservice #3hdumatin #peur #pourtoi #fyp",
-   "statut": "a_publier"
-  },
-  {
-   "dossier": "histoire-photo-un-an",
-   "titre": "La photo d'un an",
-   "description": "Sur la photo, le fauteuil de Papy était vide.. 📸\nEnvoie-la à quelqu'un qui devrait appeler son papy 👇\n\n#histoire #papy #famille #emotion #animation #photo #pourtoi #fyp",
-   "statut": "a_publier"
-  },
-  {
-   "dossier": "etsi-compte-double-2",
-   "titre": "Et si ton compte doublait chaque jour ? (FIN)",
-   "description": "Il a dû tout donner.. 💸 La FIN de « Et si ton compte doublait ».\nEnregistre-la et dis-moi : tu aurais tout donné ? 👇\n\n#etsi #argent #maths #banque #histoire #animation #pourtoi #fyp",
-   "statut": "a_publier"
-  },
-  {
-   "dossier": "horreur-gps",
-   "titre": "Le GPS",
-   "description": "Le GPS de Papy s'est allumé tout seul.. 📍\nEnvoie-la à celui qui conduit la nuit 👇\n\n#horreur #histoiredhorreur #creepypasta #gps #minuit #peur #pourtoi #fyp",
-   "statut": "a_publier"
-  },
-  {
-   "dossier": "colo-1",
-   "titre": "La colo — Partie 1",
-   "description": "On était douze. Il en a compté treize.. 🔦\nEnregistre-la pour la Partie 2 👇\n\n#horreur #histoiredhorreur #creepypasta #colo #minuit #peur #pourtoi #fyp",
-   "statut": "a_publier"
-  },
-  {
-   "dossier": "foret-1",
-   "titre": "Perdu en forêt — Jour 1",
-   "description": "Perdu en forêt, 4 % de batterie.. 🌲\nEnregistre-la, tu en auras besoin un jour 📌\n\n#survie #foret #perdu #randonnee #conseils #112 #pourtoi #fyp",
-   "statut": "a_publier"
-  },
-  {
-   "dossier": "protocole-glace",
-   "titre": "Protocole de survie : la glace",
-   "description": "Si la glace craque sous tes pieds.. 🧊\nEnregistre-la, tu en auras besoin un jour 📌\n\n#survie #glace #protocole #conseils #hiver #securite #pourtoi #fyp",
-   "statut": "a_publier"
-  },
-  {
-   "dossier": "etsi-11-jours",
-   "titre": "Et si tu ne dormais plus pendant 11 jours ?",
-   "description": "264 heures sans dormir.. 😵\nEnvoie-la à celui qui se couche à 4 h du matin 👇\n\n#etsi #science #sommeil #record #cerveau #lesaviezvous #pourtoi #fyp",
-   "statut": "a_publier"
-  },
-  {
-   "dossier": "secret-gouter",
-   "titre": "Le secret de son goûter",
-   "description": "Le secret de son goûter.. 🥐\nEnvoie-la à quelqu'un qui devrait appeler ses grands-parents 👇\n\n#histoire #famille #secret #emotion #animation #papy #pourtoi #fyp",
-   "statut": "a_publier"
-  },
-  {
-   "dossier": "histoire-lettres",
-   "titre": "Les lettres du futur",
-   "description": "Une lettre de moi, dans dix ans.. ✉️\nIdentifie celui qui s'est assis à côté de toi un jour 👇\n\n#histoire #animation #emotion #amitie #futur #storytime #pourtoi #fyp",
-   "statut": "a_publier"
-  },
-  {
-   "dossier": "secret-montre",
-   "titre": "Le secret de sa montre",
-   "description": "Le secret de sa montre.. ⌚\nEnvoie-la à quelqu'un qui t'a sauvé un jour 👇\n\n#histoire #secret #emotion #animation #pompier #ecole #pourtoi #fyp",
-   "statut": "a_publier"
-  },
-  {
-   "dossier": "colo-2",
-   "titre": "La colo — Partie 2",
-   "description": "Sur la liste, il y a treize prénoms.. 🔦 Le dernier, c'est le mien.\nEnregistre-la pour la fin demain 👇\n\n#horreur #histoiredhorreur #creepypasta #colo #minuit #peur #pourtoi #fyp",
-   "statut": "a_publier"
-  },
-  {
-   "dossier": "colo-3",
-   "titre": "La colo — Partie 3 (FIN)",
-   "description": "Mon meilleur pote a répondu à ma place.. 🔦 La FIN de « La colo ».\nEnvoie-la à ton meilleur pote 👇\n\n#horreur #histoiredhorreur #creepypasta #colo #minuit #peur #fin #pourtoi #fyp",
-   "statut": "a_publier"
-  },
-  {
-   "dossier": "foret-2",
-   "titre": "Perdu en forêt — Jour 2",
-   "description": "Les secours m'écrivaient.. et je me suis caché 🌲\nEnregistre-la, tu en auras besoin un jour 📌\n\n#survie #foret #perdu #sos #conseils #randonnee #pourtoi #fyp",
-   "statut": "a_publier"
-  },
-  {
-   "dossier": "protocole-incendie",
-   "titre": "Protocole de survie : l'incendie",
-   "description": "Si ton immeuble prend feu cette nuit.. 🔥 5 règles qui peuvent te sauver.\nEnregistre-la, tu en auras besoin un jour 📌\n\n#survie #incendie #protocole #conseils #pompiers #securite #pourtoi #fyp",
-   "statut": "a_publier"
-  },
-  {
-   "dossier": "cinema-frere-3",
-   "titre": "Le secret de mon frère — Partie 3",
-   "description": "Le secret de mon frère.. 🫙 Partie 3\nEnregistre-la pour la fin 👇\n\n#histoire #animation #famille #secret #frere #emotion #pourtoi #fyp",
-   "statut": "a_publier"
-  },
-  {
-   "dossier": "cinema-frere-4",
-   "titre": "Le secret de mon frère — Partie 4 (FIN)",
-   "description": "Le secret de mon frère.. ⚽ La FIN\nEnvoie-la à ton frère ou ta sœur 👇\n\n#histoire #animation #famille #secret #frere #emotion #fin #pourtoi #fyp",
-   "statut": "a_publier"
-  }
- ],
- "regles": "YouTube : la journée YouTube va de 09:00 à 09:00 (heure de Paris, minuit heure du Pacifique). 10 envois MAXIMUM par journée YouTube, format long (Upload-Post) compris. Buffer refuse aussi plus de 10 posts YouTube programmés le même jour calendaire. Les Shorts sont espacés d'au moins 60 min (idéalement 70-80 min) : fini le rattrapage toutes les 10 min."
+  "chaine": "6ae9f1a3e29c69a1714b3729",
+  "nom": "MalabarTv (YouTube Shorts)",
+  "note": "File d'attente YouTube Shorts : toutes les vidéos dans l'ordre de fabrication. Voir docs/production.md section YouTube.",
+  "file": [
+    {
+      "dossier": "blackout",
+      "titre": "Blackout général — Jour 1",
+      "description": "Toute la ville tombe en panne en plein hiver ⚡❄️ Tu ferais quoi en premier ?\nLa plupart des gens font l'erreur à 0:52… 😶\nPartie 2 demain 👀\n\n#survie #blackout #coupuredecourant #panneelectrique #hiver #scenario #apprendresurtiktok #pourtoi #fyp",
+      "statut": "programme",
+      "buffer": "6ae9f399b75704f9ac5a0ab3",
+      "heure": "2026-11-03T15:49 (publiée tout de suite)"
+    },
+    {
+      "dossier": "blackout-jour2",
+      "titre": "Blackout général — Jour 2",
+      "description": "3 h du matin. Quelqu'un frappe à ta porte pendant le blackout 🚪⚡\nTu ouvres ou pas ?\nJour 3 bientôt 👀\n\n#survie #blackout #coupuredecourant #panneelectrique #scenario #apprendresurtiktok #pourtoi #fyp",
+      "statut": "programme",
+      "buffer": "6ae9f39c5a8533248e6a624b",
+      "heure": "2026-11-03T16:00"
+    },
+    {
+      "dossier": "blackout-jour3",
+      "titre": "Blackout général — Jour 3",
+      "description": "Ton voisin n'a plus d'eau et frappe à ta porte pendant le blackout 🚪💧\nTu ouvres… ou pas ?\nJour 4 bientôt 👀\n\n#survie #blackout #coupuredecourant #entraide #voisin #scenario #apprendresurtiktok #pourtoi #fyp",
+      "statut": "programme",
+      "buffer": "6ae9f39f6f67d38091228139",
+      "heure": "2026-11-03T16:10"
+    },
+    {
+      "dossier": "nuit-mamie",
+      "titre": "Ne réponds pas — Partie 1",
+      "description": "3 h du matin. Ta grand-mère t'appelle depuis le jardin… alors qu'elle dort à côté 😨\nTu aurais répondu ? OUI ou NON 👇\nPartie 2 bientôt 👀\n\n#horreur #histoiredhorreur #creepypasta #3hdumatin #peur #scenario #pourtoi #fyp",
+      "statut": "programme",
+      "buffer": "6ae9f3a3985f73e582518344",
+      "heure": "2026-11-03T16:20"
+    },
+    {
+      "dossier": "nuit-mamie-2",
+      "titre": "Ne réponds pas — Partie 2",
+      "description": "Ta grand-mère t'appelle… alors que son téléphone est resté dans la cuisine 📱😨\nTu décroches ? OUI ou NON 👇\nPartie 3 demain 👀\n\n#horreur #histoiredhorreur #creepypasta #3hdumatin #peur #suite #pourtoi #fyp",
+      "statut": "programme",
+      "buffer": "6ae9f3a6985f73e582518598",
+      "heure": "2026-11-03T16:30"
+    },
+    {
+      "dossier": "etsi-traverser-terre",
+      "titre": "Et si… tu traversais la Terre ?",
+      "description": "Tu sautes dans un trou qui traverse toute la Terre 🌍🕳️ Tu arrives où, et en combien de temps ?\nEt toi, tu aurais sauté ? 👇\n\n#etsi #science #terre #lesaviezvous #physique #apprendresurtiktok #curiosite #pourtoi #fyp",
+      "statut": "programme",
+      "buffer": "6ae9f3a95a8533248e6a6444",
+      "heure": "2026-11-03T16:40"
+    },
+    {
+      "dossier": "blackout-jour4",
+      "titre": "Blackout général — Jour 4",
+      "description": "Des inconnus attendent dans le hall… et un camion d'eau arrive au bout de la rue 🚒💧\nMax descend ou il attend ? OUI ou NON 👇\nDernier épisode demain 👀\n\n#survie #blackout #coupuredecourant #scenario #apprendresurtiktok #pourtoi #fyp",
+      "statut": "programme",
+      "buffer": "6ae9f3ac985f73e582518695",
+      "heure": "2026-11-03T16:50"
+    },
+    {
+      "dossier": "nuit-mamie-3",
+      "titre": "Ne réponds pas — Partie 3 (fin)",
+      "description": "Tu as survécu à la nuit… mais ce soir, Mamie reçoit un message de TOI 📱😨\nLa fin de « Ne réponds pas ». Tu l'avais vu venir ? 👇\n\n#horreur #histoiredhorreur #creepypasta #fin #twist #peur #pourtoi #fyp",
+      "statut": "programme",
+      "buffer": "6ae9f3af01362e3aae9d463c",
+      "heure": "2026-11-03T17:00"
+    },
+    {
+      "dossier": "ascenseur-13-1",
+      "titre": "L'ascenseur du 13e — Partie 1",
+      "description": "Ton immeuble a 12 étages. Ce soir, l'ascenseur s'arrête au 13e 🛗😨\nIl te demande l'heure… Tu lui réponds ? OUI ou NON 👇\nPartie 2 demain 👀\n\n#horreur #histoiredhorreur #creepypasta #ascenseur #3hdumatin #peur #pourtoi #fyp",
+      "statut": "programme",
+      "buffer": "6ae9f3b36f67d38091228434",
+      "heure": "2026-11-03T20:00"
+    },
+    {
+      "dossier": "etsi-compte-double-1",
+      "titre": "Et si ton compte doublait chaque jour ? — Partie 1",
+      "description": "1 € aujourd'hui… plus d'un million dans 20 jours 💸 Mais ta banque bloque tout 🔒\nTu leur dis la vérité ? OUI ou NON 👇\nPartie 2 demain 👀\n\n#etsi #argent #millionnaire #histoire #scenario #pourtoi #fyp",
+      "statut": "programme",
+      "buffer": "6ae9f3b601362e3aae9d4757",
+      "heure": "2026-11-03T17:10"
+    },
+    {
+      "dossier": "histoire-bouton-pause",
+      "titre": "Le Bouton Pause",
+      "description": "Tu trouves une télécommande qui arrête le temps ⏸️ Bus rattrapé, 20/20 au contrôle… mais il y a un prix 😳\nToi, tu l'aurais utilisée combien de fois ? 👇\n\n#etsi #superpouvoir #arreterletemps #histoire #drole #twist #pourtoi #fyp",
+      "statut": "programme",
+      "buffer": "6ae9fcb101362e3aaea07582",
+      "heure": "2026-11-04T09:40+01:00"
+    },
+    {
+      "dossier": "histoire-classe-3b",
+      "titre": "Le Groupe « Classe 3B »",
+      "description": "Un numéro inconnu rejoint le groupe de ta classe à minuit… et tout ce qu'il écrit se réalise 📱😨\nToi, tu serais allé en cours le lendemain ? 👇\n\n#histoire #mystere #groupe #college #twist #flippant #pourtoi #fyp",
+      "statut": "programme",
+      "buffer": "6aea0806ce22073f337bfd8a",
+      "heure": "2026-11-04T10:50+01:00"
+    },
+    {
+      "dossier": "histoire-chance-infinie",
+      "titre": "Chance Infinie",
+      "description": "Tu sauves un chat noir… et tout te réussit 🍀 Mais ta chance, quelqu'un d'autre la perd 😳\nToi, à qui tu l'aurais donnée ? 👇\n\n#histoire #chance #chatnoir #twist #emotion #superpouvoir #pourtoi #fyp",
+      "statut": "programme",
+      "buffer": "6aea0809ce22073f337bfe44",
+      "heure": "2026-11-04T13:20+01:00"
+    },
+    {
+      "dossier": "cinema-mensonge-1",
+      "titre": "Cent euros le mensonge — Partie 1",
+      "description": "1) Chaque mensonge te rapporte 100 €… mais il y a un prix 😶 Tu aurais menti ? Partie 2 demain 👀\n#histoire #animation #etsi #pourtoi #fyp #storytime\n\n2) Les règles du pacte :\n💸 1 mensonge = +100 €\n❤️ 1 000 € = quelqu'un t'oublie\nTu t'arrêtes à combien ? 👇\n#histoire #animation #pourtoi #fyp\n\n3) « Excusez-moi… vous êtes qui ? » 😨 Il ne reste qu'une personne qui se souvient de lui. Partie 2 bientôt.\n#histoire #animation #suspense #pourtoi #fyp",
+      "statut": "programme",
+      "buffer": "6aea080ceeb551286871892f",
+      "heure": "2026-11-04T14:40+01:00"
+    },
+    {
+      "dossier": "cinema-mensonge-2",
+      "titre": "Cent euros le mensonge — Partie 2",
+      "description": "1) Il ne reste qu'une personne qui se souvient de lui… et elle connaît l'homme au chapeau 🎩😨 Tu sors ? OUI ou NON 👇 Partie 3 bientôt\n#histoire #animation #etsi #pourtoi #fyp #storytime\n\n2) Partie 2 :\n👵 Mamie se souvient encore de lui\n📸 Papy avait fait le même pacte en 1976\n✉️ « Pour briser le pacte, il faut dire la vérité qui coûte le plus »\nTu sors ? 👇\n#histoire #animation #pourtoi #fyp\n\n3) « Ne crois pas tout ce que dit ta grand-mère. » 😶 Quelqu'un attend sous le lampadaire…\n#histoire #animation #suspense #pourtoi #fyp",
+      "statut": "a_publier"
+    },
+    {
+      "dossier": "cinema-mensonge-3",
+      "titre": "Cent euros le mensonge — Partie 3",
+      "description": "1) 100 000 € pour un dernier mensonge… mais Mamie l'oublierait 🎩💸 Il refuse. Sauf que chaque vérité lui coûte 100 €… et sous zéro, c'est LUI qui disparaît 😨 Partie 4 demain 👀\n#histoire #animation #etsi #pourtoi #fyp #storytime\n\n2) Partie 3 :\n💸 1 vérité = −100 €\n❤️ quelqu'un se souvient de toi\n⚠️ sous zéro… tu t'effaces\nTu aurais accepté les 100 000 € ? 👇\n#histoire #animation #pourtoi #fyp\n\n3) « Alors amuse-toi bien avec tes vérités. » 🎩 Il voit le carrelage à travers sa main…\n#histoire #animation #suspense #pourtoi #fyp",
+      "statut": "a_publier"
+    },
+    {
+      "dossier": "cinema-mensonge-4",
+      "titre": "Cent euros le mensonge — Partie 4",
+      "description": "1) Il disparaît des photos… et sous le chapeau, il y a le visage de son grand-père 😱🎩 Qui doit être sauvé : lui ou Papy ? 👇 Partie 5 (la FIN) demain\n#histoire #animation #etsi #pourtoi #fyp #storytime\n\n2) Partie 4 :\n📸 il s'efface des photos\n📓 le carnet de Papy révèle la vérité qui coûte le plus\n🎩 l'homme au chapeau… c'est Papy\nToi ou Papy ? 👇\n#histoire #animation #pourtoi #fyp\n\n3) « La vérité qui coûte le plus, c'est ce qu'on n'a jamais osé dire à quelqu'un qu'on aime. » 💔\n#histoire #animation #emotion #pourtoi #fyp",
+      "statut": "a_publier"
+    },
+    {
+      "dossier": "cinema-mensonge-5",
+      "titre": "Cent euros le mensonge — Partie 5 (fin)",
+      "description": "1) LA FIN 😭 Il dit enfin la vérité qu'il n'avait jamais osé dire… Et toi, quelle vérité tu n'as jamais osé dire ? Écris-la en commentaire 👇\n#histoire #animation #etsi #pourtoi #fyp #storytime #emotion\n\n2) Partie 5, FIN :\n💔 « Je n'ai jamais eu honte de toi. Je t'aime. »\n🪙 la pièce se brise\n❤️ un, deux, trois\n👵👴 Mamie et Papy réunis\n#histoire #animation #pourtoi #fyp\n\n3) « Tu en as mis du temps, Antoine. » 🥹 La fin de « Cent euros le mensonge ».\n#histoire #animation #emotion #pourtoi #fyp",
+      "statut": "a_publier"
+    },
+    {
+      "dossier": "histoire-pensees",
+      "titre": "J'entends tes pensées",
+      "description": "Tu te réveilles et tu entends les pensées de tout le monde 🧠 Ton crush, ta prof, ton meilleur pote… mais quelqu'un pense en silence 😳\nQuel super-pouvoir pour la prochaine ? 👇\n\n#etsi #superpouvoir #lirelespensees #histoire #drole #twist #pourtoi #fyp",
+      "statut": "programme",
+      "buffer": "6aea0813985f73e58258f980",
+      "heure": "2026-11-04T17:20+01:00"
+    },
+    {
+      "dossier": "histoire-carnet-excuses",
+      "titre": "Le Carnet des excuses",
+      "description": "Chaque excuse sincère rajeunit d'un an celui qui la reçoit… mais il y a un prix 📕😳\nEt toi, à qui tu dois des excuses ? 👇\n\n#histoire #animation #emotion #twist #storytime #pourtoi #fyp",
+      "statut": "programme",
+      "buffer": "6aea080feeb5512868718a01",
+      "heure": "2026-11-04T16:00+01:00"
+    },
+    {
+      "dossier": "ascenseur-13-2",
+      "titre": "L'ascenseur du 13e — Partie 2",
+      "description": "Tu n'as pas répondu au Liftier… mais au 13e étage, toutes les horloges sont arrêtées à 3 h 13 🕰️😨\nTu éteins ton téléphone ? OUI ou NON 👇 Partie 3 = la fin\n\n#horreur #histoiredhorreur #creepypasta #ascenseur #3hdumatin #peur #pourtoi #fyp",
+      "statut": "programme",
+      "buffer": "6aea081ace22073f337c017c",
+      "heure": "2026-11-04T20:20+01:00"
+    },
+    {
+      "dossier": "horreur-baby-phone",
+      "titre": "Le Baby-phone",
+      "description": "Le baby-phone compte les respirations dans la chambre de ta petite sœur… 1… 2… 3 😨 Sauf qu'il n'écoute pas sa chambre.\nToi, tu te serais retourné ? 👇\n\n#horreur #histoiredhorreur #creepypasta #babyphone #peur #animation #pourtoi #fyp",
+      "statut": "programme",
+      "buffer": "6aea0816ce22073f337c00d5",
+      "heure": "2026-11-04T19:00+01:00"
+    },
+    {
+      "dossier": "etsi-lune",
+      "titre": "Et si la Lune disparaissait cette nuit ?",
+      "description": "La Lune disparaît d'un coup cette nuit 🌕➡️🕳️ Les marées, les tortues, les saisons… tout change 😳\nQuelle question pour le prochain « Et si » ? 👇\n\n#etsi #science #lune #espace #lesaviezvous #curiosite #pourtoi #fyp",
+      "statut": "programme",
+      "buffer": "6aea081d985f73e58258fc1f",
+      "heure": "2026-11-05T09:15+01:00"
+    },
+    {
+      "dossier": "blackout-jour5",
+      "titre": "Blackout général — Jour 5 (FIN)",
+      "description": "Dernier jour du blackout ⚡ Les silhouettes du hall… et la ville qui se rallume 💡\nToi, tu aurais tenu combien de jours ? 👇\n\n#survie #blackout #coupuredecourant #kitdurgence #fin #scenario #pourtoi #fyp",
+      "statut": "programme",
+      "heure": "2026-11-04T12:10+01:00",
+      "buffer": "6aea2c5e5a920686c6c526cc"
+    },
+    {
+      "dossier": "long/super-pouvoirs-1",
+      "format": "long",
+      "fichier": "long/super-pouvoirs-1/youtube-long.mp4",
+      "titre": "4 super-pouvoirs… et le prix à payer pour chacun | Histoires animées",
+      "description": "Arrêter le temps, entendre les pensées, une chance infinie, rajeunir les gens avec une excuse… 4 super-pouvoirs, 4 histoires, et à chaque fois un prix à payer.\nLequel tu choisirais ? Dis-le en commentaire 👇\n\n00:00 Introduction\n00:21 POUVOIR N°1 — Arrêter le temps\n01:39 POUVOIR N°2 — Entendre les pensées\n03:00 POUVOIR N°3 — La chance infinie\n04:08 POUVOIR N°4 — Le carnet des excuses\n05:47 Fin\n\n#superpouvoir #histoire #animation #etsi #twist",
+      "statut": "en_attente",
+      "note": "Refusé 3 fois par YouTube (youtube_channel_daily_limit) : 03/11 20:42, 04/11 09:05, 04/11 15:05. En attente de la vérification de la chaîne (youtube.com/verify) avant tout nouvel envoi (décision du superviseur).",
+      "contenu_ia_declare": true
+    },
+    {
+      "dossier": "long/blackout-complet",
+      "format": "long",
+      "fichier": "long/blackout-complet/youtube-long.mp4",
+      "titre": "Blackout général : 5 jours sans électricité en plein hiver (l'histoire complète)",
+      "description": "Une nuit d'hiver, toute la ville s'éteint. Pendant 5 jours, Max doit survivre au blackout : eau, chaleur, nourriture, voisins… avec de vrais conseils de survie à appliquer si ça t'arrive un jour.\nToi, tu aurais tenu combien de jours ? Dis-le en commentaire 👇\n\n00:00 Introduction\n00:30 JOUR 1 — La panne\n01:46 JOUR 2 — On frappe à la porte\n03:10 JOUR 3 — Le voisin du 5e\n04:33 JOUR 4 — Les silhouettes\n05:24 JOUR 5 — La lumière revient\n06:27 Fin\n\n#survie #blackout #coupuredecourant #histoire #animation #kitdurgence",
+      "statut": "programme",
+      "heure": "2026-11-05T18:30+01:00",
+      "upload_post": {
+        "job_id": "7a2c268740fb412f881b1cd457b59cfc",
+        "request_id": "31fd5a7fcfd44f0196832e625c4b7353"
+      },
+      "contenu_ia_declare": true
+    },
+    {
+      "dossier": "secret-gant",
+      "titre": "Le secret du gant",
+      "description": "Le secret de son gant.. 🧤\nEt toi, tu l'aurais deviné ? 👇\n\n#histoire #famille #secret #emotion #animation #papa #pourtoi #fyp",
+      "statut": "a_publier"
+    },
+    {
+      "dossier": "secret-gateau",
+      "titre": "Le secret du gâteau",
+      "description": "Le secret de sa sœur.. 🍰\nEt toi, tu aurais fait pareil ? 👇\n\n#histoire #famille #secret #emotion #animation #soeur #pourtoi #fyp",
+      "statut": "a_publier"
+    },
+    {
+      "dossier": "ascenseur-13-3",
+      "titre": "L'ascenseur du 13e — Partie 3 (FIN)",
+      "description": "Tu as éteint ton téléphone… et dans le noir, l'heure a changé toute seule 🕰️😨 La FIN de « L'ascenseur du 13e ».\nTu serais remonté ? OUI ou NON 👇\n\n#horreur #histoiredhorreur #creepypasta #ascenseur #3hdumatin #peur #fin #pourtoi #fyp",
+      "statut": "a_publier"
+    },
+    {
+      "dossier": "secret-concierge",
+      "titre": "Le secret du concierge",
+      "description": "Le secret du concierge.. 📖\nEt toi, tu l'aurais aidé ? 👇\n\n#histoire #ecole #secret #emotion #animation #lecture #pourtoi #fyp",
+      "statut": "a_publier"
+    },
+    {
+      "dossier": "horreur-station",
+      "titre": "La station-service",
+      "description": "2 h du matin. Une station perdue. Un papier sur la porte : « Si la caissière sourit, ne paie pas. » 😨\nToi, tu lui aurais tourné le dos ? OUI ou NON 👇\n\n#horreur #histoiredhorreur #creepypasta #stationservice #3hdumatin #peur #pourtoi #fyp",
+      "statut": "programme",
+      "buffer": "6aec3b083ddb81d221194404",
+      "heure": "2026-11-05T20:30+01:00"
+    },
+    {
+      "dossier": "histoire-photo-un-an",
+      "titre": "La photo d'un an",
+      "description": "Sur la photo, le fauteuil de Papy était vide.. 📸\nEnvoie-la à quelqu'un qui devrait appeler son papy 👇\n\n#histoire #papy #famille #emotion #animation #photo #pourtoi #fyp",
+      "statut": "a_publier"
+    },
+    {
+      "dossier": "etsi-compte-double-2",
+      "titre": "Et si ton compte doublait chaque jour ? (FIN)",
+      "description": "Il a dû tout donner.. 💸 La FIN de « Et si ton compte doublait ».\nEnregistre-la et dis-moi : tu aurais tout donné ? 👇\n\n#etsi #argent #maths #banque #histoire #animation #pourtoi #fyp",
+      "statut": "programme",
+      "buffer": "6aec3b1280f7fd053701537a",
+      "heure": "2026-11-05T23:50+01:00"
+    },
+    {
+      "dossier": "horreur-gps",
+      "titre": "Le GPS",
+      "description": "Le GPS de Papy s'est allumé tout seul.. 📍\nEnvoie-la à celui qui conduit la nuit 👇\n\n#horreur #histoiredhorreur #creepypasta #gps #minuit #peur #pourtoi #fyp",
+      "statut": "programme",
+      "buffer": "6aec3b0b75052a1eb830443a",
+      "heure": "2026-11-05T21:40+01:00"
+    },
+    {
+      "dossier": "colo-1",
+      "titre": "La colo — Partie 1",
+      "description": "On était douze. Il en a compté treize.. 🔦\nEnregistre-la pour la Partie 2 👇\n\n#horreur #histoiredhorreur #creepypasta #colo #minuit #peur #pourtoi #fyp",
+      "statut": "programme",
+      "buffer": "6aec3b0fe22643a987a17f6d",
+      "heure": "2026-11-05T22:50+01:00"
+    },
+    {
+      "dossier": "foret-1",
+      "titre": "Perdu en forêt — Jour 1",
+      "description": "Perdu en forêt, 4 % de batterie.. 🌲\nEnregistre-la, tu en auras besoin un jour 📌\n\n#survie #foret #perdu #randonnee #conseils #112 #pourtoi #fyp",
+      "statut": "programme",
+      "buffer": "6aec3b00e22643a987a168c5",
+      "heure": "2026-11-05T15:45+01:00"
+    },
+    {
+      "dossier": "protocole-glace",
+      "titre": "Protocole de survie : la glace",
+      "description": "Si la glace craque sous tes pieds.. 🧊\nEnregistre-la, tu en auras besoin un jour 📌\n\n#survie #glace #protocole #conseils #hiver #securite #pourtoi #fyp",
+      "statut": "programme",
+      "buffer": "6aec3b047877e0eab287ff1a",
+      "heure": "2026-11-05T16:50+01:00"
+    },
+    {
+      "dossier": "etsi-11-jours",
+      "titre": "Et si tu ne dormais plus pendant 11 jours ?",
+      "description": "264 heures sans dormir.. 😵\nEnvoie-la à celui qui se couche à 4 h du matin 👇\n\n#etsi #science #sommeil #record #cerveau #lesaviezvous #pourtoi #fyp",
+      "statut": "a_publier"
+    },
+    {
+      "dossier": "secret-gouter",
+      "titre": "Le secret de son goûter",
+      "description": "Le secret de son goûter.. 🥐\nEnvoie-la à quelqu'un qui devrait appeler ses grands-parents 👇\n\n#histoire #famille #secret #emotion #animation #papy #pourtoi #fyp",
+      "statut": "a_publier"
+    },
+    {
+      "dossier": "histoire-lettres",
+      "titre": "Les lettres du futur",
+      "description": "Une lettre de moi, dans dix ans.. ✉️\nIdentifie celui qui s'est assis à côté de toi un jour 👇\n\n#histoire #animation #emotion #amitie #futur #storytime #pourtoi #fyp",
+      "statut": "a_publier"
+    },
+    {
+      "dossier": "secret-montre",
+      "titre": "Le secret de sa montre",
+      "description": "Le secret de sa montre.. ⌚\nEnvoie-la à quelqu'un qui t'a sauvé un jour 👇\n\n#histoire #secret #emotion #animation #pompier #ecole #pourtoi #fyp",
+      "statut": "a_publier"
+    },
+    {
+      "dossier": "colo-2",
+      "titre": "La colo — Partie 2",
+      "description": "Sur la liste, il y a treize prénoms.. 🔦 Le dernier, c'est le mien.\nEnregistre-la pour la fin demain 👇\n\n#horreur #histoiredhorreur #creepypasta #colo #minuit #peur #pourtoi #fyp",
+      "statut": "a_publier"
+    },
+    {
+      "dossier": "colo-3",
+      "titre": "La colo — Partie 3 (FIN)",
+      "description": "Mon meilleur pote a répondu à ma place.. 🔦 La FIN de « La colo ».\nEnvoie-la à ton meilleur pote 👇\n\n#horreur #histoiredhorreur #creepypasta #colo #minuit #peur #fin #pourtoi #fyp",
+      "statut": "a_publier"
+    },
+    {
+      "dossier": "foret-2",
+      "titre": "Perdu en forêt — Jour 2",
+      "description": "Les secours m'écrivaient.. et je me suis caché 🌲\nEnregistre-la, tu en auras besoin un jour 📌\n\n#survie #foret #perdu #sos #conseils #randonnee #pourtoi #fyp",
+      "statut": "a_publier"
+    },
+    {
+      "dossier": "protocole-incendie",
+      "titre": "Protocole de survie : l'incendie",
+      "description": "Si ton immeuble prend feu cette nuit.. 🔥 5 règles qui peuvent te sauver.\nEnregistre-la, tu en auras besoin un jour 📌\n\n#survie #incendie #protocole #conseils #pompiers #securite #pourtoi #fyp",
+      "statut": "a_publier"
+    },
+    {
+      "dossier": "cinema-frere-3",
+      "titre": "Le secret de mon frère — Partie 3",
+      "description": "Le secret de mon frère.. 🫙 Partie 3\nEnregistre-la pour la fin 👇\n\n#histoire #animation #famille #secret #frere #emotion #pourtoi #fyp",
+      "statut": "a_publier"
+    },
+    {
+      "dossier": "cinema-frere-4",
+      "titre": "Le secret de mon frère — Partie 4 (FIN)",
+      "description": "Le secret de mon frère.. ⚽ La FIN\nEnvoie-la à ton frère ou ta sœur 👇\n\n#histoire #animation #famille #secret #frere #emotion #fin #pourtoi #fyp",
+      "statut": "a_publier"
+    }
+  ],
+  "regles": "YouTube : la journée YouTube va de 09:00 à 09:00 (heure de Paris, minuit heure du Pacifique). 10 envois MAXIMUM par journée YouTube, format long (Upload-Post) compris. Buffer refuse aussi plus de 10 posts YouTube programmés le même jour calendaire. Les Shorts sont espacés d'au moins 60 min (idéalement 70-80 min) : fini le rattrapage toutes les 10 min."
 }
