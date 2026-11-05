@@ -6,10 +6,12 @@
 - [ ] (c) « Le secret de… » (secret-gant et secret-gateau, 04/11) : vues, % regardé, engagement, comparés aux histoires.
 - [ ] (d) Rétention : ascenseur P1, P2 et Lune (25-29 % regardé le 04/11) : vérifier si les vidéos suivantes tiennent ≥ 25 % ; identifier ce qu'elles ont en commun (04/11 08:50).
 - [ ] (e) Test de volume RETENU (Superviseur, 04/11 10:02, carte blanche de l'utilisateur) : 7 vidéos TikTok/jour les 05 et 06/11 (détail dans docs/directives.md). À MESURER LE 07/11 à 08:50 : vues moyennes par vidéo à 48 h et % regardé, contre le 03/11 (11 vidéos) et le 04/11 (11 vidéos). Conclusion attendue : garder 7, revenir à 11 ou entre les deux.
+- [ ] (b ter) 05/11 : youtube.json long/super-pouvoirs-1 a upload_post=null (non envoyé ?) ; les ids cités sont ceux de blackout-complet (queued, 05/11 18:30). Question posée au Superviseur.
 - [ ] (b bis) Long « 4 super-pouvoirs » : passe par Upload-Post, ids dans videos/youtube.json (long/super-pouvoirs-1, champ upload_post) ; mesurer avec upload-post get_status puis get_post_analytics (lecture seule).
 - [ ] PRIORITÉ 21:50 : trouver ce qui donne 25-29 % de rétention à ascenseur P1/P2 et Lune (rythme des plans, 1re image, voix, durée).
 - [ ] YouTube : Buffer n'a pas rafraîchi depuis le 03/11 20:17 (Paris) ; revérifier à 21:50.
-- [ ] Réévaluer la science et les histoires le 05/11 à 08:50 (recommandation 7).
+- [x] Science/histoires : réévaluées le 05/11, pas de décision (vues < 20 par vidéo).
+- [ ] Rétention : La Lune 16,9 s → 5,4 s (2 vues) : ne rien conclure sous 20 vues.
 
 ## Consignes de passage (Superviseur, 03/11 21:01 : correction de l'utilisateur, la consigne de 21:00 est ANNULÉE)
 - Analyse complète et détaillée, budget Firecrawl normal (environ 150 crédits) : faire percer le compte passe avant tout.
