@@ -6,3 +6,4 @@
 - 05/11 08:15 UTC : TikTok forêt J2 → 06/11 12:10 (Buffer 10/10). YouTube : 6 Shorts le 05/11 (15:45 → 23:50, ≤ 10 sur 24 h glissantes). Stock prêt : 6. Fabrication suivante : Forêt J3.
 - 05/11 ~09:00 UTC : fabriqué Forêt J3 (FIN), 63,6 s, 3 passes OK, visé 07/11 12:10. Série ramenée à 3 épisodes. Stock prêt : 7. Prochain : 1re nouvelle série de survie (style Blackout/Max, 3 ép.).
 - 05/11 12:15 UTC : TikTok secret-montre → 06/11 13:30 (Buffer 10/10). YouTube : quota du jour atteint (8 + long). Stock prêt : 6. Fabrication : nouvelle série survie J1 (style Blackout).
+- 05/11 ~13:30 UTC : fabriqué « Alerte inondation » J1 (nouvelle série survie style Blackout/Max, 3 ép.), 72,5 s, 3 passes OK, visé 08/11 12:10. Stock prêt : 7. Prochain : inondation J2.
