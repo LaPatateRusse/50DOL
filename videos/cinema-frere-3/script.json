@@ -10,13 +10,13 @@
   "gemini_style": "Lis ce texte en français, comme un conteur de mini-film d'animation sur TikTok : voix masculine grave et posée, phrases courtes, rythme vif, avec de vraies pauses sur les points de suspension. Ton émouvant, intime, comme un secret qu'on raconte. Les répliques entre guillemets « » sont jouées : Léo, 19 ans, d'une voix jeune et fatiguée ; la mère d'une voix douce et forte ; le coach d'une voix sèche. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
  },
  "pad_after": {
-  "flash": 0.6,
-  "refus": 0.6,
-  "plan": 0.5,
-  "vente": 0.6,
-  "bocal": 0.8,
-  "samedi": 0.6,
-  "stade": 4.6
+  "flash": 0.9,
+  "refus": 0.9,
+  "plan": 0.8,
+  "vente": 0.9,
+  "bocal": 1.1,
+  "samedi": 0.9,
+  "stade": 5.2
  },
  "lines": [
   {
