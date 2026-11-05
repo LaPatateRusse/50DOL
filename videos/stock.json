@@ -17,13 +17,6 @@
       "creneau_vise": "à partir du 07/11 (test de volume 05-06/11 : pas de 14:30 ni 16:00)"
     },
     {
-      "dossier": "secret-montre",
-      "type": "histoire",
-      "titre": "Le secret de sa montre",
-      "description": "Le secret de sa montre.. ⌚\nEnvoie-la à quelqu'un qui t'a sauvé un jour 👇\n\n#histoire #secret #emotion #animation #pompier #ecole #pourtoi #fyp",
-      "creneau_vise": "2026-11-06T13:30+01:00"
-    },
-    {
       "dossier": "colo-3",
       "type": "horreur-serie",
       "titre": "La colo — Partie 3 (FIN)",
@@ -212,6 +205,13 @@
       "titre": "Perdu en forêt — Jour 2",
       "buffer": "6aec3ad280f7fd053701143a",
       "heure": "2026-11-06T12:10+01:00"
+    },
+    {
+      "dossier": "secret-montre",
+      "type": "histoire",
+      "titre": "Le secret de sa montre",
+      "buffer": "6aec732dfac32e0e658bd49e",
+      "heure": "2026-11-06T13:30+01:00"
     }
   ]
 }
