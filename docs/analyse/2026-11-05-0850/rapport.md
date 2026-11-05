@@ -44,4 +44,4 @@ YouTube (Shorts du 03/11, Buffer 04/11 14:39) : Blackout J1 1 235 / J2 1 173 / J
 | (b) Long « 4 super-pouvoirs » | **`videos/youtube.json`, entrée long/super-pouvoirs-1 : `upload_post` = null, statut `en_attente`** → rien n'a été envoyé via Upload-Post d'après le fichier. Les ids du fichier (`request_id` 31fd5a7f…) sont ceux de **long/blackout-complet** : statut Upload-Post `queued`, `scheduler_status pending`, 05/11 18:30, dernière mise à jour 03/11 20:05. | à vérifier par le Superviseur |
 | (c) Protocole de survie (19:15) | pas commencé | à suivre |
 | (e) Volume 7/jour (05 et 06/11) | jour 1 en cours | mesure le 07/11 08:50 |
-| Excel stats | dernière mise à jour dans le dépôt : 04/11 23:11 (Paris), soit environ 10 h (nuit) | à surveiller |
+| Excel stats | dernière mise à jour dans le dépôt : 04/11 22:11 (Paris), soit environ 10 h (nuit) | à surveiller |
