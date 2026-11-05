@@ -5,6 +5,55 @@ Critère retenu : marge nette ≥ 25 % **et** ≥ 20 €, essence et frais compr
 
 > **En bref.** Sur ~200 annonces passées en revue (Kleinanzeigen Sarre : GPU, consoles, outillage Makita ; Leboncoin par extraits de recherche), **seules 3 annonces passent nettement le critère**. 2 autres ne le passent que si la négociation aboutit. La plupart des GPU, des PS5 et de l'outillage sont **au prix du marché français**, donc sans marge. Rien n'est inventé : chaque prix vient d'une annonce visible le 05/11/2026. Les annonces bougent vite, donc vérifie qu'elles sont toujours en ligne avant de te déplacer.
 
+## ⭐ Mode « quasi sûr » : uniquement ce qui reste rentable dans le pire cas
+
+Le 100 % n'existe pas : une console peut tomber en panne entre l'achat et la revente. On peut quand même s'en approcher avec une règle simple : **n'acheter que si le prix reste rentable quand tu revends au prix le plus bas observé**, pas au prix moyen.
+
+**Ce que j'ai vérifié pour définir un prix plancher :**
+- Les sites de rachat en ligne (ZOXS, rebuy) affichent des prix « jusqu'à », valables pour du **neuf sous blister**. Exemple vérifié : ZOXS affiche « bis zu 200 € » pour une Xbox One X, mais **ne rachète actuellement pas d'occasion** pour ce modèle (« KEIN ANKAUF – NUR NEUWARE »). Ces prix ne sont donc **pas** un plancher fiable pour de l'occasion.
+- Le vrai filet de sécurité est local : des magasins de rachat qui paient **cash et immédiatement**, près de chez toi :
+  - Cash Express à [Forbach](https://www.cashexpress.fr/magasin/information/forbach), [Saint-Avold](https://www.cashexpress.fr/magasin/information/saint-avold), [Metz Centre](https://www.cashexpress.fr/magasin/information/metz-centre) et [Metz Augny](https://www.cashexpress.fr/magasin/information/metz-augny) ;
+  - [Easy Cash Moulins-lès-Metz](https://magasins.easycash.fr/moselle-57/ENT87-moulins-les-metz-57160).
+
+  Cash Express propose une **estimation de rachat en ligne immédiate** ([revendre en ligne](https://www.cashexpress.fr/p-7/page-d-accueil-revente.html)). **Avant chaque achat, fais l'estimation** de l'objet. Si le prix d'achat + l'essence est **inférieur** à l'estimation, tu ne peux pas perdre d'argent : au pire tu revends en magasin le jour même.
+
+### Les 2 seules annonces qui restent positives dans le pire cas
+
+| Article | Achat max | Revente dans le pire cas (prix LBC les plus bas observés) | Résultat dans le pire cas | Résultat attendu |
+|---|---|---|---|---|
+| **Lot de consoles, Riegelsberg** ([lien](https://www.kleinanzeigen.de/s-anzeige/videospiel-konvolut/3562055770-279-345)) | **60 €** | 3 Game Boy × 40 € + Wii U seule 25 € = **145 €** | **+75 €** (après 10 € d'essence) | ≈ +100 € |
+| **Xbox One X + 5 manettes, Dillingen** ([lien](https://www.kleinanzeigen.de/s-anzeige/xbox-one-x-konsole-mit-5-controllern-und-spielen/3561949769-279-291)) | **110 €** | console 70 € + 4 manettes × 15 € = **130 €** | **+12 €** (après 8 € d'essence) | ≈ +77 € |
+
+**Conditions non négociables pour que ce soit « quasi sûr » :**
+1. **Tester sur place**, sinon tu n'achètes pas.
+   - Game Boy : un jeu lancé, écran sans lignes mortes, son OK.
+   - Wii U : allumage complet sur une TV.
+   - Xbox : démarrage, lecture d'un disque.
+   - Les 5 manettes : appairage et sticks sans drift. Elles doivent être **originales Microsoft** (logo Xbox, étiquette Model 1537, 1697 ou 1708 dans le compartiment à piles).
+2. **Ne pas dépasser** l'achat max indiqué ci-dessus.
+3. Faire l'**estimation Cash Express en ligne** la veille, pour connaître ta sortie de secours.
+
+**Toutes les autres annonces du tableau (Xbox d'Onville, GameCube, RTX 3070) peuvent te faire perdre de l'argent dans le pire cas.** Ignore-les si tu veux du quasi sûr.
+
+### La règle à appliquer à chaque nouvelle annonce
+
+> **Prix d'achat + essence ≤ min(estimation Cash Express, prix LBC le plus bas pour le même article) − 20 €**
+
+Les articles les plus liquides, donc ceux qui se revendent le plus sûrement en moins d'une semaine :
+- manettes officielles (Xbox, DualSense, Joy-Con) ;
+- Nintendo Switch (toutes versions) ;
+- PS5 ;
+- Game Boy et DS qui fonctionnent ;
+- batteries Makita et DeWalt d'origine (avec facture) ;
+- iPhone débloqué sans iCloud.
+
+À éviter pour du « sûr » :
+- GPU (marché qui baisse, risque de minage) ;
+- outillage spécialisé ;
+- tout ce qui est vendu « non testé ».
+
+---
+
 ## Hypothèses de calcul
 
 - **Essence** : 0,15 €/km aller-retour (≈ 7 L/100 km × 1,80–1,90 €/L, avec un peu d'usure). Distances routières approximatives depuis Creutzwald.
