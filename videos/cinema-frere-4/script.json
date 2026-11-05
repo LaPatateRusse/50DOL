@@ -7,16 +7,16 @@
   "stability": 0.5,
   "tempo": 1.0,
   "gemini_voice": "Orus",
-  "gemini_style": "Lis ce texte en français, comme un conteur de mini-film d'animation sur TikTok : voix masculine grave et posée, phrases courtes, rythme vif, avec de vraies pauses sur les points de suspension. Ton émouvant, intime, comme un secret qu'on raconte. Les répliques entre guillemets « » sont jouées : Léo, 19 ans, d'une voix jeune et fatiguée ; la mère d'une voix douce et forte ; le coach d'une voix sèche. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+  "gemini_style": "Lis ce texte en français, comme un conteur de mini-film d'animation sur TikTok : voix masculine grave et posée, phrases courtes, rythme vif et soutenu, avec de courtes pauses sur les points de suspension. Ton émouvant, intime, comme un secret qu'on raconte. Les répliques entre guillemets « » sont jouées : Léo, 19 ans, d'une voix jeune et fatiguée ; la mère d'une voix douce et forte ; le coach d'une voix sèche. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
  },
  "pad_after": {
-  "flash": 0.1,
-  "tribune": 0.2,
-  "enveloppe": 0.3,
-  "go": 0.3,
-  "match": 0.5,
-  "joie": 0.3,
-  "frigo": 3.4
+  "flash": 0.6,
+  "tribune": 0.5,
+  "enveloppe": 0.6,
+  "go": 0.5,
+  "match": 0.6,
+  "joie": 0.6,
+  "frigo": 3.6
  },
  "lines": [
   {
@@ -41,18 +41,18 @@
   },
   {
    "scene": "enveloppe",
-   "say": "« La dette, je la rembourse moi-même. Je fais des ménages. Le matin. »",
-   "show": "« La dette, je la rembourse moi-même. Je fais des ménages. Le matin. »"
+   "say": "« La dette, je la rembourse moi-même. Je fais des ménages. Le matin, très tôt. »",
+   "show": "« La dette, je la rembourse moi-même. Je fais des ménages. Le matin, très tôt. »"
   },
   {
    "scene": "enveloppe",
-   "say": "Deux menteurs. Qui mentaient pour la même raison.",
-   "show": "Deux menteurs. Qui mentaient pour la même raison."
+   "say": "Deux menteurs. Qui mentaient pour la même raison. Toi, tu ne sais plus si tu dois rire ou pleurer.",
+   "show": "Deux menteurs. Qui mentaient pour la même raison. Toi, tu ne sais plus si tu dois rire ou pleurer."
   },
   {
    "scene": "go",
-   "say": "Maman pousse Léo vers le terrain. « Va. Il est dix heures. »",
-   "show": "Maman pousse Léo vers le terrain. « Va. Il est dix heures. »"
+   "say": "Maman pousse Léo vers le terrain. « Va. Il est dix heures. Et donne-moi cette serpillière. »",
+   "show": "Maman pousse Léo vers le terrain. « Va. Il est dix heures. Et donne-moi cette serpillière. »"
   },
   {
    "scene": "match",
@@ -61,13 +61,13 @@
   },
   {
    "scene": "match",
-   "say": "But.",
-   "show": "But."
+   "say": "Le ballon touche le poteau… et rentre. But.",
+   "show": "Le ballon touche le poteau… et rentre. But."
   },
   {
    "scene": "joie",
-   "say": "Maman crie plus fort que tout le stade.",
-   "show": "Maman crie plus fort que tout le stade."
+   "say": "Maman crie plus fort que tout le stade. Le coach s'approche de Léo : « Lundi, tu signes. »",
+   "show": "Maman crie plus fort que tout le stade. Le coach s'approche de Léo : « Lundi, tu signes. »"
   },
   {
    "scene": "frigo",
@@ -88,13 +88,18 @@
   ],
   "kick": [
    7,
-   "end",
-   -0.4
+   "start",
+   3.8
   ],
   "goal": [
    8,
-   "start",
-   0.0
+   "end",
+   -0.3
+  ],
+  "sign": [
+   9,
+   "end",
+   -0.5
   ],
   "endcard": [
    11,
@@ -116,7 +121,10 @@
   },
   {
    "type": "pop",
-   "cue": "goal"
+   "cue": [
+    "goal",
+    "sign"
+   ]
   }
  ],
  "pulse": [
