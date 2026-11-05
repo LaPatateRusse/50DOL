@@ -77,6 +77,22 @@
     }
    ],
    "note": "Sans vote écrit : choix le plus prudent (ne pas répondre, rester caché et observer). Série ramenée à 3 épisodes (consigne du 05/11 : 2 nouvelles séries de 3 épisodes au schéma du Blackout)."
+  },
+  {
+   "serie": "Alerte inondation",
+   "style": "Max (schéma Blackout)",
+   "heure": "12:10",
+   "episodes_prevus": 3,
+   "episodes": [
+    {
+     "jour": 1,
+     "dossier": "videos/inondation-1",
+     "publication": "2026-11-08 12:10 (visé)",
+     "fin": "3 h du matin, l'eau a envahi le rez-de-chaussée ; un homme crie dans la rue, de l'eau jusqu'à la taille.",
+     "choix": "Max descend l'aider ? OUI / NON"
+    }
+   ],
+   "note": "Sans vote : choix prudent (ne pas descendre dans l'eau ; appeler le 112, lui parler depuis la fenêtre, lancer une corde/objet flottant). J2 : sur le toit/étage, signaler, eau du robinet non potable, ne pas marcher dans l'eau (bouches d'égout ouvertes, courant). J3 : évacuation en bateau, retour : ne pas rallumer avant contrôle, photos pour l'assurance, moisissures."
   }
  ]
 }

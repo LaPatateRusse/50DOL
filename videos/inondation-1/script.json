@@ -1,0 +1,221 @@
+{
+ "title": "Alerte inondation — Jour 1",
+ "note": "Nouvelle série de survie (3 épisodes), schéma exact du Blackout (style Max). Conseils vérifiés (consignes officielles inondation) : 30 cm d'eau peuvent emporter une voiture ; ne pas aller chercher sa voiture ni descendre au parking souterrain ou à la cave ; couper électricité (et gaz) si c'est possible sans danger ; kit d'urgence (eau, lampe, chargeur, papiers, médicaments) ; monter en hauteur ; écouter la radio pour les consignes. say = texte lu ; show = sous-titre, [mot] = rouge, {mot} = jaune.",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Orus",
+  "gemini_style": "Lis ce texte en français, comme un narrateur TikTok de survie captivant : voix masculine grave, rythme posé et tendu, articule bien chaque chiffre, marque nettement les virgules et les deux-points, ton sérieux, les règles dites lentement avec assurance comme un secouriste. Marque une pause entre chaque phrase. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "intro": 0.1,
+  "alerte": 0.2,
+  "titre": 0.4,
+  "rue": 0.25,
+  "voiture": 0.25,
+  "parking": 0.25,
+  "compteur": 0.25,
+  "sac": 0.2,
+  "escalier": 0.25,
+  "radio": 0.25,
+  "nuit": 0.3,
+  "fin": 3.4
+ },
+ "lines": [
+  {
+   "scene": "intro",
+   "say": "Si l'eau monte dans ta rue en pleine nuit,",
+   "show": "Si l'eau monte dans ta rue en pleine [nuit],"
+  },
+  {
+   "scene": "alerte",
+   "say": "surtout, ne descends pas chercher ta voiture.",
+   "show": "surtout, ne descends pas chercher ta [voiture]."
+  },
+  {
+   "scene": "titre",
+   "say": "Parce que c'est là que beaucoup de gens se font piéger.",
+   "show": "Parce que c'est là que beaucoup de gens se font [piéger]."
+  },
+  {
+   "scene": "rue",
+   "say": "Deux heures du matin. Il pleut depuis trois jours. Le téléphone de Max hurle : alerte crue.",
+   "show": "2 heures du matin. Il pleut depuis 3 jours. Le téléphone de Max hurle : {alerte} {crue}."
+  },
+  {
+   "scene": "rue",
+   "say": "Dehors, la rue est déjà une rivière.",
+   "show": "Dehors, la rue est déjà une [rivière]."
+  },
+  {
+   "scene": "voiture",
+   "say": "Trente centimètres d'eau suffisent pour emporter une voiture.",
+   "show": "{30} {centimètres} d'eau suffisent pour emporter une [voiture]."
+  },
+  {
+   "scene": "parking",
+   "say": "Et un parking souterrain peut se remplir en quelques minutes. Max n'y descend pas.",
+   "show": "Et un parking souterrain peut se remplir en quelques [minutes]. Max n'y descend {pas}."
+  },
+  {
+   "scene": "compteur",
+   "say": "Règle numéro un : couper l'électricité. Mais seulement tant que ses pieds sont au sec.",
+   "show": "Règle n°1 : couper l'{électricité}. Mais seulement tant que ses pieds sont au [sec]."
+  },
+  {
+   "scene": "sac",
+   "say": "Règle numéro deux : un sac. Eau, lampe, chargeur, papiers, médicaments.",
+   "show": "Règle n°2 : un {sac}. Eau, lampe, chargeur, papiers, médicaments."
+  },
+  {
+   "scene": "escalier",
+   "say": "Règle numéro trois : monter. Le plus haut possible. Jamais à la cave.",
+   "show": "Règle n°3 : {monter}. Le plus haut possible. Jamais à la [cave]."
+  },
+  {
+   "scene": "radio",
+   "say": "Là-haut, il écoute la radio pour suivre les consignes des secours.",
+   "show": "Là-haut, il écoute la {radio} pour suivre les consignes des secours."
+  },
+  {
+   "scene": "nuit",
+   "say": "Trois heures. L'eau a envahi le rez-de-chaussée. Elle monte encore, marche après marche.",
+   "show": "3 heures. L'eau a envahi le rez-de-chaussée. Elle monte encore, marche après [marche]."
+  },
+  {
+   "scene": "fin",
+   "say": "Puis, dans la rue, quelqu'un crie. Un homme, de l'eau jusqu'à la taille.",
+   "show": "Puis, dans la rue, quelqu'un [crie]. Un homme, de l'eau jusqu'à la [taille]."
+  },
+  {
+   "scene": "fin",
+   "say": "Max descend l'aider ? Réponds en commentaire. Partie suivante, demain.",
+   "show": "Max descend l'aider ? Réponds en commentaire. Partie suivante, {demain}."
+  }
+ ],
+ "cues": {
+  "alarm": [
+   3,
+   "end",
+   -1.6
+  ],
+  "car": [
+   5,
+   "start",
+   0.4
+  ],
+  "carfloat": [
+   5,
+   "end",
+   -0.8
+  ],
+  "nopark": [
+   6,
+   "end",
+   -1.3
+  ],
+  "breaker": [
+   7,
+   "start",
+   2.2
+  ],
+  "dry": [
+   7,
+   "end",
+   -0.8
+  ],
+  "bag": [
+   8,
+   "start",
+   1.6
+  ],
+  "up": [
+   9,
+   "start",
+   1.6
+  ],
+  "nocave": [
+   9,
+   "end",
+   -0.6
+  ],
+  "radio_on": [
+   10,
+   "start",
+   1.0
+  ],
+  "cry": [
+   12,
+   "start",
+   1.2
+  ],
+  "jour2": [
+   13,
+   "end",
+   0.7
+  ]
+ },
+ "sfx": [
+  {
+   "type": "hit",
+   "scene": "titre"
+  },
+  {
+   "type": "buzz",
+   "cue": "alarm"
+  },
+  {
+   "type": "pop",
+   "cue": [
+    "car",
+    "nopark",
+    "dry",
+    "bag",
+    "up",
+    "nocave"
+   ]
+  },
+  {
+   "type": "water",
+   "cue": "carfloat",
+   "dur": 1.5
+  },
+  {
+   "type": "knock",
+   "cue": "breaker"
+  },
+  {
+   "type": "static",
+   "from": "radio_on",
+   "scene": "radio"
+  },
+  {
+   "type": "wind",
+   "scene": [
+    "intro",
+    "rue",
+    "nuit",
+    "fin"
+   ]
+  },
+  {
+   "type": "hit",
+   "cue": [
+    "cry",
+    "jour2"
+   ]
+  }
+ ],
+ "pulse": [
+  [
+   "intro",
+   "titre"
+  ],
+  [
+   "nuit",
+   "fin"
+  ]
+ ]
+}
