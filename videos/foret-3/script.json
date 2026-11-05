@@ -1,0 +1,147 @@
+{
+ "title": "Perdu en forêt — Jour 3 (FIN)",
+ "note": "Série de survie, épisode 3 = FIN (12:10 du 07/11). Sans vote écrit : choix le plus prudent (ne pas boire l'eau non traitée, rester visible). Conseils vérifiés : règle des 3 (environ 3 jours sans eau) ; rester à découvert près du signal ; signal sol-air du corps : deux bras levés en Y = « Yes, j'ai besoin d'aide », un bras en haut et un en bas = « No » ; un écran ou miroir renvoie le soleil (visible de très loin) ; ne pas s'approcher d'un hélicoptère, attendre le sauveteur.",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Orus",
+  "gemini_style": "Lis ce texte en français, comme un narrateur TikTok de survie captivant : voix masculine grave, rythme vif et soutenu, ton sérieux et tendu, les conseils dits avec assurance comme un secouriste. Le SMS entre guillemets « » est lu d'une voix neutre et inquiétante. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "flash": 0.8,
+  "refus": 0.6,
+  "bruit": 0.6,
+  "signal": 0.6,
+  "miroir": 0.6,
+  "sauvetage": 0.6,
+  "fin": 3.6
+ },
+ "cues": {
+  "three": [
+   2,
+   "start",
+   0.4
+  ],
+  "heli": [
+   3,
+   "start",
+   1.2
+  ],
+  "yes": [
+   5,
+   "start",
+   0.8
+  ],
+  "no": [
+   6,
+   "start",
+   0.4
+  ],
+  "flashsun": [
+   7,
+   "start",
+   2.4
+  ],
+  "rescue": [
+   8,
+   "start",
+   0.6
+  ],
+  "endcard": [
+   9,
+   "end",
+   0.6
+  ]
+ },
+ "sfx": [
+  {
+   "type": "pop",
+   "cue": [
+    "three",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "type": "hit",
+   "cue": [
+    "heli",
+    "flashsun",
+    "endcard"
+   ]
+  },
+  {
+   "type": "swish",
+   "cue": [
+    "rescue"
+   ]
+  },
+  {
+   "type": "wind",
+   "scene": [
+    "bruit",
+    "sauvetage"
+   ]
+  }
+ ],
+ "pulse": [
+  [
+   "bruit",
+   "sauvetage"
+  ]
+ ],
+ "lines": [
+  {
+   "scene": "flash",
+   "say": "Un hélicoptère juste au-dessus de toi. Et il ne te voit pas.",
+   "show": "Un hélicoptère juste au-dessus de toi. Et il ne te voit pas."
+  },
+  {
+   "scene": "refus",
+   "say": "Jour trois. Hier, tu n'as pas bu l'eau du ruisseau. Le moteur dans le ciel, c'était un petit avion. Il n'est jamais revenu.",
+   "show": "Jour trois. Hier, tu n'as pas bu l'eau du ruisseau. Le moteur dans le ciel, c'était un petit avion. Il n'est jamais revenu."
+  },
+  {
+   "scene": "refus",
+   "say": "Sans boire, on tient environ trois jours. Tu as encore un peu de temps. Mais plus beaucoup.",
+   "show": "Sans boire, on tient environ trois jours. Tu as encore un peu de temps. Mais plus beaucoup."
+  },
+  {
+   "scene": "bruit",
+   "say": "Neuf heures. Un grondement fait trembler les arbres. Cette fois, c'est un hélicoptère.",
+   "show": "Neuf heures. Un grondement fait trembler les arbres. Cette fois, c'est un hélicoptère."
+  },
+  {
+   "scene": "signal",
+   "say": "Ne cours pas te cacher sous les arbres. Reste au milieu de la clairière, à découvert, à côté de ton SOS.",
+   "show": "Ne cours pas te cacher sous les arbres. Reste au milieu de la clairière, à découvert, à côté de ton SOS."
+  },
+  {
+   "scene": "signal",
+   "say": "Lève les deux bras en Y. Y comme « yes ». Pour un pilote, ça veut dire : j'ai besoin d'aide.",
+   "show": "Lève les deux bras en Y. Y comme « yes ». Pour un pilote, ça veut dire : j'ai besoin d'aide."
+  },
+  {
+   "scene": "signal",
+   "say": "Un bras en haut et un bras en bas, ça veut dire non. Ne fais surtout pas ça.",
+   "show": "Un bras en haut et un bras en bas, ça veut dire non. Ne fais surtout pas ça."
+  },
+  {
+   "scene": "miroir",
+   "say": "Et l'écran de ton téléphone ? Même éteint, il renvoie le soleil comme un miroir. Un éclair visible de très loin.",
+   "show": "Et l'écran de ton téléphone ? Même éteint, il renvoie le soleil comme un miroir. Un éclair visible de très loin."
+  },
+  {
+   "scene": "sauvetage",
+   "say": "L'hélicoptère tourne. Il t'a vu. Ne cours pas vers lui : attends qu'un sauveteur vienne te chercher.",
+   "show": "L'hélicoptère tourne. Il t'a vu. Ne cours pas vers lui : attends qu'un sauveteur vienne te chercher."
+  },
+  {
+   "scene": "fin",
+   "say": "Trois jours perdu. Et tu es vivant, parce que tu as été prudent. Enregistre-la. Nouvelle série de survie bientôt.",
+   "show": "Trois jours perdu. Et tu es vivant, parce que tu as été prudent. Enregistre-la. Nouvelle série de survie bientôt."
+  }
+ ]
+}
