@@ -4,3 +4,4 @@
 - 05/11 04:20 UTC : Buffer plein. Fabriqué « frère » P4 FIN (08/11 17:30, 66 s, 3 passes OK). Stock prêt : 7. Prochain : nouvelle série 17:30 (dès 09/11) ou survie J3 selon les places.
 - 05/11 07:55 UTC : consigne reçue — 2 nouvelles séries de survie de 3 épisodes au schéma exact du Blackout (style Max J1-J3, « Jour N », « Partie suivante »), créneau 12:10, prioritaires sur les histoires. Forêt J3 reste à faire pour finir la série en cours.
 - 05/11 08:15 UTC : TikTok forêt J2 → 06/11 12:10 (Buffer 10/10). YouTube : 6 Shorts le 05/11 (15:45 → 23:50, ≤ 10 sur 24 h glissantes). Stock prêt : 6. Fabrication suivante : Forêt J3.
+- 05/11 ~09:00 UTC : fabriqué Forêt J3 (FIN), 63,6 s, 3 passes OK, visé 07/11 12:10. Série ramenée à 3 épisodes. Stock prêt : 7. Prochain : 1re nouvelle série de survie (style Blackout/Max, 3 ép.).

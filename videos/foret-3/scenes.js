@@ -143,7 +143,7 @@ SC.signal = (c, lt, gt) => {
     } else {
       p.save(); cam2(p, 960, 540, push(st, 1, 1.05, 3)); paper(p); p.restore();
       const y = shot === 'yes';
-      bodySig(p, 960, 620, 1.3 * pop(gt, y ? CUE.yes : CUE.no), y ? 'Y' : 'N', '#E8E4DC');
+      bodySig(p, 960, 620, 1.3 * pop(gt, y ? CUE.yes : CUE.no), y ? 'Y' : 'N', '#3A6EA5');
       rr(p, 560, 900, 800, 120, 30); fs(p, y ? '#2EBD6B' : '#E53935', 0);
       text(p, y ? 'Y = « YES » : AIDE-MOI' : 'NON = PAS BESOIN', 960, 975, '900 54px Montserrat', '#FFFFFF');
       if (!y) { line(p, [[640, 200], [1280, 860]], 26, 'rgba(229,57,53,.85)', null); line(p, [[1280, 200], [640, 860]], 26, 'rgba(229,57,53,.85)', null); }

@@ -52,7 +52,7 @@
    "serie": "Perdu en forêt",
    "style": "cinéma",
    "heure": "12:10",
-   "episodes_prevus": 5,
+   "episodes_prevus": 3,
    "episodes": [
     {
      "jour": 1,
@@ -67,9 +67,16 @@
      "publication": "2026-11-06 12:10 (visé)",
      "fin": "SMS = gendarmerie ; il se rend visible (clairière, sweat orange, SOS) ; soif, ruisseau ; un moteur dans le ciel.",
      "choix": "Tu bois l'eau du ruisseau ? OUI / NON"
+    },
+    {
+     "jour": 3,
+     "dossier": "videos/foret-3",
+     "publication": "2026-11-07 12:10 (visé)",
+     "fin": "FIN : ne boit pas l'eau non traitée (règle des 3 jours) ; reste à découvert près du SOS ; bras en Y = j'ai besoin d'aide ; écran comme miroir ; attend le sauveteur. Sauvé.",
+     "choix": "Tu aurais tenu 3 jours ?"
     }
    ],
-   "note": "Sans vote écrit : choix le plus prudent (ne pas répondre, rester caché et observer)."
+   "note": "Sans vote écrit : choix le plus prudent (ne pas répondre, rester caché et observer). Série ramenée à 3 épisodes (consigne du 05/11 : 2 nouvelles séries de 3 épisodes au schéma du Blackout)."
   }
  ]
 }
