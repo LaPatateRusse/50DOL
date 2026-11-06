@@ -93,11 +93,26 @@
      "choix": "Tu aurais répondu pour ton pote ? OUI / NON"
     }
    ]
+  },
+  {
+   "titre": "Le répondeur",
+   "creature": "la chose qui imite la voix de Mamie (pas encore montrée)",
+   "parties_prevues": 3,
+   "terminee": false,
+   "plan": "P1 07/11 20:00 ; P2 08/11 20:00 ; P3 (FIN) 09/11 20:00. Sans vote écrit : choix le plus prudent.",
+   "parties": [
+    {
+     "partie": 1,
+     "dossier": "videos/repondeur-1",
+     "publication": "2026-11-07 20:00 (visé)",
+     "fin": "Message reçu à 00:12 avec sa propre voix : « Ne descends pas à la cuisine. Ce n'est pas Mamie. » ; la lumière de la cuisine s'allume, une voix douce l'appelle.",
+     "choix": "Tu descends ? OUI / NON"
+    }
+   ]
   }
  ],
  "idees_suivantes": [
-  "Le baby-phone",
-  "Le répondeur"
+  "Le baby-phone"
  ],
  "one_shots": [
   {

@@ -1,0 +1,172 @@
+{
+ "title": "Le répondeur — Partie 1",
+ "note": "Nouvelle mini-série d'horreur en 3 parties (20:00 du 07/11, 08/11, 09/11), style cinéma, histoire originale. Créature : la chose qui imite la voix de Mamie (pas encore montrée). Sans vote écrit : choix le plus prudent.",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Charon",
+  "gemini_style": "Lis ce texte en français, comme un conteur d'histoires d'horreur sur TikTok : voix masculine grave, à voix normale et bien posée, intense et inquiétante, rythme vif et soutenu, sans traîner, pauses courtes. NE CHUCHOTE PAS. Les phrases entre guillemets « » : la grand-mère d'une voix douce et rassurante ; le message du répondeur d'une voix tendue et pressée, comme un adolescent paniqué. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "flash": 0.8,
+  "maison": 0.4,
+  "nuit": 0.5,
+  "message": 0.6,
+  "fin": 3.4
+ },
+ "cues": {
+  "label": [
+   2,
+   "start",
+   1.2
+  ],
+  "ring1": [
+   4,
+   "start",
+   1.8
+  ],
+  "ring2": [
+   4,
+   "start",
+   2.9
+  ],
+  "click": [
+   4,
+   "end",
+   -0.8
+  ],
+  "blink": [
+   5,
+   "start",
+   0.6
+  ],
+  "time": [
+   5,
+   "end",
+   -1.0
+  ],
+  "play": [
+   6,
+   "start",
+   0.5
+  ],
+  "voice": [
+   6,
+   "end",
+   -0.6
+  ],
+  "warn": [
+   7,
+   "start",
+   0.1
+  ],
+  "light": [
+   8,
+   "start",
+   1.0
+  ],
+  "call": [
+   8,
+   "end",
+   -1.6
+  ],
+  "endcard": [
+   9,
+   "end",
+   0.6
+  ]
+ },
+ "sfx": [
+  {
+   "type": "buzz",
+   "cue": [
+    "ring1",
+    "ring2"
+   ]
+  },
+  {
+   "type": "pop",
+   "cue": [
+    "label",
+    "click",
+    "blink",
+    "play"
+   ]
+  },
+  {
+   "type": "hit",
+   "cue": [
+    "time",
+    "warn",
+    "light",
+    "endcard"
+   ]
+  },
+  {
+   "type": "wind",
+   "scene": [
+    "message"
+   ]
+  }
+ ],
+ "pulse": [
+  [
+   "nuit",
+   "message"
+  ]
+ ],
+ "lines": [
+  {
+   "scene": "flash",
+   "say": "Le message venait de cette nuit. Et c'était ma propre voix.",
+   "show": "Le message venait de cette nuit. Et c'était ma propre voix."
+  },
+  {
+   "scene": "maison",
+   "say": "Trois jours plus tôt. Vacances chez Mamie, à la campagne. Pas de réseau. Juste un vieux téléphone fixe… et un répondeur.",
+   "show": "Trois jours plus tôt. Vacances chez Mamie, à la campagne. Pas de réseau. Juste un vieux téléphone fixe… et un répondeur."
+  },
+  {
+   "scene": "maison",
+   "say": "Sur le répondeur, une étiquette jaunie : « Ne jamais écouter un message arrivé après minuit. »",
+   "show": "Sur le répondeur, une étiquette jaunie : « Ne jamais écouter un message arrivé après minuit. »"
+  },
+  {
+   "scene": "maison",
+   "say": "Mamie sourit : « C'est ton grand-père qui avait écrit ça. Il adorait faire peur aux enfants. »",
+   "show": "Mamie sourit : « C'est ton grand-père qui avait écrit ça. Il adorait faire peur aux enfants. »"
+  },
+  {
+   "scene": "nuit",
+   "say": "Cette nuit-là, le téléphone sonne. Une fois. Deux fois. Personne ne décroche. Le répondeur s'enclenche, tout seul.",
+   "show": "Cette nuit-là, le téléphone sonne. Une fois. Deux fois. Personne ne décroche. Le répondeur s'enclenche, tout seul."
+  },
+  {
+   "scene": "nuit",
+   "say": "Le voyant rouge clignote. Un nouveau message. Reçu à minuit douze.",
+   "show": "Le voyant rouge clignote. Un nouveau message. Reçu à minuit douze."
+  },
+  {
+   "scene": "message",
+   "say": "Tu appuies sur lecture. D'abord, du vent. Puis une voix. La tienne.",
+   "show": "Tu appuies sur lecture. D'abord, du vent. Puis une voix. La tienne."
+  },
+  {
+   "scene": "message",
+   "say": "« Ne descends pas à la cuisine. Ce n'est pas Mamie. »",
+   "show": "« Ne descends pas à la cuisine. Ce n'est pas Mamie. »"
+  },
+  {
+   "scene": "fin",
+   "say": "En bas, la lumière de la cuisine s'allume. Et une voix douce t'appelle : « Mon chéri ? Tu viens ? »",
+   "show": "En bas, la lumière de la cuisine s'allume. Et une voix douce t'appelle : « Mon chéri ? Tu viens ? »"
+  },
+  {
+   "scene": "fin",
+   "say": "Tu descends ? Commente oui ou non. Partie 2 demain.",
+   "show": "Tu descends ? Commente oui ou non. Partie 2 demain."
+  }
+ ]
+}
