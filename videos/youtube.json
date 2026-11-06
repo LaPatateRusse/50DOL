@@ -369,13 +369,17 @@
       "dossier": "foret-3",
       "titre": "Perdu en forêt — Jour 3 (FIN)",
       "description": "Un hélicoptère.. et il ne me voyait pas 🚁 La FIN.\nEnregistre-la, tu en auras besoin un jour 📌\n\n#survie #foret #perdu #helicoptere #conseils #secours #shorts",
-      "statut": "a_publier"
+      "statut": "programme",
+      "buffer": "6aed87c9dbada656beff5643",
+      "heure": "2026-11-07T09:30+01:00"
     },
     {
       "dossier": "inondation-1",
       "titre": "Alerte inondation — Jour 1",
       "description": "L'eau monte dans ta rue cette nuit.. 🌊\nEnregistre-la, tu en auras besoin un jour 📌\n\n#survie #inondation #crue #conseils #securite #scenario #shorts",
-      "statut": "a_publier"
+      "statut": "programme",
+      "buffer": "6aed87cedbada656beff56fb",
+      "heure": "2026-11-07T13:00+01:00"
     },
     {
       "dossier": "inondation-2",
@@ -387,7 +391,8 @@
       "dossier": "protocole-orage",
       "titre": "Protocole de survie : l'orage",
       "description": "Si un orage te surprend dehors.. ⛈️ 5 règles qui peuvent te sauver.\nEnregistre-la, tu en auras besoin un jour 📌\n\n#survie #orage #foudre #protocole #conseils #securite #shorts",
-      "statut": "a_publier"
+      "statut": "a_publier",
+      "a_programmer": "2026-11-07T18:00+01:00 (test 3 Shorts du 07/11 ; Buffer plein à 10, à ajouter dès qu'une place se libère)"
     },
     {
       "dossier": "repondeur-1",
