@@ -1,0 +1,189 @@
+{
+ "title": "Le répondeur — Partie 2",
+ "note": "Partie 2/3 (20:00 du 08/11). Sans vote écrit : choix le plus prudent (il ne descend pas, s'enferme, ne répond pas).",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Charon",
+  "gemini_style": "Lis ce texte en français, comme un conteur d'histoires d'horreur sur TikTok : voix masculine grave, à voix normale et bien posée, intense et inquiétante, rythme vif et soutenu, sans traîner, pauses courtes. NE CHUCHOTE PAS. Les phrases entre guillemets « » : la grand-mère d'une voix douce et rassurante ; le message du répondeur d'une voix tendue et pressée, comme un adolescent paniqué. Marque une courte pause entre chaque paragraphe. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "flash": 0.8,
+  "chambre": 0.4,
+  "escalier": 0.4,
+  "porte": 0.5,
+  "repondeur": 0.5,
+  "matin": 0.5,
+  "fin": 3.4
+ },
+ "cues": {
+  "lock": [
+   1,
+   "start",
+   2.2
+  ],
+  "chair": [
+   1,
+   "end",
+   -1.2
+  ],
+  "step1": [
+   3,
+   "start",
+   2.4
+  ],
+  "step2": [
+   3,
+   "end",
+   -0.8
+  ],
+  "handle": [
+   4,
+   "end",
+   -1.6
+  ],
+  "feet": [
+   5,
+   "start",
+   0.6
+  ],
+  "cold": [
+   5,
+   "end",
+   -1.0
+  ],
+  "mach": [
+   6,
+   "start",
+   0.6
+  ],
+  "rule": [
+   7,
+   "start",
+   0.2
+  ],
+  "sun": [
+   8,
+   "start",
+   1.0
+  ],
+  "letter": [
+   9,
+   "start",
+   1.4
+  ],
+  "date": [
+   9,
+   "end",
+   -1.0
+  ],
+  "endcard": [
+   10,
+   "end",
+   0.6
+  ]
+ },
+ "sfx": [
+  {
+   "type": "knock",
+   "cue": "step1"
+  },
+  {
+   "type": "pop",
+   "cue": [
+    "lock",
+    "chair",
+    "mach",
+    "letter"
+   ]
+  },
+  {
+   "type": "hit",
+   "cue": [
+    "handle",
+    "feet",
+    "rule",
+    "date",
+    "endcard"
+   ]
+  },
+  {
+   "type": "swish",
+   "cue": [
+    "sun"
+   ]
+  },
+  {
+   "type": "wind",
+   "scene": [
+    "escalier",
+    "porte"
+   ]
+  }
+ ],
+ "pulse": [
+  [
+   "escalier",
+   "repondeur"
+  ]
+ ],
+ "lines": [
+  {
+   "scene": "flash",
+   "say": "Elle m'a appelé toute la nuit. Et je ne suis pas descendu.",
+   "show": "Elle m'a appelé toute la nuit. Et je ne suis pas descendu."
+  },
+  {
+   "scene": "chambre",
+   "say": "Tu ne descends pas. Tu fermes ta porte à clé, et tu bloques la poignée avec une chaise.",
+   "show": "Tu ne descends pas. Tu fermes ta porte à clé, et tu bloques la poignée avec une chaise."
+  },
+  {
+   "scene": "chambre",
+   "say": "En bas, la voix de Mamie insiste : « Mon chéri ? Le chocolat va refroidir. » Il est minuit vingt.",
+   "show": "En bas, la voix de Mamie insiste : « Mon chéri ? Le chocolat va refroidir. » Il est minuit vingt."
+  },
+  {
+   "scene": "escalier",
+   "say": "Puis des pas montent l'escalier. Lents. Une marche… puis une autre.",
+   "show": "Puis des pas montent l'escalier. Lents. Une marche… puis une autre."
+  },
+  {
+   "scene": "porte",
+   "say": "Ils s'arrêtent derrière ta porte. La poignée tourne, tout doucement.",
+   "show": "Ils s'arrêtent derrière ta porte. La poignée tourne, tout doucement."
+  },
+  {
+   "scene": "porte",
+   "say": "Sous la porte, tu vois deux pieds nus. Mais Mamie ne marche jamais pieds nus. Elle a toujours froid.",
+   "show": "Sous la porte, tu vois deux pieds nus. Mais Mamie ne marche jamais pieds nus. Elle a toujours froid."
+  },
+  {
+   "scene": "repondeur",
+   "say": "En bas, le répondeur se remet à parler, tout seul. C'est encore ta voix :",
+   "show": "En bas, le répondeur se remet à parler, tout seul. C'est encore ta voix :"
+  },
+  {
+   "scene": "repondeur",
+   "say": "« Elle ne peut pas entrer si tu ne réponds pas. Ne dis rien. Jusqu'au matin. »",
+   "show": "« Elle ne peut pas entrer si tu ne réponds pas. Ne dis rien. Jusqu'au matin. »"
+  },
+  {
+   "scene": "matin",
+   "say": "Six heures. Le soleil se lève. Les pieds ont disparu. Dans la cuisine, Mamie chantonne, comme chaque matin.",
+   "show": "Six heures. Le soleil se lève. Les pieds ont disparu. Dans la cuisine, Mamie chantonne, comme chaque matin."
+  },
+  {
+   "scene": "fin",
+   "say": "Mais sur la table, il y a une lettre. L'écriture de ton grand-père. Datée de cette nuit.",
+   "show": "Mais sur la table, il y a une lettre. L'écriture de ton grand-père. Datée de cette nuit."
+  },
+  {
+   "scene": "fin",
+   "say": "Tu ouvres la lettre ? Commente oui ou non. Partie 3 demain.",
+   "show": "Tu ouvres la lettre ? Commente oui ou non. Partie 3 demain."
+  }
+ ]
+}

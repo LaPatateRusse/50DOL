@@ -107,6 +107,13 @@
      "publication": "2026-11-07 20:00 (visé)",
      "fin": "Message reçu à 00:12 avec sa propre voix : « Ne descends pas à la cuisine. Ce n'est pas Mamie. » ; la lumière de la cuisine s'allume, une voix douce l'appelle.",
      "choix": "Tu descends ? OUI / NON"
+    },
+    {
+     "partie": 2,
+     "dossier": "videos/repondeur-2",
+     "publication": "2026-11-08 20:00 (visé)",
+     "fin": "Il ne descend pas, s'enferme ; pas dans l'escalier, poignée qui tourne, pieds nus sous la porte ; le répondeur (sa voix) : « Ne dis rien jusqu'au matin » ; 6 h, Mamie chantonne ; sur la table, une lettre de Papy datée de cette nuit.",
+     "choix": "Tu ouvres la lettre ? OUI / NON"
     }
    ]
   }
