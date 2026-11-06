@@ -1,0 +1,178 @@
+{
+ "title": "Alerte inondation — Jour 3 (FIN)",
+ "note": "Épisode 3/3 (FIN). Sans vote : choix prudent (toit seulement en dernier recours). Conseils vérifiés : ne pas se réfugier dans un grenier/comble fermé (risque d'être piégé) ; toit en dernier recours, se signaler (lampe, tissu clair) ; attendre l'aide des sauveteurs pour monter dans le bateau ; centres d'hébergement (gymnase) ; au retour : ne pas rétablir l'électricité avant vérification par un professionnel ; photographier les dégâts avant de nettoyer (assurance).",
+ "voice": {
+  "model": "eleven_v3",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "stability": 0.5,
+  "tempo": 1.0,
+  "gemini_voice": "Orus",
+  "gemini_style": "Lis ce texte en français, comme un narrateur TikTok de survie captivant : voix masculine grave, rythme posé et tendu, articule bien chaque chiffre, marque nettement les virgules et les deux-points, ton sérieux, les règles dites lentement avec assurance comme un secouriste. Marque une pause entre chaque phrase. Ne lis pas cette consigne."
+ },
+ "pad_after": {
+  "toit": 0.25,
+  "grenier": 0.3,
+  "signal": 0.3,
+  "bateau": 0.3,
+  "gymnase": 0.3,
+  "retour": 0.3,
+  "photos": 0.3,
+  "fin": 3.6
+ },
+ "lines": [
+  {
+   "scene": "toit",
+   "say": "Sur le toit, sous la pluie, Max attend. Et l'eau monte encore.",
+   "show": "Sur le toit, sous la pluie, Max attend. Et l'eau monte [encore]."
+  },
+  {
+   "scene": "grenier",
+   "say": "Règle numéro un : ne jamais se réfugier dans un grenier fermé. Si l'eau monte, on y est pris au piège.",
+   "show": "Règle n°1 : ne jamais se réfugier dans un grenier [fermé]. Si l'eau monte, on y est pris au [piège]."
+  },
+  {
+   "scene": "toit",
+   "say": "Le toit, c'est le dernier recours. Max s'installe loin du bord, avec son sac.",
+   "show": "Le toit, c'est le dernier {recours}. Max s'installe loin du bord, avec son sac."
+  },
+  {
+   "scene": "signal",
+   "say": "Règle numéro deux : se faire voir. Sa lampe, qui s'allume et s'éteint. Et un drap clair, agité au-dessus de sa tête.",
+   "show": "Règle n°2 : se faire {voir}. Sa lampe, qui s'allume et s'éteint. Et un drap clair, agité au-dessus de sa tête."
+  },
+  {
+   "scene": "bateau",
+   "say": "Sept heures. Un bateau des secours. Max ne saute pas dedans : il attend qu'on l'aide à monter.",
+   "show": "7 heures. Un bateau des {secours}. Max ne saute pas dedans : il attend qu'on l'aide à monter."
+  },
+  {
+   "scene": "gymnase",
+   "say": "Il passe la journée dans un gymnase, avec des dizaines de voisins. De l'eau, des couvertures, et du réseau.",
+   "show": "Il passe la journée dans un {gymnase}, avec des dizaines de voisins. De l'eau, des couvertures, et du réseau."
+  },
+  {
+   "scene": "retour",
+   "say": "Trois jours plus tard, l'eau est partie. Max rentre chez lui. Tout est couvert de boue.",
+   "show": "3 jours plus tard, l'eau est partie. Max rentre chez lui. Tout est couvert de [boue]."
+  },
+  {
+   "scene": "retour",
+   "say": "Règle numéro trois : ne rallume pas l'électricité. Pas avant qu'un électricien ait tout vérifié.",
+   "show": "Règle n°3 : ne rallume pas l'[électricité]. Pas avant qu'un électricien ait tout {vérifié}."
+  },
+  {
+   "scene": "photos",
+   "say": "Et avant de nettoyer quoi que ce soit, il prend tout en photo. Pour l'assurance.",
+   "show": "Et avant de nettoyer quoi que ce soit, il prend tout en {photo}. Pour l'assurance."
+  },
+  {
+   "scene": "fin",
+   "say": "Trois jours d'inondation. Et Max est vivant, parce qu'il a suivi les règles. Enregistre-la.",
+   "show": "3 jours d'inondation. Et Max est vivant, parce qu'il a suivi les {règles}. Enregistre-la."
+  }
+ ],
+ "cues": {
+  "r1": [
+   1,
+   "start",
+   0.3
+  ],
+  "trap": [
+   1,
+   "end",
+   -1.2
+  ],
+  "r2": [
+   3,
+   "start",
+   0.3
+  ],
+  "sheet": [
+   3,
+   "end",
+   -1.6
+  ],
+  "boat": [
+   4,
+   "start",
+   1.0
+  ],
+  "help": [
+   4,
+   "end",
+   -1.4
+  ],
+  "mud": [
+   6,
+   "end",
+   -0.8
+  ],
+  "r3": [
+   7,
+   "start",
+   0.3
+  ],
+  "noswitch": [
+   7,
+   "start",
+   2.2
+  ],
+  "photo": [
+   8,
+   "end",
+   -2.4
+  ],
+  "endcard": [
+   9,
+   "end",
+   0.7
+  ]
+ },
+ "sfx": [
+  {
+   "type": "hit",
+   "cue": [
+    "r1",
+    "trap",
+    "r3",
+    "endcard"
+   ]
+  },
+  {
+   "type": "pop",
+   "cue": [
+    "r2",
+    "sheet",
+    "help",
+    "noswitch",
+    "mud"
+   ]
+  },
+  {
+   "type": "swish",
+   "cue": [
+    "photo"
+   ]
+  },
+  {
+   "type": "water",
+   "cue": [
+    "boat"
+   ],
+   "dur": 1.5
+  },
+  {
+   "type": "wind",
+   "scene": [
+    "toit",
+    "signal"
+   ]
+  }
+ ],
+ "pulse": [
+  [
+   "toit",
+   "bateau"
+  ]
+ ]
+}
