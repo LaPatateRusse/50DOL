@@ -13,3 +13,4 @@
 - 05/11 ~21:20 UTC : fabriqué protocole orage, 63,6 s, 3 passes OK, visé 07/11 19:15. Stock prêt : 4. Prochain : nouvelle série horreur P1 (07/11 20:00), puis inondation J3.
 - 06/11 00:15 UTC : TikTok 10/10 (rien à ajouter). YouTube : 8 Shorts le 06/11 (09:30 → 23:00 ; avec le long de 18:30 = 9, ≤ 10 sur 24 h glissantes). Stock prêt : 4. Fabrication : nouvelle série horreur P1 (07/11 20:00).
 - 06/11 ~01:30 UTC : fabriqué « Le répondeur » P1 (nouvelle série horreur, 3 parties), 67,6 s, 3 passes OK, visé 07/11 20:00. Stock prêt : 5. Prochain : inondation J3 (FIN), puis répondeur P2.
+- 06/11 ~05:30 UTC : fabriqué inondation J3 (FIN), 72,4 s, 3 passes OK, visé 10/11 12:10. Série terminée. Stock prêt : 6. Prochain : répondeur P2 (08/11 20:00), puis 2e série survie style Blackout.
