@@ -11,3 +11,4 @@
 - 05/11 ~17:30 UTC : fabriqué inondation J2, 68,8 s, 3 passes OK, visé 09/11 12:10. Stock prêt : 7. Prochain : inondation J3 (FIN).
 - 05/11 20:15 UTC : TikTok +4 (colo-3 06/11 20:00, forêt-3 07/11 12:10, histoire-lettres 07/11 13:30, frère-3 07/11 17:30) → 10/10. Excel mis à jour (37 vidéos). Stock prêt : 3. Créneaux vides 07/11 : 19:15 et 20:00. Fabrication : protocole orage (19:15).
 - 05/11 ~21:20 UTC : fabriqué protocole orage, 63,6 s, 3 passes OK, visé 07/11 19:15. Stock prêt : 4. Prochain : nouvelle série horreur P1 (07/11 20:00), puis inondation J3.
+- 06/11 00:15 UTC : TikTok 10/10 (rien à ajouter). YouTube : 8 Shorts le 06/11 (09:30 → 23:00 ; avec le long de 18:30 = 9, ≤ 10 sur 24 h glissantes). Stock prêt : 4. Fabrication : nouvelle série horreur P1 (07/11 20:00).
