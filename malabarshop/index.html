@@ -110,7 +110,7 @@
   .filters{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:36px}
   .filter{padding:9px 18px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--muted);font:inherit;font-weight:700;cursor:pointer}
   .filter.active,.filter:hover{color:#fff;border-color:var(--pink);background:rgba(255,79,163,.15)}
-  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:22px}
+  .grid{display:grid;grid-template-columns:minmax(0,380px);justify-content:center;gap:22px}
   .card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
     transition:transform .25s,border-color .25s,box-shadow .25s;display:flex;flex-direction:column}
   .card:hover{transform:translateY(-6px);border-color:rgba(255,79,163,.6);box-shadow:var(--shadow)}
@@ -208,6 +208,25 @@
     font-weight:700;z-index:80;opacity:0;transition:transform .3s,opacity .3s;box-shadow:0 20px 40px -10px rgba(0,0,0,.5)}
   .toast.show{transform:translate(-50%,0);opacity:1}
 
+  .modal{position:fixed;inset:0;z-index:90;background:rgba(0,0,0,.7);display:none;align-items:center;justify-content:center;padding:16px}
+  .modal.open{display:flex}
+  .modal-box{width:min(480px,100%);max-height:calc(100vh - 32px);overflow:auto;background:var(--bg-2);border:1px solid var(--line);border-radius:24px;padding:24px}
+  .deblock{display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:14px;background:rgba(56,225,255,.08);border:1px solid rgba(56,225,255,.3);margin-bottom:14px;font-size:14px}
+  .deblock-logo{width:28px;height:28px;border-radius:8px;background:#111;color:#fff;display:grid;place-items:center;font-weight:800}
+  .pay-row{display:flex;justify-content:space-between;padding:6px 0;color:var(--muted)}
+  .pay-row b{color:var(--text)}
+  .pay-label{font-weight:700;margin:18px 0 8px;font-size:14px}
+  .coins{display:flex;gap:8px}
+  .coin{flex:1;padding:11px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--text);font:inherit;font-weight:800;cursor:pointer}
+  .coin.active{border-color:var(--pink);background:rgba(255,79,163,.18)}
+  .amount{font-family:"Lilita One";font-size:28px;color:var(--yellow)}
+  .addr{display:flex;gap:8px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+  .addr code{flex:1;font-size:13px;word-break:break-all}
+  .copy{padding:8px 12px;border-radius:10px;border:0;background:var(--violet);color:#fff;font:inherit;font-weight:700;cursor:pointer}
+  .warn{font-size:13px;color:var(--muted);margin-top:8px}
+  .pay-form{display:grid;gap:10px}
+  .pay-form input{padding:13px 14px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--text);font:inherit}
+  .pay-form .btn{margin-top:6px}
   .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s,transform .6s}
   .reveal.in{opacity:1;transform:none}
 
@@ -261,9 +280,9 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div class="reveal">
-        <span class="pill"><span class="dot"></span> Livraison en moins de 10 min</span>
+        <span class="pill"><span class="dot"></span> Paiement crypto via Deblock</span>
         <h1 class="display">Booste ta game.<br><span class="grad">Domine l'île.</span></h1>
-        <p class="lead">MalabarShop, c'est la boutique la plus sucrée pour les joueurs Fortnite : des packs prêts à l'emploi, un paiement 100% sécurisé et un support qui répond vraiment.</p>
+        <p class="lead">MalabarShop, c'est la boutique la plus sucrée pour les joueurs Fortnite : des sessions de jeu en duo, un paiement crypto simple et sécurisé et un support qui répond vraiment.</p>
         <div class="cta">
           <a href="#boutique" class="btn btn-primary">Voir la boutique
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -294,8 +313,8 @@
             <circle cx="153" cy="38" r="5" fill="#fff" opacity=".7"/>
           </svg>
         </div>
-        <div class="float-chip chip-1">⚡ Livraison instantanée</div>
-        <div class="float-chip chip-2">🔒 Paiement sécurisé</div>
+        <div class="float-chip chip-1">🎮 5 games ensemble</div>
+        <div class="float-chip chip-2">🪙 Paiement crypto</div>
       </div>
     </div>
   </section>
@@ -309,11 +328,10 @@
     <div class="wrap">
       <div class="head reveal">
         <span class="eyebrow">La boutique</span>
-        <h2 class="display">Choisis ton pack</h2>
-        <p>Des offres pensées pour tous les joueurs, du débutant au compétiteur.</p>
+        <h2 class="display">L'offre</h2>
+        <p>Joue 5 games avec moi : on monte en squad, je te donne mes astuces et on vise le Top 1.</p>
       </div>
-      <div class="filters" id="filters"></div>
-      <div class="grid" id="grid"></div>
+            <div class="grid" id="grid"></div>
     </div>
   </section>
 
@@ -331,7 +349,7 @@
         </div>
         <div class="feat reveal">
           <div class="ic" style="background:rgba(56,225,255,.15)"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#38e1ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div>
-          <h3>Paiement sécurisé</h3><p>Carte bancaire, PayPal, Apple Pay. Tes données ne sont jamais stockées.</p>
+          <h3>Paiement crypto</h3><p>Paie en USDC, BTC ou ETH directement vers notre compte Deblock.</p>
         </div>
         <div class="feat reveal">
           <div class="ic" style="background:rgba(255,225,77,.15)"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#ffe14d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></div>
@@ -353,9 +371,9 @@
         <h2 class="display">3 étapes, c'est tout</h2>
       </div>
       <div class="steps">
-        <div class="step reveal"><h3>Choisis ton pack</h3><p>Ajoute l'offre qui te correspond au panier.</p></div>
-        <div class="step reveal"><h3>Paie en sécurité</h3><p>Règle en quelques clics avec ton moyen de paiement préféré.</p></div>
-        <div class="step reveal"><h3>Profite en jeu</h3><p>Reçois ta commande par e-mail et lance ta partie.</p></div>
+        <div class="step reveal"><h3>Ajoute l'offre</h3><p>Mets « 5 games avec moi » dans ton panier.</p></div>
+        <div class="step reveal"><h3>Paie en crypto</h3><p>Envoie le montant vers notre adresse Deblock et indique ton pseudo.</p></div>
+        <div class="step reveal"><h3>On joue !</h3><p>On te recontacte sur Discord pour caler les 5 games.</p></div>
       </div>
     </div>
   </section>
@@ -383,8 +401,8 @@
         <h2 class="display">Des questions ?</h2>
       </div>
       <div class="faq">
-        <details class="reveal"><summary>Combien de temps pour recevoir ma commande ?</summary><p>La plupart des commandes sont livrées en moins de 10 minutes. En période de forte affluence, cela peut prendre jusqu'à 1 heure.</p></details>
-        <details class="reveal"><summary>Quels moyens de paiement acceptez-vous ?</summary><p>Carte bancaire (Visa, Mastercard), PayPal et Apple Pay / Google Pay. Tous les paiements sont chiffrés.</p></details>
+        <details class="reveal"><summary>Quand est-ce qu'on joue ?</summary><p>Dès que ton paiement est confirmé, on te contacte sur Discord pour fixer un créneau qui t'arrange, en général sous 24 h.</p></details>
+        <details class="reveal"><summary>Comment payer en crypto ?</summary><p>Au paiement, choisis ta crypto (USDC, BTC ou ETH), envoie le montant affiché vers l'adresse Deblock indiquée en respectant bien le réseau, puis colle l'identifiant de transaction (hash) dans le formulaire. On vérifie et on te confirme.</p></details>
         <details class="reveal"><summary>Sur quelles plateformes ça fonctionne ?</summary><p>PC, PlayStation, Xbox, Nintendo Switch et mobile. Précise ta plateforme lors de la commande.</p></details>
         <details class="reveal"><summary>Et si j'ai un problème ?</summary><p>Contacte-nous sur Discord ou par e-mail : on répond 7j/7. Si on ne peut pas résoudre le souci, tu es remboursé.</p></details>
       </div>
@@ -435,22 +453,55 @@
   <div class="drawer-foot">
     <div class="total"><span>Total</span><b id="total">0,00 €</b></div>
     <button class="btn btn-primary" id="checkout">Passer au paiement</button>
-    <div class="secure">🔒 Paiement 100% sécurisé</div>
+    <div class="secure">🪙 Paiement en crypto via Deblock</div>
   </div>
 </aside>
 <div class="toast" id="toast"></div>
 
+<!-- PAIEMENT CRYPTO -->
+<div class="modal" id="payModal" role="dialog" aria-modal="true" aria-labelledby="payTitle">
+  <div class="modal-box">
+    <div class="drawer-head" style="padding:0 0 16px"><h3 class="display" id="payTitle">Paiement crypto</h3><button class="x" id="payClose" aria-label="Fermer">×</button></div>
+    <div class="deblock"><span class="deblock-logo">D</span><span>Paiement reçu sur notre compte <b>Deblock</b></span></div>
+    <div class="pay-row"><span>Commande</span><b id="payRef"></b></div>
+    <div class="pay-row"><span>Total</span><b id="payTotal"></b></div>
+    <p class="pay-label">1. Choisis ta crypto</p>
+    <div class="coins" id="coins"></div>
+    <p class="pay-label">2. Envoie exactement</p>
+    <div class="amount" id="payAmount"></div>
+    <p class="pay-label">À cette adresse · réseau <b id="payNet" style="color:var(--yellow)"></b></p>
+    <div class="addr"><code id="payAddr"></code><button type="button" id="copyAddr" class="copy">Copier</button></div>
+    <p class="warn">⚠️ Utilise uniquement le réseau indiqué, sinon les fonds seront perdus.</p>
+    <p class="pay-label">3. Confirme ta commande</p>
+    <form id="payForm" class="pay-form">
+      <input name="tx" required placeholder="Hash / ID de la transaction">
+      <input name="pseudo" required placeholder="Ton pseudo Epic">
+      <input name="discord" required placeholder="Ton pseudo Discord">
+      <input name="email" type="email" required placeholder="ton@email.com">
+      <button class="btn btn-primary" type="submit">J'ai payé, valider</button>
+    </form>
+  </div>
+</div>
+
 <script>
+/* ============================================================
+   🪙  CONFIG PAIEMENT DEBLOCK — mets TES adresses de réception
+   (app Deblock > Crypto > choisis l'actif > Recevoir > copie l'adresse)
+   ============================================================ */
+const DEBLOCK = {
+  contactEmail: "contact@malabarshop.fr",   // où tu reçois les confirmations de commande
+  cryptos: [
+    { id:"usdc", label:"USDC", cg:"usd-coin", network:"Ethereum (ERC-20)", address:"0xVOTRE_ADRESSE_USDC_DEBLOCK", decimals:2 },
+    { id:"btc",  label:"BTC",  cg:"bitcoin",  network:"Bitcoin",           address:"bc1VOTRE_ADRESSE_BTC_DEBLOCK", decimals:6 },
+    { id:"eth",  label:"ETH",  cg:"ethereum", network:"Ethereum (ERC-20)", address:"0xVOTRE_ADRESSE_ETH_DEBLOCK", decimals:5 },
+  ],
+};
+
 /* ============================================================
    ✏️  MODIFIE TES PRODUITS ICI
    ============================================================ */
 const PRODUCTS = [
-  { id:1, name:"Pack Starter",   cat:"Packs",   price:4.99,  old:null,  tag:"Nouveau",     color:["#ff86c2","#ff4fa3"], icon:"star",   desc:"L'offre idéale pour bien commencer la saison." },
-  { id:2, name:"Pack Pro",       cat:"Packs",   price:9.99,  old:12.99, tag:"Best-seller", color:["#8c5bff","#5a2fd6"], icon:"bolt",   desc:"Le pack préféré des joueurs réguliers.", hot:true },
-  { id:3, name:"Pack Légende",   cat:"Packs",   price:19.99, old:24.99, tag:"-20%",        color:["#ffe14d","#ff9f1c"], icon:"crown",  desc:"Le pack complet pour les vrais compétiteurs." },
-  { id:4, name:"Coaching 1h",    cat:"Services",price:14.99, old:null,  tag:null,          color:["#38e1ff","#1f8fff"], icon:"target", desc:"Une session vocale avec un joueur expérimenté." },
-  { id:5, name:"Pack Duo",       cat:"Packs",   price:16.99, old:19.98, tag:"Duo",         color:["#2bd67b","#0f9f68"], icon:"duo",    desc:"Deux packs Pro pour toi et ton coéquipier." },
-  { id:6, name:"Carte cadeau",   cat:"Cadeaux", price:10.00, old:null,  tag:null,          color:["#ff7a59","#ff4f6d"], icon:"gift",   desc:"Fais plaisir : valable sur toute la boutique." },
+  { id:1, name:"5 games avec moi", cat:"Services", price:24.99, old:null, tag:"Best-seller", color:["#8c5bff","#ff4fa3"], icon:"duo", desc:"5 parties de Fortnite en duo ou en squad avec moi, avec conseils en direct pour progresser.", hot:true },
 ];
 
 const ICONS = {
@@ -465,20 +516,12 @@ const svg = (i) => `<svg viewBox="0 0 100 100">${ICONS[i]}</svg>`;
 const euro = (n) => n.toFixed(2).replace(".", ",") + " €";
 
 /* ---------- Marquee ---------- */
-const words = ["⚡ Livraison rapide","★ 4,9/5 sur +2 000 avis","🔒 Paiement sécurisé","🎮 Toutes plateformes","💬 Support 7j/7","🍬 MalabarShop"];
+const words = ["🪙 Paiement crypto Deblock","★ 4,9/5 sur +2 000 avis","🔒 Paiement sécurisé","🎮 Toutes plateformes","💬 Support 7j/7","🍬 MalabarShop"];
 document.getElementById("marquee").innerHTML = [...words,...words,...words,...words].map(w=>`<span>${w}</span>`).join("");
 
 /* ---------- Products ---------- */
 const grid = document.getElementById("grid");
-const cats = ["Tout", ...new Set(PRODUCTS.map(p=>p.cat))];
 let current = "Tout";
-document.getElementById("filters").innerHTML = cats.map(c=>`<button class="filter${c===current?" active":""}" data-c="${c}">${c}</button>`).join("");
-document.getElementById("filters").addEventListener("click", e=>{
-  const b = e.target.closest(".filter"); if(!b) return;
-  current = b.dataset.c;
-  document.querySelectorAll(".filter").forEach(f=>f.classList.toggle("active", f===b));
-  renderProducts();
-});
 function renderProducts(){
   grid.innerHTML = PRODUCTS.filter(p=>current==="Tout"||p.cat===current).map(p=>`
     <article class="card">
@@ -548,10 +591,54 @@ document.getElementById("closeCart").onclick = closeCart;
 document.getElementById("overlay").onclick = closeCart;
 document.addEventListener("keydown", e=>{ if(e.key==="Escape") closeCart(); });
 
-document.getElementById("checkout").onclick = ()=>{
-  // 👉 Branche ici ton lien de paiement (Stripe Checkout, PayPal, Shopify…)
-  toast("Paiement : branche ton lien Stripe / PayPal ici 💳");
+/* ---------- Paiement crypto Deblock ---------- */
+let rates = null, selCrypto = DEBLOCK.cryptos[0], orderRef = "";
+const cartTotal = ()=>Object.entries(cart).reduce((s,[id,q])=>s+(PRODUCTS.find(p=>p.id==id)?.price||0)*q,0);
+async function loadRates(){
+  try{
+    const ids = DEBLOCK.cryptos.map(c=>c.cg).join(",");
+    const r = await fetch(`https://api.coingecko.com/api/v3/simple/price?ids=${ids}&vs_currencies=eur`);
+    rates = await r.json();
+  }catch(e){ rates = null; }
+  renderPay();
+}
+function renderPay(){
+  const total = cartTotal();
+  document.getElementById("payTotal").textContent = euro(total);
+  document.getElementById("payRef").textContent = orderRef;
+  document.querySelectorAll(".coin").forEach(b=>b.classList.toggle("active", b.dataset.id===selCrypto.id));
+  document.getElementById("payNet").textContent = selCrypto.network;
+  document.getElementById("payAddr").textContent = selCrypto.address;
+  const rate = rates?.[selCrypto.cg]?.eur;
+  document.getElementById("payAmount").textContent = rate
+    ? `${(total/rate).toFixed(selCrypto.decimals)} ${selCrypto.label}`
+    : `l'équivalent de ${euro(total)} en ${selCrypto.label}`;
+}
+document.getElementById("coins").innerHTML = DEBLOCK.cryptos.map(c=>`<button type="button" class="coin" data-id="${c.id}">${c.label}</button>`).join("");
+document.getElementById("coins").addEventListener("click", e=>{
+  const b = e.target.closest(".coin"); if(!b) return;
+  selCrypto = DEBLOCK.cryptos.find(c=>c.id===b.dataset.id); renderPay();
+});
+document.getElementById("copyAddr").onclick = async ()=>{
+  try{ await navigator.clipboard.writeText(selCrypto.address); toast("Adresse copiée ✅"); }catch(e){ toast("Copie impossible, sélectionne l'adresse à la main"); }
 };
+const payModal = document.getElementById("payModal");
+document.getElementById("checkout").onclick = ()=>{
+  if(!cartTotal()) return;
+  orderRef = "MLB-" + Math.random().toString(36).slice(2,8).toUpperCase();
+  closeCart(); payModal.classList.add("open"); renderPay(); loadRates();
+};
+document.getElementById("payClose").onclick = ()=>payModal.classList.remove("open");
+payModal.addEventListener("click", e=>{ if(e.target===payModal) payModal.classList.remove("open"); });
+document.getElementById("payForm").addEventListener("submit", e=>{
+  e.preventDefault();
+  const f = new FormData(e.target);
+  const lines = Object.entries(cart).map(([id,q])=>`- ${PRODUCTS.find(p=>p.id==id).name} x${q}`).join("\n");
+  const body = `Commande ${orderRef}\n${lines}\nTotal : ${euro(cartTotal())}\n\nCrypto : ${selCrypto.label} (${selCrypto.network})\nMontant envoyé : ${document.getElementById("payAmount").textContent}\nHash de transaction : ${f.get("tx")}\n\nPseudo Epic : ${f.get("pseudo")}\nDiscord : ${f.get("discord")}\nE-mail : ${f.get("email")}`;
+  window.location.href = `mailto:${DEBLOCK.contactEmail}?subject=${encodeURIComponent("Commande MalabarShop "+orderRef)}&body=${encodeURIComponent(body)}`;
+  cart = {}; save(); renderCart(); payModal.classList.remove("open"); e.target.reset();
+  toast("Merci ! On vérifie ton paiement et on te contacte sur Discord 🎮");
+});
 document.getElementById("news").addEventListener("submit", e=>{
   e.preventDefault(); e.target.reset(); toast("Bienvenue ! Ton code -10% arrive par e-mail 🎉");
 });
