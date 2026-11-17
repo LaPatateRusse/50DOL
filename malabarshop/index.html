@@ -268,7 +268,6 @@
     <nav class="links">
       <a href="#boutique">Boutique</a>
       <a href="#avantages">Avantages</a>
-      <a href="#avis">Avis</a>
       <a href="#faq">FAQ</a>
     </nav>
     <a href="#boutique" class="cart-btn">🎮 <span class="cart-label">Réserver</span></a>
@@ -290,8 +289,8 @@
           <a href="#faq" class="btn btn-ghost">Comment ça marche ?</a>
         </div>
         <div class="stats">
-          <div class="stat"><b>12 000+</b><span>joueurs servis</span></div>
-          <div class="stat"><b>4,9/5</b><span>note moyenne</span></div>
+          <div class="stat"><b>5 games</b><span>ensemble</span></div>
+          <div class="stat"><b>24,99 €</b><span>tout compris</span></div>
           <div class="stat"><b>7j/7</b><span>support réactif</span></div>
         </div>
       </div>
@@ -378,20 +377,6 @@
     </div>
   </section>
 
-  <!-- AVIS -->
-  <section id="avis" style="padding-top:0">
-    <div class="wrap">
-      <div class="head reveal">
-        <span class="eyebrow">Ils nous font confiance</span>
-        <h2 class="display">Les joueurs adorent</h2>
-      </div>
-      <div class="reviews">
-        <div class="review reveal"><div class="stars">★★★★★</div><p>« Commande reçue en 5 minutes, rien à redire. Le support m'a répondu direct sur Discord. »</p><div class="who"><span class="av" style="background:var(--pink)">L</span>Lucas · vérifié</div></div>
-        <div class="review reveal"><div class="stars">★★★★★</div><p>« Site super clair, paiement facile. Je recommande à toute ma squad. »</p><div class="who"><span class="av" style="background:var(--violet)">I</span>Inès · vérifiée</div></div>
-        <div class="review reveal"><div class="stars">★★★★★</div><p>« Le meilleur rapport qualité/prix que j'ai trouvé. Je reviendrai c'est sûr. »</p><div class="who"><span class="av" style="background:#1fb6d6">N</span>Nathan · vérifié</div></div>
-      </div>
-    </div>
-  </section>
 
   <!-- FAQ -->
   <section id="faq" style="padding-top:0">
@@ -476,7 +461,7 @@ const svg = (i) => `<svg viewBox="0 0 100 100">${ICONS[i]}</svg>`;
 const euro = (n) => n.toFixed(2).replace(".", ",") + " €";
 
 /* ---------- Marquee ---------- */
-const words = ["🔒 Paiement sécurisé Shoppy","★ 4,9/5 sur +2 000 avis","🔒 Paiement sécurisé","🎮 Toutes plateformes","💬 Support 7j/7","🍬 MalabarShop"];
+const words = ["🔒 Paiement sécurisé Shoppy","🏆 Objectif Top 1","🔒 Paiement sécurisé","🎮 Toutes plateformes","💬 Support 7j/7","🍬 MalabarShop"];
 document.getElementById("marquee").innerHTML = [...words,...words,...words,...words].map(w=>`<span>${w}</span>`).join("");
 
 /* ---------- Products ---------- */
