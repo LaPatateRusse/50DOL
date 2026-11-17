@@ -126,6 +126,7 @@
   .buy{display:flex;align-items:center;justify-content:space-between;margin-top:10px}
   .price{font-family:"Lilita One";font-size:28px}
   .price s{font-family:Inter;font-size:14px;color:var(--muted);margin-left:6px}
+  .buy-btn{padding:12px 22px;font-size:15px}
   .add{width:46px;height:46px;border-radius:14px;border:0;background:var(--pink);color:#fff;cursor:pointer;display:grid;place-items:center;transition:transform .15s,background .2s}
   .add:hover{transform:rotate(90deg);background:var(--pink-2)}
   .add.done{background:#2bd67b;transform:none}
@@ -270,11 +271,7 @@
       <a href="#avis">Avis</a>
       <a href="#faq">FAQ</a>
     </nav>
-    <button class="cart-btn" id="openCart" aria-label="Ouvrir le panier">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/></svg>
-      <span class="cart-label">Panier</span>
-      <span class="badge" id="count">0</span>
-    </button>
+    <a href="#boutique" class="cart-btn">🎮 <span class="cart-label">Réserver</span></a>
   </div>
 </header>
 
@@ -283,9 +280,9 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div class="reveal">
-        <span class="pill"><span class="dot"></span> Carte · Apple Pay · PayPal · Crypto</span>
+        <span class="pill"><span class="dot"></span> PayPal · Carte · Crypto via Shoppy</span>
         <h1 class="display">Booste ta game.<br><span class="grad">Domine l'île.</span></h1>
-        <p class="lead">MalabarShop, c'est la boutique la plus sucrée pour les joueurs Fortnite : des sessions de jeu en duo, un paiement crypto simple et sécurisé et un support qui répond vraiment.</p>
+        <p class="lead">MalabarShop, c'est la boutique la plus sucrée pour les joueurs Fortnite : des sessions de jeu en duo, un paiement sécurisé via Shoppy et un support qui répond vraiment.</p>
         <div class="cta">
           <a href="#boutique" class="btn btn-primary">Voir la boutique
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -317,7 +314,7 @@
           </svg>
         </div>
         <div class="float-chip chip-1">🎮 5 games ensemble</div>
-        <div class="float-chip chip-2">🪙 Paiement crypto</div>
+        <div class="float-chip chip-2">🔒 Paiement Shoppy</div>
       </div>
     </div>
   </section>
@@ -352,7 +349,7 @@
         </div>
         <div class="feat reveal">
           <div class="ic" style="background:rgba(56,225,255,.15)"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#38e1ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div>
-          <h3>Paiement facile</h3><p>Carte, Apple Pay, Google Pay, PayPal ou crypto (Solana via Deblock).</p>
+          <h3>Paiement sécurisé</h3><p>Paiement via Shoppy : PayPal, carte bancaire ou crypto.</p>
         </div>
         <div class="feat reveal">
           <div class="ic" style="background:rgba(255,225,77,.15)"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#ffe14d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></div>
@@ -374,8 +371,8 @@
         <h2 class="display">3 étapes, c'est tout</h2>
       </div>
       <div class="steps">
-        <div class="step reveal"><h3>Ajoute l'offre</h3><p>Mets « 5 games avec moi » dans ton panier.</p></div>
-        <div class="step reveal"><h3>Paie comme tu veux</h3><p>Carte, Apple Pay, PayPal ou crypto, puis indique ton pseudo.</p></div>
+        <div class="step reveal"><h3>Clique sur Acheter</h3><p>Choisis l'offre « 5 games avec moi ».</p></div>
+        <div class="step reveal"><h3>Paie via Shoppy</h3><p>PayPal, carte ou crypto, en quelques clics. Tu reçois ta confirmation par e-mail.</p></div>
         <div class="step reveal"><h3>On joue !</h3><p>On te recontacte sur Discord pour caler les 5 games.</p></div>
       </div>
     </div>
@@ -405,7 +402,7 @@
       </div>
       <div class="faq">
         <details class="reveal"><summary>Quand est-ce qu'on joue ?</summary><p>Dès que ton paiement est confirmé, on te contacte sur Discord pour fixer un créneau qui t'arrange, en général sous 24 h.</p></details>
-        <details class="reveal"><summary>Quels moyens de paiement ?</summary><p>Carte bancaire, Apple Pay et Google Pay (via Stripe), PayPal, ou crypto. Pour la crypto, envoie le montant affiché en SOL (réseau Solana) vers l'adresse Deblock indiquée, puis colle l'identifiant de transaction (hash) dans le formulaire. On vérifie et on te confirme.</p></details>
+        <details class="reveal"><summary>Quels moyens de paiement ?</summary><p>Le paiement passe par Shoppy, une plateforme de paiement sécurisée : PayPal, carte bancaire ou crypto selon ce qui est proposé au moment du paiement. Tu reçois une confirmation par e-mail juste après.</p></details>
         <details class="reveal"><summary>Sur quelles plateformes ça fonctionne ?</summary><p>PC, PlayStation, Xbox, Nintendo Switch et mobile. Précise ta plateforme lors de la commande.</p></details>
         <details class="reveal"><summary>Et si j'ai un problème ?</summary><p>Contacte-nous sur Discord ou par e-mail : on répond 7j/7. Si on ne peut pas résoudre le souci, tu es remboursé.</p></details>
       </div>
@@ -448,89 +445,23 @@
   </div>
 </footer>
 
-<!-- CART -->
-<div class="overlay" id="overlay"></div>
-<aside class="drawer" aria-label="Panier">
-  <div class="drawer-head"><h3 class="display">Ton panier</h3><button class="x" id="closeCart" aria-label="Fermer">×</button></div>
-  <div class="items" id="items"></div>
-  <div class="drawer-foot">
-    <div class="total"><span>Total</span><b id="total">0,00 €</b></div>
-    <button class="btn btn-primary" id="checkout">Passer au paiement</button>
-    <div class="secure">🔒 Carte, Apple Pay, PayPal ou crypto</div>
-  </div>
-</aside>
 <div class="toast" id="toast"></div>
 
-<!-- PAIEMENT CRYPTO -->
-<div class="modal" id="payModal" role="dialog" aria-modal="true" aria-labelledby="payTitle">
-  <div class="modal-box">
-    <div class="drawer-head" style="padding:0 0 16px"><h3 class="display" id="payTitle">Paiement</h3><button class="x" id="payClose" aria-label="Fermer">×</button></div>
-    <div class="pay-row"><span>Commande</span><b id="payRef"></b></div>
-    <div class="pay-row"><span>Total</span><b id="payTotal"></b></div>
-    <p class="pay-label">Moyen de paiement</p>
-    <div class="coins methods" id="methods">
-      <button type="button" class="coin" data-m="card">💳 Carte / Apple Pay</button>
-      <button type="button" class="coin" data-m="paypal">PayPal</button>
-      <button type="button" class="coin" data-m="crypto">🪙 Crypto</button>
-    </div>
-
-    <div class="pane" data-pane="card">
-      <p class="pay-label">1. Paie en ligne</p>
-      <p class="warn" style="margin:0 0 10px">Carte bancaire, Apple Pay ou Google Pay, via une page de paiement sécurisée Stripe.</p>
-      <a class="btn btn-primary pay-link" id="cardLink" target="_blank" rel="noopener" style="width:100%">Payer <span class="js-total"></span></a>
-    </div>
-    <div class="pane" data-pane="paypal">
-      <p class="pay-label">1. Paie avec PayPal</p>
-      <a class="btn pay-link" id="paypalLink" target="_blank" rel="noopener" style="width:100%;background:#ffc439;color:#111">Payer <span class="js-total"></span> avec PayPal</a>
-    </div>
-
-    <div class="pane" data-pane="crypto">
-    <div class="deblock" style="margin-top:14px"><span class="deblock-logo">D</span><span>Paiement reçu sur notre compte <b>Deblock</b></span></div>
-    <p class="pay-label">1. Choisis ta crypto</p>
-    <div class="coins" id="coins"></div>
-    <p class="pay-label">2. Envoie exactement</p>
-    <div class="amount" id="payAmount"></div>
-    <p class="pay-label">À cette adresse · réseau <b id="payNet" style="color:var(--yellow)"></b></p>
-    <div class="addr"><code id="payAddr"></code><button type="button" id="copyAddr" class="copy">Copier</button></div>
-    <p class="warn">⚠️ Utilise uniquement le réseau indiqué, sinon les fonds seront perdus.</p>
-    </div>
-    <p class="pay-label" id="confirmLabel">3. Confirme ta commande</p>
-    <form id="payForm" class="pay-form">
-      <input name="tx" id="txInput" required placeholder="Hash / ID de la transaction">
-      <input name="pseudo" required placeholder="Ton pseudo Epic">
-      <input name="discord" required placeholder="Ton pseudo Discord">
-      <input name="email" type="email" required placeholder="ton@email.com">
-      <button class="btn btn-primary" type="submit">J'ai payé, valider</button>
-    </form>
-  </div>
-</div>
 
 <script>
 /* ============================================================
-   🪙  CONFIG PAIEMENT DEBLOCK — mets TES adresses de réception
-   (app Deblock > Crypto > choisis l'actif > Recevoir > copie l'adresse)
+   🛒  CONFIG SHOPPY
+   1. Crée ton produit sur shoppy.gg (Dashboard > Products > Create)
+   2. Active tes moyens de paiement (Settings > Payments) : PayPal, carte, crypto (SOL…)
+   3. Copie l'ID du produit (ex : "aB3xYz1") et colle-le ci-dessous
    ============================================================ */
-const DEBLOCK = {
-  contactEmail: "contact@malabarshop.fr",   // où tu reçois les confirmations de commande
-  // 💳 Lien de paiement Stripe (Carte + Apple Pay + Google Pay) : dashboard.stripe.com > Liens de paiement
-  //    Active « Autoriser le client à modifier la quantité » dans le lien.
-  stripeLink: "https://buy.stripe.com/VOTRE_LIEN",
-  // 🅿️ Ton nom PayPal.me (paypal.me/xxxx) — le montant est rempli automatiquement
-  paypalMe: "VOTRE_PSEUDO_PAYPAL",
-  cryptos: [
-    { id:"sol",  label:"SOL",  cg:"solana",   network:"Solana",            address:"HyEWjwA3zpHzMjgapxaRSV5vrw1AYHYNRXhssghZc2Wn", decimals:4 },
-    // Pour ajouter d'autres cryptos, décommente et mets ta vraie adresse Deblock :
-    // { id:"usdc", label:"USDC", cg:"usd-coin", network:"Ethereum (ERC-20)", address:"0x...", decimals:2 },
-    // { id:"btc",  label:"BTC",  cg:"bitcoin",  network:"Bitcoin",           address:"bc1...", decimals:6 },
-    // { id:"eth",  label:"ETH",  cg:"ethereum", network:"Ethereum (ERC-20)", address:"0x...", decimals:5 },
-  ],
-};
+const SHOPPY_PRODUCT_ID = "VOTRE_ID_PRODUIT_SHOPPY";
 
 /* ============================================================
    ✏️  MODIFIE TES PRODUITS ICI
    ============================================================ */
 const PRODUCTS = [
-  { id:1, name:"5 games avec moi", cat:"Services", price:24.99, old:null, tag:"Best-seller", color:["#8c5bff","#ff4fa3"], icon:"duo", desc:"5 parties de Fortnite en duo ou en squad avec moi, avec conseils en direct pour progresser.", hot:true },
+  { id:1, shoppy:SHOPPY_PRODUCT_ID, name:"5 games avec moi", cat:"Services", price:24.99, old:null, tag:"Best-seller", color:["#8c5bff","#ff4fa3"], icon:"duo", desc:"5 parties de Fortnite en duo ou en squad avec moi, avec conseils en direct pour progresser.", hot:true },
 ];
 
 const ICONS = {
@@ -545,7 +476,7 @@ const svg = (i) => `<svg viewBox="0 0 100 100">${ICONS[i]}</svg>`;
 const euro = (n) => n.toFixed(2).replace(".", ",") + " €";
 
 /* ---------- Marquee ---------- */
-const words = ["🪙 Paiement crypto Deblock","★ 4,9/5 sur +2 000 avis","🔒 Paiement sécurisé","🎮 Toutes plateformes","💬 Support 7j/7","🍬 MalabarShop"];
+const words = ["🔒 Paiement sécurisé Shoppy","★ 4,9/5 sur +2 000 avis","🔒 Paiement sécurisé","🎮 Toutes plateformes","💬 Support 7j/7","🍬 MalabarShop"];
 document.getElementById("marquee").innerHTML = [...words,...words,...words,...words].map(w=>`<span>${w}</span>`).join("");
 
 /* ---------- Products ---------- */
@@ -563,124 +494,14 @@ function renderProducts(){
         <p>${p.desc}</p>
         <div class="buy">
           <span class="price">${euro(p.price)}${p.old?`<s>${euro(p.old)}</s>`:""}</span>
-          <button class="add" data-id="${p.id}" aria-label="Ajouter ${p.name} au panier">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
-          </button>
+          <button class="btn btn-primary buy-btn" data-shoppy-product="${p.shoppy}">Acheter</button>
         </div>
       </div>
     </article>`).join("");
 }
 renderProducts();
 
-/* ---------- Cart ---------- */
-let cart = {};
-try { cart = JSON.parse(localStorage.getItem("malabar-cart")) || {}; } catch(e) {}
-const save = () => { try { localStorage.setItem("malabar-cart", JSON.stringify(cart)); } catch(e) {} };
 
-grid.addEventListener("click", e=>{
-  const b = e.target.closest(".add"); if(!b) return;
-  const id = b.dataset.id;
-  cart[id] = (cart[id]||0) + 1; save(); renderCart();
-  b.classList.add("done");
-  b.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg>';
-  setTimeout(()=>{ b.classList.remove("done"); b.innerHTML='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>'; }, 1100);
-  const c = document.getElementById("count"); c.classList.remove("bump"); void c.offsetWidth; c.classList.add("bump");
-  toast(`${PRODUCTS.find(p=>p.id==id).name} ajouté au panier`);
-});
-
-function renderCart(){
-  const entries = Object.entries(cart).filter(([,q])=>q>0);
-  const count = entries.reduce((s,[,q])=>s+q,0);
-  const total = entries.reduce((s,[id,q])=>s+PRODUCTS.find(p=>p.id==id).price*q,0);
-  document.getElementById("count").textContent = count;
-  document.getElementById("total").textContent = euro(total);
-  document.getElementById("checkout").disabled = !count;
-  document.getElementById("checkout").style.opacity = count?1:.5;
-  document.getElementById("items").innerHTML = entries.length ? entries.map(([id,q])=>{
-    const p = PRODUCTS.find(x=>x.id==id);
-    return `<div class="item">
-      <div class="mini" style="background:linear-gradient(135deg,${p.color[0]},${p.color[1]})">${svg(p.icon)}</div>
-      <div><b>${p.name}</b><div class="qty"><button data-d="-1" data-id="${id}">−</button>${q}<button data-d="1" data-id="${id}">+</button></div></div>
-      <strong>${euro(p.price*q)}</strong>
-    </div>`;
-  }).join("") : `<div class="empty"><div style="font-size:48px">🍬</div><p>Ton panier est vide.<br>Va jeter un œil à la boutique !</p></div>`;
-}
-document.getElementById("items").addEventListener("click", e=>{
-  const b = e.target.closest("button[data-d]"); if(!b) return;
-  cart[b.dataset.id] = Math.max(0,(cart[b.dataset.id]||0)+Number(b.dataset.d));
-  if(!cart[b.dataset.id]) delete cart[b.dataset.id];
-  save(); renderCart();
-});
-renderCart();
-
-const openCart = ()=>document.body.classList.add("cart-open");
-const closeCart = ()=>document.body.classList.remove("cart-open");
-document.getElementById("openCart").onclick = openCart;
-document.getElementById("closeCart").onclick = closeCart;
-document.getElementById("overlay").onclick = closeCart;
-document.addEventListener("keydown", e=>{ if(e.key==="Escape") closeCart(); });
-
-/* ---------- Paiement crypto Deblock ---------- */
-let rates = null, selCrypto = DEBLOCK.cryptos[0], orderRef = "";
-const cartTotal = ()=>Object.entries(cart).reduce((s,[id,q])=>s+(PRODUCTS.find(p=>p.id==id)?.price||0)*q,0);
-async function loadRates(){
-  try{
-    const ids = DEBLOCK.cryptos.map(c=>c.cg).join(",");
-    const r = await fetch(`https://api.coingecko.com/api/v3/simple/price?ids=${ids}&vs_currencies=eur`);
-    rates = await r.json();
-  }catch(e){ rates = null; }
-  renderPay();
-}
-let method = "card";
-const TX_PLACEHOLDER = { card:"E-mail utilisé pour payer (reçu Stripe)", paypal:"ID de transaction PayPal", crypto:"Hash / ID de la transaction" };
-function renderPay(){
-  const total = cartTotal();
-  document.querySelectorAll("#methods .coin").forEach(b=>b.classList.toggle("active", b.dataset.m===method));
-  document.querySelectorAll(".pane").forEach(p=>p.hidden = p.dataset.pane!==method);
-  document.querySelectorAll(".js-total").forEach(e=>e.textContent = euro(total));
-  document.getElementById("confirmLabel").textContent = (method==="crypto"?"3":"2") + ". Confirme ta commande";
-  document.getElementById("txInput").placeholder = TX_PLACEHOLDER[method];
-  document.getElementById("cardLink").href = DEBLOCK.stripeLink;
-  document.getElementById("paypalLink").href = `https://www.paypal.me/${DEBLOCK.paypalMe}/${total.toFixed(2)}EUR`;
-  document.getElementById("payTotal").textContent = euro(total);
-  document.getElementById("payRef").textContent = orderRef;
-  document.querySelectorAll("#coins .coin").forEach(b=>b.classList.toggle("active", b.dataset.id===selCrypto.id));
-  document.getElementById("payNet").textContent = selCrypto.network;
-  document.getElementById("payAddr").textContent = selCrypto.address;
-  const rate = rates?.[selCrypto.cg]?.eur;
-  document.getElementById("payAmount").textContent = rate
-    ? `${(total/rate).toFixed(selCrypto.decimals)} ${selCrypto.label}`
-    : `l'équivalent de ${euro(total)} en ${selCrypto.label}`;
-}
-document.getElementById("coins").innerHTML = DEBLOCK.cryptos.map(c=>`<button type="button" class="coin" data-id="${c.id}">${c.label}</button>`).join("");
-document.getElementById("methods").addEventListener("click", e=>{
-  const b = e.target.closest("[data-m]"); if(!b) return;
-  method = b.dataset.m; renderPay();
-});
-document.getElementById("coins").addEventListener("click", e=>{
-  const b = e.target.closest(".coin"); if(!b) return;
-  selCrypto = DEBLOCK.cryptos.find(c=>c.id===b.dataset.id); renderPay();
-});
-document.getElementById("copyAddr").onclick = async ()=>{
-  try{ await navigator.clipboard.writeText(selCrypto.address); toast("Adresse copiée ✅"); }catch(e){ toast("Copie impossible, sélectionne l'adresse à la main"); }
-};
-const payModal = document.getElementById("payModal");
-document.getElementById("checkout").onclick = ()=>{
-  if(!cartTotal()) return;
-  orderRef = "MLB-" + Math.random().toString(36).slice(2,8).toUpperCase();
-  closeCart(); payModal.classList.add("open"); renderPay(); loadRates();
-};
-document.getElementById("payClose").onclick = ()=>payModal.classList.remove("open");
-payModal.addEventListener("click", e=>{ if(e.target===payModal) payModal.classList.remove("open"); });
-document.getElementById("payForm").addEventListener("submit", e=>{
-  e.preventDefault();
-  const f = new FormData(e.target);
-  const lines = Object.entries(cart).map(([id,q])=>`- ${PRODUCTS.find(p=>p.id==id).name} x${q}`).join("\n");
-  const body = `Commande ${orderRef}\n${lines}\nTotal : ${euro(cartTotal())}\n\nMoyen : ${method==="crypto" ? `Crypto ${selCrypto.label} (${selCrypto.network}) — ${document.getElementById("payAmount").textContent}` : method==="paypal" ? "PayPal" : "Carte / Apple Pay (Stripe)"}\nRéférence paiement : ${f.get("tx")}\n\nPseudo Epic : ${f.get("pseudo")}\nDiscord : ${f.get("discord")}\nE-mail : ${f.get("email")}`;
-  window.location.href = `mailto:${DEBLOCK.contactEmail}?subject=${encodeURIComponent("Commande MalabarShop "+orderRef)}&body=${encodeURIComponent(body)}`;
-  cart = {}; save(); renderCart(); payModal.classList.remove("open"); e.target.reset();
-  toast("Merci ! On vérifie ton paiement et on te contacte sur Discord 🎮");
-});
 document.getElementById("news").addEventListener("submit", e=>{
   e.preventDefault(); e.target.reset(); toast("Bienvenue ! Ton code -10% arrive par e-mail 🎉");
 });
@@ -697,5 +518,7 @@ const io = new IntersectionObserver(es=>es.forEach(en=>{ if(en.isIntersecting){ 
 document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
 document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+<!-- Shoppy : ouvre le paiement au clic sur les boutons data-shoppy-product (doit rester APRÈS le script ci-dessus) -->
+<script src="https://shoppy.gg/api/embed.js"></script>
 </body>
 </html>
