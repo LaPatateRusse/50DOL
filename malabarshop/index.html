@@ -110,7 +110,9 @@
   .filters{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:36px}
   .filter{padding:9px 18px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--muted);font:inherit;font-weight:700;cursor:pointer}
   .filter.active,.filter:hover{color:#fff;border-color:var(--pink);background:rgba(255,79,163,.15)}
-  .grid{display:grid;grid-template-columns:minmax(0,380px);justify-content:center;gap:22px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,380px));justify-content:center;gap:22px}
+  .thumb.has-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:right center;transition:transform .35s}
+  .card:hover .thumb.has-img img{transform:scale(1.06)}
   .card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
     transition:transform .25s,border-color .25s,box-shadow .25s;display:flex;flex-direction:column}
   .card:hover{transform:translateY(-6px);border-color:rgba(255,79,163,.6);box-shadow:var(--shadow)}
@@ -327,8 +329,8 @@
     <div class="wrap">
       <div class="head reveal">
         <span class="eyebrow">La boutique</span>
-        <h2 class="display">L'offre</h2>
-        <p>Joue 5 games avec moi : on monte en squad, je te donne mes astuces et on vise le Top 1.</p>
+        <h2 class="display">Les offres</h2>
+        <p>Joue avec moi ou récupère mes meilleures astuces : choisis ce qui te va.</p>
       </div>
             <div class="grid" id="grid"></div>
     </div>
@@ -440,13 +442,15 @@
    2. Active tes moyens de paiement (Settings > Payments) : PayPal, carte, crypto (SOL…)
    3. Copie l'ID du produit (ex : "aB3xYz1") et colle-le ci-dessous
    ============================================================ */
-const SHOPPY_PRODUCT_ID = "VOTRE_ID_PRODUIT_SHOPPY";
+const SHOPPY_PRODUCT_ID = "VOTRE_ID_PRODUIT_SHOPPY";        // 5 games avec moi
+const SHOPPY_PRODUCT_ID_GLITCH = "VOTRE_ID_PRODUIT_SHOPPY_GLITCH"; // Glitch Jeton Pirate
 
 /* ============================================================
    ✏️  MODIFIE TES PRODUITS ICI
    ============================================================ */
 const PRODUCTS = [
   { id:1, shoppy:SHOPPY_PRODUCT_ID, name:"5 games avec moi", cat:"Services", price:24.99, old:null, tag:"Best-seller", color:["#8c5bff","#ff4fa3"], icon:"duo", desc:"5 parties de Fortnite en duo ou en squad avec moi, avec conseils en direct pour progresser.", hot:true },
+  { id:2, shoppy:SHOPPY_PRODUCT_ID_GLITCH, name:"Glitch Jeton Pirate", cat:"Guides", price:9.99, old:null, tag:null, color:["#1f8fff","#38e1ff"], icon:"star", img:"img/glitch-jeton-pirate.webp", desc:"La méthode la plus rapide pour récupérer des jetons pirate, expliquée étape par étape." },
 ];
 
 const ICONS = {
@@ -470,9 +474,9 @@ let current = "Tout";
 function renderProducts(){
   grid.innerHTML = PRODUCTS.filter(p=>current==="Tout"||p.cat===current).map(p=>`
     <article class="card">
-      <div class="thumb" style="background:linear-gradient(135deg,${p.color[0]},${p.color[1]})">
+      <div class="thumb${p.img?" has-img":""}" style="background:linear-gradient(135deg,${p.color[0]},${p.color[1]})">
         ${p.tag?`<span class="tag${p.hot?" hot":""}">${p.tag}</span>`:""}
-        ${svg(p.icon)}
+        ${p.img?`<img src="${p.img}" alt="${p.name}" loading="lazy">`:svg(p.icon)}
       </div>
       <div class="body">
         <h3>${p.name}</h3>
